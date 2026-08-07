@@ -412,12 +412,12 @@
     if(!box || !fotos.length){ if(banner) banner.style.display='none'; return; }
 
     box.innerHTML = fotos.map((f,i)=>`
-      <figure class="cidade-slide${i===0?' on':''}">
+      <figure class="cidade-slide${i===0?' on':''}${f.link?' cidade-slide-link':''}"${f.link?` data-link="${f.link}"`:''}>
         <img ${pfImg('cidade',f.id,f.imagem)} alt="${f.legenda}" loading="${i===0?'eager':'lazy'}">
         <figcaption>
           ${f.badge?`<span class="cidade-badge">${f.badge}</span>`:''}
           <b>${f.legenda}</b><small>${f.local}</small>
-          ${f.link?`<a class="cidade-cta" href="${f.link}">${f.cta||'Saiba mais'}</a>`:''}
+          ${f.link?`<span class="cidade-cta">${f.cta||'Saiba mais'}</span>`:''}
         </figcaption>
       </figure>`).join('');
 
@@ -440,6 +440,20 @@
     document.getElementById('cidadeNext').addEventListener('click',()=>{ ir(atual+1); tocar(); });
     banner.addEventListener('mouseenter', parar);
     banner.addEventListener('mouseleave', tocar);
+
+    // Torna slides com link clicáveis em qualquer área (desktop e mobile)
+    box.querySelectorAll('.cidade-slide-link').forEach(function(s){
+      s.style.cursor = 'pointer';
+      s.addEventListener('click', function(e){
+        if(!e.target.closest('.cidade-nav,.cidade-dot')) {
+          location.href = s.dataset.link;
+        }
+      });
+    });
+
+    // Pausa o carrossel ao toque (mobile) e retoma ao soltar
+    banner.addEventListener('touchstart', parar, {passive:true});
+    banner.addEventListener('touchend', tocar, {passive:true});
 
     if(slides.length > 1) tocar();
     else { dotsBox.style.display='none'; document.getElementById('cidadePrev').style.display='none'; document.getElementById('cidadeNext').style.display='none'; }
