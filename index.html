@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaceFly | Corrida de rua em Joinville e região</title>
+<meta name="description" content="Calendário de provas, dicas, notícias e assessoria esportiva para corredores de Joinville e do norte de Santa Catarina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"> <!-- Adicione esta linha -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- ============================================================
+     GOOGLE ANALYTICS 4
+     1. Acesse analytics.google.com
+     2. Crie uma propriedade GA4 para pacefly.com.br
+     3. Copie o Measurement ID (formato G-XXXXXXXXXX)
+     4. Substitua G-XXXXXXXXXX abaixo pelo seu ID real
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+
+<!-- BANNER RANKING (em breve)
+     ATENÇÃO: a página rankings.html NÃO deve ser divulgada ainda.
+     O banner leva para a newsletter, e o arquivo site\_redirects
+     bloqueia o acesso direto a /rankings.html no Netlify. -->
+<a class="promo-banner" href="#newsletter">
+  <div class="wrap promo-inner">
+    <span class="promo-badge">Em breve</span>
+    <span class="promo-text"><strong>PaceFly Rankings:</strong> o ranking dos corredores de Joinville e do norte de SC está sendo construído.</span>
+    <span class="promo-cta">Quero ser avisado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html#top" class="brand"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly - Você voando nas pistas"></a>
+    <nav class="menu" id="menu">
+      <a href="#calendario">Calendário</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#assessoria">Assessoria</a>
+      <a href="#assessoria" class="btn btn-azul">Quero começar</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Corrida de rua em Joinville e região</span>
+      <h1>Seu ritmo, sua <span>comunidade</span>, sua próxima prova.</h1>
+      <p class="lead">Tudo o que o corredor do norte de Santa Catarina precisa em um só lugar: calendário de provas, dicas de quem entende e as notícias que movem o esporte.</p>
+      <div class="hero-cta">
+        <a href="#calendario" class="btn btn-azul">Ver calendário de provas</a>
+        <a href="#assessoria" class="btn btn-ghost">Conhecer a assessoria</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>20+</b><small>provas mapeadas em 2026</small></div>
+        <div><b>8</b><small>cidades no calendário</small></div>
+        <div><b>Joinville</b><small>e todo o norte de SC</small></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="imagens/hero/imagem.JPG" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='imagens/hero/imagem.jpg'}else{this.onerror=null;this.src='https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1000'}" alt="Corredor cruzando a linha de chegada da Meia de JOI" style="object-position:center">
+    </div>
+  </div>
+</section>
+
+<!-- VITRINE DA CIDADE -->
+<section class="cidade-sec" id="cidade">
+  <div class="wrap">
+    <div class="cidade-head">
+      <span class="eyebrow">Nossa casa</span>
+      <h2>Joinville é a nossa pista</h2>
+    </div>
+  </div>
+  <div class="cidade-banner" id="cidadeBanner">
+    <div class="cidade-slides" id="cidadeSlides"></div>
+    <button class="cidade-nav prev" id="cidadePrev" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <button class="cidade-nav next" id="cidadeNext" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+    <div class="cidade-dots" id="cidadeDots"></div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section class="pilares-sec">
+  <div class="wrap">
+    <div class="pilares">
+      <div class="pilar">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M7.5 13.5h3M13.5 13.5h3M7.5 17h3"/></svg>
+        </span>
+        <h3>Calendário</h3>
+        <p>Todas as provas de Joinville e região, sempre atualizadas.</p>
+      </div>
+      <div class="pilar">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.45 1 1.15 1.1 1.9l.1.8h4.8l.1-.8c.1-.75.5-1.45 1.1-1.9A6 6 0 0 0 12 3Z"/></svg>
+        </span>
+        <h3>Dicas</h3>
+        <p>Treino, alimentação, vestuário e suplementação sem enrolação.</p>
+      </div>
+      <div class="pilar">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h12v13H5.5A1.5 1.5 0 0 1 4 17V5.5Z"/><path d="M16 9h3.5v8a1.5 1.5 0 0 1-3 0V9Z"/><path d="M7 9h6M7 12.5h6M7 16h4"/></svg>
+        </span>
+        <h3>Notícias</h3>
+        <p>Recordes, grandes maratonas e o que acontece na região.</p>
+      </div>
+      <div class="pilar">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7.5"/><path d="M12 13V9M12 3.5v2M10 3.5h4M18.5 7l1.2-1.2"/></svg>
+        </span>
+        <h3>Assessoria</h3>
+        <p>Acompanhamento para você evoluir com segurança e constância.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALENDARIO -->
+<section id="calendario">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Agenda 2026</span>
+      <h2>Calendário de provas em Joinville e região</h2>
+      <p>Do 5K de bairro à primeira maratona da cidade, passando pelo planalto norte, pelo litoral e pelo Vale do Itajaí. Clique em uma prova para ver percurso, inscrição, retirada de kit e resultados das últimas edições.</p>
+    </div>
+
+    <div class="cal-filtros" id="calFiltros">
+      <button class="chip on" data-mes="todos">Todas</button>
+      <button class="chip" data-mes="08">Agosto</button>
+      <button class="chip" data-mes="09">Setembro</button>
+      <button class="chip" data-mes="10">Outubro</button>
+      <button class="chip" data-mes="11">Novembro</button>
+    </div>
+
+    <div class="cal-grid" id="calGrid"></div>
+    <p class="cal-nota">Datas e distâncias conforme divulgação dos organizadores. Confirme sempre no site oficial de cada prova antes de se inscrever.</p>
+  </div>
+</section>
+
+<!-- DICAS -->
+<section id="dicas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para correr melhor</span>
+      <h2>Dicas de quem vive a corrida</h2>
+      <p>Conteúdo prático para treinar com mais inteligência, se alimentar bem e chegar inteiro no dia da prova, com atenção ao clima do inverno catarinense.</p>
+    </div>
+    <div class="dicas-grid" id="dicasGrid"></div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section id="noticias">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Universo da corrida</span>
+      <h2>Notícias que movem o esporte</h2>
+      <p>Recordes, grandes maratonas e as novidades do circuito no Brasil e no mundo.</p>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<!-- ASSESSORIA -->
+<section id="assessoria">
+  <div class="wrap assess-grid">
+    <div>
+      <span class="eyebrow">Assessoria esportiva</span>
+      <h2>Em breve: treine com acompanhamento de verdade</h2>
+      <p class="lead">Estamos montando a assessoria PaceFly para corredores de Joinville e região. Planilhas individualizadas, acompanhamento próximo e uma comunidade para te manter constante. Entre na lista de interesse e seja avisado em primeira mão quando abrirem as vagas.</p>
+      <ul class="assess-list">
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Planejamento de treino conforme seu objetivo e rotina</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Grupos de corrida e apoio nas provas da região</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Orientação sobre ritmo, evolução e prevenção de lesões</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Condições especiais para quem entrar na lista agora</li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <div id="formArea">
+        <h3>Entrar na lista de interesse</h3>
+        <p class="sub">Sem compromisso. Avisamos você quando a assessoria abrir.</p>
+        <!-- ============================================================
+             FORMSPREE - Formulário de interesse
+             1. Acesse formspree.io e crie uma conta com contato@pacefly.com.br
+             2. Clique em "New Form" → nomeie "Assessoria PaceFly"
+             3. Copie o endpoint (ex: https://formspree.io/f/xyzxyz)
+             4. Substitua FORMSPREE_ENDPOINT_AQUI abaixo pelo seu endpoint
+             ============================================================ -->
+        <form id="leadForm" action="https://formspree.io/f/xvzjjnqa" method="POST">
+          <input type="hidden" name="_subject" value="Nova lead - Assessoria PaceFly">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="field">
+            <label for="whats">WhatsApp</label>
+            <input type="tel" id="whats" name="whats" placeholder="(47) 90000-0000">
+          </div>
+          <div class="field">
+            <label for="obj">Seu objetivo</label>
+            <select id="obj" name="obj">
+              <option value="">Selecione</option>
+              <option>Começar a correr</option>
+              <option>Fazer meu primeiro 5K ou 10K</option>
+              <option>Encarar uma meia ou maratona</option>
+              <option>Melhorar meu tempo</option>
+              <option>Voltar a treinar com constância</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-azul btn-full">Quero ser avisado</button>
+          <p class="form-note">Seus dados ficam só com a PaceFly. Nada de spam.</p>
+        </form>
+      </div>
+      <div class="form-ok" id="formOk">
+        <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></div>
+        <h3>Tudo certo!</h3>
+        <p>Você entrou na lista de interesse da assessoria PaceFly. Assim que abrirmos as vagas, você será um dos primeiros a saber.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl-sec" id="newsletter">
+  <div class="wrap">
+    <div class="news-cta">
+      <div>
+        <h3>Receba o calendário e as dicas no seu e-mail</h3>
+        <p>Um resumo por semana com as próximas provas da região e o melhor conteúdo para corredores. É de graça.</p>
+      </div>
+      <!-- ============================================================
+           MAILCHIMP - Newsletter
+           1. Acesse mailchimp.com e crie uma conta
+           2. Crie uma Audience (lista)
+           3. Vá em Audience > Signup Forms > Embedded Forms
+           4. Copie a URL do campo action="" do formulário gerado
+              (ex: https://xyz.us1.list-manage.com/subscribe/post?u=abc&id=123)
+           5. Substitua MAILCHIMP_POST_URL_AQUI abaixo por essa URL
+           ============================================================ -->
+      <form class="nl-form" id="nlForm">
+        <input type="email" id="nlEmail" name="EMAIL" placeholder="Seu melhor e-mail" required>
+        <button type="submit" class="btn btn-amar" id="nlBtn">Inscrever</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly"></span>
+        <p class="desc">Movimento, confiança e comunidade. O ponto de encontro dos corredores de Joinville e do norte de Santa Catarina.</p>
+      </div>
+      <div>
+        <h4>Conteúdo</h4>
+        <ul>
+          <li><a href="#calendario">Calendário</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#assessoria">Assessoria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PaceFly</h4>
+        <ul>
+          <li><a href="#top">Sobre nós</a></li>
+          <li><a href="#assessoria">Assessoria</a></li>
+          <li><a href="#top">Comunidade</a></li>
+          <li><a href="mailto:contato@pacefly.com.br">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@pacefly.com.br">contato@pacefly.com.br</a></li>
+          <li><span>Joinville, SC</span></li>
+        </ul>
+        <div class="social">
+          <div class="social">
+  <a href="https://www.instagram.com/paceflyrunning" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 PaceFly. Todos os direitos reservados.</span>
+      <span>pacefly.com.br</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+  // Menu mobile
+  const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+  const hoje=new Date(2026,7,3); // 3 ago 2026 (referência do protótipo)
+  const eventos=window.PACEFLY_EVENTOS||[];
+  const grid=document.getElementById('calGrid');
+  const pinSVG='<svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>';
+  const setaSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  function render(mes){
+    grid.innerHTML='';
+    const lista=eventos.filter(e=>mes==='todos'||e.mes===mes);
+    lista.forEach(e=>{
+      const dataEv=new Date(e.ano,parseInt(e.mes)-1,parseInt(e.dia));
+      const dias=Math.round((dataEv-hoje)/86400000);
+      const soon=dias>=0&&dias<=14;
+      const dist=e.distancias.slice(0,3).map(d=>`<span class="tag km">${d}</span>`).join('');
+      const a=document.createElement('a');
+      a.className='evt'+(e.destaque?' evt-destaque':'');
+      a.href='evento.html?id='+e.id;
+      a.innerHTML=`
+        <div class="evt-top">
+          <div class="evt-date"><b>${e.dia}</b><small>${e.mesTxt}</small></div>
+          <div class="evt-info">
+            <h3>${e.nome}</h3>
+            <span class="loc">${pinSVG}${e.cidade}</span>
+          </div>
+        </div>
+        <div class="evt-foot">
+          ${dist}
+          ${soon?'<span class="tag soon">Em breve</span>':''}
+          ${e.parceiro==='sim'?'<span class="tag parceiro">Parceiro PaceFly</span>':''}
+        </div>
+        <span class="evt-cta">Ver detalhes ${setaSVG}</span>`;
+      grid.appendChild(a);
+    });
+    if(!lista.length){grid.innerHTML='<p class="cal-vazio">Nenhuma prova cadastrada para este mês ainda. Volte em breve.</p>';}
+  }
+  render('todos');
+
+  document.querySelectorAll('#calFiltros .chip').forEach(c=>{
+    c.addEventListener('click',()=>{
+      document.querySelectorAll('#calFiltros .chip').forEach(x=>x.classList.remove('on'));
+      c.classList.add('on');
+      render(c.dataset.mes);
+    });
+  });
+
+  // Noticias
+  const ng=document.getElementById('newsGrid');
+  function renderNoticias(noticias){
+    if(!ng) return;
+    ng.innerHTML=noticias.map((n,i)=>`
+      <a class="news${i===0?' big':''}" href="noticia.html?id=${n.id}">
+        <div class="news-img"><img ${pfImg('noticias',n.id,n.imagem)} alt="${n.titulo}"></div>
+        <div class="news-body">
+          <span class="news-tag">${n.categoria}</span>
+          <h3>${n.titulo}</h3>
+          <p>${n.resumo}</p>
+          <div class="meta">${n.local}</div>
+        </div>
+      </a>`).join('');
+  }
+  renderNoticias(window.PACEFLY_NOTICIAS||[]);
+  pfLista('noticias', window.PACEFLY_NOTICIAS||[]).then(renderNoticias);
+
+  // Dicas
+  const dg=document.getElementById('dicasGrid');
+  function renderDicas(dicas){
+    if(!dg) return;
+    dg.innerHTML=dicas.map(d=>`
+      <a class="dica" href="dica.html?id=${d.id}">
+        <div class="dica-img"><span class="dica-cat">${d.categoria}</span><img ${pfImg('dicas',d.id,d.imagem)} alt="${d.titulo}"></div>
+        <div class="dica-body">
+          <h3>${d.titulo}</h3>
+          <p>${d.resumo}</p>
+          <span class="link-seta">Ler dica completa</span>
+        </div>
+      </a>`).join('');
+  }
+  renderDicas(window.PACEFLY_DICAS||[]);
+  pfLista('dicas', window.PACEFLY_DICAS||[]).then(renderDicas);
+
+  // Vitrine da cidade — carrossel automatico
+  (function(){
+    const fotos = window.PACEFLY_CIDADE || [];
+    const box = document.getElementById('cidadeSlides');
+    const dotsBox = document.getElementById('cidadeDots');
+    const banner = document.getElementById('cidadeBanner');
+    if(!box || !fotos.length){ if(banner) banner.style.display='none'; return; }
+
+    box.innerHTML = fotos.map((f,i)=>`
+      <figure class="cidade-slide${i===0?' on':''}">
+        <img ${pfImg('cidade',f.id,f.imagem)} alt="${f.legenda}" loading="${i===0?'eager':'lazy'}">
+        <figcaption><b>${f.legenda}</b><small>${f.local}</small></figcaption>
+      </figure>`).join('');
+
+    dotsBox.innerHTML = fotos.map((f,i)=>`<button class="cidade-dot${i===0?' on':''}" data-i="${i}" aria-label="Foto ${i+1}"></button>`).join('');
+
+    const slides = box.querySelectorAll('.cidade-slide');
+    const dots = dotsBox.querySelectorAll('.cidade-dot');
+    let atual = 0, timer = null;
+
+    function ir(i){
+      atual = (i + slides.length) % slides.length;
+      slides.forEach((s,n)=>s.classList.toggle('on', n===atual));
+      dots.forEach((d,n)=>d.classList.toggle('on', n===atual));
+    }
+    function tocar(){ parar(); timer = setInterval(()=>ir(atual+1), 5000); }
+    function parar(){ if(timer){ clearInterval(timer); timer=null; } }
+
+    dots.forEach(d=>d.addEventListener('click',()=>{ ir(parseInt(d.dataset.i)); tocar(); }));
+    document.getElementById('cidadePrev').addEventListener('click',()=>{ ir(atual-1); tocar(); });
+    document.getElementById('cidadeNext').addEventListener('click',()=>{ ir(atual+1); tocar(); });
+    banner.addEventListener('mouseenter', parar);
+    banner.addEventListener('mouseleave', tocar);
+
+    if(slides.length > 1) tocar();
+    else { dotsBox.style.display='none'; document.getElementById('cidadePrev').style.display='none'; document.getElementById('cidadeNext').style.display='none'; }
+  })();
+
+  // Formulario de interesse — Formspree (AJAX)
+  document.getElementById('leadForm').addEventListener('submit', async function(ev){
+    ev.preventDefault();
+    const form = ev.target;
+    const btn = form.querySelector('button[type=submit]');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('formArea').style.display='none';
+        document.getElementById('formOk').style.display='block';
+      } else {
+        btn.textContent = 'Tentar novamente';
+        btn.disabled = false;
+      }
+    } catch(e) {
+      btn.textContent = 'Tentar novamente';
+      btn.disabled = false;
+    }
+  });
+
+  // Newsletter — Mailchimp (JSONP, sem redirecionar a página)
+  const MAILCHIMP_URL = 'https://pacefly.us16.list-manage.com/subscribe/post?u=9e9a244a97352edfb3cde1523&id=72488c6fa6'; // URL oficial do Mailchimp (audiência PaceFly)
+  document.getElementById('nlForm').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    const email = document.getElementById('nlEmail').value;
+    const btn = document.getElementById('nlBtn');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+    const cbName = '__mc' + Date.now();
+    const url = MAILCHIMP_URL.replace('/post?', '/post-json?') + '&EMAIL=' + encodeURIComponent(email) + '&c=' + cbName;
+    window[cbName] = function(data){
+      if(data.result === 'success'){
+        document.getElementById('nlEmail').value = '';
+        document.getElementById('nlEmail').placeholder = 'Inscrição recebida! Obrigado';
+        btn.textContent = '✓';
+      } else {
+        btn.textContent = 'Tentar novamente';
+        btn.disabled = false;
+      }
+      delete window[cbName];
+    };
+    const s = document.createElement('script');
+    s.src = url;
+    document.body.appendChild(s);
+  });
+</script>
+</body>
+</html>

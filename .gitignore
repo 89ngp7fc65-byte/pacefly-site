@@ -1,0 +1,12 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backups locais (nao precisam ir para o GitHub)
+*backup*
+*.bak
+*.tmp
+
+# Logs
+*.log

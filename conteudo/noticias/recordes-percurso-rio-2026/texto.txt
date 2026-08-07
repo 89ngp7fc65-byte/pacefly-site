@@ -1,0 +1,31 @@
+# ======================================================
+# TEXTO DA NOTICIA: Novos recordes de percurso no Rio
+# Pasta: site\conteudo\noticias\recordes-percurso-rio-2026\
+# Foto:  site\imagens\noticias\recordes-percurso-rio-2026\imagem.jpg
+# ======================================================
+# COMO USAR
+# - Escreva depois dos dois pontos ( : ) do campo que quiser mudar.
+# - Campo em branco = o site mantem o texto que ja existe. Nada fica vazio.
+# - Linhas que comecam com # sao instrucoes e o site ignora.
+# - Salve com Ctrl + S e depois publique o site.
+# - Manual completo: site\conteudo\COMO-ATUALIZAR-O-SITE.txt
+# ======================================================
+
+titulo:
+
+resumo:
+
+categoria:
+
+local:
+
+# Nome do site de onde veio a informacao (ex: Webrun)
+fonte-nome:
+
+# Endereco completo, comecando com https://
+fonte-url:
+
+# Abaixo escreva o texto completo da noticia.
+# Deixe UMA linha em branco entre um paragrafo e outro.
+corpo:
+

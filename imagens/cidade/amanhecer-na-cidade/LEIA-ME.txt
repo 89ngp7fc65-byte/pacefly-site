@@ -1,0 +1,6 @@
+Slide 1 do banner da home: "Joinville amanhece correndo"
+
+Salve a foto aqui como: imagem.jpg (1600x900 px, horizontal)
+
+Enquanto esta pasta estiver vazia, o site usa automaticamente
+a foto de reserva cadastrada em assets/data.js.

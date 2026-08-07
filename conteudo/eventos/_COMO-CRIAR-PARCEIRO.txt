@@ -1,0 +1,70 @@
+========================================================
+COMO MARCAR UM EVENTO COMO PARCEIRO PACEFLY
+========================================================
+
+Quando a PaceFly tem uma parceria com um organizador
+(por exemplo, um cupom de desconto para os seguidores),
+voce pode ativar um banner especial na pagina do evento
+sem mexer em codigo.
+
+Sao dois arquivos, ambos opcionais:
+
+--------------------------------------------------------
+ARQUIVO 1: texto.txt (ja existente)
+  Adicione a linha abaixo para que o calendario
+  mostre o badge "Parceiro PaceFly" no cartao do evento:
+
+     parceiro: sim
+
+  Se quiser tambem mostrar o cupom no badge do
+  calendario (nao obrigatorio, aparece so no banner
+  da pagina do evento), adicione:
+
+     cupom: PACEFLY10
+
+--------------------------------------------------------
+ARQUIVO 2: parceiro.txt (novo — crie na pasta do evento)
+  Este arquivo ativa o banner azul com o cupom dentro
+  da pagina do evento. Crie com o nome parceiro.txt
+  na mesma pasta do texto.txt correspondente.
+
+  Exemplo de conteudo:
+
+     cupom: PACEFLY10
+     desconto: 10%
+     texto: Use o cupom ao se inscrever e garanta 10% de desconto.
+     validade: 31/12/2026
+
+  Campos:
+    cupom     = codigo do cupom (aparece em destaque, clicavel)
+    desconto  = percentual ou valor exibido acima do cupom
+    texto     = frase explicativa (opcional)
+    validade  = data limite em texto livre (opcional)
+
+  Se o arquivo nao existir, nenhum banner aparece.
+  Para desativar o banner, basta apagar o arquivo.
+
+--------------------------------------------------------
+CAMINHO DO ARQUIVO (exemplo para o Circuito BB):
+
+  site\conteudo\eventos\circuito-banco-do-brasil-joinville\parceiro.txt
+  site\conteudo\eventos\circuito-banco-do-brasil-joinville\texto.txt
+
+--------------------------------------------------------
+ARTE DO EVENTO (opcional)
+  Para usar uma imagem propria do evento (banner do
+  organizador, arte oficial), coloque o arquivo com
+  o nome exato imagem.jpg na pasta de imagens:
+
+  site\imagens\eventos\circuito-banco-do-brasil-joinville\imagem.jpg
+
+  O site ja troca a foto do hero da pagina do evento
+  por essa imagem automaticamente.
+
+--------------------------------------------------------
+RESUMO
+  1. Crie parceiro.txt com o cupom e detalhes
+  2. Adicione "parceiro: sim" no texto.txt do evento
+  3. (Opcional) Troque a imagem.jpg pelo banner oficial
+  4. Publique o site normalmente
+========================================================

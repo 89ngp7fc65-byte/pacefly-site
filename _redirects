@@ -1,0 +1,13 @@
+# Netlify - regras de redirecionamento
+# ---------------------------------------------------------------
+# A pagina do ranking ainda NAO deve ficar publica.
+# Enquanto o projeto nao for lancado, qualquer acesso direto a
+# /rankings.html e devolvido para a home. O arquivo continua na
+# pasta site\ para a tarefa semanal atualizar a previa localmente.
+#
+# QUANDO FOR LANCAR O RANKING: apague ou comente as 3 linhas
+# abaixo e republique o site.
+# ---------------------------------------------------------------
+/rankings.html    /    302
+/rankings         /    302
+/rankings/*       /    302

@@ -1,0 +1,5 @@
+Fotos das provas (página de detalhe do evento).
+Para dar foto própria a uma prova, crie a pasta com o mesmo "id"
+da prova em data.js e salve dentro dela: imagem.jpg (1400x900 px).
+Exemplo: imagens\eventos\maratona-joinville-42k\imagem.jpg
+Sem foto local, o site usa a foto online de reserva.

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://pacefly.com.br/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- DICAS -->
+  <url><loc>https://pacefly.com.br/dica.html?id=do-sofa-aos-5k</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=o-que-comer-antes-e-depois-do-treino</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=como-se-vestir-para-correr-no-inverno-de-sc</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=protecao-da-pele-para-correr-no-inverno</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=sua-primeira-prova-checklist-da-semana</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=correndo-na-chuva-inverno-sc</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- NOTÍCIAS -->
+  <url><loc>https://pacefly.com.br/noticia.html?id=hupi-run-2026-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=nb-42k-porto-alegre-resultados-kipchoge</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-rio-2026-recorde</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=floripa-fibra-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=nike-sp-city-marathon-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-joinville-estreia</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- EVENTOS / CALENDÁRIO DE PROVAS -->
+  <url><loc>https://pacefly.com.br/evento.html?id=live-run-xp-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=menegotti-run-experience</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=night-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-verde-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-tigre-joinville</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=circuito-banco-do-brasil-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-protecao-animais</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-senhor-bom-jesus-guaramirim</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=ademicon-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-jaragua-do-sul</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=jtc-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=desafio-drogaria-catarinense</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-pela-vida-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-rede-feminina-guaramirim</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-6k</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-42k</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-do-tatico</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
+</urlset>

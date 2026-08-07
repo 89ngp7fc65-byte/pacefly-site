@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Projeto do ranking ainda nao lancado: fora dos buscadores.
+# Remover estas 2 linhas quando o ranking for ao ar.
+Disallow: /rankings.html
+Disallow: /rankings
+
+Sitemap: https://pacefly.com.br/sitemap.xml

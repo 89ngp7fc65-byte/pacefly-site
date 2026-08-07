@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícia | PaceFly</title>
+<meta name="description" content="Notícias do universo da corrida de rua no Brasil e na região de Joinville.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html#top" class="brand"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly - Você voando nas pistas"></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#calendario">Calendário</a>
+      <a href="index.html#dicas">Dicas</a>
+      <a href="index.html#noticias">Notícias</a>
+      <a href="index.html#assessoria">Assessoria</a>
+      <a href="index.html#assessoria" class="btn btn-azul">Quero começar</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="artConteudo"></main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly"></span>
+        <p class="desc">Movimento, confiança e comunidade. O ponto de encontro dos corredores de Joinville e do norte de Santa Catarina.</p>
+      </div>
+      <div>
+        <h4>Conteúdo</h4>
+        <ul>
+          <li><a href="index.html#calendario">Calendário</a></li>
+          <li><a href="index.html#dicas">Dicas</a></li>
+          <li><a href="index.html#noticias">Notícias</a></li>
+          <li><a href="index.html#assessoria">Assessoria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PaceFly</h4>
+        <ul>
+          <li><a href="index.html#top">Sobre nós</a></li>
+          <li><a href="index.html#assessoria">Assessoria</a></li>
+          <li><a href="mailto:contato@pacefly.com.br">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@pacefly.com.br">contato@pacefly.com.br</a></li>
+          <li><span>Joinville, SC</span></li>
+        </ul>
+        <div class="social">
+          <a href="index.html#top" aria-label="Instagram">IG</a>
+          <a href="index.html#top" aria-label="Strava">St</a>
+          <a href="index.html#top" aria-label="YouTube">Yt</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 PaceFly. Todos os direitos reservados.</span>
+      <span>pacefly.com.br</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+  const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>menu.classList.toggle('open'));
+
+  async function render(){
+    const id=new URLSearchParams(location.search).get('id');
+    const lista=await pfLista('noticias', window.PACEFLY_NOTICIAS||[]);
+    const n=lista.find(x=>x.id===id);
+    const alvo=document.getElementById('artConteudo');
+    if(!n){
+      alvo.innerHTML=`<section class="wrap" style="padding:90px 0;text-align:center"><h1>Notícia não encontrada</h1><p style="color:var(--cinza-cl);margin:14px 0 26px">Este conteúdo pode ter sido movido.</p><a class="btn btn-azul" href="index.html#noticias">Ver todas as notícias</a></section>`;
+      return;
+    }
+    document.title=n.titulo+' | PaceFly';
+    const corpo=(n.corpo||[]).map(p=>`<p>${p}</p>`).join('');
+
+    const outras=lista.filter(x=>x.id!==n.id).slice(0,3).map(o=>`
+      <a class="on-card" href="noticia.html?id=${o.id}">
+        <div class="im"><img ${pfImg('noticias',o.id,o.imagem)} alt="${o.titulo}"></div>
+        <div class="bd"><span class="ct">${o.categoria}</span><h3>${o.titulo}</h3></div>
+      </a>`).join('');
+
+    alvo.innerHTML=`
+      <article>
+        <div class="art-hero">
+          <div class="art-hero-bg"><img ${pfImg('noticias',n.id,n.imagem)} alt=""></div>
+          <div class="wrap art-hero-inner">
+            <span class="art-cat">${n.categoria}</span>
+            <h1>${n.titulo}</h1>
+            <div class="art-meta"><span>${n.local}</span> · <span>${n.dataTxt}</span></div>
+          </div>
+        </div>
+        <div class="art-wrap">
+          ${n.resumo?`<p class="art-resumo">${n.resumo}</p>`:''}
+          <div class="art-body">${corpo}</div>
+          ${n.fonteUrl?`<div class="art-fonte">Fonte: <a href="${n.fonteUrl}" target="_blank" rel="noopener">${n.fonteNome||n.fonteUrl}</a></div>`:''}
+          <a class="art-back" href="index.html#noticias">← Voltar para as notícias</a>
+        </div>
+      </article>
+      ${outras?`<section class="art-outras"><div class="wrap"><h2>Outras notícias</h2><div class="outras-grid">${outras}</div></div></section>`:''}`;
+  }
+  render();
+</script>
+</body>
+</html>

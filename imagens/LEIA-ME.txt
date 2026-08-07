@@ -1,0 +1,26 @@
+COMO TROCAR AS FOTOS DO SITE
+============================
+
+Cada seção/tópico do site tem uma pasta aqui dentro:
+
+  imagens\hero\                -> foto grande do topo da página
+  imagens\dicas\<nome-da-dica>\      -> foto de cada dica
+  imagens\noticias\<nome-da-noticia>\ -> foto de cada notícia
+
+PARA TROCAR UMA FOTO:
+1. Escolha a pasta do tópico desejado
+2. Salve a nova foto lá dentro com o nome exato:  imagem.jpg
+3. Pronto. Recarregue o site (F5) e a nova foto aparece.
+
+SE A PASTA ESTIVER SEM imagem.jpg:
+O site usa automaticamente a foto online (Pexels) cadastrada
+em assets\data.js como reserva. Nada quebra.
+
+TAMANHOS RECOMENDADOS:
+- hero: 1000 px de largura ou mais (formato retrato/quadrado)
+- dicas e notícias: 1200 x 800 px (paisagem)
+- Formato JPG, tamanho de arquivo até ~500 KB
+
+QUANDO CRIAR UMA DICA/NOTÍCIA NOVA:
+Crie uma pasta com o mesmo "id" usado em data.js
+(minúsculas, hífens, sem acentos) e coloque a imagem.jpg dentro.

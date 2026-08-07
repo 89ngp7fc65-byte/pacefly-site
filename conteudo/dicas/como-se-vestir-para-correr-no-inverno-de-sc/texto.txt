@@ -1,0 +1,23 @@
+# ======================================================
+# TEXTO DA DICA: Como se vestir para correr no inverno de SC
+# Pasta desta dica: site\conteudo\dicas\como-se-vestir-para-correr-no-inverno-de-sc\
+# Foto desta dica:  site\imagens\dicas\como-se-vestir-para-correr-no-inverno-de-sc\imagem.jpg
+# ======================================================
+# COMO USAR
+# - Escreva depois dos dois pontos ( : ) do campo que quiser mudar.
+# - Campo em branco = o site mantem o texto que ja existe. Nada fica vazio.
+# - Linhas que comecam com # sao instrucoes e o site ignora.
+# - Salve com Ctrl + S e depois publique o site.
+# - Manual completo: site\conteudo\COMO-ATUALIZAR-O-SITE.txt
+# ======================================================
+
+titulo:
+
+resumo:
+
+categoria:
+
+# Abaixo escreva o texto completo da dica.
+# Deixe UMA linha em branco entre um paragrafo e outro.
+corpo:
+

@@ -1,0 +1,172 @@
+========================================================
+COMO ATUALIZAR O SITE DA PACEFLY SEM SABER PROGRAMAR
+========================================================
+
+Este manual e para voce atualizar o site sozinho, mexendo
+apenas em arquivos de texto (.txt) e imagens (.jpg).
+Voce NAO precisa mexer em nenhum codigo.
+
+--------------------------------------------------------
+A REGRA DE OURO (leia isto primeiro)
+--------------------------------------------------------
+Nada aqui pode quebrar o site.
+
+Se voce deixar um arquivo vazio, apagar um campo, ou nem
+criar a pasta, o site simplesmente continua mostrando o
+texto que ja estava la. NUNCA fica em branco.
+
+Ou seja: pode experimentar sem medo.
+
+--------------------------------------------------------
+COMO A PASTA ESTA ORGANIZADA
+--------------------------------------------------------
+Dentro de site\ existem duas pastas suas:
+
+  site\conteudo\   -> os TEXTOS e LINKS
+  site\imagens\    -> as FOTOS
+
+Dentro de cada uma, ha uma pasta por assunto:
+
+  noticias\   -> as noticias do site
+  dicas\      -> as dicas para corredores
+  eventos\    -> as provas do calendario
+
+E dentro dessas, uma pasta por item, com o "id" do item.
+Exemplo:
+
+  site\conteudo\dicas\do-sofa-aos-5k\texto.txt
+  site\imagens\dicas\do-sofa-aos-5k\imagem.jpg
+
+O nome da pasta (o "id") precisa ser sempre o mesmo nos
+dois lugares. Nao troque esses nomes.
+
+--------------------------------------------------------
+COMO MUDAR UM TEXTO (passo a passo)
+--------------------------------------------------------
+1. Abra a pasta site\conteudo\
+2. Entre na pasta do assunto (noticias, dicas ou eventos).
+3. Entre na pasta do item que voce quer mudar.
+4. Abra o arquivo texto.txt com dois cliques
+   (abre no Bloco de Notas).
+5. Escreva o que quiser depois dos dois pontos de cada
+   campo. Exemplo:
+
+      titulo: Meu novo titulo aqui
+
+6. Salve o arquivo (Ctrl + S) e feche.
+7. Publique o site (veja a secao PUBLICAR mais abaixo).
+
+Pronto. O site passa a mostrar o seu texto.
+
+--------------------------------------------------------
+O QUE SIGNIFICA CADA CAMPO
+--------------------------------------------------------
+titulo:       o titulo que aparece grande
+resumo:       a frase curta que aparece no cartao
+categoria:    a etiqueta (ex: Treino, Recordes)
+local:        cidade/estado (usado nas noticias)
+fonte-nome:   nome do site de onde veio a informacao
+fonte-url:    o link (endereco) desse site
+link:         (so em eventos) link da inscricao oficial
+corpo:        o texto completo, em varios paragrafos
+
+REGRA DO CORPO: tudo que voce escrever DEPOIS da linha
+"corpo:" vira o texto da pagina. Para separar paragrafos,
+deixe UMA LINHA EM BRANCO entre eles.
+
+--------------------------------------------------------
+NAO QUER MUDAR UM CAMPO?
+--------------------------------------------------------
+Deixe ele vazio (sem escrever nada depois dos dois pontos)
+ou apague a linha inteira. O site vai manter o texto que
+ja existia. Voce pode mudar so o titulo e deixar todo o
+resto em branco, por exemplo.
+
+--------------------------------------------------------
+COMO TROCAR UMA FOTO
+--------------------------------------------------------
+1. Abra site\imagens\ e entre na pasta do assunto e do item.
+2. Salve sua foto la dentro com o nome exato: imagem.jpg
+3. Publique o site.
+
+Se nao tiver foto, nao faca nada: o site usa uma foto de
+banco automaticamente.
+
+ATENCAO ao nome do arquivo: precisa ser imagem.jpg
+O Windows costuma esconder a extensao. Se ao renomear
+aparecer "imagem.jpg.jpg", ative em Explorador de Arquivos:
+Exibir > Mostrar > Extensoes de nomes de arquivos.
+
+--------------------------------------------------------
+COMO VER O RESULTADO ANTES DE PUBLICAR
+--------------------------------------------------------
+De dois cliques em: ver_site_local.bat
+(fica na pasta principal do projeto, Pacefly)
+
+Ele abre o site no navegador ja com os seus textos.
+Para fechar, feche a janela preta que abriu junto.
+
+Obs.: se voce abrir o index.html direto com dois cliques,
+os textos das pastas NAO aparecem (limitacao do navegador).
+Por isso use sempre o ver_site_local.bat para conferir.
+
+--------------------------------------------------------
+PUBLICAR (colocar no ar)
+--------------------------------------------------------
+Clique duas vezes em: publicar_site.bat
+(fica na pasta principal do projeto, Pacefly)
+
+O script envia as mudancas para o GitHub e o Netlify
+atualiza o site automaticamente em alguns segundos.
+
+Nao e mais necessario arrastar a pasta para o Netlify.
+
+MODO ANTIGO (so se o publicar_site.bat nao funcionar):
+1. Entre no site netlify.com e faca login.
+2. Abra o projeto keen-banoffee-f399e0, aba Deploys.
+3. Arraste a pasta "site" para a area de upload.
+NUNCA use app.netlify.com/drop (criaria um site novo).
+
+--------------------------------------------------------
+FAZER BACKUP (recomendado)
+--------------------------------------------------------
+De dois cliques em backup_site.bat (na pasta Pacefly).
+Ele salva uma copia de tudo no OneDrive, com a data.
+Faca isso sempre que mudar algo importante.
+
+--------------------------------------------------------
+E SE EU ERRAR ALGUMA COISA?
+--------------------------------------------------------
+Nada grave acontece. Se um texto sair errado, apague o
+conteudo do texto.txt (deixe o arquivo vazio) e o site
+volta ao texto anterior automaticamente.
+
+Se quiser voltar tudo como estava, pegue a ultima copia
+na pasta de backup do OneDrive.
+
+--------------------------------------------------------
+EVENTOS PARCEIROS (cupom de desconto)
+--------------------------------------------------------
+Quando a PaceFly tem parceria com um organizador, voce
+pode ativar um banner de cupom na pagina do evento.
+
+Para isso, crie um arquivo chamado parceiro.txt dentro
+da pasta do evento, com este conteudo:
+
+   cupom: PACEFLY10
+   desconto: 10%
+   texto: Use o cupom ao se inscrever e garanta 10% de desconto.
+   validade: 31/12/2026
+
+Tambem adicione "parceiro: sim" no texto.txt do evento
+para que o calendario mostre o badge "Parceiro PaceFly".
+
+Instrucoes completas em:
+  site\conteudo\eventos\_COMO-CRIAR-PARCEIRO.txt
+
+--------------------------------------------------------
+RESUMO DE 3 PASSOS
+--------------------------------------------------------
+1. Editar o texto.txt, parceiro.txt (ou colocar a imagem.jpg)
+2. Conferir com ver_site_local.bat
+3. Clicar duas vezes em publicar_site.bat e rodar o backup

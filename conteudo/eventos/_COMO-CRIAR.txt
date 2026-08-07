@@ -1,0 +1,49 @@
+# ======================================================
+# TEXTOS DAS PROVAS (EVENTOS)
+# Pasta: site\conteudo\eventos\
+# ======================================================
+#
+# As provas do calendario sao atualizadas AUTOMATICAMENTE
+# toda segunda-feira as 08:00, com dados oficiais do
+# CorridasBR. Por isso normalmente voce NAO precisa mexer
+# aqui.
+#
+# Mas se quiser escrever um texto proprio para alguma
+# prova (uma descricao sua, ou trocar o link de inscricao),
+# faca assim:
+#
+# PASSO 1
+# Crie aqui dentro uma pasta com o "id" da prova.
+# O id aparece no endereco da pagina da prova, depois de
+# "?id=". Exemplo, ao abrir a Maratona de Joinville o
+# endereco termina com:
+#     evento.html?id=maratona-joinville-42k
+# Entao a pasta se chama:  maratona-joinville-42k
+#
+# PASSO 2
+# Dentro dela, crie um arquivo chamado exatamente:
+#     texto.txt
+#
+# PASSO 3
+# Copie e cole o modelo abaixo dentro desse arquivo
+# (a partir da linha "nome:") e preencha o que quiser.
+# Campo em branco = mantem o texto atual da prova.
+#
+# ------------------ MODELO ----------------------------
+#
+# nome:
+#
+# descricao:
+#
+# link:
+#
+# ------------------------------------------------------
+#
+# O que significa cada campo:
+#   nome:       o nome da prova como aparece no site
+#   descricao:  o texto de apresentacao da prova
+#   link:       endereco da inscricao oficial (https://...)
+#
+# Depois de salvar, publique o site. Manual completo em:
+#   site\conteudo\COMO-ATUALIZAR-O-SITE.txt
+# ======================================================

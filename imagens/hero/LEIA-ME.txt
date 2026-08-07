@@ -1,0 +1,3 @@
+Foto principal do topo do site (hero).
+Salve aqui como: imagem.jpg (1000 px+ de largura).
+Sem arquivo local, o site usa a foto online de reserva.
