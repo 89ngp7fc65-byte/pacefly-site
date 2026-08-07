@@ -412,7 +412,8 @@
     if(!box || !fotos.length){ if(banner) banner.style.display='none'; return; }
 
     box.innerHTML = fotos.map((f,i)=>`
-      <figure class="cidade-slide${i===0?' on':''}${f.link?' cidade-slide-link':''}"${f.link?` data-link="${f.link}"`:''}>
+      <figure class="cidade-slide${i===0?' on':''}">
+        ${f.link?`<a class="cidade-slide-overlay" href="${f.link}" aria-label="${f.legenda}"></a>`:''}
         <img ${pfImg('cidade',f.id,f.imagem)} alt="${f.legenda}" loading="${i===0?'eager':'lazy'}">
         <figcaption>
           ${f.badge?`<span class="cidade-badge">${f.badge}</span>`:''}
@@ -440,16 +441,6 @@
     document.getElementById('cidadeNext').addEventListener('click',()=>{ ir(atual+1); tocar(); });
     banner.addEventListener('mouseenter', parar);
     banner.addEventListener('mouseleave', tocar);
-
-    // Torna slides com link clicáveis em qualquer área (desktop e mobile)
-    box.querySelectorAll('.cidade-slide-link').forEach(function(s){
-      s.style.cursor = 'pointer';
-      s.addEventListener('click', function(e){
-        if(!e.target.closest('.cidade-nav,.cidade-dot')) {
-          location.href = s.dataset.link;
-        }
-      });
-    });
 
     // Pausa o carrossel ao toque (mobile) e retoma ao soltar
     banner.addEventListener('touchstart', parar, {passive:true});
