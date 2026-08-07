@@ -137,17 +137,20 @@
 
       ${parceiro ? `
       <div style="background:linear-gradient(90deg,#0057B8 0%,#003d8a 100%);color:#fff;padding:0">
-        <div class="wrap" style="display:flex;align-items:center;gap:24px;padding:28px 24px;flex-wrap:wrap">
-          <div style="flex:1;min-width:220px">
-            <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#FFC400;margin-bottom:6px">Evento Parceiro PaceFly</div>
-            <div style="font-size:1.05rem;font-weight:600;line-height:1.4">${parceiro.texto||'Use o cupom abaixo e garanta desconto na sua inscrição.'}</div>
-            ${parceiro.validade?`<div style="font-size:0.78rem;color:rgba(255,255,255,0.65);margin-top:6px">Válido até ${parceiro.validade}</div>`:''}
+        <div class="wrap" style="padding:28px 24px">
+          <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:18px">
+            <div style="flex:1;min-width:220px">
+              <div style="font-size:0.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#FFC400;margin-bottom:6px">Evento Parceiro PaceFly</div>
+              <div style="font-size:1.05rem;font-weight:600;line-height:1.4">${parceiro.texto||'Use o cupom abaixo e garanta desconto na sua inscrição.'}</div>
+              ${parceiro.validade?`<div style="font-size:0.78rem;color:rgba(255,255,255,0.65);margin-top:6px">Válido até ${parceiro.validade}</div>`:''}
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px">${parceiro.desconto?'Desconto de '+parceiro.desconto:''}</div>
+              <div id="cupom-btn-${parceiro.cupom}" style="background:#FFC400;color:#0c1e38;font-size:1.55rem;font-weight:900;letter-spacing:3px;padding:12px 28px;border-radius:8px;cursor:pointer;user-select:all;white-space:nowrap" onclick="(function(el,txt){var ok=function(){el.textContent='Copiado!';setTimeout(function(){el.textContent=txt},1800)};if(navigator.clipboard){navigator.clipboard.writeText(txt).then(ok).catch(function(){var t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(t);ok()})}else{var t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(t);ok()}})(this,'${parceiro.cupom||''}')" title="Toque para copiar">${parceiro.cupom||'—'}</div>
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.55);margin-top:6px">Toque para copiar</div>
+            </div>
           </div>
-          <div style="text-align:center">
-            <div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:6px">${parceiro.desconto?'Desconto de '+parceiro.desconto:''}</div>
-            <div style="background:#FFC400;color:#0c1e38;font-size:1.55rem;font-weight:900;letter-spacing:3px;padding:12px 28px;border-radius:8px;cursor:pointer;user-select:all;white-space:nowrap" onclick="navigator.clipboard&&navigator.clipboard.writeText('${parceiro.cupom||''}').then(()=>{this.textContent='Copiado!';setTimeout(()=>{this.textContent='${parceiro.cupom||''}'},1800)})" title="Clique para copiar">${parceiro.cupom||'—'}</div>
-            <div style="font-size:0.7rem;color:rgba(255,255,255,0.55);margin-top:6px">Clique para copiar</div>
-          </div>
+          ${temLink?`<a href="${ev.oficialUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#FFC400;color:#0c1e38;font-weight:800;font-size:0.95rem;padding:12px 28px;border-radius:8px;text-decoration:none;letter-spacing:0.5px">Inscreva-se com ${parceiro.desconto?parceiro.desconto+' de desconto':'desconto'} &rarr;</a>`:''}
         </div>
       </div>` : ''}
 
