@@ -1,0 +1,10 @@
+# ======================================================
+# CUPOM DE PARCEIRO — Circuito Banco do Brasil (Joinville)
+# Este arquivo ativa o banner de cupom na pagina do evento.
+# Para desativar, basta apagar este arquivo.
+# ======================================================
+
+cupom: PACEFLY
+desconto: 10%
+texto: A PaceFly e parceira do Circuito BB. Use o cupom na inscricao oficial e garanta 10% de desconto.
+validade: ate 23/08/2026

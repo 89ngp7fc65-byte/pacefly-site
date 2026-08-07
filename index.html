@@ -414,7 +414,11 @@
     box.innerHTML = fotos.map((f,i)=>`
       <figure class="cidade-slide${i===0?' on':''}">
         <img ${pfImg('cidade',f.id,f.imagem)} alt="${f.legenda}" loading="${i===0?'eager':'lazy'}">
-        <figcaption><b>${f.legenda}</b><small>${f.local}</small></figcaption>
+        <figcaption>
+          ${f.badge?`<span class="cidade-badge">${f.badge}</span>`:''}
+          <b>${f.legenda}</b><small>${f.local}</small>
+          ${f.link?`<a class="cidade-cta" href="${f.link}">${f.cta||'Saiba mais'}</a>`:''}
+        </figcaption>
       </figure>`).join('');
 
     dotsBox.innerHTML = fotos.map((f,i)=>`<button class="cidade-dot${i===0?' on':''}" data-i="${i}" aria-label="Foto ${i+1}"></button>`).join('');

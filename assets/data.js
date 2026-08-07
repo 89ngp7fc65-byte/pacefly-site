@@ -79,19 +79,21 @@ const PACEFLY_EVENTOS = [
   },
   {
     "id": "circuito-banco-do-brasil-joinville",
-    "nome": "Circuito Banco do Brasil",
+    "nome": "Circuito Banco do Brasil de Corrida",
     "dia": "23",
     "mes": "08",
     "mesTxt": "AGO",
     "ano": 2026,
     "dataExtenso": "23 de agosto de 2026",
     "cidade": "Joinville, SC",
-    "largada": "Perini Business Park",
-    "organizador": "Tática Marketing Esportivo",
+    "largada": "Perini Business Park (Rua Dona Francisca, 8300)",
+    "organizador": "TTK SP / Norte Marketing Esportivo",
     "edicao": "Etapa Joinville",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Etapa joinvilense do Circuito Banco do Brasil, com largada no Perini Business Park e percursos de 10 km e 5 km.",
-    "oficialUrl": "https://www.circuitobb.com.br"
+    "distancias": ["10 km", "5 km", "1 km (kids)"],
+    "descricao": "Etapa joinvilense do Circuito Banco do Brasil de Corrida, no Perini Business Park, com percursos de 10 km, 5 km e 1 km (kids). A largada dos 5 km e 10 km é às 7h e a corridinha kids sai às 9h. O dia ainda tem avaliação física, massagens, áreas de relaxamento e outras experiências gratuitas para toda a família. A PaceFly é parceira do evento: use o cupom PACEFLY na inscrição oficial e ganhe 10% de desconto.",
+    "oficialUrl": "https://www.circuitobb.com.br/joinville/unica",
+    "parceiro": "sim",
+    "cupom": "PACEFLY"
   },
   {
     "id": "corrida-protecao-animais",
@@ -409,13 +411,13 @@ const PACEFLY_NOTICIAS = [
     dataTxt: "28 de julho de 2026",
     local: "Joinville, SC",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "RCN Online",
-    fonteUrl: "https://www.rcnonline.com.br/eventos/2026/07/2604958-circuito-banco-do-brasil-de-corrida-vai-chegar-a-joinville.html",
+    fonteNome: "Circuito Banco do Brasil de Corrida",
+    fonteUrl: "https://www.circuitobb.com.br/joinville/unica",
     corpo: [
-      "O Circuito Banco do Brasil de Corrida chega pela primeira vez a Joinville no dia 23 de agosto, um domingo. Com dez anos de história e passagens por Cuiabá, São Paulo, Salvador, Rio de Janeiro e Belo Horizonte só em 2026, o circuito é hoje um dos maiores eventos de corrida de rua do país.",
-      "A prova será no Perini Business Park, na Rua Dona Francisca, 8300, no Distrito Industrial. A largada dos percursos de 5 km e 10 km está marcada para as 7h, e a corridinha das crianças, com os responsáveis, sai às 9h. As inscrições podem ser feitas em www.circuitobb.com.br.",
-      "Além da corrida, o evento reserva atendimento de avaliação física, massagens e áreas de relaxamento gratuitas, num formato que já é marca registrada do circuito por onde passa.",
-      "Para o corredor de Joinville, é a chance de participar de um evento nacional sem sair de casa. A etapa cai no mesmo mês de outras provas grandes na cidade, então vale organizar a agenda: no nosso calendário você encontra tudo o que está confirmado para agosto na região."
+      "O Circuito Banco do Brasil de Corrida chega a Joinville no dia 23 de agosto e promete reunir esporte, bem-estar e diversão para toda a família. Reconhecida pela qualidade de vida, pela forte ligação com o esporte e pelos amplos espaços para atividades ao ar livre, a maior cidade de Santa Catarina recebe o circuito reforçando sua vocação para hábitos saudáveis.",
+      "São percursos de 1 km (kids), 5 km e 10 km, uma experiência completa para iniciantes, corredores experientes e famílias que buscam lazer e integração. A largada dos 5 km e 10 km é às 7h, no Perini Business Park (Rua Dona Francisca, 8300, Distrito Industrial), e a corridinha das crianças sai às 9h.",
+      "Além das provas, o evento oferece avaliações físicas, massagens, áreas de relaxamento e outras ativações gratuitas, transformando o dia da corrida em uma celebração do esporte, da saúde e da convivência. A retirada de kits acontece nos dias 21 e 22 de agosto, a partir das 10h, na loja oficial do Joinville Esporte Clube, anexa à Arena Joinville (Rua Inácio Bastos, 1084, Bucarein).",
+      "A PaceFly é parceira do evento: use o cupom PACEFLY na inscrição oficial e garanta 10% de desconto. As inscrições, os valores dos kits e os detalhes dos percursos estão no site oficial da prova."
     ]
   },
   {
@@ -605,6 +607,15 @@ const PACEFLY_DICAS = [
    Tamanho sugerido: 1600x900 px (horizontal).
    ============================================================ */
 const PACEFLY_CIDADE = [
+  {
+    id: "circuito-banco-do-brasil-joinville",
+    badge: "Parceiro PaceFly",
+    legenda: "Circuito Banco do Brasil, 23 de agosto em Joinville",
+    local: "1 km (kids), 5 km e 10 km, cupom PACEFLY com 10% de desconto",
+    cta: "Ver o evento e se inscrever",
+    link: "evento.html?id=circuito-banco-do-brasil-joinville",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
   {
     id: "amanhecer-na-cidade",
     legenda: "Joinville amanhece correndo",
