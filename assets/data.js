@@ -30,36 +30,20 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "night-run-joinville",
-    "nome": "Night Run Joinville",
-    "dia": "08",
+    "id": "meia-maratona-navegantes",
+    "nome": "Meia Maratona Internacional de Navegantes",
+    "dia": "15",
     "mes": "08",
     "mesTxt": "AGO",
     "ano": 2026,
-    "dataExtenso": "8 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Av. Hermann August Lepper",
-    "organizador": "42K Assessoria Esportiva",
-    "edicao": "Edição 2026",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "A corrida noturna de Joinville, com largada na Av. Hermann August Lepper e percursos de 10 km e 5 km.",
-    "oficialUrl": "https://42k.esp.br"
-  },
-  {
-    "id": "corrida-verde-joinville",
-    "nome": "1ª Corrida Verde",
-    "dia": "09",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "9 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Mercado Municipal",
-    "organizador": "On Sports",
-    "edicao": "1ª edição",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Primeira edição da Corrida Verde, com largada no Mercado Municipal e percursos de 10 km e 5 km.",
-    "oficialUrl": "https://www.onsportsoficial.com.br"
+    "dataExtenso": "15 e 16 de agosto de 2026",
+    "cidade": "Navegantes, SC",
+    "largada": "Farol de Navegantes, Rua Joaquim dos Santos, 1117, bairro São Pedro",
+    "organizador": "Fundação Municipal de Esporte de Navegantes",
+    "edicao": "Edição 2026, com selo Permit Ouro da CBAt",
+    "distancias": ["21 km", "10 km", "5 km", "Kids"],
+    "descricao": "Prova à beira-mar considerada uma das mais planas de Santa Catarina, com largada e chegada no Farol de Navegantes, no bairro São Pedro. No sábado, 15 de agosto, à noite, saem a Corrida Kids (a partir de 14 anos) e os percursos de 5 km e 10 km. No domingo, 16 de agosto, pela manhã, é a vez da meia maratona de 21 km. A edição 2026 tem selo Permit Ouro da Confederação Brasileira de Atletismo, cronometragem por chip e trajeto totalmente asfaltado.",
+    "oficialUrl": "https://navegantes.sc.gov.br/2025/07/21/meia-maratona-de-navegantes-que-acontece-em-agosto-esta-com-inscricoes-abertas/"
   },
   {
     "id": "corrida-tigre-joinville",
@@ -104,11 +88,11 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "23 de agosto de 2026",
     "cidade": "Joinville, SC",
-    "largada": "Shopping Mueller Joinville",
+    "largada": "Shopping Mueller Joinville, Rua Senador Felipe Schmidt, 235, às 7h",
     "organizador": "42K Assessoria Esportiva",
     "edicao": "3ª edição",
-    "distancias": ["7 km", "5,5 km"],
-    "descricao": "Terceira edição da Corrida pela Proteção dos Animais, etapa do Circuito Movimento Pelo Bem (Shopping Mueller com a 42K Assessoria Esportiva), com largada no Shopping Mueller e percursos de 7 km e 5,5 km. Parte da renda de inscrição é destinada a instituições de apoio à causa animal de Joinville.",
+    "distancias": ["7 km", "5,5 km", "Caminhada", "Kids", "Pet Walk 2 km"],
+    "descricao": "Terceira edição da Corrida pela Proteção dos Animais, etapa do Circuito Movimento Pelo Bem (Shopping Mueller com a 42K Assessoria Esportiva). A largada é às 7h, no Shopping Mueller, com percursos competitivos de 7 km e 5,5 km, além de caminhada, corrida kids e o Pet Walk de 2 km para quem quiser levar o cachorro. Parte da renda de inscrição é destinada a instituições de apoio à causa animal de Joinville.",
     "oficialUrl": "https://42k.esp.br"
   },
   {
@@ -120,7 +104,7 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "23 de agosto de 2026",
     "cidade": "Guaramirim, SC",
-    "largada": "Paróquia Senhor Bom Jesus, Rua 28 de Agosto, 1189",
+    "largada": "Paróquia Senhor Bom Jesus, Rua 28 de Agosto, 1189, às 6h30",
     "organizador": "CJR Academia e Eventos",
     "edicao": "2ª edição",
     "distancias": ["10 km", "5 km", "Caminhada 3 km", "Kids"],
@@ -208,6 +192,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://www.ticketsports.com.br/e/9-corrida-e-caminhada-de-combate-ao-avc-86921"
   },
   {
+    "id": "corrida-do-fogo-mafra",
+    "nome": "1ª Corrida do Fogo",
+    "dia": "12",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "12 de setembro de 2026",
+    "cidade": "Mafra, SC",
+    "largada": "Mafra, SC (endereço e horário de largada a confirmar com a organização)",
+    "organizador": "CJR Academia e Eventos",
+    "edicao": "1ª edição",
+    "distancias": ["5 km"],
+    "descricao": "Estreia da Corrida do Fogo em Mafra, no planalto norte catarinense, com percurso de 5 km. Confirme horário de largada e local exato de concentração diretamente com a organização antes de se inscrever.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/1-corrida-do-fogo-74816"
+  },
+  {
     "id": "jtc-run-joinville",
     "nome": "JTC Run",
     "dia": "13",
@@ -256,6 +256,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://number.esp.br"
   },
   {
+    "id": "meia-maratona-bela-vista-gaspar",
+    "nome": "42ª Meia Maratona Bela Vista Country Club",
+    "dia": "26",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "26 e 27 de setembro de 2026",
+    "cidade": "Gaspar, SC",
+    "largada": "Bela Vista Country Club, Rua Anfilóquio Nunes Pires, 5300, às 6h30 (Maratoninha às 9h15)",
+    "organizador": "Bela Vista Country Club",
+    "edicao": "42ª edição",
+    "distancias": ["21 km", "10 km", "5 km", "Maratoninha"],
+    "descricao": "Considerada a meia maratona mais antiga do Brasil, a prova reúne mais de 3 mil participantes em Gaspar, no Vale do Itajaí. A largada dos adultos é às 6h30, no Bela Vista Country Club, com percursos de 21 km, 10 km e 5 km. A Maratoninha, para crianças de 4 a 13 anos, sai às 9h15 e tem vagas limitadas a 200 participantes.",
+    "oficialUrl": "https://www.clubebelavista.com.br/eventos/42-meia-maratona"
+  },
+  {
     "id": "corrida-pela-vida-joinville",
     "nome": "Corrida pela Vida",
     "dia": "11",
@@ -270,6 +286,22 @@ const PACEFLY_EVENTOS = [
     "distancias": ["8 km", "3 km"],
     "descricao": "Sexta edição da Corrida pela Vida, que encerra o Circuito Movimento Pelo Bem do ano, com largada no Shopping Mueller e percursos de 8 km e 3 km.",
     "oficialUrl": "https://www.ticketsports.com.br/e/corrida-pela-vida-2026-joinville-sc-84988"
+  },
+  {
+    "id": "sports-run-jaragua-do-sul",
+    "nome": "Sports + Run",
+    "dia": "11",
+    "mes": "10",
+    "mesTxt": "OUT",
+    "ano": 2026,
+    "dataExtenso": "11 de outubro de 2026",
+    "cidade": "Jaraguá do Sul, SC",
+    "largada": "Arena Jaraguá, Rua Gustavo Hagedorn, 636, às 7h",
+    "organizador": "M8 Runners - Treinamento e Eventos Esportivos",
+    "edicao": "1ª edição",
+    "distancias": ["10 km", "5 km", "3 km", "Caminhada", "Kids"],
+    "descricao": "Estreia da Sports + Run em Jaraguá do Sul, com largada às 7h na Arena Jaraguá. A programação reúne percursos de 10 km, 5 km e 3 km, caminhada e corrida kids com medalha garantida para as crianças.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/sports-run-2026-85105"
   },
   {
     "id": "maratona-internacional-pomerode",
@@ -312,7 +344,7 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "18 de outubro de 2026",
     "cidade": "São Bento do Sul, SC",
-    "largada": "São Bento do Sul, SC",
+    "largada": "Avenida dos Imigrantes, às 8h",
     "organizador": "Unimed",
     "edicao": "Etapa São Bento do Sul",
     "distancias": ["10 km", "5 km"],
@@ -369,6 +401,22 @@ const PACEFLY_EVENTOS = [
     "destaque": true
   },
   {
+    "id": "circuito-unimed-mafra",
+    "nome": "Circuito de Corridas Unimed",
+    "dia": "08",
+    "mes": "11",
+    "mesTxt": "NOV",
+    "ano": 2026,
+    "dataExtenso": "8 de novembro de 2026",
+    "cidade": "Mafra, SC",
+    "largada": "Avenida Coronel José Severiano Maia, 590, Vila Buenos Aires",
+    "organizador": "Unimed",
+    "edicao": "Etapa Mafra",
+    "distancias": ["10 km", "5 km"],
+    "descricao": "Etapa mafrense do Circuito de Corridas Unimed, na Avenida Coronel José Severiano Maia, no bairro Vila Buenos Aires, com percursos de 10 km e 5 km. A retirada de kits acontece no dia anterior à prova.",
+    "oficialUrl": "https://circuitodecorridaunimed.com.br/corrida/mafra/"
+  },
+  {
     "id": "corrida-bombeiros-joinville",
     "nome": "6ª Corrida Bombeiros Voluntários",
     "dia": "15",
@@ -377,11 +425,11 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "15 de novembro de 2026",
     "cidade": "Joinville, SC",
-    "largada": "Corpo de Bombeiros Voluntários de Joinville",
+    "largada": "Unidade Central dos Bombeiros Voluntários, Rua Jaguaruna, às 6h",
     "organizador": "Number Esportes",
     "edicao": "6ª edição",
     "distancias": ["9 km", "5 km"],
-    "descricao": "Sexta edição da corrida em apoio aos Bombeiros Voluntários de Joinville, com percursos de 9 km e 5 km.",
+    "descricao": "Sexta edição da corrida em apoio aos Bombeiros Voluntários de Joinville, com largada às 6h na Unidade Central, na Rua Jaguaruna, e percursos de 9 km e 5 km. Inscrições até 3 de novembro.",
     "oficialUrl": "https://www.cbvj.org.br"
   },
   {
@@ -472,36 +520,37 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "rio-half-marathon-2026-retorno",
-    categoria: "Meia Maratona do Rio",
-    titulo: "Meia Maratona Internacional do Rio volta ao calendário em 16 de agosto",
-    resumo: "A 28ª edição da Rio Half Marathon, com selo da World Athletics, retoma o tradicional percurso entre o Leblon e a Glória, com largada na Avenida Niemeyer, de frente para o mar.",
-    dataTxt: "16 de agosto de 2026",
-    local: "Rio de Janeiro, RJ",
+    id: "corridas-do-bem-sao-bento-do-sul-2026",
+    categoria: "Corridas do Bem Sesi",
+    titulo: "Corridas do Bem chega a São Bento do Sul em 23 de agosto, com renda revertida ao Hospital Sagrada Família",
+    resumo: "A etapa são-bentense do circuito estadual Sesi + Saúde tem largada às 7h em frente ao Sesi Centro, com provas de 5 km e 10 km, caminhada e a Maratoninha infantil. Neste ano, parte do valor das inscrições vai para o Hospital e Maternidade Sagrada Família.",
+    dataTxt: "23 de agosto de 2026",
+    local: "São Bento do Sul, SC",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Meia Maratona Internacional do Rio",
-    fonteUrl: "https://www.yescom.com.br/meiadorio/2026/index.asp",
+    fonteNome: "On Sports / Corridas do Bem Sesi + Saúde",
+    fonteUrl: "https://www.onsportsoficial.com.br/evento/8035/corridas-do-bem-sesi-saude-2026-etapa-sao-bento-do-sul",
     corpo: [
-      "A Meia Maratona Internacional do Rio, conhecida como Rio Half Marathon, volta ao calendário carioca no dia 16 de agosto, na sua 28ª edição. A prova tem selo da World Athletics e é considerada uma das mais tradicionais do país, com largada na Avenida Niemeyer, no Leblon, de frente para o mar.",
-      "O percurso passa por pontos conhecidos da orla do Rio, entre praia, costões e túneis, até a chegada na Avenida Infante Dom Henrique, na Glória, entre a Praça Paris e o Monumento aos Pracinhas. As distâncias oferecidas são 5 km e 21,0975 km.",
-      "A retirada de kits e a expo dos atletas acontecem nos dias 14 e 15 de agosto, em horários variados, movimentando a cidade nos dias que antecedem a largada.",
-      "Para o corredor da região de Joinville, é mais uma prova histórica de volta ao radar de quem sonha em correr no Rio de Janeiro. Enquanto isso, o calendário aqui perto segue recheado de opções para treinar essa meta."
+      "São Bento do Sul recebe no dia 23 de agosto, domingo, a etapa local do circuito Corridas do Bem Sesi + Saúde 2026. A largada é às 7h, em frente ao Sesi Centro, na Rua Benjamin Constant, 99.",
+      "A programação reúne corridas de 5 km e 10 km, com categorias para público geral, industriário, pessoas com deficiência e colaboradores da Fiesc, além de caminhada de 5 km. As crianças de 2 a 14 anos participam da Maratoninha, com percursos de 30 a 150 metros conforme a idade, limitada a 200 participantes.",
+      "A retirada de kits acontece no dia 22 de agosto, das 9h às 16h, na loja VéloBR, na Avenida Argolo, 512, no Centro. O kit inclui camiseta, chip de cronometragem, número de peito e brindes.",
+      "Neste ano, parte do valor das inscrições será revertida ao Hospital e Maternidade Sagrada Família, de São Bento do Sul. O circuito, promovido pelo Sesi de Santa Catarina, já passou por Joinville e por outras cidades do estado antes de chegar ao planalto norte."
     ]
   },
   {
-    id: "maratona-joinville-estreia",
-    categoria: "Perto de você",
-    titulo: "Joinville terá sua 1ª Maratona em novembro de 2026",
-    resumo: "A cidade estreia no calendário dos 42K em 1º de novembro, com uma prova de 6 km no sábado anterior.",
-    dataTxt: "2026",
-    local: "Joinville, SC",
+    id: "maratona-joao-pessoa-2026",
+    categoria: "Maratona de João Pessoa",
+    titulo: "Fábio Rodrigues e Mirian Franco vencem a Maratona Internacional de João Pessoa",
+    resumo: "A 6ª edição da prova reuniu 3.689 concluintes entre as quatro distâncias no primeiro fim de semana de agosto e estreou com selo Permit Ouro da CBAt na maratona.",
+    dataTxt: "1 e 2 de agosto de 2026",
+    local: "João Pessoa, PB",
     imagem: "https://images.pexels.com/photos/39308/pexels-photo-39308.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "1ª Maratona de Joinville",
-    fonteUrl: "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
+    fonteNome: "Contra Relógio",
+    fonteUrl: "https://contrarelogio.com.br/fabio-rodrigues-e-mirian-franco-vencem-a-maratona-internacional-de-joao-pessoa/",
     corpo: [
-      "Joinville entra para o mapa das maratonas do Brasil. A cidade realiza sua 1ª Maratona no dia 1º de novembro de 2026, com a distância clássica de 42 km e largada no Kart Joinville, sob organização da Tkar Produção de Eventos Esportivos.",
-      "O fim de semana começa no sábado, 31 de outubro, com uma prova de 6 km, ampliando a participação para quem ainda não encara a distância cheia.",
-      "Para o corredor da região, é a chance de disputar uma maratona em casa, sem precisar viajar, e de fazer parte de um evento inédito na história esportiva da cidade. Fique de olho no nosso calendário para acompanhar a abertura das inscrições e os detalhes do percurso."
+      "A sexta edição da Maratona Internacional de João Pessoa movimentou a capital paraibana no primeiro fim de semana de agosto. O evento começou no sábado, dia 1º, com os 10 km e a meia maratona, e terminou no domingo, dia 2, com os 5 km e a maratona, que neste ano estreou com o selo Permit Ouro da Confederação Brasileira de Atletismo.",
+      "Ao todo, 3.689 corredores concluíram as quatro distâncias: 1.789 nos 5 km, 883 nos 10 km, 685 na meia maratona e 332 na maratona completa.",
+      "Fábio Rodrigues de Souza Cordeiro, de Barra do Garças, no Mato Grosso, venceu a maratona masculina com 2h23min07s, à frente de Thiago dos Santos Costa e Adriano José dos Santos. Foi a segunda vitória de Fábio na distância no ano, depois da estreia em Manaus, em abril.",
+      "Entre as mulheres, Mirian Franco da Silva, de Garanhuns, em Pernambuco, venceu aos 47 anos com 3h11min24s, conquistando o título pela primeira vez depois de ter terminado em quarto lugar em edição anterior. Para o corredor da região de Joinville, o resultado mostra a força que o atletismo amador segue ganhando pelo país. Fique de olho no nosso calendário para as próximas provas por aqui perto."
     ]
   }
 ];
