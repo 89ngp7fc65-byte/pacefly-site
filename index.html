@@ -152,6 +152,12 @@
       <button class="chip" data-mes="11">Novembro</button>
     </div>
 
+    <div class="cal-busca">
+      <input type="search" id="calBusca" placeholder="Buscar prova por nome, cidade ou distância...">
+      <select id="calDist" aria-label="Filtrar por distância"></select>
+      <select id="calCidade" aria-label="Filtrar por cidade"></select>
+    </div>
+
     <div class="cal-grid" id="calGrid"></div>
     <p class="cal-nota">Datas e distâncias conforme divulgação dos organizadores. Confirme sempre no site oficial de cada prova antes de se inscrever.</p>
   </div>
@@ -230,6 +236,7 @@
               <option>Encarar uma meia ou maratona</option>
               <option>Melhorar meu tempo</option>
               <option>Voltar a treinar com constância</option>
+              <option>Ranking de corredores</option>
             </select>
           </div>
           <button type="submit" class="btn btn-azul btn-full">Quero ser avisado</button>
@@ -329,9 +336,22 @@
   const pinSVG='<svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>';
   const setaSVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 
-  function render(mes){
+  const busca=document.getElementById('calBusca');
+  const selDist=document.getElementById('calDist');
+  const selCidade=document.getElementById('calCidade');
+  let fMes='todos';
+
+  // popular filtros de distancia e cidade a partir das provas cadastradas
+  (function(){
+    const dists=new Set(), cidades=new Set();
+    eventos.forEach(e=>{ (e.distancias||[]).forEach(d=>dists.add(d)); if(e.cidade) cidades.add(e.cidade); });
+    const ordDist=[...dists].sort((a,b)=>(parseFloat(a)||99)-(parseFloat(b)||99));
+    if(selDist) selDist.innerHTML='<option value="">Todas as distâncias</option>'+ordDist.map(d=>`<option>${d}</option>`).join('');
+    if(selCidade) selCidade.innerHTML='<option value="">Todas as cidades</option>'+[...cidades].sort((a,b)=>a.localeCompare(b)).map(c=>`<option>${c}</option>`).join('');
+  })();
+
+  function render(lista){
     grid.innerHTML='';
-    const lista=eventos.filter(e=>mes==='todos'||e.mes===mes);
     lista.forEach(e=>{
       const dataEv=new Date(e.ano,parseInt(e.mes)-1,parseInt(e.dia));
       const dias=Math.round((dataEv-hoje)/86400000);
@@ -356,17 +376,38 @@
         <span class="evt-cta">Ver detalhes ${setaSVG}</span>`;
       grid.appendChild(a);
     });
-    if(!lista.length){grid.innerHTML='<p class="cal-vazio">Nenhuma prova cadastrada para este mês ainda. Volte em breve.</p>';}
+    if(!lista.length){grid.innerHTML='<p class="cal-vazio">Nenhuma prova encontrada com esses filtros. Tente limpar a busca ou trocar mês, distância ou cidade.</p>';}
   }
-  render('todos');
+
+  function aplicar(){
+    const q=((busca&&busca.value)||'').trim().toLowerCase();
+    const d=(selDist&&selDist.value)||'';
+    const c=(selCidade&&selCidade.value)||'';
+    const lista=eventos.filter(e=>{
+      if(fMes!=='todos' && e.mes!==fMes) return false;
+      if(d && !(e.distancias||[]).includes(d)) return false;
+      if(c && e.cidade!==c) return false;
+      if(q){
+        const alvo=(e.nome+' '+e.cidade+' '+(e.largada||'')+' '+(e.distancias||[]).join(' ')).toLowerCase();
+        if(alvo.indexOf(q)<0) return false;
+      }
+      return true;
+    });
+    render(lista);
+  }
+  aplicar();
 
   document.querySelectorAll('#calFiltros .chip').forEach(c=>{
     c.addEventListener('click',()=>{
       document.querySelectorAll('#calFiltros .chip').forEach(x=>x.classList.remove('on'));
       c.classList.add('on');
-      render(c.dataset.mes);
+      fMes=c.dataset.mes;
+      aplicar();
     });
   });
+  if(busca) busca.addEventListener('input', aplicar);
+  if(selDist) selDist.addEventListener('change', aplicar);
+  if(selCidade) selCidade.addEventListener('change', aplicar);
 
   // Noticias
   const ng=document.getElementById('newsGrid');

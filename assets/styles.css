@@ -77,7 +77,13 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 
 /* Calendario */
 #calendario{background:var(--off)}
-.cal-filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.cal-filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.cal-busca{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.cal-busca input,.cal-busca select{padding:12px 15px;border:1.5px solid var(--linha);border-radius:11px;font-family:inherit;font-size:.92rem;color:var(--preto);background:#fff;transition:.15s}
+.cal-busca input{flex:1;min-width:240px}
+.cal-busca select{cursor:pointer;min-width:170px}
+.cal-busca input:focus,.cal-busca select:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(0,87,184,.12)}
+@media(max-width:560px){.cal-busca input,.cal-busca select{width:100%;flex:none;min-width:0}}
 .chip{padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--linha);font-weight:600;font-size:.85rem;cursor:pointer;color:var(--cinza);transition:.15s;font-family:inherit}
 .chip:hover{border-color:var(--azul);color:var(--azul)}
 .chip.on{background:var(--azul);color:#fff;border-color:var(--azul)}
