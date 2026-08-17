@@ -30,38 +30,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "meia-maratona-navegantes",
-    "nome": "Meia Maratona Internacional de Navegantes",
-    "dia": "15",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "15 e 16 de agosto de 2026",
-    "cidade": "Navegantes, SC",
-    "largada": "Farol de Navegantes, Rua Joaquim dos Santos, 1117, bairro São Pedro",
-    "organizador": "Fundação Municipal de Esporte de Navegantes",
-    "edicao": "Edição 2026, com selo Permit Ouro da CBAt",
-    "distancias": ["21 km", "10 km", "5 km", "Kids"],
-    "descricao": "Prova à beira-mar considerada uma das mais planas de Santa Catarina, com largada e chegada no Farol de Navegantes, no bairro São Pedro. No sábado, 15 de agosto, à noite, saem a Corrida Kids (a partir de 14 anos) e os percursos de 5 km e 10 km. No domingo, 16 de agosto, pela manhã, é a vez da meia maratona de 21 km. A edição 2026 tem selo Permit Ouro da Confederação Brasileira de Atletismo, cronometragem por chip e trajeto totalmente asfaltado.",
-    "oficialUrl": "https://navegantes.sc.gov.br/2025/07/21/meia-maratona-de-navegantes-que-acontece-em-agosto-esta-com-inscricoes-abertas/"
-  },
-  {
-    "id": "corrida-tigre-joinville",
-    "nome": "Corrida Tigre - 85 Anos",
-    "dia": "16",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "16 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Rua Ottokar Doerffel, em frente à Tigre, bairro Atiradores, às 7h",
-    "organizador": "SER Tigre e Number Esportes",
-    "edicao": "Edição 85 Anos",
-    "distancias": ["10 km", "5 km", "Kids"],
-    "descricao": "Prova de rua em Joinville em comemoração aos 85 anos da Tigre. A largada dos 10 km e 5 km é às 7h, na Rua Ottokar Doerffel, em frente à unidade da Tigre, no bairro Atiradores. A Corrida Kids sai às 8h20 e a premiação acontece às 9h. O kit inclui camiseta, número de peito, chip de cronometragem, sacola e medalha.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/corrida-tigre-85-anos-87589"
-  },
-  {
     "id": "circuito-banco-do-brasil-joinville",
     "nome": "Circuito Banco do Brasil de Corrida",
     "dia": "23",
@@ -256,6 +224,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://number.esp.br"
   },
   {
+    "id": "corrida-cooper-jaragua-do-sul",
+    "nome": "Corrida e Caminhada Movimento Cooper - Etapa Jaraguá do Sul",
+    "dia": "20",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "20 de setembro de 2026",
+    "cidade": "Jaraguá do Sul, SC",
+    "largada": "Parque Linear Via Verde, Rua Bertholdo Bruns, bairro Ilha da Figueira, às 8h",
+    "organizador": "Corre Brasil Marketing Esportivo, com apoio da Cooper",
+    "edicao": "Etapa Jaraguá do Sul",
+    "distancias": ["7 km", "3 km", "Caminhada Pet 3 km", "Kids"],
+    "descricao": "Etapa jaraguaense do Movimento Cooper, com largada às 8h no Parque Linear Via Verde, na Rua Bertholdo Bruns, bairro Ilha da Figueira. A programação reúne corrida de 7 km e 3 km, corrida kids e uma caminhada pet de 3 km para quem quiser levar o cachorro. A inscrição inclui a doação de 1 kg de alimento não perecível (exceto sal), entregue no dia da prova.",
+    "oficialUrl": "https://vemcorrer.com/evento/369-corrida-e-caminhada-movimento-cooper-n-etapa-jaragua-do-sul-2026"
+  },
+  {
     "id": "meia-maratona-bela-vista-gaspar",
     "nome": "42ª Meia Maratona Bela Vista Country Club",
     "dia": "26",
@@ -348,7 +332,7 @@ const PACEFLY_EVENTOS = [
     "organizador": "Unimed",
     "edicao": "Etapa São Bento do Sul",
     "distancias": ["10 km", "5 km"],
-    "descricao": "Etapa são-bentense do Circuito de Corridas Unimed, com percursos de 10 km e 5 km. Confirme o local e o horário exato da largada na página oficial da etapa antes de se inscrever.",
+    "descricao": "Etapa são-bentense do Circuito de Corridas Unimed, com largada às 8h na Avenida dos Imigrantes e percursos de 10 km e 5 km. A retirada de kits acontece em 12 de outubro, das 14h às 17h, na sede da Unimed. Clientes com carteirinha Unimed têm 50% de desconto na inscrição.",
     "oficialUrl": "https://circuitodecorridaunimed.com.br/corrida/sao-bento-do-sul/"
   },
   {
@@ -452,20 +436,20 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
-    id: "circuito-bb-corrida-joinville-2026",
-    categoria: "Circuito Banco do Brasil",
-    titulo: "Circuito Banco do Brasil de Corrida chega a Joinville em 23 de agosto",
-    resumo: "Pela primeira vez na cidade, a etapa larga no Perini Business Park com percursos de 5 km, 10 km e 1 km para crianças, além de ativações gratuitas de saúde e bem-estar.",
-    dataTxt: "28 de julho de 2026",
+    id: "corrida-protecao-animais-mueller-2026",
+    categoria: "Corrida pela Proteção dos Animais",
+    titulo: "3ª Corrida pela Proteção dos Animais movimenta o Circuito Movimento Pelo Bem em Joinville",
+    resumo: "A prova de 23 de agosto, no Shopping Mueller, reverte toda a renda das inscrições às ONGs Turma do Gatil e Patinhas Carentes. As duas etapas anteriores do circuito já arrecadaram mais de R$ 22 mil neste ano.",
+    dataTxt: "23 de agosto de 2026",
     local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Circuito Banco do Brasil de Corrida",
-    fonteUrl: "https://www.circuitobb.com.br/joinville/unica",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Shopping Mueller Joinville",
+    fonteUrl: "https://muellerjoinville.com.br/atracao/corrida-pela-protecao-dos-animais-sera-a-proxima-etapa-do-circuito-movimento-pelo-bem/",
     corpo: [
-      "O Circuito Banco do Brasil de Corrida chega a Joinville no dia 23 de agosto e promete reunir esporte, bem-estar e diversão para toda a família. Reconhecida pela qualidade de vida, pela forte ligação com o esporte e pelos amplos espaços para atividades ao ar livre, a maior cidade de Santa Catarina recebe o circuito reforçando sua vocação para hábitos saudáveis.",
-      "São percursos de 1 km (kids), 5 km e 10 km, uma experiência completa para iniciantes, corredores experientes e famílias que buscam lazer e integração. A largada dos 5 km e 10 km é às 7h, no Perini Business Park (Rua Dona Francisca, 8300, Distrito Industrial), e a corridinha das crianças sai às 9h.",
-      "Além das provas, o evento oferece avaliações físicas, massagens, áreas de relaxamento e outras ativações gratuitas, transformando o dia da corrida em uma celebração do esporte, da saúde e da convivência. A retirada de kits acontece nos dias 21 e 22 de agosto, a partir das 10h, na loja oficial do Joinville Esporte Clube, anexa à Arena Joinville (Rua Inácio Bastos, 1084, Bucarein).",
-      "A PaceFly é parceira do evento: use o cupom PACEFLY na inscrição oficial e garanta 10% de desconto. As inscrições, os valores dos kits e os detalhes dos percursos estão no site oficial da prova."
+      "O Circuito Movimento Pelo Bem, promovido pelo Shopping Mueller em parceria com a 42K Assessoria Esportiva, convida a comunidade de Joinville para a próxima etapa do ano: a 3ª Corrida pela Proteção dos Animais, marcada para o dia 23 de agosto. Toda a renda das inscrições será destinada às ONGs Turma do Gatil e Patinhas Carentes, que fazem um trabalho de resgate, acolhimento e cuidado de animais na cidade.",
+      "A prova acontece das 7h às 10h, com largada e chegada no Shopping Mueller Joinville, na Rua Visconde de Taunay, 235, no Centro. Os percursos vão do competitivo ao familiar, incluindo caminhada, corrida kids e o Pet Walk, para quem quiser levar o cachorro para caminhar junto.",
+      "Nas duas etapas já realizadas neste ano, o circuito arrecadou mais de R$ 22 mil para causas sociais de Joinville. A 3ª Corrida pelas Mulheres, em março, levantou R$ 16.602,50 para o Lar Renascer, e a 4ª Corrida pela Inclusão, em abril, arrecadou R$ 6.200 para o Núcleo de Assistência Integral ao Paciente Especial, o Naipe.",
+      "Uma novidade desta edição são as camisetas oficiais, desenvolvidas pela Offop, marca fitness de Joinville, em parceria com a Diklatex, com tecido tecnológico pensado para conforto durante a corrida. Depois da etapa dedicada à proteção animal, o circuito se encerra em 11 de outubro com a 6ª Corrida pela Vida, em prol da Rede Feminina de Combate ao Câncer. Confira todos os detalhes no nosso calendário."
     ]
   },
   {
@@ -486,20 +470,20 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "sp-city-marathon-dobradinha-brasileira",
-    categoria: "SP City Marathon",
-    titulo: "SP City Marathon 2026 tem dobradinha brasileira com vitórias de Gilmar Silvestre e Maria Ferraz",
-    resumo: "Na 10ª edição da maratona paulistana, Gilmar Silvestre Lopes venceu numa chegada decidida nos últimos metros e Maria Aparecida Ferraz assumiu a liderança feminina na reta final. A prova também bateu recorde de concluintes.",
-    dataTxt: "27 de julho de 2026",
-    local: "São Paulo, SP",
-    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Iguana Sports",
-    fonteUrl: "https://iguanasports.com.br/blogs/materias/sp-city-marathon-2026-tem-dobradinha-brasileira-com-vitorias-de-gilmar-silvestre-e-maria-ferraz",
+    id: "meia-maratona-rio-2026",
+    categoria: "Meia Maratona do Rio",
+    titulo: "Meia Maratona Internacional do Rio de Janeiro reúne 18 mil corredores neste domingo",
+    resumo: "A 28ª edição da prova sai do Leblon rumo ao Aterro do Flamengo, passando por Copacabana e pelo Pão de Açúcar, com a elite do atletismo brasileiro na disputa dos 21,097 km.",
+    dataTxt: "16 de agosto de 2026",
+    local: "Rio de Janeiro, RJ",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Olympics.com Brasil",
+    fonteUrl: "https://www.olympics.com/pt/noticias/meia-maratona-internacional-rio-de-janeiro-2026-horarios-percurso-onde-assistir",
     corpo: [
-      "A 10ª edição da São Paulo City Marathon, disputada no domingo, 26 de julho, terminou com dobradinha brasileira nas duas provas principais. Na maratona masculina, Gilmar Silvestre Lopes venceu numa chegada decidida nos últimos metros, cruzando a linha com o mesmo tempo do queniano Nicolas Kiptoo Kosgei, 2h16min34s. Na maratona feminina, Maria Aparecida Ferraz assumiu a liderança na parte final do percurso e fechou em 2h42min19s.",
-      "O crescimento do evento também chamou atenção: a maratona teve 6.635 concluintes, 23% a mais que em 2025, enquanto a meia maratona somou 21.478 concluintes, alta de 34%, um número que já se aproxima das maiores provas do continente.",
-      "Na meia maratona, os títulos ficaram com os etíopes Alemu Balcha Ragasa, no masculino, e Tigist Girma Assefa, no feminino, mas o pódio seguiu com boa presença brasileira, incluindo Giovani dos Santos e Jéssica Ladeira Soares entre os primeiros colocados.",
-      "Para o corredor da região de Joinville, o resultado reforça um momento de amadurecimento da elite brasileira nas maratonas de rua, o mesmo movimento que também aparece nas provas menores do calendário local. Vale acompanhar o nosso calendário para não perder as próximas largadas por aqui."
+      "Neste domingo, 16 de agosto, o Rio de Janeiro recebe a 28ª edição da Meia Maratona Internacional, uma das provas mais tradicionais do calendário brasileiro. A expectativa é reunir cerca de 18 mil corredores nas ruas da cidade, um crescimento expressivo sobre os 12 mil inscritos do ano anterior.",
+      "O percurso de 21,097 km larga na Praia do Leblon e termina no Monumento aos Pracinhas, no Aterro do Flamengo, passando por trechos icônicos como Copacabana e o Pão de Açúcar. A largada da elite acontece pela manhã, aproveitando o clima mais ameno do início do dia carioca.",
+      "Além do público amador, a prova costuma reunir nomes de peso do atletismo nacional, servindo como uma das principais referências de tempo da temporada antes das grandes maratonas do fim de ano.",
+      "Para o corredor de Joinville e região, a Meia do Rio é uma vitrine do nível que a corrida de rua brasileira vem alcançando, o mesmo movimento que também aparece nas provas menores do calendário catarinense. Vale acompanhar o nosso calendário para não perder as próximas largadas por aqui perto."
     ]
   },
   {
@@ -537,110 +521,110 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "maratona-joao-pessoa-2026",
-    categoria: "Maratona de João Pessoa",
-    titulo: "Fábio Rodrigues e Mirian Franco vencem a Maratona Internacional de João Pessoa",
-    resumo: "A 6ª edição da prova reuniu 3.689 concluintes entre as quatro distâncias no primeiro fim de semana de agosto e estreou com selo Permit Ouro da CBAt na maratona.",
-    dataTxt: "1 e 2 de agosto de 2026",
-    local: "João Pessoa, PB",
-    imagem: "https://images.pexels.com/photos/39308/pexels-photo-39308.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Contra Relógio",
-    fonteUrl: "https://contrarelogio.com.br/fabio-rodrigues-e-mirian-franco-vencem-a-maratona-internacional-de-joao-pessoa/",
+    id: "maratona-floripa-17-mil-inscritos-2026",
+    categoria: "Maratona de Floripa",
+    titulo: "Maratona de Floripa ultrapassa 17 mil inscritos e entra na reta final",
+    resumo: "A prova, disputada em 29 e 30 de agosto em Florianópolis, espera chegar a 19 mil participantes nas distâncias de 42 km, 21 km e 5 km. Os percursos da meia maratona e dos 5 km foram remodelados para esta edição.",
+    dataTxt: "11 de agosto de 2026",
+    local: "Florianópolis, SC",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Contra-Relógio / Terra",
+    fonteUrl: "https://www.terra.com.br/vida-e-estilo/partiu-correr/maratona-de-floripa-supera-17-mil-inscritos-e-entra-na-reta-final,622e7d25ec42b4131762997c02e1566835s90s84.html",
     corpo: [
-      "A sexta edição da Maratona Internacional de João Pessoa movimentou a capital paraibana no primeiro fim de semana de agosto. O evento começou no sábado, dia 1º, com os 10 km e a meia maratona, e terminou no domingo, dia 2, com os 5 km e a maratona, que neste ano estreou com o selo Permit Ouro da Confederação Brasileira de Atletismo.",
-      "Ao todo, 3.689 corredores concluíram as quatro distâncias: 1.789 nos 5 km, 883 nos 10 km, 685 na meia maratona e 332 na maratona completa.",
-      "Fábio Rodrigues de Souza Cordeiro, de Barra do Garças, no Mato Grosso, venceu a maratona masculina com 2h23min07s, à frente de Thiago dos Santos Costa e Adriano José dos Santos. Foi a segunda vitória de Fábio na distância no ano, depois da estreia em Manaus, em abril.",
-      "Entre as mulheres, Mirian Franco da Silva, de Garanhuns, em Pernambuco, venceu aos 47 anos com 3h11min24s, conquistando o título pela primeira vez depois de ter terminado em quarto lugar em edição anterior. Para o corredor da região de Joinville, o resultado mostra a força que o atletismo amador segue ganhando pelo país. Fique de olho no nosso calendário para as próximas provas por aqui perto."
+      "A Maratona Internacional de Floripa já ultrapassou os 17 mil inscritos e entra na reta final do período de inscrições. A prova, maior corrida de rua de Santa Catarina, acontece nos dias 29 e 30 de agosto em Florianópolis, com disputas de 42 km, 21 km e 5 km, e a organização espera chegar a 19 mil participantes.",
+      "A meia maratona larga no sábado, dia 29, e a maratona e os 5 km saem no domingo, dia 30. Uma das novidades deste ano está no percurso dos 5 km, que passa a cruzar a Ponte Hercílio Luz, enquanto a meia maratona foi reformulada com menos curvas, buscando deixar a corrida mais fluida.",
+      "Os percursos de 42 km e 21 km têm selo Ouro da Confederação Brasileira de Atletismo, e a maratona integra o Ranking Brasileiro de Maratonistas da Contra-Relógio e o Circuito Brasil Gigante, que reúne oito maratonas pelo país em 2026. Floripa é a sexta etapa do circuito, depois de São Paulo, Paraná, Porto Alegre, Campo Grande e João Pessoa.",
+      "Para quem mora em Joinville e no norte catarinense, a Maratona de Floripa é uma das provas de referência do estado e já está no nosso calendário. A programação começa em 27 de agosto, com a abertura da Expo e a retirada de kits, e as inscrições seguem abertas no site oficial da prova."
     ]
   }
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-08-02
+/* DICAS_ULTIMA_ROTACAO: 2026-08-16
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "descobrir-seu-ritmo-de-treino",
-    categoria: "Treino",
-    titulo: "Como descobrir o seu ritmo ideal de treino",
-    resumo: "A maioria dos corredores treina rápido demais nos dias fáceis. O teste da conversa resolve isso sem precisar de relógio caro.",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Existe um erro que atravessa quase todos os níveis de corrida: treinar rápido demais nos dias que deveriam ser leves. O resultado é chegar cansado nos treinos que realmente exigem intensidade, e a evolução simplesmente empaca.",
-      "O jeito mais simples de acertar o ritmo é o teste da conversa. No treino leve, você precisa conseguir falar frases completas sem engasgar. Se só sai palavra solta entre uma respirada e outra, você está indo rápido demais para aquele dia.",
-      "Uma referência prática: a maior parte do seu volume semanal, algo em torno de 70% a 80%, deveria ser nesse ritmo confortável. O restante fica para tiros, ritmo forte ou subidas, que aí sim precisam doer um pouco.",
-      "Se você usa relógio com frequência cardíaca, use como apoio e não como dono do treino. Frio, noite mal dormida, café e estresse mexem nos batimentos, e o corpo costuma ser mais honesto que o número na tela.",
-      "Vale lembrar que ritmo leve não é ritmo inútil. É nele que o corpo constrói base aeróbica, fortalece tendões e aprende a queimar energia com eficiência. Correr devagar de propósito é o que permite correr rápido quando importa."
-    ]
-  },
-  {
-    id: "quando-trocar-o-tenis-de-corrida",
-    categoria: "Equipamento",
-    titulo: "Quando trocar o tênis de corrida",
-    resumo: "Entre 500 e 800 km o amortecimento já não é o mesmo. Aprenda a ler os sinais antes que a dor apareça.",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "O tênis de corrida tem prazo de validade, mesmo que a parte de cima continue com cara de novo. A referência mais usada fica entre 500 e 800 km, variando conforme o peso do corredor, o tipo de piso e a construção da entressola.",
-      "O sinal mais confiável não é a aparência, é a sensação. Quando o tênis começa a parecer duro, sem aquele retorno na passada, e você sente mais impacto na canela e no joelho depois dos treinos longos, provavelmente a espuma já perdeu boa parte da capacidade de absorver choque.",
-      "Vale olhar a sola por baixo também. Desgaste muito irregular, com uma região lisa enquanto o resto ainda tem relevo, indica que o apoio já mudou e a pisada está compensando de um jeito que não é o seu natural.",
-      "Uma prática que ajuda muito é o rodízio entre dois pares. Alternando os tênis, a espuma tem tempo de voltar ao formato entre uma corrida e outra, e os dois duram mais do que um par usado todos os dias.",
-      "Anote a quilometragem em algum lugar, nem que seja no aplicativo do celular. É bem mais barato trocar o tênis no momento certo do que tratar uma canelite ou uma fascite plantar que apareceu por causa de um calçado gasto."
-    ]
-  },
-  {
-    id: "musculacao-para-corredor",
-    categoria: "Fortalecimento",
-    titulo: "Musculação para corredor: o que realmente importa",
-    resumo: "Não é sobre ficar grande. Quadril, core e panturrilha fortes seguram o corpo no fim da prova e afastam lesão.",
-    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Muito corredor evita a musculação com medo de ficar pesado ou de gastar energia que faria falta na corrida. Na prática, acontece o contrário: força bem trabalhada melhora a economia de corrida e é uma das formas mais eficazes de reduzir risco de lesão.",
-      "A prioridade número um é o quadril. Glúteo médio e máximo fracos deixam o joelho cair para dentro na passada, e daí vem boa parte das dores de joelho e da banda iliotibial. Agachamento, afundo, elevação de quadril e trabalho com faixa elástica dão conta do recado.",
-      "O segundo pilar é a panturrilha e o pé. Elevação de panturrilha, feita também com o joelho dobrado, prepara o tornozelo para absorver impacto repetido e ajuda bastante quem sofre com canelite ou dor na sola do pé.",
-      "O core entra como estabilizador. Prancha, prancha lateral e exercícios antirrotação seguram o tronco quando o cansaço chega, evitando aquela postura desmontada dos últimos quilômetros que rouba ritmo sem você perceber.",
-      "Duas sessões por semana, de 30 a 40 minutos, já entregam a maior parte do benefício. Faça de preferência em dias de corrida leve ou depois do treino de corrida, para não chegar com as pernas cansadas no treino que exige qualidade. Se tiver dúvida sobre carga ou execução, vale uma orientação profissional."
-    ]
-  },
-  {
-    id: "respiracao-na-corrida-mitos",
-    categoria: "Técnica",
-    titulo: "Respiração na corrida: o que funciona e o que é mito",
-    resumo: "Respirar pelo nariz não é regra, e não existe cadência mágica. O que importa é usar o diafragma e ajustar ao esforço.",
+    id: "seguranca-correr-de-madrugada-luz-baixa",
+    categoria: "Segurança",
+    titulo: "Correr no escuro: como se ver e ser visto nas primeiras horas do dia",
+    resumo: "No inverno, o sol nasce tarde e muita gente treina ainda de madrugada. Roupa refletiva, lanterna de cabeça e escolha de rota fazem toda a diferença na segurança.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Poucos assuntos geram tanta regra sem fundamento quanto a respiração na corrida. A primeira coisa a esclarecer é que respirar só pelo nariz não é obrigatório. Conforme o esforço sobe, a demanda de ar aumenta e a boca precisa entrar, isso é fisiologia e não falta de técnica.",
-      "O ponto que realmente muda o jogo é respirar com o diafragma, e não só com a parte alta do peito. Na respiração diafragmática a barriga expande na inspiração, o pulmão é usado por inteiro e você consegue mais ar com menos esforço muscular.",
-      "Existe muita conversa sobre cadência respiratória, do tipo três passos inspirando e dois expirando. Pode ser um exercício útil para acalmar a respiração em treinos leves, mas não existe padrão mágico que sirva para todo mundo em qualquer ritmo.",
-      "Ficar ofegante em treino leve costuma significar ritmo alto demais, não problema de respiração. Antes de tentar controlar o ar, tente reduzir a velocidade e ver se a respiração se organiza sozinha.",
-      "Nas manhãs frias e úmidas da nossa região, o ar mais gelado pode incomodar a garganta de quem tem vias aéreas sensíveis. Usar uma gola ou bandana cobrindo a boca nos primeiros minutos ajuda a aquecer o ar. Se falta de ar ou chiado forem frequentes, vale procurar avaliação médica."
+      "No inverno, o sol demora a aparecer no norte de Santa Catarina, e boa parte dos treinos matinais acontece ainda no escuro. Isso muda a lógica da segurança: não basta se preocupar só com o próprio cansaço, é preciso pensar em como enxergar o caminho e em como os carros enxergam você.",
+      "O primeiro cuidado é a roupa. Peças com faixas refletivas, mesmo discretas, fazem diferença enorme sob o farol de um carro. Cores claras ajudam de dia, mas à noite o que realmente funciona é o material refletivo, não a cor em si.",
+      "Uma lanterna de cabeça ou de peito resolve dois problemas ao mesmo tempo: ilumina buracos e desníveis na calçada e sinaliza sua presença de longe para quem vem na direção contrária. Vale mais a lanterna simples usada todo dia do que o modelo caro que fica parado na gaveta.",
+      "Escolher a rota também é decisão de segurança. Prefira ruas com iluminação pública em bom estado e evite atalhos por terrenos baldios ou trechos sem movimento, mesmo que sejam mais curtos. Correr acompanhado, ou pelo menos avisar alguém do horário e do trajeto, é um hábito simples que custa nada.",
+      "Por fim, atenção aos fones de ouvido. No escuro, a audição vira um sentido extra de segurança, então vale reduzir o volume ou correr só com um lado livre para escutar o trânsito. Treinar de madrugada não precisa ser arriscado, só exige um pouco mais de planejamento antes de sair de casa."
     ]
   },
   {
-    id: "sono-e-recuperacao-do-corredor",
-    categoria: "Recuperação",
-    titulo: "Sono: o treino que acontece enquanto você dorme",
-    resumo: "É dormindo que o corpo repara o músculo e consolida o ganho do treino. Noite curta derruba desempenho e aumenta risco de lesão.",
-    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    id: "postura-e-passada-erros-comuns",
+    categoria: "Técnica",
+    titulo: "Postura e passada: os erros mais comuns que sabotam o corredor",
+    resumo: "Cabeça caída, passada longa demais, braços tensos. Pequenos ajustes na postura melhoram a economia de corrida e reduzem o risco de dor.",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "O treino é o estímulo, mas a adaptação acontece no descanso, e a maior parte dela durante o sono. É dormindo que o corpo repara fibras musculares, repõe estoques de energia e consolida o ganho daquele treino puxado de terça.",
-      "Noites curtas de forma repetida cobram caro. A percepção de esforço aumenta, a coordenação piora e o risco de lesão sobe, além do humor e da vontade de treinar despencarem justamente quando você mais precisa de constância.",
-      "Para a maioria dos adultos, a faixa de 7 a 9 horas dá conta. Quem está em fase de volume alto, preparando uma meia ou uma maratona, tende a precisar da parte de cima dessa faixa.",
-      "Alguns ajustes simples resolvem muita coisa: horário parecido para dormir e acordar todos os dias, quarto escuro e fresco, e cortar a tela pelo menos meia hora antes de deitar. Café à tarde atrapalha mais gente do que se imagina, mesmo quem jura que não sente efeito.",
-      "Se um dia a noite for ruim, não force um treino de qualidade na manhã seguinte. Trocar por um trote leve ou por um dia de descanso é decisão de quem treina com inteligência, não sinal de falta de disciplina."
+      "Muita gente corre pensando só na perna, mas boa parte da economia de corrida vem do que acontece do quadril para cima. Cabeça caída, ombros tensos e tronco curvado para frente fazem o corpo gastar energia à toa, e o cansaço chega mais cedo do que deveria.",
+      "Um erro comum é a passada longa demais, quando o pé toca o chão bem à frente do corpo. Esse impacto frontal funciona quase como um freio a cada passada, sobrecarrega o joelho e reduz a eficiência. O ideal é que o pé aterrisse mais próximo da linha do quadril, com passos um pouco mais curtos e mais rápidos.",
+      "Os braços também contam a história do esforço. Se eles sobem demais na frente do peito ou cruzam o corpo de um lado para o outro, parte da energia que deveria empurrar você para frente está sendo desperdiçada de lado. O movimento ideal é próximo ao corpo, com o cotovelo dobrado perto de 90 graus, balançando para frente e para trás.",
+      "Olhar para o próprio umbigo é outro hábito que atrapalha sem que o corredor perceba. Manter o olhar num ponto mais à frente, na altura do horizonte, ajuda a manter a cabeça alinhada com a coluna e evita aquela tensão no pescoço que aparece depois de corridas longas.",
+      "Ajustar a postura não é sobre copiar a passada de outra pessoa, é sobre soltar tensões desnecessárias. Vale gravar um vídeo correndo em ritmo leve de vez em quando e observar: se algo parece rígido ou forçado, geralmente é ali que está o ajuste mais simples de fazer."
     ]
   },
   {
-    id: "como-escolher-sua-proxima-prova",
+    id: "rotina-do-dia-da-prova",
     categoria: "Provas",
-    titulo: "Como escolher a sua próxima prova",
-    resumo: "Distância compatível, prazo de preparo realista e percurso que combina com o seu momento. A escolha certa mantém a motivação viva.",
+    titulo: "Rotina do dia da prova: o que fazer da véspera até a largada",
+    resumo: "Comer certo, dormir bem e chegar cedo. Uma rotina bem definida no dia da prova evita imprevistos e ajuda a render o treino que você já fez.",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Escolher uma prova é uma das melhores formas de dar propósito ao treino. Mas a escolha errada, seja pela distância ou pelo prazo, transforma o que era motivação em frustração.",
-      "Comece pelo prazo. Para saltar de 5 km para 10 km, uma janela de 8 a 12 semanas costuma ser confortável. Para encarar uma meia maratona pela primeira vez, pense em 12 a 16 semanas com base já construída. Prazo apertado é o caminho mais curto para a lesão.",
-      "Olhe o percurso com atenção. Provas planas favorecem quem busca tempo, enquanto percursos com subidas exigem preparo específico. Horário também conta: uma prova noturna pede rotina de alimentação diferente de uma largada às 7h.",
-      "Considere o tamanho do evento. Provas grandes têm estrutura, público e energia contagiante, mas também mais gente no funil da largada. Provas menores, comuns aqui na região, oferecem clima mais tranquilo e são ótimas para estrear.",
-      "Uma estratégia que funciona bem é montar o calendário com uma prova principal e duas ou três menores no caminho, usadas como treino e termômetro. No nosso calendário você encontra as opções de Joinville e do norte catarinense para montar essa sequência sem precisar viajar longe."
+      "O treino já foi feito nas semanas anteriores, mas o dia da prova tem uma lógica própria. Uma boa rotina, pensada com antecedência, evita que o nervosismo ou um imprevisto de última hora atrapalhem tudo o que você construiu até ali.",
+      "A noite anterior pesa mais do que parece. Deixar separado o que vai vestir, o número de peito já fixado e o horário de saída calculado com folga tira decisões da manhã da prova, quando a cabeça já está mais ansiosa. Dormir cedo importa mais do que fazer o último treino puxado da véspera.",
+      "No café da manhã, a regra é não testar novidade. Coma algo que você já experimentou em treinos e que seu estômago reconhece bem, de preferência de duas a três horas antes da largada. Provas com largada muito cedo pedem um café mais leve, complementado por algo pequeno já no local da concentração.",
+      "Chegar com antecedência é outro ponto que faz diferença. Estacionar, retirar o número se ainda não tiver feito, ir ao banheiro sem fila e ainda sobrar tempo para um aquecimento leve muda completamente o estado de espírito na hora de entrar no corredor de largada.",
+      "Por fim, tenha um plano simples para o percurso: em que ritmo pretende começar, onde ficam os pontos de hidratação, o que fazer se sentir desconforto. Prova não é hora de inventar estratégia nova, é hora de confiar no que já foi treinado."
+    ]
+  },
+  {
+    id: "dor-no-joelho-do-corredor",
+    categoria: "Saúde",
+    titulo: "Dor no joelho do corredor: quando é normal e quando é hora de parar",
+    resumo: "Nem toda dor é sinal de lesão grave, mas ignorar os sinais certos pode transformar um incômodo passageiro em um problema sério.",
+    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Dor no joelho é uma das queixas mais comuns entre corredores, e também uma das que mais geram dúvida: treinar mesmo assim ou parar? A resposta certa depende do tipo de dor, não da vontade de não perder o treino do dia.",
+      "Um desconforto leve, que aparece durante a corrida e desaparece logo depois que você para, geralmente é sinal de sobrecarga temporária, algo que um dia de descanso ou uma redução no volume resolve. Já uma dor que piora ao longo do treino, que incha a região ou que continua no dia seguinte pede atenção maior.",
+      "A famosa dor lateral do joelho, ligada à banda iliotibial, costuma aparecer em quem aumentou a quilometragem rápido demais ou tem fraqueza no quadril. Ela tende a surgir sempre no mesmo ponto do percurso, quase como um relógio, o que ajuda a identificar o padrão.",
+      "Sinais de alerta que não devem ser ignorados incluem dor que persiste em repouso, inchaço visível, sensação de instabilidade no joelho ou dor que piora dia após dia mesmo com descanso. Nesses casos, treinar apostando que vai passar sozinho costuma custar caro depois.",
+      "Fortalecimento de quadril e panturrilha, progressão de treino sem pular etapas e um tênis em boas condições previnem boa parte dessas dores. Mas quando o desconforto foge do padrão leve e passageiro, a conversa certa é com um profissional de saúde, não com o grupo de corrida."
+    ]
+  },
+  {
+    id: "treino-intervalado-para-iniciar",
+    categoria: "Treino",
+    titulo: "Treino intervalado: o que é e como começar sem se machucar",
+    resumo: "Alternar tiros rápidos com recuperação é uma das formas mais eficientes de ganhar velocidade. O segredo está em começar devagar e respeitar a progressão.",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Treino intervalado, os famosos tiros, é uma das ferramentas mais eficientes para quem quer ficar mais rápido, mas também uma das que mais gera lesão quando é feita sem critério. A lógica é simples: alternar blocos de esforço mais forte com blocos de recuperação.",
+      "Para quem nunca fez, o começo não precisa ser sofisticado. Um exemplo simples é alternar um minuto em ritmo forte, mas controlado, com dois minutos de trote bem leve ou caminhada, repetindo de 6 a 8 vezes. A sensação deve ser de esforço real, mas não de sprint total.",
+      "O erro mais comum de quem está começando é ir forte demais no primeiro tiro e não conseguir manter o ritmo nos seguintes. É melhor terminar o treino sentindo que ainda tinha um pouco mais a dar do que travar no meio da sessão.",
+      "Esse tipo de treino é o que mais cobra do corpo, então pede aquecimento de verdade antes, com trote leve e alguns exercícios de ativação, e vale fazer no máximo uma ou duas vezes por semana, nunca em dias seguidos.",
+      "Os ganhos não aparecem no primeiro treino, aparecem depois de algumas semanas de constância. Se a meta é melhorar o tempo numa prova de 5 km ou 10 km, o intervalado bem dosado costuma trazer resultado mais rápido do que simplesmente correr mais quilômetros no mesmo ritmo de sempre."
+    ]
+  },
+  {
+    id: "assaduras-e-detalhes-do-equipamento",
+    categoria: "Equipamento",
+    titulo: "Assaduras, meias e os pequenos detalhes que arruinam um treino longo",
+    resumo: "Meia errada, costura no lugar errado, vaselina esquecida em casa. Os detalhes pequenos costumam decidir o conforto nos treinos e provas mais longas.",
+    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Tem treino longo que é arruinado não pela distância, mas por um detalhe pequeno: uma costura mal posicionada, uma meia errada, uma assadura que começa incômoda e termina insuportável. Vale prestar atenção nesses detalhes antes que eles decidam o treino por você.",
+      "Meia de algodão costuma ser a maior vilã. Ela retém umidade e favorece o atrito, exatamente o combo que gera bolha. Meias técnicas, feitas para corrida, secam mais rápido e reduzem esse problema, mesmo custando um pouco mais.",
+      "Assaduras aparecem nos lugares de mais atrito: coxas, embaixo dos braços, no peito para quem usa camiseta de tecido áspero. Vaselina ou produtos próprios de antiassadura aplicados antes do treino resolvem boa parte do problema, principalmente em treinos acima de uma hora.",
+      "Roupa nova nunca deve estrear no dia da prova. Toda peça, camiseta, shorts, meia, precisa já ter passado por pelo menos um treino longo antes, para você descobrir se incomoda em algum ponto enquanto ainda dá tempo de trocar.",
+      "Cortar as unhas dos pés antes de treinos longos, escolher o cadarço com o aperto certo e verificar se a língua do tênis não está torta são cuidados que levam menos de um minuto e evitam boa parte dos pequenos problemas que tiram a graça de um treino que, fora isso, estava ótimo."
     ]
   }
 ];
