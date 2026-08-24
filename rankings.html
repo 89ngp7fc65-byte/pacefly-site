@@ -94,7 +94,7 @@
       <p>O layout abaixo já está pronto. Falta o que mais importa: os dados oficiais das provas parceiras. Assim que o primeiro acordo for fechado, esse espaço ganha vida.</p>
     </div>
 
-    <span class="rk-preview-tag">Prévia com dados reais da apuração interna · atualizado em 04/08/2026</span>
+    <span class="rk-preview-tag">Prévia com dados reais da apuração interna · atualizado em 22/08/2026</span>
 
     <div class="rk-cats" id="rkCats">
       <button class="rk-cat-chip on" data-cat="geral">Geral</button>
@@ -107,8 +107,8 @@
     <div class="rk-podio">
       <div class="rk-pod-item p2">
         <div class="rk-pod-medal">2</div>
-        <div class="nm">Jorge Nestor Pereira</div>
-        <div class="tm">160 pts</div>
+        <div class="nm">Vitor Estivalet de Souza</div>
+        <div class="tm">180 pts</div>
       </div>
       <div class="rk-pod-item p1">
         <div class="rk-pod-medal">1</div>
@@ -117,8 +117,8 @@
       </div>
       <div class="rk-pod-item p3">
         <div class="rk-pod-medal">3</div>
-        <div class="nm">Nicolas Dias</div>
-        <div class="tm">135 pts</div>
+        <div class="nm">Jorge Nestor Pereira</div>
+        <div class="tm">160 pts</div>
       </div>
     </div>
 
@@ -256,17 +256,17 @@
   burger.addEventListener('click',()=>menu.classList.toggle('open'));
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-  // Tabela com o Top 10 real do Ranking Geral (apuração interna de 03/08/2026)
+  // Tabela com o Top 10 real do Ranking Geral (apuração interna de 22/08/2026)
   const tbody=document.querySelector('#rkTable tbody');
   const rkTop10=[
     {nome:'Rafaela Pereira Benevenuto',pts:'240 pts'},
+    {nome:'Vitor Estivalet de Souza',pts:'180 pts'},
     {nome:'Jorge Nestor Pereira',pts:'160 pts'},
+    {nome:'Richard Glauco Jose Pereira',pts:'160 pts'},
     {nome:'Nicolas Dias',pts:'135 pts'},
-    {nome:'Vitor Estivalet de Souza',pts:'120 pts'},
-    {nome:'Richard Glauco Jose Pereira',pts:'110 pts'},
+    {nome:'Romildo Goncalves',pts:'125 pts'},
     {nome:'Ayumi Momoi',pts:'110 pts'},
     {nome:'Arnaldo Franklin da Silva Rosendo',pts:'100 pts'},
-    {nome:'Romildo Goncalves',pts:'95 pts'},
     {nome:'Nicolas Alvaro Francelino de Souza',pts:'90 pts'},
     {nome:'Andrea Silva do Amaral',pts:'90 pts'}
   ];

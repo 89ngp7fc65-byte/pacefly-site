@@ -30,72 +30,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "circuito-banco-do-brasil-joinville",
-    "nome": "Circuito Banco do Brasil de Corrida",
-    "dia": "23",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "23 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Perini Business Park (Rua Dona Francisca, 8300)",
-    "organizador": "TTK SP / Norte Marketing Esportivo",
-    "edicao": "Etapa Joinville",
-    "distancias": ["10 km", "5 km", "1 km (kids)"],
-    "descricao": "Etapa joinvilense do Circuito Banco do Brasil de Corrida, no Perini Business Park, com percursos de 10 km, 5 km e 1 km (kids). A largada dos 5 km e 10 km é às 7h e a corridinha kids sai às 9h. O dia ainda tem avaliação física, massagens, áreas de relaxamento e outras experiências gratuitas para toda a família. A PaceFly é parceira do evento: use o cupom PACEFLY na inscrição oficial e ganhe 10% de desconto.",
-    "oficialUrl": "https://www.circuitobb.com.br/joinville/unica",
-    "parceiro": "sim",
-    "cupom": "PACEFLY"
-  },
-  {
-    "id": "corrida-protecao-animais",
-    "nome": "Corrida pela Proteção dos Animais",
-    "dia": "23",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "23 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Shopping Mueller Joinville, Rua Senador Felipe Schmidt, 235, às 7h",
-    "organizador": "42K Assessoria Esportiva",
-    "edicao": "3ª edição",
-    "distancias": ["7 km", "5,5 km", "Caminhada", "Kids", "Pet Walk 2 km"],
-    "descricao": "Terceira edição da Corrida pela Proteção dos Animais, etapa do Circuito Movimento Pelo Bem (Shopping Mueller com a 42K Assessoria Esportiva). A largada é às 7h, no Shopping Mueller, com percursos competitivos de 7 km e 5,5 km, além de caminhada, corrida kids e o Pet Walk de 2 km para quem quiser levar o cachorro. Parte da renda de inscrição é destinada a instituições de apoio à causa animal de Joinville.",
-    "oficialUrl": "https://42k.esp.br"
-  },
-  {
-    "id": "corrida-senhor-bom-jesus-guaramirim",
-    "nome": "2ª Corrida com o Senhor Bom Jesus",
-    "dia": "23",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "23 de agosto de 2026",
-    "cidade": "Guaramirim, SC",
-    "largada": "Paróquia Senhor Bom Jesus, Rua 28 de Agosto, 1189, às 6h30",
-    "organizador": "CJR Academia e Eventos",
-    "edicao": "2ª edição",
-    "distancias": ["10 km", "5 km", "Caminhada 3 km", "Kids"],
-    "descricao": "Segunda edição da Corrida com o Senhor Bom Jesus, em Guaramirim, com largada na Paróquia Senhor Bom Jesus, na Rua 28 de Agosto, 1189. A programação tem provas de 10 km e 5 km, caminhada de 3 km e corrida kids. As inscrições vão até 15 de agosto ou até o limite técnico de 700 participantes.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/2-corrida-com-o-senhor-bom-jesus-85707"
-  },
-  {
-    "id": "corridas-do-bem-sesi-sao-bento-do-sul",
-    "nome": "Corridas do Bem Sesi + Saúde",
-    "dia": "23",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "23 de agosto de 2026",
-    "cidade": "São Bento do Sul, SC",
-    "largada": "Em frente ao Sesi do Centro, às 7h",
-    "organizador": "Sesi Santa Catarina",
-    "edicao": "Etapa São Bento do Sul",
-    "distancias": ["10 km", "5 km", "Caminhada 5 km", "Maratoninha"],
-    "descricao": "Etapa são-bentense do circuito Corridas do Bem Sesi + Saúde, com largada às 7h em frente ao Sesi do Centro. A programação tem corridas de 10 km e 5 km, caminhada de 5 km e a Maratoninha para crianças de 2 a 14 anos, com percursos de 30 a 150 metros conforme a idade. A retirada de kits acontece no dia anterior e o kit inclui camiseta, chip de cronometragem, número de peito e brindes.",
-    "oficialUrl": "https://sesisc.org.br/pt-br/eventos/sesi-corridas-do-bem-sao-bento-do-sul"
-  },
-  {
     "id": "maratona-internacional-floripa",
     "nome": "Maratona Internacional de Floripa Fibra",
     "dia": "29",
@@ -142,6 +76,22 @@ const PACEFLY_EVENTOS = [
     "distancias": ["10 km", "5 km"],
     "descricao": "Etapa jaraguaense do Circuito de Corridas Unimed, com largada às 7h no estacionamento do Parque Linear Via Verde e percursos de 10 km e 5 km.",
     "oficialUrl": "https://circuitodecorridaunimed.com.br"
+  },
+  {
+    "id": "tex-run-blumenau",
+    "nome": "Tex Run",
+    "dia": "30",
+    "mes": "08",
+    "mesTxt": "AGO",
+    "ano": 2026,
+    "dataExtenso": "30 de agosto de 2026",
+    "cidade": "Blumenau, SC",
+    "largada": "Tex Cotton, Rua Itajaí, 948, bairro Vorstadt, às 7h30",
+    "organizador": "Tex Cotton",
+    "edicao": "1ª edição",
+    "distancias": ["8 km", "4 km", "Caminhada 4 km", "Kids"],
+    "descricao": "Estreia da Tex Run em Blumenau, criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil no Vale do Itajaí. A largada é às 7h30, na sede da empresa, na Rua Itajaí, 948, bairro Vorstadt, com percursos de 8 km e 4 km, caminhada de 4 km e corrida kids para crianças de 2 a 14 anos. O trajeto plano passa por pontos turísticos do centro da cidade e cada inscrição inclui a doação de 1 kg de alimento não perecível para entidades da região que atendem crianças.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/CORRIDA+TEX+RUN+2026-87231"
   },
   {
     "id": "corrida-avc-sao-francisco-do-sul",
@@ -219,9 +169,9 @@ const PACEFLY_EVENTOS = [
     "largada": "Ágora Tech Park",
     "organizador": "Number Esportes",
     "edicao": "4ª edição",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Quarta edição do Desafio Drogaria Catarinense, com largada no Ágora Tech Park e percursos de 10 km e 5 km. A prova vem crescendo ano a ano e já se consolidou entre as principais corridas de rua de Joinville.",
-    "oficialUrl": "https://number.esp.br"
+    "distancias": ["10 km", "5 km", "Kids"],
+    "descricao": "Quarta edição do Desafio Drogaria Catarinense, com largada no Ágora Tech Park e percursos de 10 km, 5 km e corrida kids. A prova vem crescendo ano a ano e já se consolidou entre as principais corridas de rua de Joinville.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507"
   },
   {
     "id": "corrida-cooper-jaragua-do-sul",
@@ -436,37 +386,54 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
-    id: "corrida-protecao-animais-mueller-2026",
-    categoria: "Corrida pela Proteção dos Animais",
-    titulo: "3ª Corrida pela Proteção dos Animais movimenta o Circuito Movimento Pelo Bem em Joinville",
-    resumo: "A prova de 23 de agosto, no Shopping Mueller, reverte toda a renda das inscrições às ONGs Turma do Gatil e Patinhas Carentes. As duas etapas anteriores do circuito já arrecadaram mais de R$ 22 mil neste ano.",
-    dataTxt: "23 de agosto de 2026",
+    id: "primeira-maratona-de-joinville-2026",
+    categoria: "1ª Maratona de Joinville",
+    titulo: "Joinville vai ter sua primeira maratona da história em 1º de novembro",
+    resumo: "A cidade sempre teve a tradicional Meia Maratona, mas nunca uma prova de 42 km. Isso muda no fim de semana de 31 de outubro e 1º de novembro, com largada no Kart Joinville e opção de revezamento para quem quiser dividir o percurso.",
+    dataTxt: "31 de outubro e 1º de novembro de 2026",
     local: "Joinville, SC",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Shopping Mueller Joinville",
-    fonteUrl: "https://muellerjoinville.com.br/atracao/corrida-pela-protecao-dos-animais-sera-a-proxima-etapa-do-circuito-movimento-pelo-bem/",
+    fonteNome: "Ticket Sports",
+    fonteUrl: "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
     corpo: [
-      "O Circuito Movimento Pelo Bem, promovido pelo Shopping Mueller em parceria com a 42K Assessoria Esportiva, convida a comunidade de Joinville para a próxima etapa do ano: a 3ª Corrida pela Proteção dos Animais, marcada para o dia 23 de agosto. Toda a renda das inscrições será destinada às ONGs Turma do Gatil e Patinhas Carentes, que fazem um trabalho de resgate, acolhimento e cuidado de animais na cidade.",
-      "A prova acontece das 7h às 10h, com largada e chegada no Shopping Mueller Joinville, na Rua Visconde de Taunay, 235, no Centro. Os percursos vão do competitivo ao familiar, incluindo caminhada, corrida kids e o Pet Walk, para quem quiser levar o cachorro para caminhar junto.",
-      "Nas duas etapas já realizadas neste ano, o circuito arrecadou mais de R$ 22 mil para causas sociais de Joinville. A 3ª Corrida pelas Mulheres, em março, levantou R$ 16.602,50 para o Lar Renascer, e a 4ª Corrida pela Inclusão, em abril, arrecadou R$ 6.200 para o Núcleo de Assistência Integral ao Paciente Especial, o Naipe.",
-      "Uma novidade desta edição são as camisetas oficiais, desenvolvidas pela Offop, marca fitness de Joinville, em parceria com a Diklatex, com tecido tecnológico pensado para conforto durante a corrida. Depois da etapa dedicada à proteção animal, o circuito se encerra em 11 de outubro com a 6ª Corrida pela Vida, em prol da Rede Feminina de Combate ao Câncer. Confira todos os detalhes no nosso calendário."
+      "Joinville tem décadas de tradição com a Meia Maratona, mas nunca recebeu uma prova na distância cheia de 42 km. Isso vai mudar em 2026: a Tkar Produção de Eventos Esportivos confirmou a 1ª Maratona de Joinville, com largada no Kart Joinville, marcando um capítulo novo para o esporte na cidade.",
+      "A programação se estende por dois dias. No sábado, 31 de outubro, a organização abre o fim de semana com uma prova de 6 km, pensada para quem quer participar da festa sem encarar a distância cheia. No domingo, 1º de novembro, é a vez da maratona propriamente dita, com os 42 km tradicionais.",
+      "Uma das novidades é a opção de revezamento para os 42 km, em que duas pessoas podem dividir o percurso entre si, o que amplia a prova para quem ainda não se sente pronto para correr a distância sozinho, mas quer fazer parte dessa estreia histórica.",
+      "Para o corredor de Joinville e região, a expectativa é grande: depois de anos de meia maratona, a cidade finalmente entra no calendário nacional das provas de 42 km. Os detalhes de inscrição estão na plataforma oficial do evento, e o nosso calendário já traz a prova cadastrada para quem quiser se programar com antecedência."
     ]
   },
   {
-    id: "desafio-beto-carrero-penha-2026",
-    categoria: "Na região",
-    titulo: "Desafio Beto Carrero reúne 3 mil corredores dentro do parque, em Penha",
-    resumo: "A oitava edição da prova ocupou as ruas do Beto Carrero World entre sexta e domingo, com trajetos de 3 km a 21 km e a tradicional medalha para quem completa as quatro distâncias competitivas.",
-    dataTxt: "31 de julho a 2 de agosto de 2026",
-    local: "Penha, SC",
+    id: "desafio-drogaria-catarinense-2026-confirmado",
+    categoria: "Desafio Drogaria Catarinense",
+    titulo: "4º Desafio Drogaria Catarinense confirma data em 19 de setembro no Ágora Tech Park",
+    resumo: "A prova, que vem crescendo a cada edição, mantém os percursos de 10 km e 5 km, além da corrida kids, com largada no Ágora Tech Park, na Rua Dona Francisca.",
+    dataTxt: "19 de setembro de 2026",
+    local: "Joinville, SC",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "NSC Total",
-    fonteUrl: "https://www.nsctotal.com.br/esportes/beto-carrero-recebe-desafio-com-quatro-trajetos-e-3-mil-corredores",
+    fonteNome: "Ticket Sports",
+    fonteUrl: "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507",
     corpo: [
-      "A oitava edição do Desafio Beto Carrero movimentou Penha, no litoral norte catarinense, entre sexta-feira (31) e domingo (2). Cerca de 3 mil atletas de todo o país se dividiram entre os trajetos de 5, 6, 10 e 21 quilômetros ao longo de três dias, correndo pelas ruas do parque e interagindo com as atrações no caminho.",
-      "A programação abriu na sexta com os 5 km, às 20h30. No sábado, a manhã começou com os 10 km, às 6h30, e a noite trouxe os 6 km e, na sequência, a corrida de 3 km para toda a família, com crianças e adultos percorrendo juntos o interior do parque. O fim de semana se encerrou no domingo com a meia maratona, largando às 6h.",
-      "Quem completou as quatro provas competitivas somou 42 quilômetros ao longo do evento e levou para casa a medalha especial do Desafio. A chegada de todas as distâncias foi na arena montada no kartódromo do parque, com hidratação, degustações e atividades para as famílias.",
-      "Para quem mora na região de Joinville, Penha fica a menos de duas horas de carro e a prova é um exemplo de como o turismo esportivo catarinense também gera corrida de qualidade. Fique de olho no nosso calendário para as próximas provas por aqui perto."
+      "A Number Esportes confirmou a data do 4º Desafio Drogaria Catarinense: a prova acontece em 19 de setembro, um sábado, no Ágora Tech Park, na Rua Dona Francisca, em Joinville.",
+      "A programação segue o formato que já consagrou o evento entre os corredores da cidade, com percursos de 10 km e 5 km para quem busca desempenho, além da corrida kids para os pequenos participarem também.",
+      "De uma edição para outra, o Desafio Drogaria Catarinense vem ganhando mais gente na largada e hoje já é uma das provas de referência do calendário joinvilense de setembro, ao lado de outras etapas que movimentam a cidade no mesmo mês.",
+      "Quem quiser se organizar com antecedência já pode conferir todos os detalhes da prova, incluindo local exato de largada e distâncias, no nosso calendário de corridas."
+    ]
+  },
+  {
+    id: "tex-run-blumenau-2026",
+    categoria: "Na região",
+    titulo: "Tex Run estreia em Blumenau em 30 de agosto e une corrida a ação solidária",
+    resumo: "Primeira edição da prova celebra os 40 anos da Tex Cotton, com largada na sede da empresa, no bairro Vorstadt. Cada inscrição inclui a doação de 1 kg de alimento não perecível para entidades que atendem crianças na região.",
+    dataTxt: "30 de agosto de 2026",
+    local: "Blumenau, SC",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Noticenter",
+    fonteUrl: "https://www.noticenter.com.br/noticia/42029/tex-run-abre-inscricoes-para-corrida-que-celebra-historia-de-empreendedorismo-em-blumenau",
+    corpo: [
+      "Blumenau recebe pela primeira vez a Tex Run no dia 30 de agosto, prova criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil, uma das mais tradicionais do Vale do Itajaí.",
+      "A largada é às 7h30, na própria sede da empresa, na Rua Itajaí, 948, no bairro Vorstadt, com percursos de 8 km e 4 km, caminhada de 4 km e corrida kids para crianças de 2 a 14 anos. O trajeto é plano e passa por pontos turísticos do centro da cidade, o que facilita a participação até de quem está começando a correr.",
+      "A prova tem um lado solidário: cada inscrição inclui a doação de 1 kg de alimento não perecível, revertido a entidades da região que trabalham com acolhimento de crianças. Ao longo do percurso, a organização também promete ativações especiais a cada quilômetro.",
+      "Para quem mora em Joinville e no norte catarinense, Blumenau fica a menos de duas horas de viagem, e a Tex Run é mais uma opção de fim de semana para quem gosta de conhecer provas novas na região do Vale do Itajaí."
     ]
   },
   {
@@ -501,23 +468,6 @@ const PACEFLY_NOTICIAS = [
       "O Via Verde virou ponto de encontro dos corredores jaraguaenses nos últimos anos, e a escolha do local ajuda a explicar por que a etapa costuma atrair também gente de Guaramirim, Schroeder e Corupá, além do pessoal de Joinville que faz a viagem curta pela BR-280.",
       "A retirada de kits está prevista para 17 de agosto, na sede da Unimed Jaraguá do Sul, na Avenida Marechal Deodoro da Fonseca, no centro, com apresentação de documento com foto. Vale confirmar horários e regras diretamente com a organização antes de ir.",
       "Para quem mora na região, a etapa cai bem no calendário: acontece no mesmo fim de semana da Ademicon Run, em Joinville, e serve como bom termômetro para quem está construindo base rumo às provas de setembro e outubro."
-    ]
-  },
-  {
-    id: "corridas-do-bem-sao-bento-do-sul-2026",
-    categoria: "Corridas do Bem Sesi",
-    titulo: "Corridas do Bem chega a São Bento do Sul em 23 de agosto, com renda revertida ao Hospital Sagrada Família",
-    resumo: "A etapa são-bentense do circuito estadual Sesi + Saúde tem largada às 7h em frente ao Sesi Centro, com provas de 5 km e 10 km, caminhada e a Maratoninha infantil. Neste ano, parte do valor das inscrições vai para o Hospital e Maternidade Sagrada Família.",
-    dataTxt: "23 de agosto de 2026",
-    local: "São Bento do Sul, SC",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "On Sports / Corridas do Bem Sesi + Saúde",
-    fonteUrl: "https://www.onsportsoficial.com.br/evento/8035/corridas-do-bem-sesi-saude-2026-etapa-sao-bento-do-sul",
-    corpo: [
-      "São Bento do Sul recebe no dia 23 de agosto, domingo, a etapa local do circuito Corridas do Bem Sesi + Saúde 2026. A largada é às 7h, em frente ao Sesi Centro, na Rua Benjamin Constant, 99.",
-      "A programação reúne corridas de 5 km e 10 km, com categorias para público geral, industriário, pessoas com deficiência e colaboradores da Fiesc, além de caminhada de 5 km. As crianças de 2 a 14 anos participam da Maratoninha, com percursos de 30 a 150 metros conforme a idade, limitada a 200 participantes.",
-      "A retirada de kits acontece no dia 22 de agosto, das 9h às 16h, na loja VéloBR, na Avenida Argolo, 512, no Centro. O kit inclui camiseta, chip de cronometragem, número de peito e brindes.",
-      "Neste ano, parte do valor das inscrições será revertida ao Hospital e Maternidade Sagrada Família, de São Bento do Sul. O circuito, promovido pelo Sesi de Santa Catarina, já passou por Joinville e por outras cidades do estado antes de chegar ao planalto norte."
     ]
   },
   {
@@ -640,15 +590,6 @@ const PACEFLY_DICAS = [
    Tamanho sugerido: 1600x900 px (horizontal).
    ============================================================ */
 const PACEFLY_CIDADE = [
-  {
-    id: "circuito-banco-do-brasil-joinville",
-    badge: "Parceiro PaceFly",
-    legenda: "Circuito Banco do Brasil, 23 de agosto em Joinville",
-    local: "1 km (kids), 5 km e 10 km, cupom PACEFLY com 10% de desconto",
-    cta: "Ver o evento e se inscrever",
-    link: "evento.html?id=circuito-banco-do-brasil-joinville",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1600"
-  },
   {
     id: "amanhecer-na-cidade",
     legenda: "Joinville amanhece correndo",
