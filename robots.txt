@@ -1,9 +1,8 @@
 User-agent: *
 Allow: /
 
-# Projeto do ranking ainda nao lancado: fora dos buscadores.
-# Remover estas 2 linhas quando o ranking for ao ar.
-Disallow: /rankings.html
-Disallow: /rankings
+# Ranking lancado em 30/08/2026 e liberado para os buscadores.
+# O bloqueio anterior (Disallow /rankings.html e /rankings) foi
+# removido no lancamento oficial.
 
 Sitemap: https://pacefly.com.br/sitemap.xml

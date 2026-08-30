@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>PaceFly · Imagem de compartilhamento do Ranking (1200x630)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;font-family:'Montserrat',sans-serif;background:#060e1f}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:#060e1f}
+  .mesh{position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:54px 54px}
+  .glow{position:absolute;width:820px;height:820px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,87,184,.44) 0%,rgba(0,87,184,0) 68%);
+    top:-280px;right:-220px}
+  .glow2{position:absolute;width:620px;height:620px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,196,0,.15) 0%,rgba(255,196,0,0) 70%);
+    bottom:-280px;left:-160px}
+  .strip{position:absolute;left:0;top:0;bottom:0;width:8px;background:#FFC400;z-index:5}
+  .content{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;
+    justify-content:space-between;padding:48px 60px 46px 76px}
+  .topo{display:flex;align-items:center;justify-content:space-between}
+  .topo img{height:74px;width:auto;filter:brightness(0) invert(1)}
+  .selo{display:flex;align-items:center;gap:11px;border:2px solid rgba(0,200,83,.55);
+    border-radius:100px;padding:10px 22px;background:rgba(0,200,83,.12)}
+  .selo-dot{width:10px;height:10px;border-radius:50%;background:#00C853;
+    box-shadow:0 0 14px rgba(0,200,83,.9)}
+  .selo span{font-size:15px;font-weight:800;color:#3ddc84;letter-spacing:2.5px;text-transform:uppercase}
+  .meio{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:6px}
+  .eyebrow{font-size:17px;font-weight:800;color:rgba(255,255,255,.45);
+    letter-spacing:4.5px;text-transform:uppercase;margin-bottom:16px}
+  .titulo{font-size:66px;font-weight:900;color:#fff;line-height:1.04;letter-spacing:-2px;max-width:840px}
+  .titulo .amarelo{color:#FFC400}
+  .rule{width:84px;height:6px;background:#FFC400;border-radius:4px;margin:22px 0 20px}
+  .sub{font-size:23px;font-weight:500;color:rgba(255,255,255,.68);line-height:1.5;max-width:700px}
+  .rodape{display:flex;align-items:flex-end;justify-content:space-between}
+  .stats{display:flex;gap:34px}
+  .stat b{display:block;font-size:34px;font-weight:900;color:#fff;line-height:1;letter-spacing:-1px}
+  .stat small{display:block;font-size:14px;font-weight:700;color:rgba(255,255,255,.45);
+    text-transform:uppercase;letter-spacing:1.5px;margin-top:5px}
+  .site{font-size:21px;font-weight:800;color:#FFC400;letter-spacing:.3px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="mesh"></div><div class="glow"></div><div class="glow2"></div>
+  <div class="strip"></div>
+  <div class="content">
+    <div class="topo">
+      <img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly">
+      <div class="selo"><div class="selo-dot"></div><span>No ar</span></div>
+    </div>
+    <div class="meio">
+      <div class="eyebrow">// Temporada 2026 · Norte de Santa Catarina</div>
+      <div class="titulo">O ranking dos<br>corredores da <span class="amarelo">região.</span></div>
+      <div class="rule"></div>
+      <div class="sub">Correu duas provas ou mais este ano? Busque seu nome e veja sua posição.</div>
+    </div>
+    <div class="rodape">
+      <div class="stats">
+        <div class="stat"><b>847</b><small>classificados</small></div>
+        <div class="stat"><b>11</b><small>provas apuradas</small></div>
+        <div class="stat"><b>6.376</b><small>participações</small></div>
+      </div>
+      <div class="site">pacefly.com.br/ranking</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -3,18 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PaceFly Rankings | Ranking dos corredores de Joinville e Norte de SC</title>
-<meta name="description" content="Conheça o PaceFly Rankings: o ranking regional dos corredores de Joinville e do norte de Santa Catarina. Veja como vai funcionar e cadastre-se para ser um dos primeiros.">
+<title>PaceFly Ranking 2026 | Ranking dos corredores de Joinville e Norte de SC</title>
+<meta name="description" content="Consulte sua posição no PaceFly Ranking 2026, o ranking acumulado dos corredores de Joinville, Jaraguá do Sul e região. Busque pelo seu nome e veja seus pontos na temporada.">
+<link rel="canonical" href="https://pacefly.com.br/rankings.html">
+
+<!-- OPEN GRAPH / COMPARTILHAMENTO -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PaceFly">
+<meta property="og:title" content="PaceFly Ranking 2026 | Ranking dos corredores do Norte de SC">
+<meta property="og:description" content="Correu duas provas na região em 2026? Você já está no ranking. Busque seu nome e veja sua posição.">
+<meta property="og:url" content="https://pacefly.com.br/rankings.html">
+<meta property="og:image" content="https://pacefly.com.br/assets/og-ranking.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PaceFly Ranking 2026">
+<meta name="twitter:description" content="Correu duas provas na região em 2026? Você já está no ranking. Busque seu nome.">
+<meta name="twitter:image" content="https://pacefly.com.br/assets/og-ranking.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/rankings.css">
 
 <!-- FAVICON -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS
+     NÃO adicione a tag do GA aqui. O snippet é injetado pelo
+     Netlify em todas as páginas do site, inclusive nesta. Colocar
+     uma segunda tag no HTML criaria carregamento duplicado e
+     contagem inflada de sessões.
+     Os eventos personalizados desta página (busca_ranking,
+     compartilhar_posicao e gerar_imagem_posicao) usam a tag que o
+     Netlify já injeta. Veja a função evento() no fim do arquivo.
+     ============================================================ -->
+
+<!-- DADOS ESTRUTURADOS -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"PaceFly Ranking 2026",
+  "description":"Ranking acumulado de corrida de rua do Norte de Santa Catarina, temporada 2026.",
+  "url":"https://pacefly.com.br/rankings.html",
+  "publisher":{"@type":"Organization","name":"PaceFly","url":"https://pacefly.com.br"},
+  "about":{"@type":"SportsEvent","name":"Corrida de rua no Norte de Santa Catarina"}
+}
+</script>
 </head>
 <body>
 
@@ -28,27 +70,79 @@
       <a href="index.html#noticias">Notícias</a>
       <a href="rankings.html" class="nav-rk">Ranking<span class="nav-rk-dot"></span></a>
       <a href="index.html#assessoria">Assessoria</a>
-      <a href="index.html#assessoria" class="btn btn-azul">Quero começar</a>
+      <a href="#busca" class="btn btn-azul">Buscar meu nome</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="rk-hero">
-  <div class="wrap rk-hero-inner">
-    <span class="rk-status"><span class="dot"></span>Em estruturação · lançamento em breve</span>
-    <h1>O ranking dos corredores de <span>Joinville e do Norte de SC</span></h1>
-    <p class="lead">O PaceFly Rankings vai reunir, prova a prova, o desempenho de quem corre na nossa região: resultados oficiais, categorias por distância e um jeito simples de ver sua evolução ao lado de outros corredores da comunidade.</p>
-    <div class="rk-hero-cta">
-      <a href="#cadastro" class="btn btn-amar">Quero ser um dos primeiros</a>
-      <a href="#como-funciona" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35)">Como vai funcionar</a>
+<!-- HERO COM BUSCA -->
+<section class="rkl-hero" id="busca">
+  <div class="rkl-mesh"></div>
+  <div class="rkl-glow"></div>
+  <div class="rkl-glow2"></div>
+  <div class="wrap rkl-hero-inner">
+    <span class="rkl-live"><span class="dot"></span>No ar · Temporada 2026</span>
+    <h1>Você está no <span>ranking</span> dos corredores do Norte de SC?</h1>
+    <p class="rkl-lead">Se você correu duas provas ou mais na região em 2026, seu nome já foi apurado. Busque abaixo e veja sua posição.</p>
+
+    <div class="rkl-busca">
+      <div class="rkl-busca-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="text" id="rklBusca" placeholder="Digite seu nome completo" autocomplete="off" aria-label="Buscar seu nome no ranking">
+        <button type="button" id="rklBtnBusca">Buscar</button>
+      </div>
+      <p class="rkl-busca-hint">Use o nome como aparece no resultado oficial da prova. Não precisa acentuar.</p>
     </div>
-    <div class="rk-hero-stats">
-      <div><b>Norte de SC</b><small>região de cobertura</small></div>
-      <div><b>5+</b><small>categorias de distância</small></div>
-      <div><b>Mensal</b><small>frequência de atualização</small></div>
+
+    <div class="rkl-resultado" id="rklResultado"></div>
+
+    <div class="rkl-stats">
+      <div><b id="stTotal">731</b><small>atletas classificados</small></div>
+      <div><b id="stProvas">10</b><small>provas apuradas</small></div>
+      <div><b>72h</b><small>para entrar após a prova</small></div>
+      <div><b>2026</b><small>temporada em andamento</small></div>
     </div>
+  </div>
+</section>
+
+<!-- PÓDIO E TABELA -->
+<section class="rkl-tabela-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Classificação geral</span>
+      <h2>O ranking da temporada</h2>
+      <p>Todos os atletas com duas provas ou mais concluídas na região em 2026, ordenados por pontos acumulados. Toque em qualquer nome da lista para abrir a posição completa e gerar a imagem de compartilhamento.</p>
+    </div>
+
+    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 22/08/2026</span>
+
+    <div class="rkl-abas" id="rklAbas" role="tablist">
+      <button type="button" class="rkl-aba on" data-cat="geral" role="tab">Geral <span class="qt" id="qtGeral"></span></button>
+      <button type="button" class="rkl-aba" data-cat="F" role="tab">Feminino <span class="qt" id="qtF"></span></button>
+      <button type="button" class="rkl-aba" data-cat="M" role="tab">Masculino <span class="qt" id="qtM"></span></button>
+    </div>
+
+    <div class="rkl-podio" id="rklPodio"></div>
+
+    <div class="rkl-filtro">
+      <div class="rkl-filtro-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="text" id="rklFiltro" placeholder="Filtrar a lista por nome" autocomplete="off" aria-label="Filtrar a lista">
+      </div>
+      <span class="rkl-contador" id="rklContador"></span>
+    </div>
+
+    <div class="rkl-tabela-wrap">
+      <table class="rkl-tabela" id="rklTabela">
+        <thead>
+          <tr><th>Pos.</th><th>Atleta</th><th>Variação</th><th class="num">Provas</th><th class="num">Pontos</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="rkl-mais" id="rklMais"><button type="button" id="rklBtnMais">Ver mais atletas</button></div>
   </div>
 </section>
 
@@ -56,155 +150,171 @@
 <section id="como-funciona">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">O projeto</span>
-      <h2>Como o PaceFly Rankings vai funcionar</h2>
-      <p>Um ranking sério depende de dados oficiais. Por isso a construção segue uma ordem clara, sem atalhos, para que quando o ranking for ao ar ele já nasça confiável.</p>
-    </div>
-    <div class="rk-steps">
-      <div class="rk-step">
-        <span class="num">1</span>
-        <h3>Mapeamento das provas</h3>
-        <p>Estamos levantando as principais provas de Joinville e do norte catarinense, com foco nas de maior participação.</p>
-      </div>
-      <div class="rk-step">
-        <span class="num">2</span>
-        <h3>Parceria com organizadores</h3>
-        <p>Fechamos acordos com os organizadores e empresas de cronometragem para receber os resultados oficiais de cada prova.</p>
-      </div>
-      <div class="rk-step">
-        <span class="num">3</span>
-        <h3>Metodologia pública</h3>
-        <p>Critérios de pontuação, categorias e critérios de desempate publicados de forma clara, para todo mundo entender como o ranking funciona.</p>
-      </div>
-      <div class="rk-step">
-        <span class="num">4</span>
-        <h3>Atualização a cada prova</h3>
-        <p>Ranking atualizado conforme as provas parceiras acontecem, com destaque para quem mais evoluiu no período.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PREVIA DO FORMATO -->
-<section id="rk-preview">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Prévia</span>
-      <h2>É mais ou menos assim que vai ficar</h2>
-      <p>O layout abaixo já está pronto. Falta o que mais importa: os dados oficiais das provas parceiras. Assim que o primeiro acordo for fechado, esse espaço ganha vida.</p>
+      <span class="eyebrow">Metodologia</span>
+      <h2>Como a pontuação funciona</h2>
+      <p>Cada prova rende pontos pela colocação geral, em qualquer distância. A pontuação acumula durante toda a temporada e não existe descarte: tudo soma.</p>
     </div>
 
-    <span class="rk-preview-tag">Prévia com dados reais da apuração interna · atualizado em 22/08/2026</span>
-
-    <div class="rk-cats" id="rkCats">
-      <button class="rk-cat-chip on" data-cat="geral">Geral</button>
-      <button class="rk-cat-chip" data-cat="5k">5 km</button>
-      <button class="rk-cat-chip" data-cat="10k">10 km</button>
-      <button class="rk-cat-chip" data-cat="21k">21 km</button>
-      <button class="rk-cat-chip" data-cat="42k">42 km</button>
+    <div class="rkl-pts-grid">
+      <div class="rkl-pts ouro"><b>60</b><small>1º lugar geral</small></div>
+      <div class="rkl-pts prata"><b>50</b><small>2º lugar geral</small></div>
+      <div class="rkl-pts bronze"><b>40</b><small>3º lugar geral</small></div>
+      <div class="rkl-pts"><b>30</b><small>4º e 5º lugar</small></div>
+      <div class="rkl-pts"><b>25</b><small>6º ao 10º lugar</small></div>
+      <div class="rkl-pts"><b>20</b><small>11º ao 20º lugar</small></div>
+      <div class="rkl-pts"><b>15</b><small>21º ao 50º lugar</small></div>
+      <div class="rkl-pts"><b>10</b><small>51º em diante</small></div>
     </div>
 
-    <div class="rk-podio">
-      <div class="rk-pod-item p2">
-        <div class="rk-pod-medal">2</div>
-        <div class="nm">Vitor Estivalet de Souza</div>
-        <div class="tm">180 pts</div>
-      </div>
-      <div class="rk-pod-item p1">
-        <div class="rk-pod-medal">1</div>
-        <div class="nm">Rafaela Pereira Benevenuto</div>
-        <div class="tm">240 pts</div>
-      </div>
-      <div class="rk-pod-item p3">
-        <div class="rk-pod-medal">3</div>
-        <div class="nm">Jorge Nestor Pereira</div>
-        <div class="tm">160 pts</div>
-      </div>
-    </div>
-
-    <div class="rk-table-wrap">
-      <table class="rk-table" id="rkTable">
-        <thead>
-          <tr><th>Pos.</th><th>Corredor(a)</th><th>Cidade</th><th>Melhor tempo</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- CADASTRO -->
-<section id="rk-cadastro">
-  <div class="wrap assess-grid">
-    <div>
-      <span class="eyebrow">Faça parte</span>
-      <h2>Quero ser um dos primeiros no ranking</h2>
-      <p class="lead">Cadastre-se agora. Quando fecharmos parceria com a prova que você correu, seu resultado entra automaticamente na primeira leva do ranking, e você é avisado em primeira mão.</p>
-      <ul class="assess-list">
-        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Prioridade nas primeiras edições do ranking</li>
-        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Aviso assim que sua prova entrar como parceira</li>
-        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span> Sem compromisso, sem custo</li>
-      </ul>
-    </div>
-
-    <div class="form-card" id="cadastro">
-      <div id="rkFormArea">
-        <h3>Cadastro de corredor(a)</h3>
-        <p class="sub">Leva menos de um minuto.</p>
-        <form id="rkForm" action="https://formspree.io/f/xvzjjnqa" method="POST">
-          <input type="hidden" name="_subject" value="Novo cadastro - PaceFly Rankings">
-          <div class="field">
-            <label for="rkNome">Nome</label>
-            <input type="text" id="rkNome" name="nome" placeholder="Seu nome" required>
-          </div>
-          <div class="field">
-            <label for="rkEmail">E-mail</label>
-            <input type="email" id="rkEmail" name="email" placeholder="voce@email.com" required>
-          </div>
-          <div class="field">
-            <label for="rkWhats">WhatsApp</label>
-            <input type="tel" id="rkWhats" name="whats" placeholder="(47) 90000-0000">
-          </div>
-          <div class="field">
-            <label for="rkCidade">Cidade</label>
-            <input type="text" id="rkCidade" name="cidade" placeholder="Joinville, Jaraguá do Sul...">
-          </div>
-          <div class="field">
-            <label for="rkDist">Sua distância mais frequente</label>
-            <select id="rkDist" name="distancia">
-              <option value="">Selecione</option>
-              <option>5 km</option>
-              <option>10 km</option>
-              <option>21 km</option>
-              <option>42 km</option>
-              <option>Ainda não corri uma prova</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-amar btn-full">Quero entrar no ranking</button>
-          <p class="form-note">Seus dados ficam só com a PaceFly. Nada de spam.</p>
-        </form>
-      </div>
-      <div class="form-ok" id="rkFormOk">
-        <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></div>
-        <h3>Cadastro feito!</h3>
-        <p>Assim que sua prova entrar como parceira do PaceFly Rankings, você é um dos primeiros a saber.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRANSPARENCIA -->
-<section style="padding:56px 0">
-  <div class="wrap">
-    <div class="rk-nota">
+    <div class="rk-nota" style="margin-bottom:38px">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.8v.2"/></svg>
       <div>
-        <strong>Por que ainda não tem ranking no ar?</strong><br>
-        Um ranking só vale alguma coisa se os dados forem oficiais. Preferimos esperar fechar as parcerias de dados com os organizadores das provas do que publicar um ranking incompleto ou com números que não refletem a realidade. Enquanto isso, acompanhe o <a href="index.html#calendario" style="color:var(--azul);font-weight:700">calendário de provas</a> e as <a href="index.html#noticias" style="color:var(--azul);font-weight:700">notícias</a> da região.
+        <strong>Consistência vale mais que velocidade.</strong><br>
+        Um atleta que corre quatro provas e termina entre o 21º e o 50º lugar soma 60 pontos. Outro que corre uma única prova e fica em 3º soma 40. Quem aparece mais vezes fica na frente, e é assim que o ranking foi desenhado.
+      </div>
+    </div>
+
+    <div class="rkl-regras">
+      <div class="rkl-regra">
+        <div class="ic">🏁</div>
+        <h3>Duas provas ou mais</h3>
+        <p>Atletas com uma única prova ficam na base de dados, mas ainda não aparecem no ranking publicado.</p>
+      </div>
+      <div class="rkl-regra">
+        <div class="ic">📍</div>
+        <h3>Provas do Norte de SC</h3>
+        <p>Joinville, Jaraguá do Sul, Schroeder, Guaramirim, Massaranduba, Corupá, Araquari e municípios vizinhos.</p>
+      </div>
+      <div class="rkl-regra">
+        <div class="ic">📏</div>
+        <h3>5, 10, 15, 21 ou 42 km</h3>
+        <p>Corrida de rua com percurso medido e cronometragem eletrônica, com resultado oficial publicado.</p>
+      </div>
+    </div>
+
+    <div class="rk-nota" style="margin-top:26px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.8v.2"/></svg>
+      <div>
+        <strong>Atenção à diferença entre o calendário e o ranking.</strong><br>
+        Nosso <a href="index.html#calendario" style="color:var(--azul);font-weight:700">calendário de provas</a> cobre uma área maior, incluindo o Planalto Norte, o litoral e o Vale do Itajaí, porque ali a intenção é informar sobre tudo que acontece por perto. O ranking é mais restrito de propósito: entram apenas as provas realizadas nos municípios listados acima. Uma corrida em Blumenau ou Gaspar aparece no calendário, mas ainda não pontua no ranking.
+      </div>
+    </div>
+
+    <h3 style="font-size:1.15rem;margin:44px 0 6px">Critérios de desempate</h3>
+    <p style="font-size:.94rem;color:var(--cinza-cl);margin-bottom:18px;max-width:680px">Quando dois atletas terminam a temporada com a mesma pontuação, os critérios são aplicados nesta ordem, até que o empate se resolva.</p>
+
+    <div class="rkl-desempate">
+      <div class="rkl-dsp">
+        <span class="n">1º</span>
+        <div>
+          <b>Maior número de corridas</b>
+          <span>Quem participou de mais provas fica na frente. É o mesmo princípio que rege o ranking inteiro: presença conta.</span>
+        </div>
+      </div>
+      <div class="rkl-dsp">
+        <span class="n">2º</span>
+        <div>
+          <b>Melhor colocação individual</b>
+          <span>A melhor posição geral que o atleta obteve em qualquer prova da temporada.</span>
+        </div>
+      </div>
+      <div class="rkl-dsp">
+        <span class="n">3º</span>
+        <div>
+          <b>Melhor tempo na maior distância</b>
+          <span>O tempo absoluto na maior distância que o atleta disputou no ano.</span>
+        </div>
+      </div>
+      <div class="rkl-dsp">
+        <span class="n">4º</span>
+        <div>
+          <b>Data da última corrida</b>
+          <span>Persistindo o empate, quem correu mais recentemente fica na frente.</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- TRANSPARÊNCIA -->
+<section style="background:var(--off);border-top:1px solid var(--linha)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Transparência</span>
+      <h2>De onde vêm os dados</h2>
+      <p>Um ranking só vale o quanto vale a fonte dele. Todo resultado que entra aqui vem da lista oficial publicada pela própria prova, apurada por cronometragem eletrônica.</p>
+    </div>
+
+    <div class="rkl-fontes">
+      <span class="rkl-fonte"><i>✓</i>Cronometragem eletrônica oficial</span>
+      <span class="rkl-fonte"><i>✓</i>Resultado público da prova</span>
+      <span class="rkl-fonte"><i>✓</i>Percurso medido</span>
+      <span class="rkl-fonte"><i>✓</i>Conferência nome a nome</span>
+    </div>
+
+    <div class="rkl-regras" style="margin-top:32px">
+      <div class="rkl-regra">
+        <div class="ic">⏱️</div>
+        <h3>Atualizado em até 72 horas</h3>
+        <p>Assim que o resultado oficial de uma prova da região é publicado, ele é conferido e incorporado ao ranking em até três dias.</p>
+      </div>
+      <div class="rkl-regra">
+        <div class="ic">🚫</div>
+        <h3>O que nunca entra</h3>
+        <p>Tempo de aplicativo, treino cronometrado, prova virtual ou qualquer resultado sem lista oficial publicada. Se a prova não divulgou o resultado, ela fica de fora até divulgar.</p>
+      </div>
+      <div class="rkl-regra">
+        <div class="ic">🔎</div>
+        <h3>Correu e não está aqui?</h3>
+        <p>Pode ser que a prova que você correu ainda não tenha sido apurada. A lista das que já entraram está logo abaixo. Se faltar alguma, avise em <a href="mailto:contato@pacefly.com.br?subject=Ranking%20PaceFly%20-%20prova%20faltando" style="color:var(--azul);font-weight:700">contato@pacefly.com.br</a> que a gente corre atrás do resultado.</p>
+      </div>
+      <div class="rkl-regra">
+        <div class="ic">✋</div>
+        <h3>Seu nome, sua decisão</h3>
+        <p>Usamos apenas dados que a organização da prova já publicou. Categorias infantis ficam de fora. Para remover ou corrigir seu nome, escreva para <a href="mailto:contato@pacefly.com.br?subject=Ranking%20PaceFly%20-%20remocao%20ou%20correcao" style="color:var(--azul);font-weight:700">contato@pacefly.com.br</a>.</p>
+      </div>
+    </div>
+
+    <div class="rkl-apuradas" id="rklApuradas" hidden>
+      <div class="rkl-apuradas-topo">
+        <h3>Provas já apuradas</h3>
+        <span class="rkl-periodo" id="rklPeriodo"></span>
+      </div>
+      <p class="rkl-apuradas-nota">O ranking é construído prova a prova, conforme os resultados oficiais vão sendo publicados. Estas são as que já entraram na temporada 2026. Provas anteriores a este período ainda não foram apuradas, e provas recentes entram assim que a organização divulga o resultado.</p>
+      <ul class="rkl-lista-provas" id="rklListaProvas"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="rkl-cta">
+  <div class="rkl-mesh"></div>
+  <div class="wrap rkl-cta-inner">
+    <h2>Não achou seu nome? <span>Ainda dá tempo.</span></h2>
+    <p>A temporada vai até 31 de dezembro. Corra duas provas da região e você entra automaticamente, sem inscrição e sem formulário. É só correr.</p>
+    <div class="rkl-cta-btns">
+      <a href="index.html#calendario" class="btn btn-amar">Ver o calendário de provas</a>
+      <a href="https://www.instagram.com/paceflyrunning" target="_blank" rel="noopener" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35)">Seguir no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL DA IMAGEM DE COMPARTILHAMENTO -->
+<div class="rkl-modal" id="rklModal">
+  <div class="rkl-modal-inner">
+    <h4>Sua posição, pronta para postar</h4>
+    <canvas id="rklCanvas" width="1080" height="1350"></canvas>
+    <!-- Compartilhar vem primeiro e em destaque porque é ele que abre a
+         bandeja do celular com o Instagram na lista. Baixar continua ali
+         para quem prefere postar depois, mas deixou de ser o caminho
+         sugerido: no story é onde o card se propaga. -->
+    <div class="rkl-modal-btns">
+      <button type="button" class="prim" id="rklCompImg">Compartilhar no story</button>
+      <button type="button" class="sec" id="rklBaixar">Baixar imagem</button>
+    </div>
+    <button type="button" class="rkl-modal-fechar" id="rklFechar">Fechar</button>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -251,64 +361,693 @@
 </footer>
 
 <script>
-  // Menu mobile
-  const burger=document.getElementById('burger'), menu=document.getElementById('menu');
-  burger.addEventListener('click',()=>menu.classList.toggle('open'));
-  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+/* ==========================================================================
+   PaceFly Ranking — página ao vivo
+   Os dados vêm de assets/ranking_2026.json. Se o arquivo não carregar, a
+   página cai para o Top 10 embutido abaixo, sem quebrar nada.
+   ========================================================================== */
 
-  // Tabela com o Top 10 real do Ranking Geral (apuração interna de 22/08/2026)
-  const tbody=document.querySelector('#rkTable tbody');
-  const rkTop10=[
-    {nome:'Rafaela Pereira Benevenuto',pts:'240 pts'},
-    {nome:'Vitor Estivalet de Souza',pts:'180 pts'},
-    {nome:'Jorge Nestor Pereira',pts:'160 pts'},
-    {nome:'Richard Glauco Jose Pereira',pts:'160 pts'},
-    {nome:'Nicolas Dias',pts:'135 pts'},
-    {nome:'Romildo Goncalves',pts:'125 pts'},
-    {nome:'Ayumi Momoi',pts:'110 pts'},
-    {nome:'Arnaldo Franklin da Silva Rosendo',pts:'100 pts'},
-    {nome:'Nicolas Alvaro Francelino de Souza',pts:'90 pts'},
-    {nome:'Andrea Silva do Amaral',pts:'90 pts'}
-  ];
-  let linhas='';
-  rkTop10.forEach((a,i)=>{
-    linhas+=`<tr><td class="pos">${i+1}º</td><td>${a.nome}</td><td>—</td><td>${a.pts}</td></tr>`;
-  });
-  tbody.innerHTML=linhas;
+// Menu mobile
+const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-  // Chips de categoria (visual, prepara a estrutura para quando os dados chegarem)
-  document.querySelectorAll('#rkCats .rk-cat-chip').forEach(c=>{
-    c.addEventListener('click',()=>{
-      document.querySelectorAll('#rkCats .rk-cat-chip').forEach(x=>x.classList.remove('on'));
-      c.classList.add('on');
-    });
-  });
+// Reserva: Top 10 da apuração de 22/08/2026
+const RESERVA = {
+  atualizado_em:"22/08/2026", total_atletas:731, total_provas:10,
+  atletas:[
+    {p:1,n:"Rafaela Pereira Benevenuto",pt:240},
+    {p:2,n:"Vitor Estivalet de Souza",pt:180},
+    {p:3,n:"Jorge Nestor Pereira",pt:160},
+    {p:4,n:"Richard Glauco Jose Pereira",pt:160},
+    {p:5,n:"Nicolas Dias",pt:135},
+    {p:6,n:"Romildo Goncalves",pt:125},
+    {p:7,n:"Ayumi Momoi",pt:110},
+    {p:8,n:"Arnaldo Franklin da Silva Rosendo",pt:100},
+    {p:9,n:"Nicolas Alvaro Francelino de Souza",pt:90},
+    {p:10,n:"Andrea Silva do Amaral",pt:90}
+  ]
+};
 
-  // Formulario de cadastro — Formspree (AJAX)
-  document.getElementById('rkForm').addEventListener('submit', async function(ev){
-    ev.preventDefault();
-    const form = ev.target;
-    const btn = form.querySelector('button[type=submit]');
-    btn.textContent = 'Enviando...';
-    btn.disabled = true;
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        document.getElementById('rkFormArea').style.display='none';
-        document.getElementById('rkFormOk').style.display='block';
-      } else {
-        btn.textContent = 'Tentar novamente';
-        btn.disabled = false;
-      }
-    } catch(e) {
-      btn.textContent = 'Tentar novamente';
-      btn.disabled = false;
+let DADOS = RESERVA;
+let visiveis = 20;
+let listaAtual = [];
+let catAtual = 'geral';
+// Atleta aberto no card. Guardado aqui para os botões não precisarem carregar
+// os dados dentro do atributo onclick, que quebra com nome tipo SANT'ANA.
+let atletaAtual = null;
+// Cada categoria tem sua própria numeração. Um atleta pode ser 40º no geral
+// e 8º no feminino, e as duas informações importam para ele.
+let LISTAS = { geral:[], F:[], M:[] };
+
+const PAGINA = 20;
+const $ = id => document.getElementById(id);
+
+// Medição dos eventos da página. A tag do GA vem do Netlify, então aqui só
+// empurramos o evento para ela. Tenta primeiro gtag e, se ela ainda não tiver
+// carregado, cai no dataLayer, que existe antes. Falha em silêncio se não
+// houver nenhum dos dois, para nunca quebrar a página por causa de medição.
+function evento(nome, params){
+  try{
+    if(typeof gtag === 'function'){ gtag('event', nome, params||{}); return; }
+    if(window.dataLayer && typeof window.dataLayer.push === 'function'){
+      window.dataLayer.push(Object.assign({event:nome}, params||{}));
     }
+  }catch(e){}
+}
+
+// Normaliza para busca: sem acento, minúsculo, espaços colapsados
+const norm = s => (s||"").toString().normalize("NFD")
+  .replace(/\p{Diacritic}/gu,"")
+  .toLowerCase().replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim();
+
+function carregar(){
+  fetch('assets/ranking_2026.json',{cache:'no-store'})
+    .then(r=>{ if(!r.ok) throw new Error('sem arquivo'); return r.json(); })
+    .then(d=>{ if(d && Array.isArray(d.atletas) && d.atletas.length){ DADOS=d; } })
+    .catch(()=>{ /* mantém a reserva */ })
+    .finally(iniciar);
+}
+
+function iniciar(){
+  DADOS.atletas.forEach(a=>{ a._k = norm(a.n); });
+
+  // Geral: usa a posição que veio do arquivo
+  LISTAS.geral = DADOS.atletas.map(a=>({...a}));
+
+  // Feminino e Masculino: renumerados dentro da própria categoria
+  ['F','M'].forEach(sx=>{
+    LISTAS[sx] = DADOS.atletas
+      .filter(a => (a.s||'').toUpperCase() === sx)
+      .map((a,i)=>({...a, p:i+1, pGeral:a.p}));
   });
+
+  const temSexo = LISTAS.F.length || LISTAS.M.length;
+  if(!temSexo){
+    // Sem o campo de sexo nos dados, as abas não teriam o que mostrar.
+    $('rklAbas').style.display = 'none';
+  } else {
+    $('qtGeral').textContent = LISTAS.geral.length;
+    $('qtF').textContent = LISTAS.F.length;
+    $('qtM').textContent = LISTAS.M.length;
+  }
+
+  listaAtual = LISTAS.geral;
+
+  if(DADOS.atualizado_em) $('rklAtualizado').textContent = 'Atualizado em ' + DADOS.atualizado_em;
+  if(DADOS.total_atletas) $('stTotal').textContent = DADOS.total_atletas.toLocaleString('pt-BR');
+  if(DADOS.total_provas)  $('stProvas').textContent = DADOS.total_provas;
+
+  montarApuradas();
+  montarPodio();
+  render();
+
+  // Busca vinda do bloco da home (rankings.html?q=nome)
+  try{
+    const q = new URLSearchParams(location.search).get('q');
+    if(q && q.trim()){
+      $('rklBusca').value = q.trim();
+      buscar();
+      $('rklResultado').scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }catch(e){}
+}
+
+// Lista das provas apuradas. Responde na página a pergunta que mais gera
+// desconfiança em quem correu e não se encontrou. Sai do próprio JSON, então
+// se atualiza junto com a apuração.
+function montarApuradas(){
+  const caixa = $('rklApuradas');
+  const provas = DADOS.provas;
+  if(!Array.isArray(provas) || !provas.length){ caixa.hidden = true; return; }
+  caixa.hidden = false;
+  if(DADOS.periodo_coberto){
+    $('rklPeriodo').textContent = DADOS.periodo_coberto;
+  }
+  $('rklListaProvas').innerHTML = provas
+    .map(p=>`<li>${esc(p)}</li>`).join('');
+}
+
+function montarPodio(){
+  const t3 = LISTAS[catAtual].slice(0,3);
+  if(t3.length<3){ $('rklPodio').style.display='none'; return; }
+  $('rklPodio').style.display='grid';
+  const ordem = [t3[1],t3[0],t3[2]];
+  const classe = ['p2','p1','p3'];
+  $('rklPodio').innerHTML = ordem.map((a,i)=>`
+    <div class="rkl-pod ${classe[i]}">
+      <div class="rkl-pod-medal">${a.p}</div>
+      <div class="nm">${esc(a.n)}</div>
+      <div class="pt">${a.pt} <span>pts</span></div>
+    </div>`).join('');
+}
+
+function trocarCategoria(cat){
+  catAtual = cat;
+  document.querySelectorAll('#rklAbas .rkl-aba').forEach(b=>{
+    b.classList.toggle('on', b.dataset.cat === cat);
+  });
+  const termo = norm($('rklFiltro').value);
+  listaAtual = termo ? LISTAS[cat].filter(a=>a._k.includes(termo)) : LISTAS[cat];
+  visiveis = PAGINA;
+  montarPodio();
+  render();
+  evento('trocar_categoria',{categoria:cat});
+}
+
+function esc(s){ return (s||"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+// Variação de posição desde a apuração anterior.
+// v > 0 subiu, v < 0 caiu, v === 0 manteve, v === "novo" entrou agora.
+// Sem o campo, não mostra nada: melhor vazio do que informação inventada.
+function badgeVar(v){
+  if(v === undefined || v === null || v === '') return '';
+  if(v === 'novo' || v === 'NOVO') return `<span class="rkl-var novo">NOVO</span>`;
+  const n = Number(v);
+  if(isNaN(n)) return '';
+  if(n > 0) return `<span class="rkl-var sobe" title="Subiu ${n} ${n===1?'posição':'posições'}"><i>▲</i>${n}</span>`;
+  if(n < 0) return `<span class="rkl-var desce" title="Caiu ${Math.abs(n)} ${Math.abs(n)===1?'posição':'posições'}"><i>▼</i>${Math.abs(n)}</span>`;
+  return `<span class="rkl-var igual" title="Manteve a posição">=</span>`;
+}
+
+function render(destaque){
+  const tbody = document.querySelector('#rklTabela tbody');
+  const fatia = listaAtual.slice(0, visiveis);
+
+  if(!fatia.length){
+    tbody.innerHTML = `<tr><td colspan="5"><div class="rkl-vazio">Nenhum atleta encontrado com esse nome.</div></td></tr>`;
+  } else {
+    let html = '';
+    const listaCheia = listaAtual.length === LISTAS[catAtual].length;
+    fatia.forEach((a,idx)=>{
+      const cls = a.p===1?'top1':a.p===2?'top2':a.p===3?'top3':'';
+      const classes = ['clicavel'];
+      if(a.p<=10) classes.push('top10');
+      if(destaque && a._k===destaque) classes.push('destaque');
+
+      // Linha divisória logo depois do 10º, só quando a lista está inteira
+      if(listaCheia && idx>0 && a.p===11){
+        html += `<tr><td colspan="5" class="rkl-corte">Demais classificados</td></tr>`;
+      }
+
+      const attr = ` class="${classes.join(' ')}" data-k="${esc(a._k)}" tabindex="0" role="button" aria-label="Ver posição de ${esc(a.n)}"`;
+      html += `<tr${attr}>
+        <td class="pos"><span class="rkl-pos-badge ${cls}">${a.p}º</span></td>
+        <td class="nome">${esc(a.n)}<span class="rkl-toque">ver e compartilhar</span></td>
+        <td>${badgeVar(a.v)}</td>
+        <td class="num">${a.c?a.c:'&middot;'}</td>
+        <td class="num pts">${a.pt}</td>
+      </tr>`;
+    });
+    tbody.innerHTML = html;
+  }
+
+  const total = listaAtual.length;
+  const totalCat = LISTAS[catAtual].length;
+  $('rklContador').textContent = total === totalCat
+    ? `${total.toLocaleString('pt-BR')} atletas`
+    : `${total.toLocaleString('pt-BR')} de ${totalCat.toLocaleString('pt-BR')}`;
+
+  const btn = $('rklBtnMais');
+  if(visiveis >= total){ $('rklMais').style.display = total>PAGINA ? 'flex':'none'; btn.disabled=true; btn.textContent='Fim da lista'; }
+  else { $('rklMais').style.display='flex'; btn.disabled=false; btn.textContent='Ver mais atletas'; }
+}
+
+/* ---------- BUSCA PRINCIPAL (hero) ---------- */
+function buscar(){
+  const termo = norm($('rklBusca').value);
+  const area = $('rklResultado');
+
+  if(termo.length < 3){
+    area.className='rkl-resultado'; area.innerHTML='';
+    return;
+  }
+
+  const exatos = DADOS.atletas.filter(a=>a._k===termo);
+  const parciais = DADOS.atletas.filter(a=>a._k.includes(termo));
+  const achados = exatos.length ? exatos : parciais;
+
+  if(!achados.length){
+    evento('busca_ranking',{resultado:'nao_encontrado'});
+    area.innerHTML = `
+      <div class="rkl-naoachou">
+        <h3>Não encontramos esse nome na lista</h3>
+        <p>Pode ser que você ainda não tenha duas provas concluídas na região em 2026, ou que seu nome apareça de outra forma no resultado oficial. Tente buscar só o primeiro nome e o sobrenome.</p>
+        <a href="index.html#calendario" class="btn btn-amar">Ver as próximas provas</a>
+      </div>`;
+    area.className='rkl-resultado on';
+    return;
+  }
+
+  if(achados.length > 1 && !exatos.length){
+    evento('busca_ranking',{resultado:'varios', qtd:achados.length});
+    area.innerHTML = `
+      <div class="rkl-naoachou">
+        <h3>Encontramos ${achados.length} atletas com esse nome</h3>
+        <p>A lista abaixo já está filtrada. <strong>Toque no seu nome</strong> para ver sua posição completa e gerar a imagem para compartilhar.</p>
+        <a href="#rklTabela" class="btn btn-amar">Ver a lista</a>
+      </div>`;
+    area.className='rkl-resultado on';
+    filtrarPor(termo);
+    return;
+  }
+
+  evento('busca_ranking',{resultado:'encontrado', posicao:achados[0].p});
+  mostrarAtleta(achados[0], true);
+}
+
+// Monta o card do atleta. Usado tanto pela busca quanto pelo clique numa
+// linha da tabela: qualquer um dos 731 chega aqui, não só quem tem nome único.
+// filtrar = true faz a tabela mostrar só esse nome, o que importa quando o
+// atleta está na posição 400 e não apareceria nas 20 primeiras linhas.
+function mostrarAtleta(a, filtrar){
+  const area = $('rklResultado');
+  const total = LISTAS.geral.length;
+  const melhores = Math.max(1, Math.round((a.p/total)*100));
+
+  // Posição na categoria por sexo, quando o dado existe
+  const sx = (a.s||'').toUpperCase();
+  const naCat = (sx==='F'||sx==='M') ? LISTAS[sx].find(x=>x._k===a._k && x.pt===a.pt) : null;
+  const rotuloCat = sx==='F' ? 'no feminino' : 'no masculino';
+
+  area.innerHTML = `
+    <div class="rkl-card-atleta">
+      <div class="top">
+        <div class="rkl-card-pos"><b>${a.p}º</b><small>no geral</small></div>
+        <div>
+          <div class="rkl-card-nome">${esc(a.n)}</div>
+          <div class="rkl-card-sub">PaceFly Ranking · Temporada 2026 · Norte de SC</div>
+        </div>
+      </div>
+      <div class="rkl-card-metricas">
+        <div class="rkl-metrica"><b>${a.pt}</b><small>pontos</small></div>
+        ${a.c?`<div class="rkl-metrica"><b>${a.c}</b><small>${a.c===1?'prova':'provas'}</small></div>`:''}
+        ${naCat?`<div class="rkl-metrica"><b>${naCat.p}º</b><small>${rotuloCat}</small></div>`:''}
+        <div class="rkl-metrica"><b>${melhores}%</b><small>entre os melhores</small></div>
+      </div>
+      <div class="rkl-share-linha">
+        <button type="button" class="rkl-share" id="rklBtnShare">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg>
+          Compartilhar
+        </button>
+        <button type="button" class="rkl-share alt" id="rklBtnImg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="M21 15l-5-5L5 21"/></svg>
+          Gerar imagem
+        </button>
+      </div>
+    </div>`;
+
+  // Guarda o atleta em memória em vez de embutir os dados no onclick.
+  // Nome com apóstrofo (SANT'ANA, D'AVILA) quebraria o atributo HTML.
+  atletaAtual = {p:a.p, n:a.n, pt:a.pt, c:a.c||null, cat:naCat?naCat.p:null, sx:sx};
+  $('rklBtnShare').addEventListener('click', ()=>compartilhar(atletaAtual));
+  $('rklBtnImg').addEventListener('click', ()=>gerarImagem(atletaAtual));
+
+  area.className='rkl-resultado on';
+  if(filtrar) filtrarPor(a._k, true); else render(a._k);
+  area.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function filtrarPor(termo, destacar){
+  $('rklFiltro').value = termo;
+  listaAtual = LISTAS[catAtual].filter(a=>a._k.includes(termo));
+  // Se o atleta não está na categoria aberta, volta para o geral para não
+  // devolver uma lista vazia logo depois de a pessoa se encontrar.
+  if(!listaAtual.length && catAtual !== 'geral'){
+    trocarCategoria('geral');
+    listaAtual = LISTAS.geral.filter(a=>a._k.includes(termo));
+    $('rklFiltro').value = termo;
+  }
+  visiveis = Math.max(PAGINA, listaAtual.length<=PAGINA?PAGINA:visiveis);
+  render(destacar?termo:null);
+}
+
+/* Aviso curto no rodapé da tela.
+   Existe porque todo caminho de falha do compartilhamento estava sendo
+   engolido em silêncio: a pessoa clicava e não recebia nem sucesso nem erro.
+   Num botão que é o motor de propagação do ranking, silêncio parece defeito. */
+function aviso(msg, acao){
+  const antigo = document.getElementById('rklAviso');
+  if(antigo) antigo.remove();
+
+  const cx = document.createElement('div');
+  cx.id = 'rklAviso';
+  cx.setAttribute('role','status');
+  cx.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);' +
+    'z-index:9999;max-width:min(92vw,460px);display:flex;align-items:center;gap:14px;' +
+    'background:#0C1E38;color:#fff;border:1px solid rgba(255,196,0,.45);' +
+    'border-radius:12px;padding:14px 18px;box-shadow:0 12px 34px rgba(0,0,0,.34);' +
+    'font:600 14px/1.45 Montserrat,Arial,sans-serif;opacity:0;transition:opacity .18s';
+
+  const txt = document.createElement('span');
+  txt.textContent = msg;
+  txt.style.flex = '1';
+  cx.appendChild(txt);
+
+  /* O link vai como <a> clicável, e não como window.open automático, porque
+     depois de um await o navegador trata a janela nova como popup e bloqueia. */
+  if(acao && acao.href){
+    const a = document.createElement('a');
+    a.href = acao.href;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = acao.rotulo || 'Abrir';
+    a.style.cssText = 'flex:none;background:#FFC400;color:#0C1E38;text-decoration:none;' +
+      'border-radius:8px;padding:9px 14px;font-weight:800;white-space:nowrap';
+    cx.appendChild(a);
+  }
+
+  document.body.appendChild(cx);
+  requestAnimationFrame(()=>{ cx.style.opacity = '1'; });
+  setTimeout(()=>{
+    cx.style.opacity = '0';
+    setTimeout(()=>cx.remove(), 300);
+  }, acao && acao.href ? 9000 : 4200);
+}
+
+async function compartilhar(d){
+  if(!d) return;
+  const pos = d.p, pts = d.pt;
+  evento('compartilhar_posicao',{posicao:pos});
+  const txt = `Estou em ${pos}º lugar no PaceFly Ranking 2026, o ranking dos corredores do Norte de SC, com ${pts} pontos. Confere o seu:`;
+  const url = 'https://pacefly.com.br/rankings.html';
+  const whats = 'https://wa.me/?text=' + encodeURIComponent(txt + ' ' + url);
+
+  /* No celular a bandeja nativa abre e resolve tudo. No computador o Chrome
+     TEM navigator.share, então a versão anterior entrava aqui, falhava e o
+     erro morria num catch vazio: clique sem resposta nenhuma. Agora a falha
+     cai no plano B em vez de sumir. */
+  if(navigator.share){
+    try{
+      await navigator.share({title:'PaceFly Ranking 2026', text:txt, url:url});
+      return;
+    }catch(e){
+      // Fechar a bandeja é decisão da pessoa, não erro. Não insistimos.
+      if(e && e.name === 'AbortError') return;
+    }
+  }
+
+  // Plano B: deixa o texto pronto na área de transferência e oferece o WhatsApp.
+  try{
+    await navigator.clipboard.writeText(txt + ' ' + url);
+    aviso('Texto copiado. Cole onde quiser postar.', {href:whats, rotulo:'WhatsApp'});
+  }catch(e){
+    aviso('Compartilhe sua posição:', {href:whats, rotulo:'WhatsApp'});
+  }
+}
+
+/* ---------- IMAGEM PARA COMPARTILHAR ----------
+   Desenha um card 1080x1350 no canvas, na mesma linguagem visual da marca.
+   O atleta baixa e posta no story. Isso multiplica alcance de um jeito que
+   texto puro no WhatsApp não alcança.                                      */
+let ultimoBlob = null;
+
+// Pré-carrega o logo para ele já estar pronto quando o atleta pedir a imagem.
+// Tenta primeiro a versão branca. Se ela não estiver na pasta assets, usa a
+// oficial e clareia no canvas, chegando no mesmo resultado visual.
+let logoImg = null;
+let logoPrecisaClarear = false;
+(function(){
+  const branco = new Image();
+  branco.onload = ()=>{ logoImg = branco; logoPrecisaClarear = false; };
+  branco.onerror = ()=>{
+    const oficial = new Image();
+    oficial.onload = ()=>{ logoImg = oficial; logoPrecisaClarear = true; };
+    oficial.onerror = ()=>{ logoImg = null; };
+    oficial.src = 'assets/PaceFly_Logo_Oficial.png';
+  };
+  branco.src = 'assets/PaceFly_Logo_Branco.png';
+})();
+
+function gerarImagem(d, semLogo){
+  if(!d) return;
+  const cv = $('rklCanvas'), ctx = cv.getContext('2d');
+  const W = cv.width, H = cv.height;
+  ctx.filter = 'none';
+  ctx.globalAlpha = 1;
+
+  // Fundo
+  ctx.fillStyle = '#060e1f'; ctx.fillRect(0,0,W,H);
+
+  // Brilho azul
+  let g = ctx.createRadialGradient(W*0.78,H*0.14,0, W*0.78,H*0.14, W*0.85);
+  g.addColorStop(0,'rgba(0,87,184,.45)'); g.addColorStop(1,'rgba(0,87,184,0)');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  // Brilho dourado
+  g = ctx.createRadialGradient(W*0.16,H*0.88,0, W*0.16,H*0.88, W*0.7);
+  g.addColorStop(0,'rgba(255,196,0,.16)'); g.addColorStop(1,'rgba(255,196,0,0)');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+
+  // Malha
+  ctx.strokeStyle='rgba(255,255,255,.03)'; ctx.lineWidth=1;
+  for(let x=0;x<W;x+=60){ ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+  for(let y=0;y<H;y+=60){ ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+  // Faixa lateral
+  ctx.fillStyle='#FFC400'; ctx.fillRect(0,0,10,H);
+
+  const L = 96; // margem esquerda
+
+  // Logo no canto superior direito. Altura 118px da presenca de marca sem
+  // competir com o numero gigante da posicao, que continua sendo o heroi.
+  // Largura limitada a 420px, pouco menos da metade do card, para logo largo
+  // nao chegar perto do texto que comeca na margem esquerda.
+  let logoBase = 150; // linha de base do topo, usada tambem pelo eyebrow
+  if(logoImg && logoImg.naturalWidth && !semLogo){
+    const alvoH = 118;
+    let h = alvoH;
+    let w = logoImg.naturalWidth * (h / logoImg.naturalHeight);
+    if(w > 420){ w = 420; h = logoImg.naturalHeight * (w / logoImg.naturalWidth); }
+    const x = W - L - w;
+    const y = 96 + (alvoH - h) / 2;   // centraliza vertical se for mais baixo
+    if(logoPrecisaClarear){
+      ctx.filter = 'brightness(0) invert(1)';
+    }
+    ctx.globalAlpha = 0.95;
+    ctx.drawImage(logoImg, x, y, w, h);
+    ctx.globalAlpha = 1;
+    ctx.filter = 'none';
+    logoBase = 96 + alvoH / 2 + 9;    // alinha o eyebrow ao meio do logo
+  }
+
+  // Com o logo na tela, repetir "PACEFLY" no texto seria redundante.
+  // A linha passa a informar temporada e região, que o logo não diz.
+  const temLogo = !!(logoImg && logoImg.naturalWidth && !semLogo);
+  ctx.textAlign='left';
+  ctx.fillStyle='rgba(255,255,255,.45)';
+  ctx.font='800 26px Montserrat, Arial, sans-serif';
+  ctx.fillText(temLogo ? '// TEMPORADA 2026 · NORTE DE SC'
+                       : '// PACEFLY RANKING · TEMPORADA 2026', L, logoBase);
+
+  // Posição gigante
+  ctx.fillStyle='#FFC400';
+  ctx.font='900 300px Montserrat, Arial, sans-serif';
+  const posTxt = d.p + 'º';
+  ctx.fillText(posTxt, L, 470);
+
+  ctx.fillStyle='rgba(255,255,255,.55)';
+  ctx.font='800 40px Montserrat, Arial, sans-serif';
+  ctx.fillText('NO RANKING GERAL', L, 535);
+
+  // Régua
+  ctx.fillStyle='#0057B8'; ctx.fillRect(L,585,120,8);
+
+  // Nome, quebrado em até 3 linhas
+  ctx.fillStyle='#fff';
+  ctx.font='900 60px Montserrat, Arial, sans-serif';
+  const linhas = quebrar(ctx, d.n.toUpperCase(), W - L - 96, 3);
+  let y = 680;
+  linhas.forEach(t=>{ ctx.fillText(t, L, y); y += 72; });
+
+  // Cartões de métrica
+  const cards = [{v:String(d.pt), l:'PONTOS'}];
+  if(d.c) cards.push({v:String(d.c), l: d.c===1?'PROVA':'PROVAS'});
+  if(d.cat) cards.push({v:d.cat+'º', l: d.sx==='F'?'FEMININO':'MASCULINO'});
+
+  const topo = Math.max(y + 30, 900);
+  const larg = (W - L*2 - (cards.length-1)*20) / cards.length;
+  cards.forEach((c,i)=>{
+    const x = L + i*(larg+20);
+    ctx.fillStyle='rgba(255,255,255,.06)';
+    arredondado(ctx, x, topo, larg, 150, 20); ctx.fill();
+    ctx.strokeStyle='rgba(255,255,255,.12)'; ctx.lineWidth=2;
+    arredondado(ctx, x, topo, larg, 150, 20); ctx.stroke();
+    ctx.textAlign='center';
+    ctx.fillStyle='#fff'; ctx.font='900 58px Montserrat, Arial, sans-serif';
+    ctx.fillText(c.v, x+larg/2, topo+82);
+    ctx.fillStyle='rgba(255,255,255,.5)'; ctx.font='700 22px Montserrat, Arial, sans-serif';
+    ctx.fillText(c.l, x+larg/2, topo+120);
+  });
+
+  // Rodapé
+  ctx.textAlign='left';
+  ctx.strokeStyle='rgba(255,255,255,.14)'; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(L, H-190); ctx.lineTo(W-L, H-190); ctx.stroke();
+
+  ctx.fillStyle='#fff'; ctx.font='900 38px Montserrat, Arial, sans-serif';
+  ctx.fillText('@paceflyrunning', L, H-120);
+  ctx.fillStyle='rgba(255,255,255,.5)'; ctx.font='600 28px Montserrat, Arial, sans-serif';
+  ctx.fillText('pacefly.com.br/ranking', L, H-72);
+
+  ctx.textAlign='right';
+  ctx.fillStyle='#FFC400'; ctx.font='800 30px Montserrat, Arial, sans-serif';
+  ctx.fillText('NORTE DE SC', W-L, H-120);
+
+  // Desenhar uma imagem no canvas "contamina" ele quando a página é aberta
+  // direto do disco (file://). Nesse caso exportar dispara SecurityError e o
+  // botão de baixar morreria. Se acontecer, redesenha sem o logo e segue.
+  ultimoBlob = null;
+  try{
+    cv.toDataURL('image/png');            // teste barato: falha aqui se contaminado
+    cv.toBlob(b=>{ ultimoBlob = b; }, 'image/png');
+  }catch(err){
+    if(!semLogo){
+      console.warn('Canvas bloqueado pelo navegador ao usar o logo local. ' +
+                   'Gerando sem o logo. No site publicado isso não acontece.');
+      return gerarImagem(d, true);
+    }
+  }
+
+  $('rklModal').classList.add('on');
+  evento('gerar_imagem_posicao',{posicao:d.p, com_logo:temLogo});
+}
+
+function quebrar(ctx, txt, max, maxLinhas){
+  const palavras = txt.split(' ');
+  const out = []; let atual = '';
+  palavras.forEach(p=>{
+    const teste = atual ? atual+' '+p : p;
+    if(ctx.measureText(teste).width > max && atual){ out.push(atual); atual = p; }
+    else atual = teste;
+  });
+  if(atual) out.push(atual);
+  if(out.length > maxLinhas){
+    const cortado = out.slice(0, maxLinhas);
+    cortado[maxLinhas-1] = cortado[maxLinhas-1].replace(/\s+\S*$/,'') + '...';
+    return cortado;
+  }
+  return out;
+}
+
+function arredondado(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+
+$('rklFechar').addEventListener('click', ()=> $('rklModal').classList.remove('on'));
+$('rklModal').addEventListener('click', e=>{ if(e.target === $('rklModal')) $('rklModal').classList.remove('on'); });
+
+/* Devolve o PNG como Blob. O toBlob do canvas é assíncrono, então se a pessoa
+   tocar no botão logo que o card aparece o ultimoBlob ainda pode estar vazio.
+   Aqui a gente espera em vez de desistir. */
+function obterBlob(){
+  return new Promise(resolve=>{
+    if(ultimoBlob) return resolve(ultimoBlob);
+    try{
+      $('rklCanvas').toBlob(b=>{ ultimoBlob = b; resolve(b); }, 'image/png');
+    }catch(e){ resolve(null); }
+  });
+}
+
+/* Antes o download usava toDataURL, que transforma a imagem inteira num
+   endereço de texto de mais de um megabyte. O navegador aceita o clique, mas
+   trunca ou recusa arquivos grandes, e o PNG chega quebrado. Com Blob e
+   createObjectURL o arquivo vai binário, do tamanho que tem que ter. */
+async function baixarImagem(){
+  const blob = await obterBlob();
+  if(!blob){
+    alert('Não foi possível salvar a imagem neste navegador. Tire um print da tela ou tente pelo site publicado.');
+    return false;
+  }
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'pacefly-ranking-2026.png';
+  a.rel = 'noopener';
+  document.body.appendChild(a);      // Firefox e iOS ignoram link fora do DOM
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 8000);  // revogar cedo cancela o download
+  return true;
+}
+
+$('rklBaixar').addEventListener('click', ()=>{ baixarImagem(); });
+
+$('rklCompImg').addEventListener('click', async ()=>{
+  /* Compartilhar arquivo é recurso de celular. No computador o canShare
+     devolve falso e a versão anterior simplesmente baixava a imagem, sem
+     dizer nada: parecia que o botão estava quebrado. Agora avisa o que fez. */
+  const baixar = async (msg)=>{ if(await baixarImagem()) aviso(msg); };
+
+  const blob = await obterBlob();
+  if(!blob){
+    await baixar('Imagem salva. Poste no seu story e marque @paceflyrunning.');
+    return;
+  }
+
+  const arq = new File([blob],'pacefly-ranking-2026.png',{type:'image/png'});
+  if(navigator.canShare && navigator.canShare({files:[arq]})){
+    try{
+      await navigator.share({files:[arq], title:'PaceFly Ranking 2026'});
+    }catch(e){
+      if(e && e.name === 'AbortError') return;   // a pessoa fechou a bandeja
+      baixar('Não deu para compartilhar por aqui. Imagem salva: poste e marque @paceflyrunning.');
+    }
+  } else {
+    baixar('Imagem salva. Poste no seu story e marque @paceflyrunning.');
+  }
+});
+
+/* ---------- LIGAÇÕES ---------- */
+$('rklBtnBusca').addEventListener('click', buscar);
+$('rklBusca').addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); buscar(); }});
+$('rklBusca').addEventListener('input', ()=>{ if($('rklBusca').value.trim()==='' ){ $('rklResultado').className='rkl-resultado'; $('rklFiltro').value=''; listaAtual=LISTAS[catAtual]; visiveis=PAGINA; render(); }});
+
+let tFiltro;
+$('rklFiltro').addEventListener('input', ()=>{
+  clearTimeout(tFiltro);
+  tFiltro = setTimeout(()=>{
+    const t = norm($('rklFiltro').value);
+    listaAtual = t ? LISTAS[catAtual].filter(a=>a._k.includes(t)) : LISTAS[catAtual];
+    visiveis = PAGINA;
+    render();
+  },160);
+});
+
+document.querySelectorAll('#rklAbas .rkl-aba').forEach(b=>{
+  b.addEventListener('click', ()=>trocarCategoria(b.dataset.cat));
+});
+
+// Clique em qualquer linha da tabela abre o card daquele atleta. Delegação no
+// tbody porque as linhas são reconstruídas a cada filtro e paginação.
+document.querySelector('#rklTabela tbody').addEventListener('click', e=>{
+  const tr = e.target.closest('tr.clicavel');
+  if(!tr) return;
+  const alvo = LISTAS[catAtual].find(a=>a._k === tr.dataset.k)
+            || LISTAS.geral.find(a=>a._k === tr.dataset.k);
+  if(alvo){
+    evento('ver_atleta',{origem:'tabela', posicao:alvo.p});
+    mostrarAtleta(alvo, false);
+  }
+});
+
+// Mesma ação pelo teclado, para quem navega com Tab
+document.querySelector('#rklTabela tbody').addEventListener('keydown', e=>{
+  if(e.key !== 'Enter' && e.key !== ' ') return;
+  const tr = e.target.closest('tr.clicavel');
+  if(!tr) return;
+  e.preventDefault();
+  tr.click();
+});
+
+$('rklBtnMais').addEventListener('click', ()=>{ visiveis += 50; render(); });
+
+carregar();
 </script>
 </body>
 </html>

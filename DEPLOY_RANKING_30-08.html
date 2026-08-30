@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaceFly · Checklist de deploy do Ranking · 30/08/2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Montserrat',sans-serif;background:#F4F6FA;color:#101516;line-height:1.55}
+  .wrap{max-width:940px;margin:0 auto;padding:24px 16px 60px}
+  .header{background:linear-gradient(135deg,#0057B8,#00234d);border-radius:20px;padding:40px 36px;color:#fff;margin-bottom:22px;position:relative;overflow:hidden}
+  .header::after{content:"DEPLOY";position:absolute;right:-20px;bottom:-30px;font-size:104px;font-weight:900;color:rgba(255,255,255,.05);letter-spacing:-4px}
+  .header .eyebrow{font-size:12px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:#FFC400;margin-bottom:10px}
+  .header h1{font-size:27px;font-weight:900;margin-bottom:8px;line-height:1.15}
+  .header .sub{font-size:14px;color:rgba(255,255,255,.76);max-width:600px}
+  h2{font-size:19px;font-weight:800;margin:32px 0 12px;color:#0057B8}
+  h2 .hint{font-size:12px;font-weight:600;color:#999}
+  .bloco{background:#fff;border-radius:16px;box-shadow:0 1px 4px rgba(0,0,0,.06);margin-bottom:14px;overflow:hidden}
+  .bloco-top{display:flex;align-items:center;gap:14px;padding:16px 22px;border-left:6px solid #0057B8;background:#FAFBFD}
+  .bloco-top.crit{border-left-color:#E53935;background:#FFF6F6}
+  .bloco-top.ok{border-left-color:#00C853;background:#F5FCF8}
+  .bloco-n{width:30px;height:30px;border-radius:9px;background:#0057B8;color:#fff;font-size:13px;font-weight:900;display:grid;place-items:center;flex-shrink:0}
+  .bloco-top.crit .bloco-n{background:#E53935}
+  .bloco-top.ok .bloco-n{background:#00C853}
+  .bloco-t{flex:1;font-size:15.5px;font-weight:800}
+  .bloco-tag{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border-radius:100px;white-space:nowrap}
+  .tag-crit{background:#FFEBEE;color:#c62828}
+  .tag-feito{background:#E8F5E9;color:#2e7d32}
+  .tag-voce{background:#FFF8E1;color:#8a6d00}
+  .bloco-body{padding:16px 22px 20px 22px;font-size:13.8px;color:#444}
+  .bloco-body p{margin-bottom:10px}
+  .bloco-body code{background:#F0F3F8;border:1px solid #E1E7F0;border-radius:6px;padding:2px 8px;font-size:12.5px;font-family:ui-monospace,Menlo,Consolas,monospace;color:#0b3d7a}
+  .bloco-body pre{background:#0b1728;color:#cfe0f5;border-radius:10px;padding:14px 18px;font-size:12.5px;overflow-x:auto;font-family:ui-monospace,Menlo,Consolas,monospace;margin:10px 0}
+  ul{list-style:none;margin-top:6px}
+  li{font-size:13.8px;padding:7px 0;border-bottom:1px solid #F0F2F6;color:#444}
+  li:last-child{border-bottom:0}
+  li::before{content:"☐  ";color:#0057B8;font-weight:800}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06);font-size:13px}
+  th{background:#0057B8;color:#fff;text-align:left;padding:11px 14px;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+  td{padding:11px 14px;border-top:1px solid #EEF1F6;vertical-align:top}
+  .alerta{background:#FFF4F4;border-left:5px solid #E53935;border-radius:0 14px 14px 0;padding:18px 22px;margin-bottom:14px}
+  .alerta h3{font-size:15px;font-weight:800;color:#c62828;margin-bottom:6px}
+  .alerta p{font-size:13.5px;color:#7d2020}
+  .nota{font-size:11.5px;color:#999;margin-top:32px;padding-top:16px;border-top:1px solid #E0E4EA}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="eyebrow">Lançamento oficial</div>
+    <h1>Deploy do PaceFly Ranking · domingo, 30/08 às 10h</h1>
+    <div class="sub">O que já está pronto no repositório, o que depende de você e a ordem exata de execução na manhã do lançamento.</div>
+  </div>
+
+  <h2>Bloqueadores <span class="hint">· sem isso o lançamento não acontece</span></h2>
+
+  <div class="ok-box" style="margin-bottom:14px">
+    <h3>Nenhum bloqueador em aberto</h3>
+    <p>Os três foram resolvidos em 26/08. Os dados dos 731 atletas estão gerados e conferidos, o Google Analytics já vinha do Netlify (e ainda tinha uma tag quebrada no HTML, agora removida) e a imagem de compartilhamento sai com um duplo clique. Resta rodar o <code>gerar_og_ranking.bat</code>, testar no celular e publicar.</p>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">JSON com os 731 atletas gerado e conferido</div>
+      <div class="bloco-tag tag-feito">Feito em 26/08</div>
+    </div>
+    <div class="bloco-body">
+      <p><strong>Conferido item a item:</strong> 731 atletas, posições contínuas de 1 a 731 sem buracos, todos com duas provas ou mais, sexo preenchido em todos (abas Feminino e Masculino ativas) e número de provas em todos (coluna Provas preenchida). Nenhum atleta de uma prova só passou. A coluna Variação ficou vazia de propósito, porque ainda não existe apuração anterior para comparar.</p>
+      <p>Para regerar depois de cada nova apuração, dê duplo clique em <code>gerar_ranking.bat</code>. A janela agora fica aberta no fim para você ler o resultado.</p>
+      <pre>cd "C:\Users\santo\Claude\Projects\Pacefly\site"
+python gerar_json_ranking.py</pre>
+      <p>Ele lê <code>OneDrive\Business\Ranking corredores\ranking_multicorridas_norte_sc_2026.csv</code>, que é o arquivo certo: só contém quem tem duas provas ou mais. O outro arquivo, <code>ranking_corredores</code>, inclui atletas com uma prova só e não serve para o ranking publicado.</p>
+      <p><strong>O que o script faz com os dados:</strong></p>
+      <ul style="list-style:none">
+        <li style="border:0;padding:4px 0">Renumera as posições de 1 a 731 entre os classificados, eliminando os buracos da base (que pula de 42 para 60)</li>
+        <li style="border:0;padding:4px 0">Aplica os critérios de desempate do doc 08: pontos, depois número de corridas, depois melhor colocação</li>
+        <li style="border:0;padding:4px 0">Descarta qualquer atleta com menos de duas provas, mesmo que você aponte para o arquivo errado</li>
+        <li style="border:0;padding:4px 0">Preenche sexo e número de provas, que ligam as abas de categoria e a coluna Provas</li>
+        <li style="border:0;padding:4px 0">Mostra no fim quantos ficaram em cada categoria e o Top 5 para conferência</li>
+      </ul>
+      <p style="margin-top:10px">Depois de rodar, abra <code>rankings.html</code> no navegador e busque um nome que você sabe que está na lista.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Google Analytics: resolvido, e havia uma tag quebrada no site</div>
+      <div class="bloco-tag tag-feito">Feito em 26/08</div>
+    </div>
+    <div class="bloco-body">
+      <p>O ID do GA está cadastrado no Netlify, que injeta a tag em todas as páginas do site automaticamente. Ou seja, a página nova do ranking <strong>já nasce medida</strong>, sem precisar de nada no HTML.</p>
+
+      <div class="alerta" style="margin:14px 0">
+        <h3>O que estava errado</h3>
+        <p>O <code>index.html</code> tinha um bloco de Google Analytics apontando para <code>G-XXXXXXXXXX</code>, que é o exemplo da documentação e não existe como propriedade. Toda visita ao site baixava o script do Google por nada, e o <code>rankings.html</code> tinha herdado o mesmo bloco. Os dois foram removidos: a medição continua vindo do Netlify, que é o único lugar onde o ID precisa estar.</p>
+      </div>
+
+      <p><strong>Por que não colocar a tag nos dois lugares:</strong> duas tags na mesma página disparam dois <em>page_view</em> por visita. As sessões inflam, a taxa de rejeição despenca e os relatórios param de refletir a realidade. Um ID, um lugar.</p>
+
+      <p>Os três eventos da página (<code>busca_ranking</code>, <code>compartilhar_posicao</code> e <code>gerar_imagem_posicao</code>) usam a tag que o Netlify injeta. A função tenta o <code>gtag</code> e, se ele ainda não carregou, cai no <code>dataLayer</code>, então nenhum evento se perde.</p>
+
+      <p><strong>Para conferir depois do deploy:</strong> abra o Google Analytics, vá em Relatórios e depois Tempo real, entre na página do ranking pelo celular e faça uma busca. Os eventos aparecem em menos de um minuto na lista de eventos.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Imagem de compartilhamento: é só dar um duplo clique</div>
+      <div class="bloco-tag tag-feito">Pronta para gerar</div>
+    </div>
+    <div class="bloco-body">
+      <p>Esse é o card que aparece quando alguém manda o link no WhatsApp, e o link vai circular muito no domingo. Sem ele, o compartilhamento sai sem imagem e perde metade do apelo.</p>
+      <p>Já desenhei a imagem em <code>og-ranking.html</code>, na mesma linguagem visual da campanha, com os números da temporada. Para transformar em arquivo:</p>
+      <p style="margin:12px 0"><strong>Duplo clique em <code>gerar_og_ranking.bat</code></strong></p>
+      <p>Ele acha o Chrome sozinho, gera <code>assets/og-ranking.png</code> em 1200×630 e abre a imagem no final para você conferir. Se quiser mudar algum texto, edite o <code>og-ranking.html</code> e rode de novo.</p>
+    </div>
+  </div>
+
+  <h2>Já feito no repositório <span class="hint">· revise se concorda</span></h2>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Bloqueio de publicação removido</div>
+      <div class="bloco-tag tag-feito">Feito</div>
+    </div>
+    <div class="bloco-body">
+      <p><code>_redirects</code> devolvia <code>/rankings.html</code> para a home e <code>robots.txt</code> pedia aos buscadores para ignorar a página. Os dois foram liberados.</p>
+      <p>Além disso, agora <code>pacefly.com.br/ranking</code> e <code>/rankings</code> redirecionam para a página. URL curta importa: ela vai ser falada em conversa e digitada à mão.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Página reconstruída como ranking ao vivo</div>
+      <div class="bloco-tag tag-feito">Feito</div>
+    </div>
+    <div class="bloco-body">
+      <p>A versão anterior era uma página de espera: dizia "em estruturação", "é mais ou menos assim que vai ficar" e "por que ainda não tem ranking no ar". Tudo isso contradizia o lançamento e saiu.</p>
+      <p>O que entrou no lugar:</p>
+      <ul style="list-style:none">
+        <li style="border:0;padding:4px 0">Busca por nome no topo da página, antes de qualquer outra coisa</li>
+        <li style="border:0;padding:4px 0">Card de resultado com posição, pontos e percentil, mais botão de compartilhar no WhatsApp</li>
+        <li style="border:0;padding:4px 0">Lista completa com filtro e paginação de 20 em 20</li>
+        <li style="border:0;padding:4px 0">Tabela de pontuação real do doc 08, de 60 a 10 pontos</li>
+        <li style="border:0;padding:4px 0">Seção de transparência com as 5 fontes, prazo de 72h e canal de remoção</li>
+        <li style="border:0;padding:4px 0">Open Graph e dados estruturados para o link render bem quando compartilhado</li>
+      </ul>
+      <p style="margin-top:10px">Os estilos novos ficaram isolados em <code>assets/rankings.css</code>, então nenhuma outra página do site foi afetada.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Home, sitemap e busca</div>
+      <div class="bloco-tag tag-feito">Feito</div>
+    </div>
+    <div class="bloco-body">
+      <p>O banner do topo da home dizia "Em breve" e levava para a newsletter. Agora diz "No ar" e leva direto para o ranking. O sitemap ganhou a página com prioridade 0.9 e data de 30/08.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <div class="bloco-top ok">
+      <div class="bloco-n">✓</div>
+      <div class="bloco-t">Ajustes da revisão de 26/08</div>
+      <div class="bloco-tag tag-feito">Feito</div>
+    </div>
+    <div class="bloco-body">
+      <ul style="list-style:none">
+        <li style="border:0;padding:5px 0"><strong>Menu:</strong> Ranking entrou entre Notícias e Assessoria, e em todas as páginas do site, não só na home</li>
+        <li style="border:0;padding:5px 0"><strong>Categorias:</strong> abas Geral, Feminino e Masculino, cada uma com numeração própria. Quem busca o nome vê a posição no geral e na categoria ao mesmo tempo</li>
+        <li style="border:0;padding:5px 0"><strong>Provas por atleta:</strong> coluna preparada, depende da coluna de corridas no CSV</li>
+        <li style="border:0;padding:5px 0"><strong>Desempate:</strong> os quatro critérios do doc 08 agora estão publicados na página</li>
+        <li style="border:0;padding:5px 0"><strong>Região:</strong> nota explicando que o calendário cobre uma área maior que o ranking, para ninguém achar que uma prova de Blumenau pontua</li>
+        <li style="border:0;padding:5px 0"><strong>Fontes:</strong> nomes das cronometradoras removidos do site e das peças de sexta, substituídos por critérios de qualidade do dado</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Duas coisas que encontrei na base</h2>
+
+  <div class="alerta">
+    <h3>O arquivo mais óbvio era o errado</h3>
+    <p><code>ranking_corredores_norte_sc_2026.csv</code> parece a fonte natural, mas a partir da posição 43 ele lista atletas com uma prova só, que pelo doc 08 não entram no ranking publicado. Publicar esse arquivo colocaria no ar gente que a própria metodologia exclui, e contradiria a campanha, que fala em 731 classificados. O gerador agora usa o <code>ranking_multicorridas</code> e ainda filtra por segurança.</p>
+  </div>
+
+  <div class="alerta" style="background:#FFFBF0;border-left-color:#FFC400">
+    <h3 style="color:#8a6d00">As setas de subida e queda só aparecem na próxima atualização</h3>
+    <p style="color:#6b5200">O <code>historico_posicoes_norte_sc_2026.csv</code> foi sobrescrito com a apuração de 22/08, a mesma que estamos publicando. Comparar um arquivo com ele mesmo daria "=" para 21 atletas e "NOVO" para os outros 710, o que seria pior que não mostrar nada. O gerador detecta isso pela data e deixa a coluna vazia. Quando você rodar a próxima apuração, o histórico passa a ser o de 22/08 e as setas acendem sozinhas.</p>
+  </div>
+
+  <h2>Decisão pendente</h2>
+  <div class="alerta">
+    <h3>Os 5 acordos com organizadores</h3>
+    <p>O doc 08, item 8.2, condiciona a publicação aberta ao fechamento de pelo menos cinco acordos de dados, e o doc 12 recomenda não tratar resultados sem acordo formal com o organizador. Não encontrei registro de que estejam fechados. Como a página vai ao ar no domingo, vale decidir conscientemente: seguir assim assumindo o risco, ou avisar os organizadores antes da publicação. Mandar o link para eles no sábado, como cortesia e convite de parceria, resolve boa parte do problema e ainda abre conversa comercial.</p>
+  </div>
+
+  <h2>Ordem de execução no domingo</h2>
+  <table>
+    <tr><th style="width:80px">Horário</th><th>Ação</th></tr>
+    <tr><td><strong>Sábado</strong></td><td>Rodar o gerador do JSON, trocar o ID do GA, criar a imagem og-ranking.jpg e fazer o deploy. Publicar no sábado deixa a manhã de domingo livre para o que importa, que é conversar com as pessoas.</td></tr>
+    <tr><td><strong>Sábado</strong></td><td>Testar no celular: abrir pacefly.com.br/ranking, buscar um nome, tocar em compartilhar e conferir se o card do WhatsApp aparece com imagem.</td></tr>
+    <tr><td><strong>09h50</strong></td><td>Trocar o link da bio do Instagram para pacefly.com.br/ranking.</td></tr>
+    <tr><td><strong>10h00</strong></td><td>Publicar o carrossel de estreia e o story com sticker de link, no mesmo minuto.</td></tr>
+    <tr><td><strong>10h00 às 13h</strong></td><td>Ficar disponível. Responder todo comentário, republicar cada print marcando o atleta. Esta janela decide a distribuição do post e é onde os atletas descobrem que apareceram.</td></tr>
+    <tr><td><strong>Tarde</strong></td><td>Publicar o story "procura seu nome" com caixa de perguntas. Mandar o link para os organizadores das 10 provas apuradas.</td></tr>
+  </table>
+
+  <h2>Teste antes de publicar</h2>
+  <div class="bloco">
+    <div class="bloco-body" style="padding-top:20px">
+      <ul>
+        <li>Abrir rankings.html e buscar um nome que está na lista: o card aparece com posição e pontos</li>
+        <li>Buscar um nome que não está: aparece a mensagem convidando para as próximas provas</li>
+        <li>Buscar sem acento e em minúsculas: encontra do mesmo jeito</li>
+        <li>Filtrar a tabela e clicar em "Ver mais atletas" até o fim da lista</li>
+        <li>Testar no celular, que é de onde vem quase todo o tráfego do Instagram</li>
+        <li>Tocar em "Compartilhar minha posição" e conferir o texto que sai</li>
+        <li>Colar o link no WhatsApp e ver se o card mostra título, descrição e imagem</li>
+        <li>Conferir se pacefly.com.br/ranking (sem o .html) abre a página</li>
+        <li>Conferir o e-mail contato@pacefly.com.br, que a página promete para pedidos de remoção</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nota">
+    Arquivos alterados nesta preparação: <code>rankings.html</code> (reconstruído), <code>assets/rankings.css</code> (novo), <code>assets/ranking_2026.json</code> (novo, parcial), <code>gerar_json_ranking.py</code> (novo), <code>_redirects</code>, <code>robots.txt</code>, <code>sitemap.xml</code> e o banner do <code>index.html</code>. Nenhum outro arquivo do site foi tocado. Dados do ranking conforme apuração de 22/08/2026; metodologia conforme doc 08 v1.0 e doc 12 (LGPD).
+  </div>
+
+</div>
+</body>
+</html>

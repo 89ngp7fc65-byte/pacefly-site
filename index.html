@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/rankings.css">
 
 <!-- FAVICON -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -17,31 +18,26 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <!-- ============================================================
-     GOOGLE ANALYTICS 4
-     1. Acesse analytics.google.com
-     2. Crie uma propriedade GA4 para pacefly.com.br
-     3. Copie o Measurement ID (formato G-XXXXXXXXXX)
-     4. Substitua G-XXXXXXXXXX abaixo pelo seu ID real
+     GOOGLE ANALYTICS
+     A tag do GA é injetada pelo Netlify em todas as páginas, então
+     NÃO deve ser repetida aqui. O bloco que existia neste ponto
+     carregava a propriedade de exemplo G-XXXXXXXXXX, que não existe:
+     baixava o script do Google em toda visita sem medir nada.
+     Removido em 26/08/2026.
+     Para conferir ou trocar o ID: painel do Netlify, no site
+     pacefly, em Site configuration e depois Snippet injection.
      ============================================================ -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
 </head>
 <body>
 
-<!-- BANNER RANKING (em breve)
-     ATENÇÃO: a página rankings.html NÃO deve ser divulgada ainda.
-     O banner leva para a newsletter, e o arquivo site\_redirects
-     bloqueia o acesso direto a /rankings.html no Netlify. -->
-<a class="promo-banner" href="#newsletter">
+<!-- BANNER RANKING (no ar desde 30/08/2026)
+     O banner leva direto para a página do ranking. O bloqueio que
+     existia em site\_redirects foi removido no lançamento. -->
+<a class="promo-banner" href="rankings.html">
   <div class="wrap promo-inner">
-    <span class="promo-badge">Em breve</span>
-    <span class="promo-text"><strong>PaceFly Rankings:</strong> o ranking dos corredores de Joinville e do norte de SC está sendo construído.</span>
-    <span class="promo-cta">Quero ser avisado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    <span class="promo-badge">No ar</span>
+    <span class="promo-text"><strong>PaceFly Ranking 2026:</strong> correu duas provas na região este ano? Seu nome já está na lista.</span>
+    <span class="promo-cta">Ver minha posição <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
   </div>
 </a>
 
@@ -53,6 +49,7 @@
       <a href="#calendario">Calendário</a>
       <a href="#dicas">Dicas</a>
       <a href="#noticias">Notícias</a>
+      <a href="rankings.html" class="nav-rk">Ranking<span class="nav-rk-dot"></span></a>
       <a href="#assessoria">Assessoria</a>
       <a href="#assessoria" class="btn btn-azul">Quero começar</a>
     </nav>
@@ -163,6 +160,53 @@
   </div>
 </section>
 
+<!-- RANKING (bloco de chamada para a página completa) -->
+<section id="ranking-home" class="rkh">
+  <div class="rkh-mesh"></div>
+  <div class="rkh-glow"></div>
+  <div class="wrap rkh-inner">
+    <div class="rkh-txt">
+      <span class="rkh-live"><span class="dot"></span>No ar · Temporada 2026</span>
+      <h2>Você está no <span>ranking</span> dos corredores da região?</h2>
+      <p>Correu duas provas ou mais no Norte de SC este ano? Seu nome já foi apurado. Busque pelo nome e veja sua posição, seus pontos e quantas provas você já tem na temporada.</p>
+      <form class="rkh-busca" action="rankings.html" method="get">
+        <input type="text" name="q" placeholder="Digite seu nome" aria-label="Buscar seu nome no ranking">
+        <button type="submit">Buscar</button>
+      </form>
+      <a href="rankings.html" class="rkh-link">Ver o ranking completo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="rkh-podio" id="rkhPodio"></div>
+  </div>
+</section>
+<script>
+// Pódio do ranking na home. Lê o mesmo arquivo da página completa, então
+// atualiza sozinho a cada nova apuração. Se falhar, o bloco some sem quebrar.
+(function(){
+  var alvo = document.getElementById('rkhPodio');
+  if(!alvo) return;
+  fetch('assets/ranking_2026.json',{cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(d){
+      var t3 = (d.atletas||[]).slice(0,3);
+      if(t3.length < 3){ alvo.style.display='none'; return; }
+      var cls = ['p1','p2','p3'];
+      alvo.innerHTML = t3.map(function(a,i){
+        var nome = String(a.n||'').replace(/[&<>"]/g,function(c){
+          return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];
+        });
+        return '<div class="rkh-pod '+cls[i]+'">'
+             +   '<div class="rkh-med">'+a.p+'</div>'
+             +   '<div class="rkh-nm">'+nome+'</div>'
+             +   '<div class="rkh-pt">'+a.pt+' <span>pts</span></div>'
+             + '</div>';
+      }).join('');
+    })
+    .catch(function(){ alvo.style.display='none'; });
+})();
+</script>
+
 <!-- DICAS -->
 <section id="dicas">
   <div class="wrap">
@@ -235,8 +279,7 @@
               <option>Fazer meu primeiro 5K ou 10K</option>
               <option>Encarar uma meia ou maratona</option>
               <option>Melhorar meu tempo</option>
-              <option>Voltar a treinar com constância</option>
-              <option>Ranking de corredores</option>
+              <option>Voltar a treinar com constância</option>              
             </select>
           </div>
           <button type="submit" class="btn btn-azul btn-full">Quero ser avisado</button>

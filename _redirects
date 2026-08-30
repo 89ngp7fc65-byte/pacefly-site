@@ -1,13 +1,20 @@
 # Netlify - regras de redirecionamento
 # ---------------------------------------------------------------
-# A pagina do ranking ainda NAO deve ficar publica.
-# Enquanto o projeto nao for lancado, qualquer acesso direto a
-# /rankings.html e devolvido para a home. O arquivo continua na
-# pasta site\ para a tarefa semanal atualizar a previa localmente.
+# RANKING LIBERADO EM 30/08/2026.
+# O bloqueio que devolvia /rankings.html para a home foi removido
+# no lancamento oficial. As linhas antigas ficam registradas abaixo
+# apenas como historico:
+#     /rankings.html    /    302
+#     /rankings         /    302
+#     /rankings/*       /    302
 #
-# QUANDO FOR LANCAR O RANKING: apague ou comente as 3 linhas
-# abaixo e republique o site.
+# Agora fazemos o contrario: URLs curtas e amigaveis apontam para a
+# pagina do ranking. Isso importa porque o link e divulgado no
+# Instagram e falado de boca em boca, entao pacefly.com.br/ranking
+# precisa funcionar.
 # ---------------------------------------------------------------
-/rankings.html    /    302
-/rankings         /    302
-/rankings/*       /    302
+
+/ranking          /rankings.html    301
+/rankings         /rankings.html    301
+/ranking/*        /rankings.html    301
+/rankings/*       /rankings.html    301
