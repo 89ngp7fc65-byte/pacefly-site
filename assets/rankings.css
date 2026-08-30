@@ -182,7 +182,14 @@
 .rkl-filtro-box input::placeholder{color:#7f93aa;font-weight:500}
 .rkl-contador{font-size:.84rem;color:#8fa3ba;font-weight:700;white-space:nowrap}
 
-.rkl-tabela-wrap{background:rgba(255,255,255,.04);border:1px solid var(--rkl-borda);border-radius:18px;overflow:hidden}
+/* overflow-x:auto no lugar de overflow:hidden. Com hidden, se a tabela ficasse
+   mais larga que a tela do celular a última coluna era simplesmente cortada,
+   sem barra de rolagem e sem nenhum indício para o usuário. Pontos é a coluna
+   que mais importa na página, então some justamente o que a pessoa foi ver. */
+.rkl-tabela-wrap{
+  background:rgba(255,255,255,.04);border:1px solid var(--rkl-borda);
+  border-radius:18px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+}
 .rkl-tabela{width:100%;border-collapse:collapse;font-size:.92rem}
 .rkl-tabela th{
   background:rgba(0,0,0,.3);color:#8fa3ba;text-align:left;padding:13px 20px;
@@ -411,4 +418,20 @@
   .rkl-card-atleta .top{flex-direction:column;align-items:flex-start;gap:14px}
   .rkl-tabela th:nth-child(3),.rkl-tabela td:nth-child(3){display:none}
   .rkl-tabela td,.rkl-tabela th{padding:12px 14px}
+}
+
+/* Celular estreito. Mesmo sem a coluna de variação, as quatro restantes
+   somavam mais que a largura útil de uma tela de 360px: posição 78px,
+   dois cabeçalhos com espaçamento entre letras e o nome, que não quebra
+   no meio da palavra. O resultado era Pontos cortado na borda direita.
+   Aqui a tabela é apertada até caber sem precisar rolar. */
+@media(max-width:480px){
+  .rkl-tabela{font-size:.86rem}
+  .rkl-tabela th{padding:11px 8px;font-size:.62rem;letter-spacing:.03em}
+  .rkl-tabela td{padding:12px 8px}
+  .rkl-tabela td.pos{width:54px}
+  .rkl-pos-badge{min-width:28px;height:26px;padding:0 6px;font-size:.78rem}
+  .rkl-tabela td.nome{overflow-wrap:anywhere}   /* nomes longos sem sobrenome curto */
+  .rkl-toque{font-size:.66rem;margin-top:2px}
+  .rkl-corte{padding:9px 12px;font-size:.66rem}
 }
