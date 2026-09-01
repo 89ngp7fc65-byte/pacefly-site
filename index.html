@@ -143,7 +143,6 @@
 
     <div class="cal-filtros" id="calFiltros">
       <button class="chip on" data-mes="todos">Todas</button>
-      <button class="chip" data-mes="08">Agosto</button>
       <button class="chip" data-mes="09">Setembro</button>
       <button class="chip" data-mes="10">Outubro</button>
       <button class="chip" data-mes="11">Novembro</button>
@@ -373,7 +372,7 @@
   burger.addEventListener('click',()=>menu.classList.toggle('open'));
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-  const hoje=new Date(2026,7,23); // 23 ago 2026 (referência do protótipo)
+  const hoje=new Date(2026,7,30); // 30 ago 2026 (referência do protótipo)
   const eventos=window.PACEFLY_EVENTOS||[];
   const grid=document.getElementById('calGrid');
   const pinSVG='<svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>';

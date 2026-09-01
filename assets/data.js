@@ -30,70 +30,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "maratona-internacional-floripa",
-    "nome": "Maratona Internacional de Floripa Fibra",
-    "dia": "29",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "29 e 30 de agosto de 2026",
-    "cidade": "Florianópolis, SC",
-    "largada": "Praça Sesquicentenário (Bolsão da Casan), Av. Beira-Mar Norte",
-    "organizador": "Maratona Internacional de Floripa",
-    "edicao": "Edição 2026",
-    "distancias": ["42 km", "21 km", "5 km", "Maratoninha"],
-    "descricao": "A maior prova de rua de Santa Catarina, disputada em dois dias na Beira-Mar Norte, com largada na Praça Sesquicentenário. A meia maratona sai no sábado, 29 de agosto, e a maratona no domingo, 30. A programação inclui ainda os 5 km e a Maratoninha para crianças e jovens até 13 anos. A retirada de kits começa na quinta-feira, 27 de agosto.",
-    "oficialUrl": "https://maratonadefloripa.com.br"
-  },
-  {
-    "id": "ademicon-run-joinville",
-    "nome": "Ademicon Run",
-    "dia": "30",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "30 de agosto de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Ademicon, Rua Ministro Calógeras",
-    "organizador": "42K Assessoria Esportiva",
-    "edicao": "Edição 2026",
-    "distancias": ["8 km", "4 km"],
-    "descricao": "Prova de rua em Joinville com largada na Ademicon e percursos de 8 km e 4 km.",
-    "oficialUrl": "https://42k.esp.br"
-  },
-  {
-    "id": "circuito-unimed-jaragua-do-sul",
-    "nome": "Circuito de Corridas Unimed",
-    "dia": "30",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "30 de agosto de 2026",
-    "cidade": "Jaraguá do Sul, SC",
-    "largada": "Parque Linear Via Verde",
-    "organizador": "Unimed",
-    "edicao": "Etapa Jaraguá do Sul",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Etapa jaraguaense do Circuito de Corridas Unimed, com largada às 7h no estacionamento do Parque Linear Via Verde e percursos de 10 km e 5 km.",
-    "oficialUrl": "https://circuitodecorridaunimed.com.br"
-  },
-  {
-    "id": "tex-run-blumenau",
-    "nome": "Tex Run",
-    "dia": "30",
-    "mes": "08",
-    "mesTxt": "AGO",
-    "ano": 2026,
-    "dataExtenso": "30 de agosto de 2026",
-    "cidade": "Blumenau, SC",
-    "largada": "Tex Cotton, Rua Itajaí, 948, bairro Vorstadt, às 7h30",
-    "organizador": "Tex Cotton",
-    "edicao": "1ª edição",
-    "distancias": ["8 km", "4 km", "Caminhada 4 km", "Kids"],
-    "descricao": "Estreia da Tex Run em Blumenau, criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil no Vale do Itajaí. A largada é às 7h30, na sede da empresa, na Rua Itajaí, 948, bairro Vorstadt, com percursos de 8 km e 4 km, caminhada de 4 km e corrida kids para crianças de 2 a 14 anos. O trajeto plano passa por pontos turísticos do centro da cidade e cada inscrição inclui a doação de 1 kg de alimento não perecível para entidades da região que atendem crianças.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/CORRIDA+TEX+RUN+2026-87231"
-  },
-  {
     "id": "corrida-avc-sao-francisco-do-sul",
     "nome": "9ª Corrida e Caminhada de Combate ao AVC",
     "dia": "06",
@@ -422,159 +358,159 @@ const PACEFLY_NOTICIAS = [
   {
     id: "tex-run-blumenau-2026",
     categoria: "Na região",
-    titulo: "Tex Run estreia em Blumenau em 30 de agosto e une corrida a ação solidária",
-    resumo: "Primeira edição da prova celebra os 40 anos da Tex Cotton, com largada na sede da empresa, no bairro Vorstadt. Cada inscrição inclui a doação de 1 kg de alimento não perecível para entidades que atendem crianças na região.",
+    titulo: "Tex Run estreia em Blumenau com vitórias de Felipe Tiago de Souza e Alessandra Dolberth",
+    resumo: "Primeira edição da prova, criada para celebrar os 40 anos da Tex Cotton, levou corredores às ruas do bairro Vorstadt neste domingo, com percursos de 8 km e 4 km e ação solidária de doação de alimentos.",
     dataTxt: "30 de agosto de 2026",
     local: "Blumenau, SC",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Noticenter",
-    fonteUrl: "https://www.noticenter.com.br/noticia/42029/tex-run-abre-inscricoes-para-corrida-que-celebra-historia-de-empreendedorismo-em-blumenau",
+    fonteNome: "Super Crono",
+    fonteUrl: "https://www.supercrono.com.br/resultados/result/#/corrida-tex-run-2026",
     corpo: [
-      "Blumenau recebe pela primeira vez a Tex Run no dia 30 de agosto, prova criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil, uma das mais tradicionais do Vale do Itajaí.",
-      "A largada é às 7h30, na própria sede da empresa, na Rua Itajaí, 948, no bairro Vorstadt, com percursos de 8 km e 4 km, caminhada de 4 km e corrida kids para crianças de 2 a 14 anos. O trajeto é plano e passa por pontos turísticos do centro da cidade, o que facilita a participação até de quem está começando a correr.",
-      "A prova tem um lado solidário: cada inscrição inclui a doação de 1 kg de alimento não perecível, revertido a entidades da região que trabalham com acolhimento de crianças. Ao longo do percurso, a organização também promete ativações especiais a cada quilômetro.",
-      "Para quem mora em Joinville e no norte catarinense, Blumenau fica a menos de duas horas de viagem, e a Tex Run é mais uma opção de fim de semana para quem gosta de conhecer provas novas na região do Vale do Itajaí."
+      "Blumenau recebeu neste domingo, 30 de agosto, a estreia da Tex Run, prova criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil, uma das mais tradicionais do Vale do Itajaí. A largada saiu da própria sede da empresa, na Rua Itajaí, 948, no bairro Vorstadt, com percursos de 8 km e 4 km, caminhada e corrida kids.",
+      "Nos 8 km, Adilson Alves Dolberth venceu o masculino com 27min20s, e Simoni Gabriel foi a campeã feminina, com 34min39s. Já nos 4 km, o mais rápido foi Felipe Tiago de Souza, com 13min43s, e Alessandra Alves Dolberth levou o título feminino, com 17min09s. Os tempos ainda constam como classificação extraoficial na plataforma de cronometragem.",
+      "A prova também teve um lado solidário: cada inscrição incluiu a doação de 1 kg de alimento não perecível, revertido a entidades da região que trabalham com acolhimento de crianças.",
+      "Para quem mora em Joinville e no norte catarinense, Blumenau fica a menos de duas horas de viagem, e a boa adesão da primeira edição da Tex Run sinaliza que ela deve voltar ao calendário do Vale do Itajaí em 2027."
     ]
   },
   {
-    id: "meia-maratona-rio-2026",
-    categoria: "Meia Maratona do Rio",
-    titulo: "Meia Maratona Internacional do Rio de Janeiro reúne 18 mil corredores neste domingo",
-    resumo: "A 28ª edição da prova sai do Leblon rumo ao Aterro do Flamengo, passando por Copacabana e pelo Pão de Açúcar, com a elite do atletismo brasileiro na disputa dos 21,097 km.",
-    dataTxt: "16 de agosto de 2026",
-    local: "Rio de Janeiro, RJ",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Olympics.com Brasil",
-    fonteUrl: "https://www.olympics.com/pt/noticias/meia-maratona-internacional-rio-de-janeiro-2026-horarios-percurso-onde-assistir",
-    corpo: [
-      "Neste domingo, 16 de agosto, o Rio de Janeiro recebe a 28ª edição da Meia Maratona Internacional, uma das provas mais tradicionais do calendário brasileiro. A expectativa é reunir cerca de 18 mil corredores nas ruas da cidade, um crescimento expressivo sobre os 12 mil inscritos do ano anterior.",
-      "O percurso de 21,097 km larga na Praia do Leblon e termina no Monumento aos Pracinhas, no Aterro do Flamengo, passando por trechos icônicos como Copacabana e o Pão de Açúcar. A largada da elite acontece pela manhã, aproveitando o clima mais ameno do início do dia carioca.",
-      "Além do público amador, a prova costuma reunir nomes de peso do atletismo nacional, servindo como uma das principais referências de tempo da temporada antes das grandes maratonas do fim de ano.",
-      "Para o corredor de Joinville e região, a Meia do Rio é uma vitrine do nível que a corrida de rua brasileira vem alcançando, o mesmo movimento que também aparece nas provas menores do calendário catarinense. Vale acompanhar o nosso calendário para não perder as próximas largadas por aqui perto."
-    ]
-  },
-  {
-    id: "circuito-unimed-jaragua-agosto-2026",
+    id: "ademicon-run-joinville-2026-resultado",
     categoria: "Na região",
-    titulo: "Circuito Unimed chega a Jaraguá do Sul em 30 de agosto com largada no Parque Linear Via Verde",
-    resumo: "A etapa jaraguaense do circuito catarinense larga às 7h, com provas de 5 km e 10 km. A retirada de kits acontece no dia 17 de agosto, na sede da Unimed no centro da cidade.",
+    titulo: "Ademicon Run: Henzo Luccas e Bruna Macedo vencem os 4 km, Lucas Brandalise e Rafaela Benevenuto os 8 km",
+    resumo: "A prova de rua com largada na Ademicon, em Joinville, reuniu corredores nos percursos de 8 km e 4 km neste domingo, com pódios definidos no masculino e no feminino em ambas as distâncias.",
+    dataTxt: "30 de agosto de 2026",
+    local: "Joinville, SC",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Km Eventos",
+    fonteUrl: "https://www.km.esp.br/resultado/ademicon-run,1300826",
+    corpo: [
+      "A Ademicon Run, prova de rua organizada pela 42K Assessoria Esportiva com largada na sede da Ademicon, em Joinville, teve sua edição de 2026 disputada neste domingo, 30 de agosto, com percursos de 8 km e 4 km.",
+      "Nos 8 km, o pódio masculino foi liderado por Lucas Brandalise, seguido por Luciano Manfio e Wagner Carvalho Cardozo Borges. No feminino, a vitória ficou com Rafaela Pereira Benevenuto, à frente de Rafaela Barbara da Silva e Aline da Silva.",
+      "Já nos 4 km, Henzo Luccas venceu o masculino, com João Paulo Vieira e Leonardo de Carvalho dos Santos completando o pódio. No feminino, Bruna Macedo ficou em primeiro, seguida por Mariana Coelho Strutzel e Luciele Martins.",
+      "A prova é uma das que a 42K Assessoria Esportiva organiza ao longo do ano em Joinville, ao lado de eventos como a JTC Run e a Corrida pela Vida, que seguem no calendário da cidade em setembro e outubro."
+    ]
+  },
+  {
+    id: "circuito-unimed-jaragua-2026-resultado",
+    categoria: "Na região",
+    titulo: "Circuito Unimed em Jaraguá do Sul tem Caio Henrique de Oliveira e Hailander da Silva como campeões",
+    resumo: "A etapa jaraguaense do circuito catarinense, no Parque Linear Via Verde, definiu os vencedores dos 5 km e dos 10 km neste domingo, no masculino e no feminino.",
     dataTxt: "30 de agosto de 2026",
     local: "Jaraguá do Sul, SC",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Circuito de Corridas Unimed SC",
-    fonteUrl: "https://circuitodecorridaunimed.com.br/index.php/corrida/jaragua-do-sul/",
+    fonteNome: "MyCrono",
+    fonteUrl: "https://resultados.racetag.com.br/mycrono/#/circuito-unimed-jaragua-do-sul-2026",
     corpo: [
-      "O Circuito de Corridas Unimed, um dos calendários mais capilarizados de Santa Catarina, chega a Jaraguá do Sul no dia 30 de agosto. A largada está marcada para as 7h, no estacionamento do Parque Linear Via Verde, com percursos de 5 km e 10 km.",
+      "O Circuito de Corridas Unimed, um dos calendários mais capilarizados de Santa Catarina, passou por Jaraguá do Sul neste domingo, 30 de agosto, com largada no estacionamento do Parque Linear Via Verde e percursos de 5 km e 10 km.",
+      "Nos 10 km, Hailander da Silva foi o campeão masculino, com o tempo de 35min35s, e Aldenia Marinho venceu o feminino, em 43min10s. Nos 5 km, Caio Henrique de Oliveira levou o título masculino, com 17min30s, e Lucimari Perin Miretzki foi a campeã feminina, com 20min00s.",
       "O Via Verde virou ponto de encontro dos corredores jaraguaenses nos últimos anos, e a escolha do local ajuda a explicar por que a etapa costuma atrair também gente de Guaramirim, Schroeder e Corupá, além do pessoal de Joinville que faz a viagem curta pela BR-280.",
-      "A retirada de kits está prevista para 17 de agosto, na sede da Unimed Jaraguá do Sul, na Avenida Marechal Deodoro da Fonseca, no centro, com apresentação de documento com foto. Vale confirmar horários e regras diretamente com a organização antes de ir.",
-      "Para quem mora na região, a etapa cai bem no calendário: acontece no mesmo fim de semana da Ademicon Run, em Joinville, e serve como bom termômetro para quem está construindo base rumo às provas de setembro e outubro."
+      "O Circuito Unimed segue pela região com etapas em São Bento do Sul, em outubro, e em Mafra, em novembro, sempre com o mesmo formato de 10 km e 5 km."
     ]
   },
   {
-    id: "maratona-floripa-17-mil-inscritos-2026",
+    id: "maratona-floripa-2026-fim-de-semana-ponte-hercilio-luz",
     categoria: "Maratona de Floripa",
-    titulo: "Maratona de Floripa ultrapassa 17 mil inscritos e entra na reta final",
-    resumo: "A prova, disputada em 29 e 30 de agosto em Florianópolis, espera chegar a 19 mil participantes nas distâncias de 42 km, 21 km e 5 km. Os percursos da meia maratona e dos 5 km foram remodelados para esta edição.",
-    dataTxt: "11 de agosto de 2026",
+    titulo: "Maratona de Floripa tem ugandense e brasileira como campeões dos 42 km, com recorde de percurso",
+    resumo: "Jonathan Akankwasa e Ana Catarina Amancio de Oliveira venceram a maratona, disputada neste domingo com cerca de 19 mil atletas de 26 países. No sábado, os títulos da meia maratona também saíram com recorde, para o queniano Nicolas Kosgei e a colombiana Laura Morales.",
+    dataTxt: "29 e 30 de agosto de 2026",
     local: "Florianópolis, SC",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Contra-Relógio / Terra",
-    fonteUrl: "https://www.terra.com.br/vida-e-estilo/partiu-correr/maratona-de-floripa-supera-17-mil-inscritos-e-entra-na-reta-final,622e7d25ec42b4131762997c02e1566835s90s84.html",
+    fonteNome: "NSC Total",
+    fonteUrl: "https://www.nsctotal.com.br/esportes/veja-os-campeoes-da-prova-de-42-km-da-maratona-internacional-de-floripa",
     corpo: [
-      "A Maratona Internacional de Floripa já ultrapassou os 17 mil inscritos e entra na reta final do período de inscrições. A prova, maior corrida de rua de Santa Catarina, acontece nos dias 29 e 30 de agosto em Florianópolis, com disputas de 42 km, 21 km e 5 km, e a organização espera chegar a 19 mil participantes.",
-      "A meia maratona larga no sábado, dia 29, e a maratona e os 5 km saem no domingo, dia 30. Uma das novidades deste ano está no percurso dos 5 km, que passa a cruzar a Ponte Hercílio Luz, enquanto a meia maratona foi reformulada com menos curvas, buscando deixar a corrida mais fluida.",
-      "Os percursos de 42 km e 21 km têm selo Ouro da Confederação Brasileira de Atletismo, e a maratona integra o Ranking Brasileiro de Maratonistas da Contra-Relógio e o Circuito Brasil Gigante, que reúne oito maratonas pelo país em 2026. Floripa é a sexta etapa do circuito, depois de São Paulo, Paraná, Porto Alegre, Campo Grande e João Pessoa.",
-      "Para quem mora em Joinville e no norte catarinense, a Maratona de Floripa é uma das provas de referência do estado e já está no nosso calendário. A programação começa em 27 de agosto, com a abertura da Expo e a retirada de kits, e as inscrições seguem abertas no site oficial da prova."
+      "A Maratona Internacional de Floripa Fibra 2026 tomou conta da Beira-Mar Norte neste fim de semana, com pelotões de cerca de 19 mil corredores representando 26 países. A concentração ficou na Praça Sesquicentenário, com provas de 42 km, 21 km, 5 km e a divisão infantil.",
+      "Nos 42 km, disputados no domingo, 30 de agosto, o ugandense Jonathan Akankwasa venceu com tempo recorde de 2h14min56s, superando o brasileiro Antonio Marco Pereira de Araújo, que buscava o tricampeonato e terminou em terceiro. No feminino, a brasileira Ana Catarina Amancio de Oliveira faturou o bicampeonato com marca também recorde, 2h40min35s.",
+      "No sábado, 29 de agosto, a meia maratona também teve recordes de percurso: o queniano Nicolas Kiptoo Kosgei cravou 1h03min43s no masculino, e a colombiana Laura Manuela Morales fez 1h15min33s no feminino. Nos 5 km de domingo, Fernando Augusto Rodrigues da Silva e Isadora Martello Chiesorin foram os campeões.",
+      "A edição trouxe um novo traçado com passagem sob a Ponte Hercílio Luz em todas as categorias adultas, além de chancela da World Athletics para a meia maratona e selo Road Race Label para os 42 km, que integram o Circuito Brasil Gigante. Para o corredor de Joinville e do norte catarinense, a Maratona de Floripa segue como a principal referência de prova grande dentro do estado."
     ]
   }
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-08-16
+/* DICAS_ULTIMA_ROTACAO: 2026-08-30
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "seguranca-correr-de-madrugada-luz-baixa",
-    categoria: "Segurança",
-    titulo: "Correr no escuro: como se ver e ser visto nas primeiras horas do dia",
-    resumo: "No inverno, o sol nasce tarde e muita gente treina ainda de madrugada. Roupa refletiva, lanterna de cabeça e escolha de rota fazem toda a diferença na segurança.",
+    id: "hidratacao-antes-durante-depois-do-treino",
+    categoria: "Nutrição",
+    titulo: "Hidratação: quanto beber antes, durante e depois do treino",
+    resumo: "Com os dias esquentando no norte de Santa Catarina, a sede deixa de ser o único sinal de que o corpo precisa de água. Um planejamento simples de hidratação evita queda de rendimento e cãibra.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "No inverno, o sol demora a aparecer no norte de Santa Catarina, e boa parte dos treinos matinais acontece ainda no escuro. Isso muda a lógica da segurança: não basta se preocupar só com o próprio cansaço, é preciso pensar em como enxergar o caminho e em como os carros enxergam você.",
-      "O primeiro cuidado é a roupa. Peças com faixas refletivas, mesmo discretas, fazem diferença enorme sob o farol de um carro. Cores claras ajudam de dia, mas à noite o que realmente funciona é o material refletivo, não a cor em si.",
-      "Uma lanterna de cabeça ou de peito resolve dois problemas ao mesmo tempo: ilumina buracos e desníveis na calçada e sinaliza sua presença de longe para quem vem na direção contrária. Vale mais a lanterna simples usada todo dia do que o modelo caro que fica parado na gaveta.",
-      "Escolher a rota também é decisão de segurança. Prefira ruas com iluminação pública em bom estado e evite atalhos por terrenos baldios ou trechos sem movimento, mesmo que sejam mais curtos. Correr acompanhado, ou pelo menos avisar alguém do horário e do trajeto, é um hábito simples que custa nada.",
-      "Por fim, atenção aos fones de ouvido. No escuro, a audição vira um sentido extra de segurança, então vale reduzir o volume ou correr só com um lado livre para escutar o trânsito. Treinar de madrugada não precisa ser arriscado, só exige um pouco mais de planejamento antes de sair de casa."
+      "Conforme o inverno vai ficando para trás e os treinos voltam a pegar sol mais cedo, a hidratação passa a pesar mais no resultado do treino. O problema é que a sede é um sinal atrasado: quando ela aparece, o corpo já está em déficit de líquido há um tempo.",
+      "Antes de sair para correr, o ideal é beber um copo de água de 1 a 2 horas antes, dando tempo do corpo absorver sem deixar o estômago pesado na largada. Em treinos de até 40 minutos, isso costuma bastar, sem necessidade de carregar garrafa.",
+      "Para treinos mais longos, a lógica muda: pequenos goles a cada 15 ou 20 minutos rendem mais do que beber muito de uma vez só. Em dias quentes ou treinos acima de uma hora, vale considerar um isotônico para repor também o sódio perdido no suor, principalmente para quem sua bastante.",
+      "Depois do treino, o corpo continua precisando de reposição por um bom tempo. Uma referência simples é beber cerca de 1,5 litro de água para cada quilo perdido de suor, o que dá para estimar pesando-se antes e depois de um treino mais longo em dia quente.",
+      "Sinais de que a hidratação ficou atrasada incluem urina bem escura, dor de cabeça depois do treino e sensação de cansaço fora do normal. Se isso virar rotina, vale rever a quantidade de água ao longo do dia, não só durante a corrida."
     ]
   },
   {
-    id: "postura-e-passada-erros-comuns",
-    categoria: "Técnica",
-    titulo: "Postura e passada: os erros mais comuns que sabotam o corredor",
-    resumo: "Cabeça caída, passada longa demais, braços tensos. Pequenos ajustes na postura melhoram a economia de corrida e reduzem o risco de dor.",
+    id: "primeira-semana-de-treino-do-zero",
+    categoria: "Treino",
+    titulo: "Como montar sua primeira semana de treino do zero",
+    resumo: "Sair do sedentarismo direto para a corrida contínua é o caminho mais rápido para uma lesão. Uma primeira semana bem planejada, com caminhada e corrida intercaladas, constrói uma base que dura.",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Muita gente corre pensando só na perna, mas boa parte da economia de corrida vem do que acontece do quadril para cima. Cabeça caída, ombros tensos e tronco curvado para frente fazem o corpo gastar energia à toa, e o cansaço chega mais cedo do que deveria.",
-      "Um erro comum é a passada longa demais, quando o pé toca o chão bem à frente do corpo. Esse impacto frontal funciona quase como um freio a cada passada, sobrecarrega o joelho e reduz a eficiência. O ideal é que o pé aterrisse mais próximo da linha do quadril, com passos um pouco mais curtos e mais rápidos.",
-      "Os braços também contam a história do esforço. Se eles sobem demais na frente do peito ou cruzam o corpo de um lado para o outro, parte da energia que deveria empurrar você para frente está sendo desperdiçada de lado. O movimento ideal é próximo ao corpo, com o cotovelo dobrado perto de 90 graus, balançando para frente e para trás.",
-      "Olhar para o próprio umbigo é outro hábito que atrapalha sem que o corredor perceba. Manter o olhar num ponto mais à frente, na altura do horizonte, ajuda a manter a cabeça alinhada com a coluna e evita aquela tensão no pescoço que aparece depois de corridas longas.",
-      "Ajustar a postura não é sobre copiar a passada de outra pessoa, é sobre soltar tensões desnecessárias. Vale gravar um vídeo correndo em ritmo leve de vez em quando e observar: se algo parece rígido ou forçado, geralmente é ali que está o ajuste mais simples de fazer."
+      "Quem decide começar a correr costuma cometer o mesmo erro: tentar correr o máximo possível já no primeiro treino. O resultado, na maioria das vezes, é dor no dia seguinte, desânimo e, em muitos casos, uma lesão que atrasa o começo em semanas.",
+      "Um jeito mais inteligente de começar é intercalar caminhada rápida com pequenos trechos de corrida leve. Por exemplo: 1 minuto correndo e 2 minutos caminhando, repetindo por 20 a 25 minutos. O corpo vai se adaptando ao impacto aos poucos, sem sobrecarregar tendão e articulação de uma vez.",
+      "Na primeira semana, três treinos já são suficientes, com um dia de descanso entre eles. Não é sobre quantidade, é sobre dar tempo do corpo se recuperar entre uma sessão e outra, principalmente para quem está destreinado há tempo.",
+      "Vale prestar atenção ao ritmo: se não dá para manter uma conversa enquanto corre, o ritmo está forte demais para essa fase. As primeiras semanas são de adaptação, não de performance, e ir com calma agora é o que garante evolução mais à frente.",
+      "A partir da segunda ou terceira semana, dá para aumentar aos poucos o tempo correndo e reduzir o de caminhada, sempre respeitando como o corpo responde. Quem persiste nesse ritmo gradual costuma chegar aos 30 minutos contínuos de corrida sem drama nenhum."
     ]
   },
   {
-    id: "rotina-do-dia-da-prova",
-    categoria: "Provas",
-    titulo: "Rotina do dia da prova: o que fazer da véspera até a largada",
-    resumo: "Comer certo, dormir bem e chegar cedo. Uma rotina bem definida no dia da prova evita imprevistos e ajuda a render o treino que você já fez.",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "O treino já foi feito nas semanas anteriores, mas o dia da prova tem uma lógica própria. Uma boa rotina, pensada com antecedência, evita que o nervosismo ou um imprevisto de última hora atrapalhem tudo o que você construiu até ali.",
-      "A noite anterior pesa mais do que parece. Deixar separado o que vai vestir, o número de peito já fixado e o horário de saída calculado com folga tira decisões da manhã da prova, quando a cabeça já está mais ansiosa. Dormir cedo importa mais do que fazer o último treino puxado da véspera.",
-      "No café da manhã, a regra é não testar novidade. Coma algo que você já experimentou em treinos e que seu estômago reconhece bem, de preferência de duas a três horas antes da largada. Provas com largada muito cedo pedem um café mais leve, complementado por algo pequeno já no local da concentração.",
-      "Chegar com antecedência é outro ponto que faz diferença. Estacionar, retirar o número se ainda não tiver feito, ir ao banheiro sem fila e ainda sobrar tempo para um aquecimento leve muda completamente o estado de espírito na hora de entrar no corredor de largada.",
-      "Por fim, tenha um plano simples para o percurso: em que ritmo pretende começar, onde ficam os pontos de hidratação, o que fazer se sentir desconforto. Prova não é hora de inventar estratégia nova, é hora de confiar no que já foi treinado."
-    ]
-  },
-  {
-    id: "dor-no-joelho-do-corredor",
-    categoria: "Saúde",
-    titulo: "Dor no joelho do corredor: quando é normal e quando é hora de parar",
-    resumo: "Nem toda dor é sinal de lesão grave, mas ignorar os sinais certos pode transformar um incômodo passageiro em um problema sério.",
+    id: "respiracao-na-corrida-evitar-pontada",
+    categoria: "Técnica",
+    titulo: "Respiração na corrida: o ritmo certo evita a pontada",
+    resumo: "Aquela fisgada do lado da barriga tem explicação, e prevenção. Ajustar a respiração ao ritmo da passada é um dos jeitos mais simples de evitar a pontada que atrapalha o treino.",
     imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Dor no joelho é uma das queixas mais comuns entre corredores, e também uma das que mais geram dúvida: treinar mesmo assim ou parar? A resposta certa depende do tipo de dor, não da vontade de não perder o treino do dia.",
-      "Um desconforto leve, que aparece durante a corrida e desaparece logo depois que você para, geralmente é sinal de sobrecarga temporária, algo que um dia de descanso ou uma redução no volume resolve. Já uma dor que piora ao longo do treino, que incha a região ou que continua no dia seguinte pede atenção maior.",
-      "A famosa dor lateral do joelho, ligada à banda iliotibial, costuma aparecer em quem aumentou a quilometragem rápido demais ou tem fraqueza no quadril. Ela tende a surgir sempre no mesmo ponto do percurso, quase como um relógio, o que ajuda a identificar o padrão.",
-      "Sinais de alerta que não devem ser ignorados incluem dor que persiste em repouso, inchaço visível, sensação de instabilidade no joelho ou dor que piora dia após dia mesmo com descanso. Nesses casos, treinar apostando que vai passar sozinho costuma custar caro depois.",
-      "Fortalecimento de quadril e panturrilha, progressão de treino sem pular etapas e um tênis em boas condições previnem boa parte dessas dores. Mas quando o desconforto foge do padrão leve e passageiro, a conversa certa é com um profissional de saúde, não com o grupo de corrida."
+      "A pontada, aquela dor aguda do lado da barriga, é uma das queixas mais comuns entre corredores, especialmente entre quem está começando. Ela costuma aparecer quando a respiração fica curta e descompassada da passada, ou quando o treino começa forte demais sem aquecimento.",
+      "Uma respiração eficiente na corrida é mais profunda do que parece. Em vez de respirar só com o peito, vale puxar o ar enchendo também a barriga, o chamado respirar diafragmático, que aproveita melhor cada respiração e reduz a chance da pontada aparecer.",
+      "Um padrão que costuma ajudar é respirar em ritmo de 3 passos inspirando e 2 expirando, alternando o lado em que o pé toca o chão na hora de soltar o ar. Isso distribui o impacto entre os dois lados do corpo e reduz a sobrecarga que costuma gerar a fisgada.",
+      "Se a pontada aparecer no meio do treino, reduzir o ritmo e respirar fundo e devagar, empurrando o ar para fora com força, costuma aliviar em poucos minutos. Parar totalmente raramente é necessário, mas forçar o ritmo com dor é o caminho certo para piorar.",
+      "Comer pouco antes de correr e começar o treino sem aquecimento são dois fatores que aumentam bastante a chance de pontada. Um aquecimento leve de 5 minutos e um intervalo de pelo menos uma hora após a última refeição já reduzem boa parte do problema."
     ]
   },
   {
-    id: "treino-intervalado-para-iniciar",
-    categoria: "Treino",
-    titulo: "Treino intervalado: o que é e como começar sem se machucar",
-    resumo: "Alternar tiros rápidos com recuperação é uma das formas mais eficientes de ganhar velocidade. O segredo está em começar devagar e respeitar a progressão.",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Treino intervalado, os famosos tiros, é uma das ferramentas mais eficientes para quem quer ficar mais rápido, mas também uma das que mais gera lesão quando é feita sem critério. A lógica é simples: alternar blocos de esforço mais forte com blocos de recuperação.",
-      "Para quem nunca fez, o começo não precisa ser sofisticado. Um exemplo simples é alternar um minuto em ritmo forte, mas controlado, com dois minutos de trote bem leve ou caminhada, repetindo de 6 a 8 vezes. A sensação deve ser de esforço real, mas não de sprint total.",
-      "O erro mais comum de quem está começando é ir forte demais no primeiro tiro e não conseguir manter o ritmo nos seguintes. É melhor terminar o treino sentindo que ainda tinha um pouco mais a dar do que travar no meio da sessão.",
-      "Esse tipo de treino é o que mais cobra do corpo, então pede aquecimento de verdade antes, com trote leve e alguns exercícios de ativação, e vale fazer no máximo uma ou duas vezes por semana, nunca em dias seguidos.",
-      "Os ganhos não aparecem no primeiro treino, aparecem depois de algumas semanas de constância. Se a meta é melhorar o tempo numa prova de 5 km ou 10 km, o intervalado bem dosado costuma trazer resultado mais rápido do que simplesmente correr mais quilômetros no mesmo ritmo de sempre."
-    ]
-  },
-  {
-    id: "assaduras-e-detalhes-do-equipamento",
+    id: "quando-trocar-o-tenis-de-corrida",
     categoria: "Equipamento",
-    titulo: "Assaduras, meias e os pequenos detalhes que arruinam um treino longo",
-    resumo: "Meia errada, costura no lugar errado, vaselina esquecida em casa. Os detalhes pequenos costumam decidir o conforto nos treinos e provas mais longas.",
+    titulo: "Hora de trocar o tênis: os sinais que o solado dá",
+    resumo: "O amortecimento perde eficiência bem antes de o tênis parecer gasto por fora. Reconhecer os sinais certos evita lesão e também economiza um tênis novo antes da hora.",
     imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Tem treino longo que é arruinado não pela distância, mas por um detalhe pequeno: uma costura mal posicionada, uma meia errada, uma assadura que começa incômoda e termina insuportável. Vale prestar atenção nesses detalhes antes que eles decidam o treino por você.",
-      "Meia de algodão costuma ser a maior vilã. Ela retém umidade e favorece o atrito, exatamente o combo que gera bolha. Meias técnicas, feitas para corrida, secam mais rápido e reduzem esse problema, mesmo custando um pouco mais.",
-      "Assaduras aparecem nos lugares de mais atrito: coxas, embaixo dos braços, no peito para quem usa camiseta de tecido áspero. Vaselina ou produtos próprios de antiassadura aplicados antes do treino resolvem boa parte do problema, principalmente em treinos acima de uma hora.",
-      "Roupa nova nunca deve estrear no dia da prova. Toda peça, camiseta, shorts, meia, precisa já ter passado por pelo menos um treino longo antes, para você descobrir se incomoda em algum ponto enquanto ainda dá tempo de trocar.",
-      "Cortar as unhas dos pés antes de treinos longos, escolher o cadarço com o aperto certo e verificar se a língua do tênis não está torta são cuidados que levam menos de um minuto e evitam boa parte dos pequenos problemas que tiram a graça de um treino que, fora isso, estava ótimo."
+      "Uma referência comum para troca de tênis de corrida é entre 500 e 800 km de uso, mas esse número varia bastante conforme o peso do corredor, o tipo de pisada e a superfície mais usada nos treinos. Vale usar essa faixa como alerta, não como regra fixa.",
+      "O desgaste que mais importa costuma ser invisível: a espuma do solado perde parte do amortecimento aos poucos, mesmo quando a parte de cima do tênis ainda parece nova. Um jeito simples de perceber é apertar o solado com o dedo, comparando com um tênis novo do mesmo modelo, se tiver como comparar.",
+      "Sinais no corpo também avisam. Dor nova no joelho, no tornozelo ou na canela, sem mudança no volume ou intensidade do treino, pode ser o tênis pedindo aposentadoria antes mesmo de qualquer sinal visível de desgaste.",
+      "Olhar o desgaste da sola por baixo ajuda a entender o tipo de pisada e se está uniforme. Desgaste muito concentrado de um lado só, ou uma quina gasta de forma irregular, é sinal de que vale conversar com quem vende o tênis sobre o modelo mais adequado para o seu movimento.",
+      "Para quem treina bastante, ter dois pares em rodízio costuma prolongar a vida útil de cada um, já que a espuma do solado recupera parte do amortecimento durante o descanso entre um uso e outro. E o par novo nunca deve estrear direto numa prova."
+    ]
+  },
+  {
+    id: "motivacao-quando-a-vontade-de-treinar-sai-de-ferias",
+    categoria: "Mente",
+    titulo: "Manter a motivação quando a vontade de treinar sai de férias",
+    resumo: "Toda rotina de treino tem semanas de baixa. Pequenos ajustes de meta, companhia e variedade ajudam a atravessar essas fases sem abandonar o hábito que você já construiu.",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Mesmo quem corre há anos passa por semanas em que o despertador toca e a vontade de treinar simplesmente não aparece. Isso é normal, faz parte de qualquer rotina de longo prazo, e o problema não é sentir isso, é como reagir quando acontece.",
+      "Um erro comum é tentar recuperar a motivação sozinho, treinando exatamente igual até a vontade voltar. Muitas vezes o que falta não é disciplina, é variedade: trocar o percurso de sempre, treinar em outro horário ou convidar alguém para correr junto já muda a sensação do treino.",
+      "Ter uma meta concreta pela frente, como uma prova já inscrita no calendário, costuma funcionar melhor do que depender só da vontade do dia. A meta vira o motivo para sair de casa nos dias em que a motivação sozinha não seria suficiente.",
+      "Correr em grupo, mesmo que só uma vez por semana, ajuda bastante nessas fases. O compromisso com outras pessoas, e a conversa durante o treino, tiram o peso da corrida como obrigação solitária e devolvem parte do prazer que fez você começar.",
+      "Se a queda de vontade vier acompanhada de cansaço persistente, sono ruim ou irritação fora do comum, vale considerar que pode ser sinal de treino em excesso, não só desânimo passageiro. Nesses casos, um ou dois dias de descanso extra costumam resolver mais do que insistir."
+    ]
+  },
+  {
+    id: "aquecimento-e-alongamento-antes-e-depois",
+    categoria: "Saúde",
+    titulo: "Aquecimento e alongamento: o que fazer antes e depois de correr",
+    resumo: "Alongar antes e aquecer depois é a ordem trocada que mais aparece entre corredores iniciantes. Entender a diferença entre os dois momentos ajuda a treinar com menos risco de lesão.",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Antes de correr, o corpo pede aquecimento, não alongamento parado. Um alongamento estático, segurando a posição por 20 ou 30 segundos, com o músculo ainda frio, pode reduzir a força momentânea da perna e não previne lesão como muita gente imagina.",
+      "O aquecimento ideal antes do treino é dinâmico: uma caminhada rápida de 3 a 5 minutos, seguida de alguns exercícios de mobilidade, como elevação de joelho, chute no glúteo e passadas curtas indo aumentando o ritmo aos poucos até chegar na velocidade do treino.",
+      "Depois de correr é o momento certo para o alongamento estático, com o músculo já aquecido e mais receptivo. Focar em panturrilha, posterior de coxa, quadríceps e quadril, segurando cada posição por cerca de 30 segundos, ajuda na recuperação e na manutenção da amplitude de movimento ao longo do tempo.",
+      "Treinos mais longos ou intensos pedem ainda mais atenção a esse momento pós-treino. Pular o alongamento sistematicamente, semana após semana, é um dos fatores que colabora para o encurtamento muscular que aparece em corredores mais experientes.",
+      "No fim das contas, a regra simples é: movimento antes, alongamento depois. Essa inversão de ordem, tão comum entre quem está começando, é um ajuste pequeno que reduz risco de lesão sem exigir nenhum equipamento ou tempo extra na rotina."
     ]
   }
 ];
