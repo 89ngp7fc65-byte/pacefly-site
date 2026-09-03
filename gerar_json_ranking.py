@@ -40,11 +40,11 @@ SAIDA = AQUI / "assets" / "ranking_2026.json"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "27/08/2026",
+    "atualizado_em": "02/09/2026",
     "temporada": 2026,
-    "total_provas": 11,
-    "total_participacoes": 6376,
-    "periodo_coberto": "14 de junho a 23 de agosto de 2026",
+    "total_provas": 12,
+    "total_participacoes": 6873,
+    "periodo_coberto": "14 de junho a 30 de agosto de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
         "12ª Corrida do 8º BPM · 21/06 · Joinville",
@@ -57,12 +57,12 @@ META = {
         "2ª Menegotti Run Together · 02/08 · Jaraguá do Sul",
         "Corrida Tigre 85 Anos · 16/08 · Joinville",
         "Circuito Banco do Brasil · 23/08 · Joinville",
+        "Circuito de Corridas Unimed · 30/08 · Jaraguá do Sul",
     ],
     # Setas de subida e queda. Deixe True na rotina normal.
-    # Está False nesta rodada porque a apuração de 27/08 além de incluir uma
-    # prova nova também corrigiu nomes que estavam duplicados por espaçamento.
-    # Boa parte das mudanças de posição veio da correção, não de desempenho, e
-    # uma seta vermelha em quem não perdeu nada seria informação errada.
+    # Está False nesta rodada porque o historico_posicoes foi regenerado junto
+    # com o recálculo de 02/09 (mesma data da apuração). Comparar posição atual
+    # com posição atual daria "=" para todo mundo sem significado real.
     # Volte para True na próxima apuração, quando a comparação for limpa.
     "usar_historico": False,
 }

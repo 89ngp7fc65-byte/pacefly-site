@@ -1,0 +1,25 @@
+[OK] Lendo: C:\Users\santo\OneDrive\Business\Ranking corredores\ranking_multicorridas_norte_sc_2026.csv
+[INFO] Setas de variacao desligadas nesta rodada
+       (usar_historico = False no META do topo do arquivo).
+[OK] Separador detectado: ';'
+[OK] Cabecalho: ['pos', 'nome', 'sexo', 'corridas', 'pontos', 'melhorPos', 'historico']
+[OK] Colunas: nome=nome | pontos=pontos | posicao=pos | corridas=corridas | sexo=sexo
+[OK] Posicoes renumeradas de 1 a 956 entre os classificados.
+
+==========================================================
+Gerado: C:\Users\santo\Claude\Projects\Pacefly\site\assets\ranking_2026.json
+Atletas: 956   |   Ignorados: 0   |   Tamanho: 57 KB
+Feminino: 486   |   Masculino: 470   |   Com nº de provas: 956
+Atualizado em: 02/09/2026  (edite META no topo se mudar)
+==========================================================
+
+Top 5 para conferencia:
+    1º  RAFAELA PEREIRA BENEVENUTO                  240 pts
+    2º  VITOR ESTIVALET DE SOUZA                    180 pts
+    3º  JORGE NESTOR PEREIRA                        160 pts
+    4º  RICHARD GLAUCO JOSE PEREIRA                 160 pts
+    5º  CRISTIANE MELLO COSTA                       135 pts
+
+Abra rankings.html no navegador e busque um nome para validar.
+
+Pressione Enter para fechar...
