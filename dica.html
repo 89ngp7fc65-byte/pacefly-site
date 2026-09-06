@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dica | PaceFly</title>
 <meta name="description" content="Dicas práticas de treino, alimentação, vestuário e recuperação para corredores.">
+<link rel="canonical" href="https://pacefly.com.br/dica.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PaceFly">
+<meta property="og:title" content="Dica | PaceFly">
+<meta property="og:description" content="Dicas práticas de treino, alimentação, vestuário e recuperação para corredores.">
+<meta property="og:url" content="https://pacefly.com.br/dica.html">
+<meta property="og:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dica | PaceFly">
+<meta name="twitter:description" content="Dicas práticas de treino, alimentação, vestuário e recuperação para corredores.">
+<meta name="twitter:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -87,7 +99,25 @@
       alvo.innerHTML=`<section class="wrap" style="padding:90px 0;text-align:center"><h1>Dica não encontrada</h1><p style="color:var(--cinza-cl);margin:14px 0 26px">Este conteúdo pode ter sido movido.</p><a class="btn btn-azul" href="index.html#dicas">Ver todas as dicas</a></section>`;
       return;
     }
-    document.title=d.titulo+' | PaceFly';
+    const dUrl='https://pacefly.com.br/dica.html?id='+d.id;
+    window.pfSEO({
+      title: d.titulo+' | PaceFly',
+      description: d.resumo || (d.corpo&&d.corpo[0]) || '',
+      url: dUrl,
+      image: d.imagem,
+      type: 'article'
+    });
+    window.pfJSONLD({
+      "@context":"https://schema.org",
+      "@type":"Article",
+      "headline":d.titulo,
+      "description":d.resumo||'',
+      "image":[d.imagem],
+      "url":dUrl,
+      "mainEntityOfPage":dUrl,
+      "author":{"@type":"Organization","name":"PaceFly"},
+      "publisher":{"@type":"Organization","name":"PaceFly","logo":{"@type":"ImageObject","url":"https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png"}}
+    });
     const corpo=(d.corpo||[]).map(p=>`<p>${p}</p>`).join('');
 
     const outras=lista.filter(x=>x.id!==d.id).slice(0,3).map(o=>`

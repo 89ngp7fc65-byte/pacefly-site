@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Evento | PaceFly</title>
 <meta name="description" content="Detalhes da prova: data, distâncias e link oficial de inscrição.">
+<link rel="canonical" href="https://pacefly.com.br/evento.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PaceFly">
+<meta property="og:title" content="Evento | PaceFly">
+<meta property="og:description" content="Detalhes da prova: data, distâncias e link oficial de inscrição.">
+<meta property="og:url" content="https://pacefly.com.br/evento.html">
+<meta property="og:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Evento | PaceFly">
+<meta name="twitter:description" content="Detalhes da prova: data, distâncias e link oficial de inscrição.">
+<meta name="twitter:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -109,7 +121,33 @@
       alvo.innerHTML=`<section class="wrap" style="padding:90px 0;text-align:center"><h1>Evento não encontrado</h1><p style="color:var(--cinza-cl);margin:14px 0 26px">O evento que você procura pode ter saído do calendário.</p><a class="btn btn-azul" href="index.html#calendario">Voltar ao calendário</a></section>`;
       return;
     }
-    document.title=ev.nome+' | PaceFly';
+    const evImagem=heroImgs[ev.id]||heroDefault;
+    const evUrl='https://pacefly.com.br/evento.html?id='+ev.id;
+    window.pfSEO({
+      title: ev.nome+' | PaceFly',
+      description: ev.descricao || ('Prova de rua em '+ev.cidade+', '+ev.dataExtenso+'. Distâncias: '+ev.distancias.join(', ')+'.'),
+      url: evUrl,
+      image: evImagem,
+      type: 'article'
+    });
+    window.pfJSONLD({
+      "@context":"https://schema.org",
+      "@type":"SportsEvent",
+      "name":ev.nome,
+      "description":ev.descricao||'',
+      "startDate":ev.ano+'-'+ev.mes+'-'+ev.dia,
+      "eventStatus":"https://schema.org/EventScheduled",
+      "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+      "location":{
+        "@type":"Place",
+        "name":ev.largada||ev.cidade,
+        "address":{"@type":"PostalAddress","addressLocality":ev.cidade,"addressRegion":"SC","addressCountry":"BR"}
+      },
+      "image":[evImagem],
+      "url":evUrl,
+      "organizer":ev.organizador?{"@type":"Organization","name":ev.organizador}:undefined,
+      "offers":ev.oficialUrl?{"@type":"Offer","url":ev.oficialUrl,"availability":"https://schema.org/InStock"}:undefined
+    });
     const distPills=ev.distancias.map(d=>`<span class="dist-pill">${d}</span>`).join('');
     const temLink=!!ev.oficialUrl;
 

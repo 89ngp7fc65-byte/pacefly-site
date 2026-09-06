@@ -22,4 +22,4 @@ Top 5 para conferencia:
 
 Abra rankings.html no navegador e busque um nome para validar.
 
-Pressione Enter para fechar...
+Pressione Enter para fechar...^C

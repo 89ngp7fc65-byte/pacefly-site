@@ -642,6 +642,94 @@ function pfParceiro(id) {
   } catch (e) { return Promise.resolve(null); }
 }
 
+/* ============================================================
+   SEO POR PÁGINA (título, description, canonical, Open Graph)
+   ------------------------------------------------------------
+   dica.html, noticia.html e evento.html carregam o conteúdo via
+   JS a partir deste arquivo, então o <head> estático só tem um
+   título/description genérico. Assim que o item real é
+   encontrado, cada página chama pfSEO({...}) para substituir
+   título, meta description, canonical e Open Graph pelo dado
+   real daquele item específico (mesmo padrão já usado, escrito
+   à mão, em rankings.html).
+   IMPORTANTE: isso ajuda o Google (que executa JS ao indexar),
+   mas NÃO ajuda o preview de compartilhamento no WhatsApp/
+   Instagram/Twitter — esses robôs leem só o HTML estático, sem
+   rodar JS. Para preview de compartilhamento correto por item,
+   seria preciso gerar HTML estático por página (fora do escopo
+   desta correção).
+   ============================================================ */
+function pfTrunc(txt, max) {
+  if (!txt) return '';
+  txt = String(txt).trim();
+  if (txt.length <= max) return txt;
+  var cortado = txt.slice(0, max - 1).replace(/\s+\S*$/, '');
+  return cortado + '...';
+}
+
+function pfMeta(chave, valor, ehProperty) {
+  if (!valor) return;
+  var attr = ehProperty ? 'property' : 'name';
+  var el = document.querySelector('meta[' + attr + '="' + chave + '"]');
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, chave);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', valor);
+}
+
+function pfCanonical(url) {
+  if (!url) return;
+  var el = document.querySelector('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement('link');
+    el.setAttribute('rel', 'canonical');
+    document.head.appendChild(el);
+  }
+  el.setAttribute('href', url);
+}
+
+function pfSEO(opts) {
+  opts = opts || {};
+  var descricao = pfTrunc(opts.description, 160);
+  if (opts.title) document.title = opts.title;
+  pfMeta('description', descricao, false);
+  pfCanonical(opts.url);
+  pfMeta('og:type', opts.type || 'article', true);
+  pfMeta('og:site_name', 'PaceFly', true);
+  pfMeta('og:title', opts.title, true);
+  pfMeta('og:description', descricao, true);
+  pfMeta('og:url', opts.url, true);
+  pfMeta('og:image', opts.image, true);
+  pfMeta('og:locale', 'pt_BR', true);
+  pfMeta('twitter:card', 'summary_large_image', false);
+  pfMeta('twitter:title', opts.title, false);
+  pfMeta('twitter:description', descricao, false);
+  pfMeta('twitter:image', opts.image, false);
+}
+
+/* ============================================================
+   DADOS ESTRUTURADOS (JSON-LD) POR ITEM
+   ------------------------------------------------------------
+   Injeta/substitui um único <script type="application/ld+json">
+   no <head> com o schema.org do item atual (Article, NewsArticle
+   ou SportsEvent, conforme a página). Mesma ressalva do pfSEO:
+   ajuda o Google (executa JS ao indexar), não ajuda robôs de
+   preview de compartilhamento (não rodam JS).
+   ============================================================ */
+function pfJSONLD(obj) {
+  if (!obj) return;
+  var id = 'pf-jsonld-item';
+  var antigo = document.getElementById(id);
+  if (antigo) antigo.remove();
+  var script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = id;
+  script.textContent = JSON.stringify(obj);
+  document.head.appendChild(script);
+}
+
 if (typeof window !== "undefined") {
   window.pfTexto = pfTexto;
   window.pfAplicar = pfAplicar;
@@ -652,4 +740,6 @@ if (typeof window !== "undefined") {
   window.PACEFLY_DICAS = PACEFLY_DICAS;
   window.PACEFLY_CIDADE = PACEFLY_CIDADE;
   window.pfImg = pfImg;
+  window.pfSEO = pfSEO;
+  window.pfJSONLD = pfJSONLD;
 }

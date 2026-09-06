@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notícia | PaceFly</title>
 <meta name="description" content="Notícias do universo da corrida de rua no Brasil e na região de Joinville.">
+<link rel="canonical" href="https://pacefly.com.br/noticia.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PaceFly">
+<meta property="og:title" content="Notícia | PaceFly">
+<meta property="og:description" content="Notícias do universo da corrida de rua no Brasil e na região de Joinville.">
+<meta property="og:url" content="https://pacefly.com.br/noticia.html">
+<meta property="og:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Notícia | PaceFly">
+<meta name="twitter:description" content="Notícias do universo da corrida de rua no Brasil e na região de Joinville.">
+<meta name="twitter:image" content="https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -87,7 +99,25 @@
       alvo.innerHTML=`<section class="wrap" style="padding:90px 0;text-align:center"><h1>Notícia não encontrada</h1><p style="color:var(--cinza-cl);margin:14px 0 26px">Este conteúdo pode ter sido movido.</p><a class="btn btn-azul" href="index.html#noticias">Ver todas as notícias</a></section>`;
       return;
     }
-    document.title=n.titulo+' | PaceFly';
+    const nUrl='https://pacefly.com.br/noticia.html?id='+n.id;
+    window.pfSEO({
+      title: n.titulo+' | PaceFly',
+      description: n.resumo || (n.corpo&&n.corpo[0]) || '',
+      url: nUrl,
+      image: n.imagem,
+      type: 'article'
+    });
+    window.pfJSONLD({
+      "@context":"https://schema.org",
+      "@type":"NewsArticle",
+      "headline":n.titulo,
+      "description":n.resumo||'',
+      "image":[n.imagem],
+      "url":nUrl,
+      "mainEntityOfPage":nUrl,
+      "author":{"@type":"Organization","name":"PaceFly"},
+      "publisher":{"@type":"Organization","name":"PaceFly","logo":{"@type":"ImageObject","url":"https://pacefly.com.br/assets/PaceFly_Logo_Oficial.png"}}
+    });
     const corpo=(n.corpo||[]).map(p=>`<p>${p}</p>`).join('');
 
     const outras=lista.filter(x=>x.id!==n.id).slice(0,3).map(o=>`

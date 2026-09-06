@@ -4,7 +4,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://pacefly.com.br/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,41 +17,50 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- DICAS -->
-  <url><loc>https://pacefly.com.br/dica.html?id=do-sofa-aos-5k</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=o-que-comer-antes-e-depois-do-treino</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=como-se-vestir-para-correr-no-inverno-de-sc</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=protecao-da-pele-para-correr-no-inverno</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=sua-primeira-prova-checklist-da-semana</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=correndo-na-chuva-inverno-sc</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- DICAS (regenerado em 05/09/2026: as 6 abaixo são as que estão
+       no ar hoje em assets/data.js, PACEFLY_DICAS. Este array é
+       rotacionado por completo a cada 2 semanas — sempre que a
+       rotação acontecer, regenerar este bloco junto. -->
+  <url><loc>https://pacefly.com.br/dica.html?id=hidratacao-antes-durante-depois-do-treino</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=primeira-semana-de-treino-do-zero</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=respiracao-na-corrida-evitar-pontada</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=quando-trocar-o-tenis-de-corrida</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=motivacao-quando-a-vontade-de-treinar-sai-de-ferias</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=aquecimento-e-alongamento-antes-e-depois</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- NOTÍCIAS -->
-  <url><loc>https://pacefly.com.br/noticia.html?id=hupi-run-2026-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=nb-42k-porto-alegre-resultados-kipchoge</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-rio-2026-recorde</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=floripa-fibra-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=nike-sp-city-marathon-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-joinville-estreia</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- NOTÍCIAS (regenerado em 05/09/2026: as 6 abaixo são as que
+       estão no ar hoje em assets/data.js, PACEFLY_NOTICIAS. Este
+       array é atualizado por item conforme sai notícia nova —
+       ao trocar/adicionar uma notícia, atualizar este bloco junto. -->
+  <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=desafio-drogaria-catarinense-2026-confirmado</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=tex-run-blumenau-2026</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=ademicon-run-joinville-2026-resultado</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=circuito-unimed-jaragua-2026-resultado</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-floripa-2026-fim-de-semana-ponte-hercilio-luz</loc><lastmod>2026-08-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- EVENTOS / CALENDÁRIO DE PROVAS -->
-  <url><loc>https://pacefly.com.br/evento.html?id=live-run-xp-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=menegotti-run-experience</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=night-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-verde-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-tigre-joinville</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=circuito-banco-do-brasil-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-protecao-animais</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-senhor-bom-jesus-guaramirim</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=ademicon-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-jaragua-do-sul</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=jtc-run-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=desafio-drogaria-catarinense</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-pela-vida-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-rede-feminina-guaramirim</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-6k</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-42k</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-joinville</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-do-tatico</loc><lastmod>2026-07-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <!-- EVENTOS / CALENDÁRIO DE PROVAS (regenerado em 05/09/2026: os
+       18 abaixo são os que estão no ar hoje em assets/data.js,
+       PACEFLY_EVENTOS. Ao passar uma prova ou adicionar uma nova,
+       atualizar este bloco junto — provas que saem do calendário
+       devem sair também daqui, senão viram link morto indexado. -->
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-avc-sao-francisco-do-sul</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-do-fogo-mafra</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=jtc-run-joinville</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=barra-run-barra-velha</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=desafio-drogaria-catarinense</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-cooper-jaragua-do-sul</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=meia-maratona-bela-vista-gaspar</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-pela-vida-joinville</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=sports-run-jaragua-do-sul</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=maratona-internacional-pomerode</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-sao-francisco-do-sul</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-sao-bento-do-sul</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-rede-feminina-guaramirim</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-6k</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-42k</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-mafra</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-joinville</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pacefly.com.br/evento.html?id=corrida-do-tatico</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 
 </urlset>
