@@ -23,28 +23,12 @@
      de divulgar amplamente.
    ============================================================ */
 
-// PACEFLY_EVENTOS — versão corrigida (links oficiais reais)
+// PACEFLY_EVENTOS: versão corrigida (links oficiais reais)
 // Substitua todo o array PACEFLY_EVENTOS do seu assets/data.js
 // por este bloco abaixo (do "const PACEFLY_EVENTOS = [" até o "];")
 // ============================================================
 
 const PACEFLY_EVENTOS = [
-  {
-    "id": "corrida-avc-sao-francisco-do-sul",
-    "nome": "9ª Corrida e Caminhada de Combate ao AVC",
-    "dia": "06",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "6 de setembro de 2026",
-    "cidade": "São Francisco do Sul, SC",
-    "largada": "Av. Jaime Ernesto de Oliveira, 1",
-    "organizador": "KM Eventos Esportivos",
-    "edicao": "9ª edição",
-    "distancias": ["8 km", "4 km"],
-    "descricao": "Nona edição da Corrida e Caminhada de Combate ao AVC, em São Francisco do Sul, com largada na Av. Jaime Ernesto de Oliveira, 1, e percursos de 8 km e 4 km. A prova une esporte e conscientização sobre a prevenção do AVC.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/9-corrida-e-caminhada-de-combate-ao-avc-86921"
-  },
   {
     "id": "corrida-do-fogo-mafra",
     "nome": "1ª Corrida do Fogo",
@@ -62,6 +46,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://www.ticketsports.com.br/e/1-corrida-do-fogo-74816"
   },
   {
+    "id": "balneario-shopping-night-run",
+    "nome": "Balneário Shopping Night Run",
+    "dia": "12",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "12 de setembro de 2026",
+    "cidade": "Balneário Camboriú, SC",
+    "largada": "Balneário Shopping, Av. Santa Catarina, 1, bairro dos Estados. Concentração às 23h30, largada dos 5 km às 23h50 e dos 2,5 km às 23h59",
+    "organizador": "Number Esportes",
+    "edicao": "Edição 2026",
+    "distancias": ["5 km", "2,5 km"],
+    "descricao": "Corrida noturna com percurso montado inteiramente dentro do Balneário Shopping, no estacionamento e no mall, em ambiente iluminado e fechado ao trânsito. São 250 vagas para os 5 km e 250 para os 2,5 km, com tempo limite de 1 hora e premiação do 1º ao 5º lugar no geral de cada distância. O kit inclui camiseta, medalha, squeeze, chip e número de peito, e a retirada acontece no próprio shopping das 10h às 22h do dia da prova.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/BALNE%C3%81RIO+SHOPPING+NIGHT+RUN-87850"
+  },
+  {
     "id": "jtc-run-joinville",
     "nome": "JTC Run",
     "dia": "13",
@@ -70,12 +70,12 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "13 de setembro de 2026",
     "cidade": "Joinville, SC",
-    "largada": "Joinville Tênis Clube",
+    "largada": "Joinville Tênis Clube, Rua Aubé, 177, Saguaçu, às 7h",
     "organizador": "42K Assessoria Esportiva",
     "edicao": "Edição 2026",
-    "distancias": ["11 km", "3,5 km"],
-    "descricao": "Prova de rua com largada no Joinville Tênis Clube e percursos de 11 km e 3,5 km.",
-    "oficialUrl": "https://42k.esp.br"
+    "distancias": ["11 km", "3,5 km", "Kids"],
+    "descricao": "Prova de rua com largada às 7h no Joinville Tênis Clube, na Rua Aubé, 177, bairro Saguaçu, com percursos de 11 km e 3,5 km e corrida kids logo depois da chegada do último adulto, a partir das 8h30. Os 11 km sobem pela Rua Dona Francisca e voltam pelo Boa Vista, e os 3,5 km fazem um circuito curto pelas ruas do entorno do clube. O limite é de 1.100 atletas e o tempo máximo de prova é de 1h30.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/JTC+RUN+2026+-+JOINVILLE+-+SC-86176"
   },
   {
     "id": "barra-run-barra-velha",
@@ -86,11 +86,11 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "13 de setembro de 2026",
     "cidade": "Barra Velha, SC",
-    "largada": "Barra Velha, SC",
-    "organizador": "Barra Run",
+    "largada": "Praça Lauro Carneiro de Loyola, Avenida Paraná, 96, em frente ao Hotel Candeias, às 7h",
+    "organizador": "Mons Ultra Trail",
     "edicao": "Edição 2026",
-    "distancias": ["16 km", "10 km", "5 km"],
-    "descricao": "Prova tradicional do litoral norte catarinense, com percursos de 16 km, 10 km e 5 km à beira-mar em Barra Velha. Os 16 km fazem dela uma boa opção para quem quer testar uma distância acima dos 10 km sem encarar a meia maratona.",
+    "distancias": ["16 km", "10 km", "5 km", "Caminhada 3 km", "Kids"],
+    "descricao": "Prova tradicional do litoral norte catarinense, com arena montada na Praça Lauro Carneiro de Loyola, na Avenida Paraná, 96, perto da lagoa de Barra Velha. Largada única às 7h para 16 km, 10 km e 5 km, com caminhada de 3 km e corrida kids no mesmo local. O tempo limite é de 3 horas, e os 16 km fazem dela uma boa opção para quem quer testar uma distância acima dos 10 km sem encarar a meia maratona.",
     "oficialUrl": "https://www.ticketsports.com.br/e/barra-run-2026-74328"
   },
   {
@@ -140,6 +140,38 @@ const PACEFLY_EVENTOS = [
     "distancias": ["21 km", "10 km", "5 km", "Maratoninha"],
     "descricao": "Considerada a meia maratona mais antiga do Brasil, a prova reúne mais de 3 mil participantes em Gaspar, no Vale do Itajaí. A largada dos adultos é às 6h30, no Bela Vista Country Club, com percursos de 21 km, 10 km e 5 km. A Maratoninha, para crianças de 4 a 13 anos, sai às 9h15 e tem vagas limitadas a 200 participantes.",
     "oficialUrl": "https://www.clubebelavista.com.br/eventos/42-meia-maratona"
+  },
+  {
+    "id": "garuva-run",
+    "nome": "Garuva Run",
+    "dia": "27",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "27 de setembro de 2026",
+    "cidade": "Garuva, SC",
+    "largada": "Praça Pedro Ivo Campos, Avenida Celso Ramos, em frente ao estacionamento da Paróquia São João Batista. Largada dos 14 km às 7h, dos 7 km às 7h10 e dos 3 km às 7h20",
+    "organizador": "KM Eventos Esportivos",
+    "edicao": "Edição 2026",
+    "distancias": ["14 km", "7 km", "3 km"],
+    "descricao": "Prova em Garuva, a menos de 40 minutos de Joinville, com percursos que passam pelo verde da Serra do Mar, por nascentes e rios da região. Os 14 km contornam a Ponte de Arame e voltam pela Estrada Colonial Otto Roder, os 7 km vão até a Pedra da Judite e retornam pelo mesmo trajeto, e os 3 km seguem em direção a Garuva acima. As inscrições vão até 20 de setembro, e o kit básico traz medalha, número de peito e chip, com opção de kit completo com camiseta. Há retirada de kit em Joinville, em local a ser divulgado pela organização.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/GARUVA+RUN-87861"
+  },
+  {
+    "id": "corrida-solida-rio-negrinho",
+    "nome": "3ª Corrida de Rua Solida",
+    "dia": "27",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "27 de setembro de 2026",
+    "cidade": "Rio Negrinho, SC",
+    "largada": "Mak Center, Rua Capitão Osmar Romão da Silva, 303, Centro. Largada dos 10 km às 7h30 e dos 5 km às 7h40",
+    "organizador": "CJR Academia e Eventos",
+    "edicao": "3ª edição",
+    "distancias": ["10 km", "5 km"],
+    "descricao": "Terceira edição da Corrida Solida em Rio Negrinho, no planalto norte catarinense, com largada no Mak Center, na Rua Capitão Osmar Romão da Silva, 303. Os 10 km saem às 7h30 e os 5 km às 7h40, com aquecimento coletivo a partir das 7h e premiação às 9h. O kit tem número de peito, chip descartável e camiseta, com retirada em 26 de setembro no próprio Mak Center, das 8h às 16h. As inscrições vão até 18 de setembro ou até o limite de 800 atletas.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/3%C2%AA+CORRIDA+DE+RUA+SOLIDA-86668"
   },
   {
     "id": "corrida-pela-vida-joinville",
@@ -220,6 +252,38 @@ const PACEFLY_EVENTOS = [
     "distancias": ["10 km", "5 km"],
     "descricao": "Etapa são-bentense do Circuito de Corridas Unimed, com largada às 8h na Avenida dos Imigrantes e percursos de 10 km e 5 km. A retirada de kits acontece em 12 de outubro, das 14h às 17h, na sede da Unimed. Clientes com carteirinha Unimed têm 50% de desconto na inscrição.",
     "oficialUrl": "https://circuitodecorridaunimed.com.br/corrida/sao-bento-do-sul/"
+  },
+  {
+    "id": "gutbrau-oktober-run-joinville",
+    "nome": "Gutbrau Oktober Run",
+    "dia": "18",
+    "mes": "10",
+    "mesTxt": "OUT",
+    "ano": 2026,
+    "dataExtenso": "18 de outubro de 2026",
+    "cidade": "Joinville, SC",
+    "largada": "Gutbrau Cervejaria, Estrada Mutucas, 3122, Vila Nova, às 8h",
+    "organizador": "42K Assessoria Esportiva",
+    "edicao": "Edição 2026",
+    "distancias": ["15 km", "10 km", "5 km", "Kids"],
+    "descricao": "Corrida com arena na Gutbrau Cervejaria, na Estrada Mutucas, 3122, bairro Vila Nova, em Joinville. Largada única às 8h para 15 km, 10 km e 5 km, com corrida kids às 10h e premiação a partir das 10h30. O percurso é basicamente plano: os 5 km são em paver e os 10 km e 15 km têm predomínio de chão batido, com hidratação a cada 3 km. É uma das poucas provas da região a oferecer 15 km, distância que serve bem de teste para quem prepara uma meia maratona. As inscrições vão até 12 de outubro e a retirada de kit está prevista para 17 de outubro.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/GUTBRAU+Oktober+RUN+-88131"
+  },
+  {
+    "id": "corrida-matriz-oxford-sao-bento",
+    "nome": "2ª Corrida da Matriz Oxford",
+    "dia": "24",
+    "mes": "10",
+    "mesTxt": "OUT",
+    "ano": 2026,
+    "dataExtenso": "24 de outubro de 2026",
+    "cidade": "São Bento do Sul, SC",
+    "largada": "Igreja Matriz Oxford, Rua São Cristóvão, bairro Oxford, às 21h",
+    "organizador": "CJR Academia e Eventos",
+    "edicao": "2ª edição",
+    "distancias": ["5 km", "Caminhada 3 km"],
+    "descricao": "Segunda edição da Corrida da Matriz Oxford, prova noturna em São Bento do Sul com largada às 21h na Igreja Matriz Oxford, na Rua São Cristóvão. São 5 km de corrida e 3 km de caminhada, com premiação logo depois, às 22h. A retirada de kit acontece em 23 de outubro no salão de festas da igreja, na Rua Alfredo Diener, 87, e também no dia da prova, das 8h às 20h30. As inscrições vão até 16 de outubro ou até o limite de 800 atletas.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/2%C2%AA+CORRIDA+DA+MATRIZ+OXFORD-87381"
   },
   {
     "id": "corrida-rede-feminina-guaramirim",
@@ -356,20 +420,20 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "tex-run-blumenau-2026",
-    categoria: "Na região",
-    titulo: "Tex Run estreia em Blumenau com vitórias de Felipe Tiago de Souza e Alessandra Dolberth",
-    resumo: "Primeira edição da prova, criada para celebrar os 40 anos da Tex Cotton, levou corredores às ruas do bairro Vorstadt neste domingo, com percursos de 8 km e 4 km e ação solidária de doação de alimentos.",
-    dataTxt: "30 de agosto de 2026",
-    local: "Blumenau, SC",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Super Crono",
-    fonteUrl: "https://www.supercrono.com.br/resultados/result/#/corrida-tex-run-2026",
+    id: "gutbrau-oktober-run-joinville-2026",
+    categoria: "Gutbrau Oktober Run",
+    titulo: "Joinville ganha uma prova de 15 km em outubro, com largada na Gutbrau Cervejaria",
+    resumo: "A Gutbrau Oktober Run acontece em 18 de outubro, na Estrada Mutucas, com percursos de 15 km, 10 km e 5 km. A distância de 15 km é rara no calendário da região e cai bem para quem está montando base para uma meia maratona.",
+    dataTxt: "18 de outubro de 2026",
+    local: "Joinville, SC",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Ticket Sports",
+    fonteUrl: "https://www.ticketsports.com.br/e/GUTBRAU+Oktober+RUN+-88131",
     corpo: [
-      "Blumenau recebeu neste domingo, 30 de agosto, a estreia da Tex Run, prova criada pela Tex Cotton para celebrar os 40 anos da companhia têxtil, uma das mais tradicionais do Vale do Itajaí. A largada saiu da própria sede da empresa, na Rua Itajaí, 948, no bairro Vorstadt, com percursos de 8 km e 4 km, caminhada e corrida kids.",
-      "Nos 8 km, Adilson Alves Dolberth venceu o masculino com 27min20s, e Simoni Gabriel foi a campeã feminina, com 34min39s. Já nos 4 km, o mais rápido foi Felipe Tiago de Souza, com 13min43s, e Alessandra Alves Dolberth levou o título feminino, com 17min09s. Os tempos ainda constam como classificação extraoficial na plataforma de cronometragem.",
-      "A prova também teve um lado solidário: cada inscrição incluiu a doação de 1 kg de alimento não perecível, revertido a entidades da região que trabalham com acolhimento de crianças.",
-      "Para quem mora em Joinville e no norte catarinense, Blumenau fica a menos de duas horas de viagem, e a boa adesão da primeira edição da Tex Run sinaliza que ela deve voltar ao calendário do Vale do Itajaí em 2027."
+      "A 42K Assessoria Esportiva confirmou a Gutbrau Oktober Run para 18 de outubro, com arena montada na Gutbrau Cervejaria, na Estrada Mutucas, 3122, no bairro Vila Nova, em Joinville. A largada é única, às 8h, para as três distâncias adultas.",
+      "O detalhe que chama atenção no calendário regional é a prova de 15 km. Entre os 10 km, que dominam o calendário de Joinville, e a meia maratona, quase não existe opção intermediária por aqui. Quem está construindo volume para encarar 21 km costuma ter que inventar o teste sozinho no treino, e a Gutbrau oferece esse degrau com estrutura de prova, hidratação e cronometragem.",
+      "O percurso ajuda nessa leitura. A organização informa que os 5 km correm em paver e que os 10 km e 15 km têm predomínio de chão batido, com traçado descrito como basicamente plano e rápido. Há postos de hidratação a cada 3 km e também na chegada, além de guarda-volumes na área interna da cervejaria. O tempo limite é de 2 horas.",
+      "A corrida kids sai às 10h, depois da chegada do último adulto, com percursos de 50 m a 300 m conforme a idade, e a premiação começa por volta das 10h30. As inscrições ficam abertas até 12 de outubro, e a retirada de kit está prevista para o dia 17, em local ainda a ser anunciado. Atenção para uma regra que costuma pegar gente desprevenida: não há entrega de kit no dia da prova para quem mora em Joinville."
     ]
   },
   {
@@ -380,8 +444,8 @@ const PACEFLY_NOTICIAS = [
     dataTxt: "30 de agosto de 2026",
     local: "Joinville, SC",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Km Eventos",
-    fonteUrl: "https://www.km.esp.br/resultado/ademicon-run,1300826",
+    fonteNome: "42K Assessoria Esportiva",
+    fonteUrl: "https://42k.esp.br",
     corpo: [
       "A Ademicon Run, prova de rua organizada pela 42K Assessoria Esportiva com largada na sede da Ademicon, em Joinville, teve sua edição de 2026 disputada neste domingo, 30 de agosto, com percursos de 8 km e 4 km.",
       "Nos 8 km, o pódio masculino foi liderado por Lucas Brandalise, seguido por Luciano Manfio e Wagner Carvalho Cardozo Borges. No feminino, a vitória ficou com Rafaela Pereira Benevenuto, à frente de Rafaela Barbara da Silva e Aline da Silva.",
@@ -397,8 +461,8 @@ const PACEFLY_NOTICIAS = [
     dataTxt: "30 de agosto de 2026",
     local: "Jaraguá do Sul, SC",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "MyCrono",
-    fonteUrl: "https://resultados.racetag.com.br/mycrono/#/circuito-unimed-jaragua-do-sul-2026",
+    fonteNome: "Circuito de Corridas Unimed",
+    fonteUrl: "https://circuitodecorridaunimed.com.br/",
     corpo: [
       "O Circuito de Corridas Unimed, um dos calendários mais capilarizados de Santa Catarina, passou por Jaraguá do Sul neste domingo, 30 de agosto, com largada no estacionamento do Parque Linear Via Verde e percursos de 5 km e 10 km.",
       "Nos 10 km, Hailander da Silva foi o campeão masculino, com o tempo de 35min35s, e Aldenia Marinho venceu o feminino, em 43min10s. Nos 5 km, Caio Henrique de Oliveira levou o título masculino, com 17min30s, e Lucimari Perin Miretzki foi a campeã feminina, com 20min00s.",
@@ -407,20 +471,20 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "maratona-floripa-2026-fim-de-semana-ponte-hercilio-luz",
-    categoria: "Maratona de Floripa",
-    titulo: "Maratona de Floripa tem ugandense e brasileira como campeões dos 42 km, com recorde de percurso",
-    resumo: "Jonathan Akankwasa e Ana Catarina Amancio de Oliveira venceram a maratona, disputada neste domingo com cerca de 19 mil atletas de 26 países. No sábado, os títulos da meia maratona também saíram com recorde, para o queniano Nicolas Kosgei e a colombiana Laura Morales.",
-    dataTxt: "29 e 30 de agosto de 2026",
-    local: "Florianópolis, SC",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "NSC Total",
-    fonteUrl: "https://www.nsctotal.com.br/esportes/veja-os-campeoes-da-prova-de-42-km-da-maratona-internacional-de-floripa",
+    id: "garuva-run-2026",
+    categoria: "Na região",
+    titulo: "Garuva Run leva corredores para dentro da Serra do Mar em 27 de setembro",
+    resumo: "A prova sai da Praça Pedro Ivo Campos, a menos de 40 minutos de Joinville, com percursos de 14 km, 7 km e 3 km. Os 14 km contornam a Ponte de Arame e voltam pela Estrada Colonial Otto Roder.",
+    dataTxt: "27 de setembro de 2026",
+    local: "Garuva, SC",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Ticket Sports",
+    fonteUrl: "https://www.ticketsports.com.br/e/GARUVA+RUN-87861",
     corpo: [
-      "A Maratona Internacional de Floripa Fibra 2026 tomou conta da Beira-Mar Norte neste fim de semana, com pelotões de cerca de 19 mil corredores representando 26 países. A concentração ficou na Praça Sesquicentenário, com provas de 42 km, 21 km, 5 km e a divisão infantil.",
-      "Nos 42 km, disputados no domingo, 30 de agosto, o ugandense Jonathan Akankwasa venceu com tempo recorde de 2h14min56s, superando o brasileiro Antonio Marco Pereira de Araújo, que buscava o tricampeonato e terminou em terceiro. No feminino, a brasileira Ana Catarina Amancio de Oliveira faturou o bicampeonato com marca também recorde, 2h40min35s.",
-      "No sábado, 29 de agosto, a meia maratona também teve recordes de percurso: o queniano Nicolas Kiptoo Kosgei cravou 1h03min43s no masculino, e a colombiana Laura Manuela Morales fez 1h15min33s no feminino. Nos 5 km de domingo, Fernando Augusto Rodrigues da Silva e Isadora Martello Chiesorin foram os campeões.",
-      "A edição trouxe um novo traçado com passagem sob a Ponte Hercílio Luz em todas as categorias adultas, além de chancela da World Athletics para a meia maratona e selo Road Race Label para os 42 km, que integram o Circuito Brasil Gigante. Para o corredor de Joinville e do norte catarinense, a Maratona de Floripa segue como a principal referência de prova grande dentro do estado."
+      "A KM Eventos Esportivos confirmou a Garuva Run para 27 de setembro, com arena na Praça Pedro Ivo Campos, na Avenida Celso Ramos, em frente ao estacionamento da Paróquia São João Batista. Para quem sai de Joinville, é menos de 40 minutos de estrada, o que coloca a prova na faixa de viagem curta que dá para fazer na manhã do próprio domingo.",
+      "São três percursos. Os 14 km contornam a Ponte de Arame, ponto que a própria organização sinaliza como de atenção, e retornam pela Estrada Colonial Otto Roder. Os 7 km vão até a Pedra da Judite e voltam pelo mesmo trajeto. Os 3 km seguem em direção a Garuva acima, também com retorno pelo mesmo caminho.",
+      "As largadas são escalonadas: 7h para os 14 km, 7h10 para os 7 km e 7h20 para os 3 km. O tempo limite dos 14 km é de 2h20, o que equivale a um pace máximo de 10 min/km. A premiação começa às 10h, com troféus do 1º ao 5º lugar no geral e do 1º ao 3º nas categorias por idade.",
+      "O que diferencia essa prova das corridas urbanas da região é o cenário. O traçado atravessa uma área de mata preservada da Serra do Mar, com nascentes e rios ao longo do caminho. Há postos de hidratação no percurso e na chegada, mas a organização sugere que quem corre com cinta ou mochila leve a própria água. As inscrições vão até 20 de setembro, e haverá um ponto de retirada de kit em Joinville, ainda a ser anunciado."
     ]
   }
 ];
@@ -654,7 +718,7 @@ function pfParceiro(id) {
    à mão, em rankings.html).
    IMPORTANTE: isso ajuda o Google (que executa JS ao indexar),
    mas NÃO ajuda o preview de compartilhamento no WhatsApp/
-   Instagram/Twitter — esses robôs leem só o HTML estático, sem
+   Instagram/Twitter, porque esses robôs leem só o HTML estático, sem
    rodar JS. Para preview de compartilhamento correto por item,
    seria preciso gerar HTML estático por página (fora do escopo
    desta correção).

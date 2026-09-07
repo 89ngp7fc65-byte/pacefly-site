@@ -40,10 +40,10 @@ SAIDA = AQUI / "assets" / "ranking_2026.json"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "02/09/2026",
+    "atualizado_em": "06/09/2026",
     "temporada": 2026,
-    "total_provas": 12,
-    "total_participacoes": 6873,
+    "total_provas": 13,
+    "total_participacoes": 7724,
     "periodo_coberto": "14 de junho a 30 de agosto de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
@@ -57,13 +57,17 @@ META = {
         "2ª Menegotti Run Together · 02/08 · Jaraguá do Sul",
         "Corrida Tigre 85 Anos · 16/08 · Joinville",
         "Circuito Banco do Brasil · 23/08 · Joinville",
+        "2ª Corrida com o Senhor Bom Jesus · 23/08 · Guaramirim",
         "Circuito de Corridas Unimed · 30/08 · Jaraguá do Sul",
     ],
     # Setas de subida e queda. Deixe True na rotina normal.
-    # Está False nesta rodada porque o historico_posicoes foi regenerado junto
-    # com o recálculo de 02/09 (mesma data da apuração). Comparar posição atual
-    # com posição atual daria "=" para todo mundo sem significado real.
-    # Volte para True na próxima apuração, quando a comparação for limpa.
+    # Segue False em 06/09/2026 pelo mesmo motivo de 02/09: o recálculo
+    # sobrescreveu o historico_posicoes antes de o JSON ser gerado, e o
+    # snapshot de 02/09 não tinha backup, então não existe base de comparação
+    # limpa nesta rodada. Isso foi corrigido na origem: o recalcular_ranking.py
+    # agora preserva o snapshot antigo em historico_posicoes_ANTERIOR_*.csv,
+    # que este script passou a ler primeiro. A partir da próxima apuração pode
+    # voltar para True e as setas voltam a funcionar sozinhas.
     "usar_historico": False,
 }
 
@@ -196,9 +200,18 @@ def main():
     elif len(sys.argv) > 2:
         historico = ler_historico(sys.argv[2])
     else:
-        auto = origem.parent / "historico_posicoes_norte_sc_2026.csv"
-        if auto.exists():
-            print(f"[OK] Historico encontrado automaticamente ao lado do CSV")
+        # O ANTERIOR vem primeiro de proposito. O recalcular_ranking.py grava
+        # nele o snapshot da apuracao passada antes de sobrescrever o oficial,
+        # entao ele e a comparacao correta mesmo quando o recalculo ja rodou.
+        # O oficial fica de reserva, para bases antigas que ainda nao tem o
+        # ANTERIOR gravado.
+        candidatos = [
+            origem.parent / "historico_posicoes_ANTERIOR_norte_sc_2026.csv",
+            origem.parent / "historico_posicoes_norte_sc_2026.csv",
+        ]
+        auto = next((c for c in candidatos if c.exists()), None)
+        if auto:
+            print(f"[OK] Historico encontrado automaticamente: {auto.name}")
             historico = ler_historico(auto)
         else:
             print("[INFO] Sem historico de posicoes. A coluna Variacao ficara vazia.")
