@@ -40,7 +40,7 @@ SAIDA = AQUI / "assets" / "ranking_2026.json"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "06/09/2026",
+    "atualizado_em": "07/09/2026",
     "temporada": 2026,
     "total_provas": 13,
     "total_participacoes": 7724,
@@ -61,13 +61,13 @@ META = {
         "Circuito de Corridas Unimed · 30/08 · Jaraguá do Sul",
     ],
     # Setas de subida e queda. Deixe True na rotina normal.
-    # Segue False em 06/09/2026 pelo mesmo motivo de 02/09: o recálculo
-    # sobrescreveu o historico_posicoes antes de o JSON ser gerado, e o
-    # snapshot de 02/09 não tinha backup, então não existe base de comparação
-    # limpa nesta rodada. Isso foi corrigido na origem: o recalcular_ranking.py
-    # agora preserva o snapshot antigo em historico_posicoes_ANTERIOR_*.csv,
-    # que este script passou a ler primeiro. A partir da próxima apuração pode
-    # voltar para True e as setas voltam a funcionar sozinhas.
+    # Segue False em 07/09/2026, e desta vez por um motivo de conteúdo, não
+    # técnico: esta apuração corrigiu a colocação por sexo que estava sendo
+    # pontuada como geral em 10 das 13 provas. Quase todo mundo muda de lugar,
+    # mas por causa da correção de metodologia, não de desempenho. Mostrar
+    # seta aqui seria dizer ao atleta que ele caiu 300 posições correndo bem.
+    # A partir da próxima apuração pode voltar para True: o snapshot desta
+    # rodada já nasce com o cálculo certo, e a comparação passa a ser limpa.
     "usar_historico": False,
 }
 

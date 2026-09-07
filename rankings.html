@@ -421,6 +421,14 @@ const norm = s => (s||"").toString().normalize("NFD")
   .replace(/\p{Diacritic}/gu,"")
   .toLowerCase().replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim();
 
+// Casa o termo por PALAVRAS, em qualquer ordem, e não por trecho contínuo.
+// Assim "alexandre klagenberg" acha "alexandre teobaldo klagenberg", que é
+// como o nome sai no resultado oficial da prova.
+const casa = (chave, termo) => {
+  const palavras = (termo||"").split(' ').filter(Boolean);
+  return palavras.length ? palavras.every(p=>chave.includes(p)) : true;
+};
+
 function carregar(){
   fetch('assets/ranking_2026.json',{cache:'no-store'})
     .then(r=>{ if(!r.ok) throw new Error('sem arquivo'); return r.json(); })
@@ -508,7 +516,7 @@ function trocarCategoria(cat){
     b.classList.toggle('on', b.dataset.cat === cat);
   });
   const termo = norm($('rklFiltro').value);
-  listaAtual = termo ? LISTAS[cat].filter(a=>a._k.includes(termo)) : LISTAS[cat];
+  listaAtual = termo ? LISTAS[cat].filter(a=>casa(a._k, termo)) : LISTAS[cat];
   visiveis = PAGINA;
   montarPodio();
   render();
@@ -584,7 +592,14 @@ function buscar(){
   }
 
   const exatos = DADOS.atletas.filter(a=>a._k===termo);
-  const parciais = DADOS.atletas.filter(a=>a._k.includes(termo));
+  // Busca por PALAVRAS, não por trecho contínuo. Corrigido em 07/09/2026:
+  // o filtro antigo era casa(a._k, termo), então quem tem nome do meio
+  // no resultado oficial nunca se achava. "rodrigo simoes" não casava com
+  // "rodrigo antonio simoes", e "alexandre klagenberg" não casava com
+  // "alexandre teobaldo klagenberg". Foi o motivo de dois corredores
+  // escreverem dizendo que não estavam no ranking, estando.
+  const palavras = termo.split(' ').filter(Boolean);
+  const parciais = DADOS.atletas.filter(a=>palavras.every(p=>a._k.includes(p)));
   const achados = exatos.length ? exatos : parciais;
 
   if(!achados.length){
@@ -592,7 +607,8 @@ function buscar(){
     area.innerHTML = `
       <div class="rkl-naoachou">
         <h3>Não encontramos esse nome na lista</h3>
-        <p>Pode ser que você ainda não tenha duas provas concluídas na região em 2026, ou que seu nome apareça de outra forma no resultado oficial. Tente buscar só o primeiro nome e o sobrenome.</p>
+        <p>O ranking mostra apenas quem completou <strong>duas provas ou mais</strong> da região em 2026. Se você correu só uma até agora, seu resultado já está na nossa base e você entra na lista automaticamente na próxima prova.</p>
+        <p>Se você já correu duas ou mais, pode ser que seu nome esteja escrito de outra forma no resultado oficial. Tente buscar só o primeiro nome, ou só o sobrenome.</p>
         <a href="index.html#calendario" class="btn btn-amar">Ver as próximas provas</a>
       </div>`;
     area.className='rkl-resultado on';
@@ -670,12 +686,12 @@ function mostrarAtleta(a, filtrar){
 
 function filtrarPor(termo, destacar){
   $('rklFiltro').value = termo;
-  listaAtual = LISTAS[catAtual].filter(a=>a._k.includes(termo));
+  listaAtual = LISTAS[catAtual].filter(a=>casa(a._k, termo));
   // Se o atleta não está na categoria aberta, volta para o geral para não
   // devolver uma lista vazia logo depois de a pessoa se encontrar.
   if(!listaAtual.length && catAtual !== 'geral'){
     trocarCategoria('geral');
-    listaAtual = LISTAS.geral.filter(a=>a._k.includes(termo));
+    listaAtual = LISTAS.geral.filter(a=>casa(a._k, termo));
     $('rklFiltro').value = termo;
   }
   visiveis = Math.max(PAGINA, listaAtual.length<=PAGINA?PAGINA:visiveis);
@@ -893,6 +909,18 @@ function gerarImagem(d, semLogo){
   ctx.fillStyle='#FFC400'; ctx.font='800 30px Montserrat, Arial, sans-serif';
   ctx.fillText('NORTE DE SC', W-L, H-120);
 
+  // Carimbo da apuração. Sem ele, dois atletas que baixam o card em semanas
+  // diferentes publicam colocações que se contradizem, e não há como saber
+  // qual é a mais recente. A posição vale para a data impressa aqui.
+  //
+  // Fica na coluna da direita, embaixo de "NORTE DE SC", espelhando a coluna
+  // da esquerda (@paceflyrunning + endereço do site). Em caixa alta e no
+  // mesmo tom do endereço, para ler como informação de rodapé e não competir
+  // com a posição, que é a estrela do card.
+  ctx.fillStyle='rgba(255,255,255,.62)';
+  ctx.font='700 24px Montserrat, Arial, sans-serif';
+  ctx.fillText('APURAÇÃO DE ' + (DADOS.atualizado_em || '--/--/----'), W-L, H-72);
+
   // Desenhar uma imagem no canvas "contamina" ele quando a página é aberta
   // direto do disco (file://). Nesse caso exportar dispara SecurityError e o
   // botão de baixar morreria. Se acontecer, redesenha sem o logo e segue.
@@ -1013,7 +1041,7 @@ $('rklFiltro').addEventListener('input', ()=>{
   clearTimeout(tFiltro);
   tFiltro = setTimeout(()=>{
     const t = norm($('rklFiltro').value);
-    listaAtual = t ? LISTAS[catAtual].filter(a=>a._k.includes(t)) : LISTAS[catAtual];
+    listaAtual = t ? LISTAS[catAtual].filter(a=>casa(a._k, t)) : LISTAS[catAtual];
     visiveis = PAGINA;
     render();
   },160);
