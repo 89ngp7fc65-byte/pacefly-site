@@ -94,6 +94,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://www.ticketsports.com.br/e/barra-run-2026-74328"
   },
   {
+    "id": "corridas-do-bem-jaragua-do-sul",
+    "nome": "Corridas do Bem SESI Saúde - Etapa Jaraguá do Sul",
+    "dia": "13",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "13 de setembro de 2026",
+    "cidade": "Jaraguá do Sul, SC",
+    "largada": "Bernardo Dornbusch, 1400, Vila Lalau, às 7h",
+    "organizador": "SESI/SC",
+    "edicao": "Edição 2026",
+    "distancias": ["10 km", "5 km", "Maratoninha", "Caminhada"],
+    "descricao": "Etapa jaraguaense do Circuito Corridas do Bem, realizado pelo SESI/SC em 16 cidades catarinenses ao longo de 2026. A prova reúne percursos de 5 km e 10 km para adultos, maratoninha para crianças e adolescentes de 2 a 13 anos e trajeto de caminhada. Parte do valor das inscrições é repassado a entidades beneficentes de Jaraguá do Sul. A etapa inclui o Festival Som em Movimento, com atrações musicais no espaço da prova. É a última das três etapas do circuito no Norte de SC nesta temporada, após Joinville em julho e São Bento do Sul em agosto.",
+    "oficialUrl": "https://sesisc.org.br/pt-br/eventos/sesi-corridas-do-bem-jaragua-do-sul"
+  },
+  {
     "id": "desafio-drogaria-catarinense",
     "nome": "4º Desafio Drogaria Catarinense",
     "dia": "19",
