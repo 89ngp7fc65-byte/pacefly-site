@@ -38,12 +38,12 @@ const PACEFLY_EVENTOS = [
     "ano": 2026,
     "dataExtenso": "12 de setembro de 2026",
     "cidade": "Mafra, SC",
-    "largada": "Mafra, SC (endereço e horário de largada a confirmar com a organização)",
+    "largada": "Quartel do Corpo de Bombeiros de Mafra, Av. Pref. Frederico Heyse, 111, Centro, Mafra-SC. Entrega de kits das 9h às 19h30 no local de largada, aquecimento das 19h30 às 20h, largada dos 5 km às 20h e premiação a partir das 21h",
     "organizador": "CJR Academia e Eventos",
     "edicao": "1ª edição",
     "distancias": ["5 km"],
-    "descricao": "Estreia da Corrida do Fogo em Mafra, no planalto norte catarinense, com percurso de 5 km. Confirme horário de largada e local exato de concentração diretamente com a organização antes de se inscrever.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/1-corrida-do-fogo-74816"
+    "descricao": "Estreia da Corrida do Fogo em Mafra, no planalto norte catarinense, com percurso noturno de 5 km pelas principais ruas do município, largada às 20h no Quartel do Corpo de Bombeiros. A prova comemora o centenário do CBMSC e a renda líquida das inscrições vai para a Associação de Bombeiros Comunitários de Mafra. Limite técnico de 500 inscritos e tempo máximo de 1 hora de prova. As inscrições se encerraram em 04 de setembro de 2026.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/1a-corrida-do-fogo-mafra-sc-87412"
   },
   {
     "id": "balneario-shopping-night-run",
