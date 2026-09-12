@@ -19,6 +19,11 @@
      parágrafos. "fonteUrl" é a origem da informação.
    - Campos que não tiver: deixe "" ou null. A página esconde
      automaticamente o que estiver vazio.
+   - "inscricoesEncerradas": true quando a inscrição da prova já
+     fechou, mesmo que a prova ainda não tenha acontecido. O site
+     troca o CTA por "Inscrições encerradas" e mantém o link para
+     a página oficial. Prova com data já passada é tratada como
+     encerrada automaticamente, sem precisar do campo.
    - Imagens: troque as URLs por fotos próprias/licenciadas antes
      de divulgar amplamente.
    ============================================================ */
@@ -43,6 +48,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "1ª edição",
     "distancias": ["5 km"],
     "descricao": "Estreia da Corrida do Fogo em Mafra, no planalto norte catarinense, com percurso noturno de 5 km pelas principais ruas do município, largada às 20h no Quartel do Corpo de Bombeiros. A prova comemora o centenário do CBMSC e a renda líquida das inscrições vai para a Associação de Bombeiros Comunitários de Mafra. Limite técnico de 500 inscritos e tempo máximo de 1 hora de prova. As inscrições se encerraram em 04 de setembro de 2026.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://www.ticketsports.com.br/e/1a-corrida-do-fogo-mafra-sc-87412"
   },
   {
@@ -59,6 +65,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "Edição 2026",
     "distancias": ["5 km", "2,5 km"],
     "descricao": "Corrida noturna com percurso montado inteiramente dentro do Balneário Shopping, no estacionamento e no mall, em ambiente iluminado e fechado ao trânsito. São 250 vagas para os 5 km e 250 para os 2,5 km, com tempo limite de 1 hora e premiação do 1º ao 5º lugar no geral de cada distância. O kit inclui camiseta, medalha, squeeze, chip e número de peito, e a retirada acontece no próprio shopping das 10h às 22h do dia da prova.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://www.ticketsports.com.br/e/BALNE%C3%81RIO+SHOPPING+NIGHT+RUN-87850"
   },
   {
@@ -75,6 +82,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "Edição 2026",
     "distancias": ["11 km", "3,5 km", "Kids"],
     "descricao": "Prova de rua com largada às 7h no Joinville Tênis Clube, na Rua Aubé, 177, bairro Saguaçu, com percursos de 11 km e 3,5 km e corrida kids logo depois da chegada do último adulto, a partir das 8h30. Os 11 km sobem pela Rua Dona Francisca e voltam pelo Boa Vista, e os 3,5 km fazem um circuito curto pelas ruas do entorno do clube. O limite é de 1.100 atletas e o tempo máximo de prova é de 1h30.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://www.ticketsports.com.br/e/JTC+RUN+2026+-+JOINVILLE+-+SC-86176"
   },
   {
@@ -91,6 +99,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "Edição 2026",
     "distancias": ["16 km", "10 km", "5 km", "Caminhada 3 km", "Kids"],
     "descricao": "Prova tradicional do litoral norte catarinense, com arena montada na Praça Lauro Carneiro de Loyola, na Avenida Paraná, 96, perto da lagoa de Barra Velha. Largada única às 7h para 16 km, 10 km e 5 km, com caminhada de 3 km e corrida kids no mesmo local. O tempo limite é de 3 horas, e os 16 km fazem dela uma boa opção para quem quer testar uma distância acima dos 10 km sem encarar a meia maratona.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://www.ticketsports.com.br/e/barra-run-2026-74328"
   },
   {
@@ -123,6 +132,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "4ª edição",
     "distancias": ["10 km", "5 km", "Kids"],
     "descricao": "Quarta edição do Desafio Drogaria Catarinense, com largada no Ágora Tech Park e percursos de 10 km, 5 km e corrida kids. A prova vem crescendo ano a ano e já se consolidou entre as principais corridas de rua de Joinville.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507"
   },
   {
@@ -139,6 +149,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "Etapa Jaraguá do Sul",
     "distancias": ["7 km", "3 km", "Caminhada Pet 3 km", "Kids"],
     "descricao": "Etapa jaraguaense do Movimento Cooper, com largada às 8h no Parque Linear Via Verde, na Rua Bertholdo Bruns, bairro Ilha da Figueira. A programação reúne corrida de 7 km e 3 km, corrida kids e uma caminhada pet de 3 km para quem quiser levar o cachorro. A inscrição inclui a doação de 1 kg de alimento não perecível (exceto sal), entregue no dia da prova.",
+    "inscricoesEncerradas": true,
     "oficialUrl": "https://vemcorrer.com/evento/369-corrida-e-caminhada-movimento-cooper-n-etapa-jaragua-do-sul-2026"
   },
   {
@@ -692,8 +703,27 @@ function pfAplicar(item, ov) {
   if (ov.corpo) m.corpo = ov.corpo;
   if (ov.parceiro) m.parceiro = ov.parceiro; // 'sim' marca o evento como parceiro
   if (ov.cupom) m.cupom = ov.cupom;          // código do cupom (para badge no calendário)
+  if (ov['inscricoes-encerradas']) m.inscricoesEncerradas = /^(sim|true|1)$/i.test(ov['inscricoes-encerradas']);
   return m;
 }
+
+/* Inscrição encerrada? Fonte única usada pelo calendário e pela página do evento.
+   Duas situações contam: o campo "inscricoesEncerradas": true no objeto da prova,
+   para quando a inscrição fecha antes do dia da corrida, e a data da prova já ter
+   passado, que encerra sozinha sem precisar editar nada. O dia da prova ainda
+   conta como aberto, porque costuma haver inscrição de última hora na retirada
+   de kit. */
+function pfInscricoesEncerradas(ev) {
+  if (!ev) return false;
+  if (ev.inscricoesEncerradas === true) return true;
+  var dia = parseInt(ev.dia, 10), mes = parseInt(ev.mes, 10), ano = parseInt(ev.ano, 10);
+  if (!dia || !mes || !ano) return false;
+  var dataProva = new Date(ano, mes - 1, dia);
+  var hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);
+  return dataProva < hoje;
+}
+window.pfInscricoesEncerradas = pfInscricoesEncerradas;
 
 function pfLista(tipo, lista) {
   return Promise.all(lista.map(function (it) {

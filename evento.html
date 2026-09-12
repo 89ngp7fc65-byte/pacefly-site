@@ -123,6 +123,7 @@
     }
     const evImagem=heroImgs[ev.id]||heroDefault;
     const evUrl='https://pacefly.com.br/evento.html?id='+ev.id;
+    const encerrada=window.pfInscricoesEncerradas?window.pfInscricoesEncerradas(ev):false;
     window.pfSEO({
       title: ev.nome+' | PaceFly',
       description: ev.descricao || ('Prova de rua em '+ev.cidade+', '+ev.dataExtenso+'. Distâncias: '+ev.distancias.join(', ')+'.'),
@@ -146,13 +147,13 @@
       "image":[evImagem],
       "url":evUrl,
       "organizer":ev.organizador?{"@type":"Organization","name":ev.organizador}:undefined,
-      "offers":ev.oficialUrl?{"@type":"Offer","url":ev.oficialUrl,"availability":"https://schema.org/InStock"}:undefined
+      "offers":ev.oficialUrl?{"@type":"Offer","url":ev.oficialUrl,"availability":encerrada?"https://schema.org/SoldOut":"https://schema.org/InStock"}:undefined
     });
     const distPills=ev.distancias.map(d=>`<span class="dist-pill">${d}</span>`).join('');
     const temLink=!!ev.oficialUrl;
 
     const ctaOficial=temLink
-      ? `<a class="btn btn-azul" href="${ev.oficialUrl}" target="_blank" rel="noopener">Ver detalhes e inscrição</a>`
+      ? `<a class="btn btn-azul" href="${ev.oficialUrl}" target="_blank" rel="noopener">${encerrada?'Ver página oficial da prova':'Ver detalhes e inscrição'}</a>`
       : `<p class="side-obs" style="margin:0">${ev.infoIndisponivel || 'Mais informações em breve'}</p>`;
 
     alvo.innerHTML=`
@@ -168,9 +169,10 @@
           <h1>${ev.nome}</h1>
           <p class="sub">${ev.descricao||''}</p>
           <div class="ev-hero-cta">
-            ${temLink?`<a class="btn btn-amar" href="${ev.oficialUrl}" target="_blank" rel="noopener">Quero me inscrever</a>`:`<span class="ev-badge">${ev.infoIndisponivel || 'Mais informações em breve'}</span>`}
+            ${temLink?`<a class="btn ${encerrada?'btn-encerrada':'btn-amar'}" href="${ev.oficialUrl}" target="_blank" rel="noopener">${encerrada?'Inscrições encerradas':'Quero me inscrever'}</a>`:`<span class="ev-badge">${ev.infoIndisponivel || 'Mais informações em breve'}</span>`}
             <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35)" href="index.html#calendario">Ver outras provas</a>
           </div>
+          ${encerrada&&temLink?`<p class="ev-hero-nota">As inscrições desta prova já foram encerradas. O botão leva à página oficial do evento, que segue no ar com regulamento, percurso e informações de retirada de kit.</p>`:''}
         </div>
       </section>
 
@@ -189,7 +191,7 @@
               <div style="font-size:0.7rem;color:rgba(255,255,255,0.55);margin-top:6px">Toque para copiar</div>
             </div>
           </div>
-          ${temLink?`<a href="${ev.oficialUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#FFC400;color:#0c1e38;font-weight:800;font-size:0.95rem;padding:12px 28px;border-radius:8px;text-decoration:none;letter-spacing:0.5px">Inscreva-se com ${parceiro.desconto?parceiro.desconto+' de desconto':'desconto'} &rarr;</a>`:''}
+          ${temLink&&!encerrada?`<a href="${ev.oficialUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#FFC400;color:#0c1e38;font-weight:800;font-size:0.95rem;padding:12px 28px;border-radius:8px;text-decoration:none;letter-spacing:0.5px">Inscreva-se com ${parceiro.desconto?parceiro.desconto+' de desconto':'desconto'} &rarr;</a>`:''}
         </div>
       </div>` : ''}
 
@@ -219,15 +221,15 @@
             </div>
 
             <div class="ev-card">
-              <h2>${I.ticket} Inscrição e mais informações</h2>
-              <p>Valores, percurso completo, horário de largada e retirada de kit são divulgados na página oficial da prova. Confira e faça sua inscrição por lá.</p>
+              <h2>${I.ticket} ${encerrada?'Informações da prova':'Inscrição e mais informações'}</h2>
+              <p>${encerrada?'As inscrições desta prova já foram encerradas. A página oficial continua disponível com regulamento, percurso, horários e informações de retirada de kit.':'Valores, percurso completo, horário de largada e retirada de kit são divulgados na página oficial da prova. Confira e faça sua inscrição por lá.'}</p>
               <div style="margin-top:18px">${ctaOficial}</div>
             </div>
           </div>
 
           <aside class="ev-side">
             <div class="side-card">
-              <div class="status-line status-aberta-txt">Próxima prova</div>
+              <div class="status-line ${encerrada?'status-encerrada-txt':'status-aberta-txt'}">${encerrada?'Inscrições encerradas':'Próxima prova'}</div>
               <div class="valor" style="font-size:1.15rem">${ev.dataExtenso||''}</div>
               <div class="side-mini">
                 <div class="row">${I.calmini}<div><b>${ev.dia}/${ev.mes}/${ev.ano}</b><span>Data da prova</span></div></div>

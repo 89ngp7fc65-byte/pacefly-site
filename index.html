@@ -372,7 +372,7 @@
   burger.addEventListener('click',()=>menu.classList.toggle('open'));
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-  const hoje=new Date(2026,8,6); // 6 set 2026
+  const hoje=(function(){var d=new Date();d.setHours(0,0,0,0);return d;})(); // data real de hoje
   const eventos=window.PACEFLY_EVENTOS||[];
   const grid=document.getElementById('calGrid');
   const pinSVG='<svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>';
@@ -397,7 +397,8 @@
     lista.forEach(e=>{
       const dataEv=new Date(e.ano,parseInt(e.mes)-1,parseInt(e.dia));
       const dias=Math.round((dataEv-hoje)/86400000);
-      const soon=dias>=0&&dias<=14;
+      const encerrada=window.pfInscricoesEncerradas?window.pfInscricoesEncerradas(e):false;
+      const soon=!encerrada&&dias>=0&&dias<=14;
       const dist=e.distancias.slice(0,3).map(d=>`<span class="tag km">${d}</span>`).join('');
       const a=document.createElement('a');
       a.className='evt'+(e.destaque?' evt-destaque':'');
@@ -413,6 +414,7 @@
         <div class="evt-foot">
           ${dist}
           ${soon?'<span class="tag soon">Em breve</span>':''}
+          ${encerrada?'<span class="tag encerrada">Inscrições encerradas</span>':''}
           ${e.parceiro==='sim'?'<span class="tag parceiro">Parceiro PaceFly</span>':''}
         </div>
         <span class="evt-cta">Ver detalhes ${setaSVG}</span>`;
