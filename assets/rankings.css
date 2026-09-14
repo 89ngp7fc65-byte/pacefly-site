@@ -111,6 +111,25 @@
 .rkl-share:hover{filter:brightness(.94);transform:translateY(-1px)}
 .rkl-share svg{width:17px;height:17px}
 
+/* Captura de e-mail dentro do card de posição. Mesma paleta e tokens do
+   card (translúcido sobre o fundo dourado), não a versão clara usada na
+   newsletter da home: aqui o fundo é escuro. */
+.rkl-email-cta{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)}
+.rkl-email-txt{font-size:.86rem;color:#e7ecf3;font-weight:600;margin-bottom:10px}
+.rkl-email-form{display:flex;gap:10px;flex-wrap:wrap}
+.rkl-email-form input{
+  flex:1;min-width:180px;background:rgba(0,0,0,.24);border:1.5px solid rgba(255,255,255,.2);
+  border-radius:11px;padding:12px 16px;color:#fff;font-family:inherit;font-size:.92rem;
+}
+.rkl-email-form input::placeholder{color:#9db2cd}
+.rkl-email-form input:focus{outline:none;border-color:var(--rkl-ouro);background:rgba(0,0,0,.32)}
+.rkl-email-form .btn{white-space:nowrap;padding:12px 20px;font-size:.88rem}
+.rkl-email-nota{font-size:.74rem;color:#9db2cd;margin-top:8px}
+@media (max-width:480px){
+  .rkl-email-form{flex-direction:column}
+  .rkl-email-form .btn{width:100%;justify-content:center}
+}
+
 .rkl-naoachou{
   background:rgba(255,255,255,.06);border:1px solid var(--rkl-borda);
   border-radius:20px;padding:26px 28px;

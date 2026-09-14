@@ -98,8 +98,8 @@
     <div class="rkl-resultado" id="rklResultado"></div>
 
     <div class="rkl-stats">
-      <div><b id="stTotal">731</b><small>atletas classificados</small></div>
-      <div><b id="stProvas">10</b><small>provas apuradas</small></div>
+      <div><b id="stTotal">1.343</b><small>atletas classificados</small></div>
+      <div><b id="stProvas">15</b><small>provas apuradas</small></div>
       <div><b>72h</b><small>para entrar após a prova</small></div>
       <div><b>2026</b><small>temporada em andamento</small></div>
     </div>
@@ -115,7 +115,7 @@
       <p>Todos os atletas com duas provas ou mais concluídas na região em 2026, ordenados por pontos acumulados. Toque em qualquer nome da lista para abrir a posição completa e gerar a imagem de compartilhamento.</p>
     </div>
 
-    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 22/08/2026</span>
+    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 13/09/2026</span>
 
     <div class="rkl-abas" id="rklAbas" role="tablist">
       <button type="button" class="rkl-aba on" data-cat="geral" role="tab">Geral <span class="qt" id="qtGeral"></span></button>
@@ -372,20 +372,20 @@ const burger=document.getElementById('burger'), menu=document.getElementById('me
 burger.addEventListener('click',()=>menu.classList.toggle('open'));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-// Reserva: Top 10 da apuração de 22/08/2026
+// Reserva: Top 10 da apuração de 13/09/2026
 const RESERVA = {
-  atualizado_em:"22/08/2026", total_atletas:731, total_provas:10,
+  atualizado_em:"13/09/2026", total_atletas:1343, total_provas:15,
   atletas:[
-    {p:1,n:"Rafaela Pereira Benevenuto",pt:240},
-    {p:2,n:"Vitor Estivalet de Souza",pt:180},
-    {p:3,n:"Jorge Nestor Pereira",pt:160},
-    {p:4,n:"Richard Glauco Jose Pereira",pt:160},
-    {p:5,n:"Nicolas Dias",pt:135},
-    {p:6,n:"Romildo Goncalves",pt:125},
-    {p:7,n:"Ayumi Momoi",pt:110},
-    {p:8,n:"Arnaldo Franklin da Silva Rosendo",pt:100},
-    {p:9,n:"Nicolas Alvaro Francelino de Souza",pt:90},
-    {p:10,n:"Andrea Silva do Amaral",pt:90}
+    {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:240},
+    {p:2,n:"NICOLAS DIAS",pt:215},
+    {p:3,n:"HERBERT SCHRODER NETO",pt:200},
+    {p:4,n:"JORGE NESTOR PEREIRA",pt:190},
+    {p:5,n:"RICHARD GLAUCO JOSE PEREIRA",pt:160},
+    {p:6,n:"LEOMAR VAZ FERREIRA",pt:145},
+    {p:7,n:"FELIPE RODRIGUES GONÇALVES",pt:140},
+    {p:8,n:"ROMILDO GONCALVES",pt:125},
+    {p:9,n:"LUCAS SIMOES DE OLIVEIRA",pt:120},
+    {p:10,n:"WAGNER CARVALHO CARDOZO BORGES",pt:120}
   ]
 };
 
@@ -443,11 +443,17 @@ function iniciar(){
   // Geral: usa a posição que veio do arquivo
   LISTAS.geral = DADOS.atletas.map(a=>({...a}));
 
-  // Feminino e Masculino: renumerados dentro da própria categoria
+  // Feminino e Masculino: renumerados dentro da própria categoria.
+  // A seta de variação também precisa ser a de dentro da categoria (`vs`,
+  // calculada no gerar_json_ranking.py comparando com a posição por sexo da
+  // apuração anterior), não a seta do ranking Geral (`v`). Até 13/09/2026 as
+  // três abas mostravam a mesma seta (a do Geral), o que dava uma queda para
+  // quem só perdeu posições porque homens (ou mulheres) entraram na frente
+  // dele no Geral, sem ele ter perdido nenhuma posição dentro do próprio sexo.
   ['F','M'].forEach(sx=>{
     LISTAS[sx] = DADOS.atletas
       .filter(a => (a.s||'').toUpperCase() === sx)
-      .map((a,i)=>({...a, p:i+1, pGeral:a.p}));
+      .map((a,i)=>({...a, p:i+1, pGeral:a.p, vGeral:a.v, v:a.vs}));
   });
 
   const temSexo = LISTAS.F.length || LISTAS.M.length;
@@ -671,6 +677,14 @@ function mostrarAtleta(a, filtrar){
           Gerar imagem
         </button>
       </div>
+      <div class="rkl-email-cta">
+        <p class="rkl-email-txt">Quer saber quando sua posição mudar? Deixe seu e-mail, a gente avisa.</p>
+        <form class="rkl-email-form" id="rklEmailForm">
+          <input type="email" id="rklEmailInput" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="btn btn-amar" id="rklEmailBtn">Quero ser avisado</button>
+        </form>
+        <p class="rkl-email-nota">Só usamos para avisar sobre o ranking. Nada de spam.</p>
+      </div>
     </div>`;
 
   // Guarda o atleta em memória em vez de embutir os dados no onclick.
@@ -678,6 +692,7 @@ function mostrarAtleta(a, filtrar){
   atletaAtual = {p:a.p, n:a.n, pt:a.pt, c:a.c||null, cat:naCat?naCat.p:null, sx:sx};
   $('rklBtnShare').addEventListener('click', ()=>compartilhar(atletaAtual));
   $('rklBtnImg').addEventListener('click', ()=>gerarImagem(atletaAtual));
+  $('rklEmailForm').addEventListener('submit', ev=>inscreverEmailRanking(ev, atletaAtual));
 
   area.className='rkl-resultado on';
   if(filtrar) filtrarPor(a._k, true); else render(a._k);
@@ -739,6 +754,39 @@ function aviso(msg, acao){
     cx.style.opacity = '0';
     setTimeout(()=>cx.remove(), 300);
   }, acao && acao.href ? 9000 : 4200);
+}
+
+/* Captura de e-mail logo abaixo do card de posição: o momento de maior
+   intenção de toda a página (a pessoa acabou de se ver no ranking). Mesma
+   lista e mesmo mecanismo (Mailchimp, JSONP, sem redirecionar a página) já
+   usados no formulário da newsletter em index.html. */
+const RKL_MAILCHIMP_URL = 'https://pacefly.us16.list-manage.com/subscribe/post?u=9e9a244a97352edfb3cde1523&id=72488c6fa6';
+
+function inscreverEmailRanking(ev, d){
+  ev.preventDefault();
+  const input = $('rklEmailInput');
+  const btn = $('rklEmailBtn');
+  const email = input.value;
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  const cbName = '__mcrkl' + Date.now();
+  const url = RKL_MAILCHIMP_URL.replace('/post?', '/post-json?')
+    + '&EMAIL=' + encodeURIComponent(email) + '&c=' + cbName;
+  window[cbName] = function(data){
+    if(data && data.result === 'success'){
+      evento('inscricao_ranking', {posicao: d ? d.p : null});
+      input.value = '';
+      input.placeholder = 'Inscrição recebida! Obrigado';
+      btn.textContent = '✓';
+    } else {
+      btn.textContent = 'Tentar novamente';
+      btn.disabled = false;
+    }
+    delete window[cbName];
+  };
+  const s = document.createElement('script');
+  s.src = url;
+  document.body.appendChild(s);
 }
 
 async function compartilhar(d){

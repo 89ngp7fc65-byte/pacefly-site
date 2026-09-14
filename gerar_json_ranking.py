@@ -30,21 +30,23 @@ O JSON fica com chaves curtas de propósito, para o arquivo baixar rápido no
 celular: p = posição, n = nome, pt = pontos, c = corridas.
 """
 
-import csv, json, sys, os, unicodedata
+import csv, json, sys, os, re, unicodedata
 from pathlib import Path
+from collections import defaultdict
 
 AQUI = Path(__file__).parent.resolve()
 SAIDA = AQUI / "assets" / "ranking_2026.json"
+RANKINGS_HTML = AQUI / "rankings.html"
 
 # Metadados da apuração. Atualize a cada nova rodada.
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "07/09/2026",
+    "atualizado_em": "13/09/2026",
     "temporada": 2026,
-    "total_provas": 13,
-    "total_participacoes": 7724,
-    "periodo_coberto": "14 de junho a 30 de agosto de 2026",
+    "total_provas": 15,
+    "total_participacoes": 8838,
+    "periodo_coberto": "14 de junho a 13 de setembro de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
         "12ª Corrida do 8º BPM · 21/06 · Joinville",
@@ -59,16 +61,14 @@ META = {
         "Circuito Banco do Brasil · 23/08 · Joinville",
         "2ª Corrida com o Senhor Bom Jesus · 23/08 · Guaramirim",
         "Circuito de Corridas Unimed · 30/08 · Jaraguá do Sul",
+        "Barra Run · 13/09 · Barra Velha",
+        "Corridas do Bem SESI Saúde · 13/09 · Jaraguá do Sul",
     ],
-    # Setas de subida e queda. Deixe True na rotina normal.
-    # Segue False em 07/09/2026, e desta vez por um motivo de conteúdo, não
-    # técnico: esta apuração corrigiu a colocação por sexo que estava sendo
-    # pontuada como geral em 10 das 13 provas. Quase todo mundo muda de lugar,
-    # mas por causa da correção de metodologia, não de desempenho. Mostrar
-    # seta aqui seria dizer ao atleta que ele caiu 300 posições correndo bem.
-    # A partir da próxima apuração pode voltar para True: o snapshot desta
-    # rodada já nasce com o cálculo certo, e a comparação passa a ser limpa.
-    "usar_historico": False,
+    # Setas de subida e queda voltam a True: o snapshot de 07/09 ja nasceu com
+    # o calculo correto (posicao geral derivada do tempo), entao a comparacao
+    # com a apuracao de hoje (13/09) e limpa, sem o problema de metodologia
+    # que zerou as setas na rodada anterior.
+    "usar_historico": True,
 }
 
 # A fonte correta é o arquivo de multicorridas: ele já traz só quem tem 2 provas
@@ -162,6 +162,65 @@ def ler_historico(caminho):
     return mapa
 
 
+def ler_historico_por_sexo(caminho):
+    """Le o mesmo CSV de historico, mas devolve a posicao DENTRO DO SEXO de
+    cada atleta na apuracao anterior ({nome_normalizado: posicaoNoSexo}).
+
+    Existe porque a pagina do site renumera Masculino e Feminino cada um a
+    partir de 1 (ve iniciar() em rankings.html), mas a seta de variacao
+    reaproveitava a mesma comparacao do ranking Geral nas tres abas — a
+    posicao ficava certa por categoria, a seta nao. Descoberto pelo gestor em
+    13/09/2026 ao notar que a mesma seta aparecia em Geral, Masculino e
+    Feminino para o mesmo atleta, mesmo a posicao dentro de cada categoria
+    tendo mudado de forma diferente. As colunas posMasc/posFem ja existem no
+    historico (gravadas por recalcular_ranking.py); so faltava uma segunda
+    leitura usando-as em vez de posGeral.
+    """
+    p = Path(caminho)
+    if not p.exists():
+        return {}
+    bruto = p.read_text(encoding="utf-8-sig", errors="replace")
+    amostra = bruto[:4000]
+    sep = ";" if amostra.count(";") > amostra.count(",") else ","
+    linhas = [l for l in csv.reader(bruto.splitlines(), delimiter=sep)
+              if any(str(x).strip() for x in l)]
+    if not linhas:
+        return {}
+    cab = linhas[0]
+    i_n = achar_coluna(cab, "nome", "atleta", "corredor")
+    i_pm = achar_coluna(cab, "posmasc")
+    i_pf = achar_coluna(cab, "posfem")
+    i_d = achar_coluna(cab, "data")
+    if i_n is None or (i_pm is None and i_pf is None):
+        # Historico antigo, de antes das colunas posMasc/posFem existirem.
+        # Sem elas nao ha como saber a posicao por sexo da rodada passada;
+        # a seta por categoria fica vazia ate o proximo snapshot ter as
+        # colunas (jah e o caso a partir de 02/09/2026).
+        return {}
+
+    if i_d is not None and len(linhas) > 1 and len(linhas[1]) > i_d:
+        data_hist = (linhas[1][i_d] or "").strip()
+        if data_hist and data_hist == META.get("atualizado_em"):
+            return {}
+
+    mapa = {}
+    for l in linhas[1:]:
+        if len(l) <= i_n:
+            continue
+        nome = (l[i_n] or "").strip()
+        if not nome:
+            continue
+        pos = None
+        if i_pm is not None and len(l) > i_pm:
+            pos = para_int(l[i_pm])
+        if pos is None and i_pf is not None and len(l) > i_pf:
+            pos = para_int(l[i_pf])
+        if pos:
+            mapa[sem_acento(nome)] = pos
+    print(f"[OK] Historico anterior (por sexo): {len(mapa)} atletas para comparacao")
+    return mapa
+
+
 def normalizar_sexo(v):
     """Aceita F/M, FEM/MASC, FEMININO/MASCULINO, MULHER/HOMEM. Devolve 'F', 'M' ou None."""
     s = sem_acento(str(v or "")).strip()
@@ -189,16 +248,132 @@ def para_int(v):
         return None
 
 
+def formatar_milhar(n):
+    """Formata inteiro com ponto de milhar (padrao pt-BR), igual ao
+    toLocaleString('pt-BR') que rankings.html usa no JavaScript."""
+    s = str(int(n))
+    partes = []
+    while len(s) > 3:
+        partes.insert(0, s[-3:])
+        s = s[:-3]
+    partes.insert(0, s)
+    return ".".join(partes)
+
+
+def sincronizar_reserva_rankings_html(meta, atletas_final):
+    """Mantem em dia o texto de reserva do rankings.html: os 2 numeros e a
+    data que aparecem no HTML estatico (visiveis por uma fracao de segundo
+    antes do JavaScript rodar) e o objeto RESERVA (usado so se o fetch do
+    JSON falhar). Nenhum dos dois era regravado sozinho, entao iam ficando
+    cada vez mais desatualizados (corrigido manualmente em 13/09/2026;
+    a partir de agora e automatico a cada rodada deste script).
+
+    So grava rankings.html se os 4 trechos esperados forem encontrados
+    exatamente uma vez cada e o resultado continuar com chaves balanceadas.
+    Se a pagina tiver sido redesenhada e algum trecho nao bater mais, a
+    funcao desiste sem tocar no arquivo e avisa no console; o restante do
+    script (a geracao do JSON, que ja aconteceu antes desta chamada)
+    continua valendo normalmente.
+    """
+    if not RANKINGS_HTML.exists():
+        print(f"[AVISO] rankings.html nao encontrado em {RANKINGS_HTML}; pulei a sincronizacao da reserva.")
+        return
+
+    try:
+        with open(RANKINGS_HTML, "r", encoding="utf-8", newline="") as f:
+            texto = f.read()
+    except Exception as e:
+        print(f"[AVISO] Nao consegui ler rankings.html ({type(e).__name__}: {e}); pulei a sincronizacao da reserva.")
+        return
+
+    total_fmt = formatar_milhar(meta["total_atletas"])
+    provas_fmt = str(meta["total_provas"])
+    data_fmt = meta["atualizado_em"]
+
+    top10 = atletas_final[:10]
+    linhas_top10 = ",\n".join(
+        f'    {{p:{a["p"]},n:{json.dumps(a["n"], ensure_ascii=False)},pt:{a["pt"]}}}'
+        for a in top10
+    )
+    novo_bloco_reserva = (
+        f"// Reserva: Top 10 da apuração de {data_fmt}\n"
+        f"const RESERVA = {{\n"
+        f'  atualizado_em:{json.dumps(data_fmt, ensure_ascii=False)}, '
+        f'total_atletas:{meta["total_atletas"]}, total_provas:{meta["total_provas"]},\n'
+        f"  atletas:[\n{linhas_top10}\n  ]\n"
+        f"}};"
+    )
+
+    padrao_total = re.compile(r'(<b id="stTotal">)[^<]*(</b>)')
+    padrao_provas = re.compile(r'(<b id="stProvas">)[^<]*(</b>)')
+    padrao_data = re.compile(r'(<span class="rkl-atualizado" id="rklAtualizado">)Atualizado em [^<]*(</span>)')
+    padrao_reserva = re.compile(r'// Reserva:.*?\nconst RESERVA = \{.*?\n\};', re.DOTALL)
+
+    novo_texto, n1 = padrao_total.subn(rf'\g<1>{total_fmt}\g<2>', texto)
+    novo_texto, n2 = padrao_provas.subn(rf'\g<1>{provas_fmt}\g<2>', novo_texto)
+    novo_texto, n3 = padrao_data.subn(rf'\g<1>Atualizado em {data_fmt}\g<2>', novo_texto)
+    # A substituicao do bloco RESERVA usa uma funcao (nao uma string com
+    # backreferences), porque nome de atleta pode conter "\" ou outro
+    # caractere que o motor de regex interpretaria como grupo de captura.
+    novo_texto, n4 = padrao_reserva.subn(lambda m: novo_bloco_reserva, novo_texto)
+
+    contagens = [n1, n2, n3, n4]
+    if contagens != [1, 1, 1, 1]:
+        print(f"[AVISO] rankings.html parece ter mudado de estrutura (trechos encontrados: {contagens},"
+              " esperado [1, 1, 1, 1]).")
+        print("        Por seguranca, NAO mexi em rankings.html desta vez. Atualize a reserva")
+        print("        manualmente ou revise esta funcao se a pagina foi redesenhada.")
+        return
+
+    if novo_texto.count("{") != texto.count("{") or novo_texto.count("}") != texto.count("}"):
+        print("[AVISO] A substituicao do bloco RESERVA desbalanceou chaves. Por seguranca,")
+        print("        NAO gravei rankings.html. Confira manualmente.")
+        return
+
+    if novo_texto == texto:
+        print("[OK] rankings.html ja estava com a reserva em dia, nada para gravar.")
+        return
+
+    # Backup simples antes de gravar, para comparar ou reverter na hora.
+    backup = RANKINGS_HTML.with_name(RANKINGS_HTML.name + ".bak")
+    try:
+        with open(backup, "w", encoding="utf-8", newline="") as f:
+            f.write(texto)
+    except Exception as e:
+        print(f"[AVISO] Nao consegui gravar o backup ({type(e).__name__}: {e}); prossegui mesmo assim.")
+
+    # Grava por arquivo temporario + troca atomica: nunca deixa rankings.html
+    # pela metade se a gravacao for interrompida no meio.
+    tmp = RANKINGS_HTML.with_name(RANKINGS_HTML.name + ".tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8", newline="") as f:
+            f.write(novo_texto)
+        os.replace(tmp, RANKINGS_HTML)
+    except Exception as e:
+        print(f"[ERRO] Falha ao gravar rankings.html ({type(e).__name__}: {e}). O arquivo original nao foi tocado.")
+        try:
+            if tmp.exists():
+                tmp.unlink()
+        except Exception:
+            pass
+        return
+
+    print(f"[OK] rankings.html atualizado: reserva e numeros estaticos agora refletem {data_fmt}")
+    print(f"     ({total_fmt} atletas, {provas_fmt} provas, Top 10 sincronizado). Backup em {backup.name}.")
+
+
 def main():
     origem = achar_csv()
     print(f"[OK] Lendo: {origem}")
 
     historico = {}
+    historico_sexo = {}
     if not META.get("usar_historico", True):
         print("[INFO] Setas de variacao desligadas nesta rodada")
         print("       (usar_historico = False no META do topo do arquivo).")
     elif len(sys.argv) > 2:
         historico = ler_historico(sys.argv[2])
+        historico_sexo = ler_historico_por_sexo(sys.argv[2])
     else:
         # O ANTERIOR vem primeiro de proposito. O recalcular_ranking.py grava
         # nele o snapshot da apuracao passada antes de sobrescrever o oficial,
@@ -213,6 +388,7 @@ def main():
         if auto:
             print(f"[OK] Historico encontrado automaticamente: {auto.name}")
             historico = ler_historico(auto)
+            historico_sexo = ler_historico_por_sexo(auto)
         else:
             print("[INFO] Sem historico de posicoes. A coluna Variacao ficara vazia.")
             print("       Passe o caminho como 2o argumento para ativar as setas.")
@@ -318,10 +494,36 @@ def main():
         print("        indevidamente. Grave o proximo snapshot com todos os")
         print("        classificados para resolver isso na proxima apuracao.")
 
+    # Mesma checagem de cobertura do historico geral, mas para o historico por
+    # sexo: sem isso um snapshot antigo (sem posMasc/posFem) marcaria todo
+    # mundo como "novo" dentro da categoria, o que nao e verdade.
+    n_por_sexo = defaultdict(int)
+    for a in atletas:
+        if a.get("s") in ("M", "F"):
+            n_por_sexo[a["s"]] += 1
+    historico_sexo_completo = bool(historico_sexo) and \
+        len(historico_sexo) >= sum(n_por_sexo.values()) * 0.8
+    if historico_sexo and not historico_sexo_completo:
+        print(f"[AVISO] O historico por sexo tem {len(historico_sexo)} atletas "
+              f"para {sum(n_por_sexo.values())} classificados com sexo. A seta")
+        print("        por categoria (Masculino/Feminino) vai aparecer so para")
+        print("        quem estava nele.")
+
     # Posicao renumerada de 1 a N entre os classificados. A base traz a
     # colocacao geral entre TODOS que correram na regiao, o que deixaria
     # buracos na tabela (42 e depois 60) e faria alguem ser 60o num ranking
     # de 731. Aqui o numero passa a significar posicao entre os publicados.
+    #
+    # A pagina do site (rankings.html/iniciar()) renumera Masculino e
+    # Feminino cada um a partir de 1 quando monta as abas — isso ja estava
+    # certo. O que faltava era a SETA de variacao acompanhar essa renumeracao:
+    # ate 13/09/2026 a mesma seta do ranking Geral era reaproveitada nas tres
+    # abas, entao o atleta podia ter subido no Masculino e a seta mostrar uma
+    # queda que so aconteceu no Geral (por causa de mulheres entrando na
+    # frente dele, por exemplo). Por isso cada atleta carrega aqui tanto a
+    # variacao geral (`v`) quanto a variacao dentro do proprio sexo (`vs`),
+    # calculada com o mesmo contador usado pela pagina.
+    pos_sexo_atual = defaultdict(int)
     final = []
     for i, a in enumerate(atletas, 1):
         reg = {"p": i, "n": a["n"], "pt": a["pt"]}
@@ -338,6 +540,15 @@ def main():
                 # So podemos afirmar "NOVO" quando o snapshot anterior cobria
                 # todo mundo. Se ele cobria so o topo, ausencia nao prova nada.
                 reg["v"] = "novo"
+        if a.get("s") in ("M", "F"):
+            pos_sexo_atual[a["s"]] += 1
+            p_sexo = pos_sexo_atual[a["s"]]
+            if historico_sexo:
+                anterior_sexo = historico_sexo.get(sem_acento(a["n"]))
+                if anterior_sexo:
+                    reg["vs"] = anterior_sexo - p_sexo
+                elif historico_sexo_completo:
+                    reg["vs"] = "novo"
         final.append(reg)
     print(f"[OK] Posicoes renumeradas de 1 a {len(final)} entre os classificados.")
 
@@ -348,6 +559,8 @@ def main():
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(json.dumps(saida, ensure_ascii=False, separators=(",", ":")),
                      encoding="utf-8")
+
+    sincronizar_reserva_rankings_html(saida, final)
 
     kb = SAIDA.stat().st_size // 1024
     n_f = sum(1 for a in final if a.get("s") == "F")
