@@ -759,7 +759,16 @@ function aviso(msg, acao){
 /* Captura de e-mail logo abaixo do card de posição: o momento de maior
    intenção de toda a página (a pessoa acabou de se ver no ranking). Mesma
    lista e mesmo mecanismo (Mailchimp, JSONP, sem redirecionar a página) já
-   usados no formulário da newsletter em index.html. */
+   usados no formulário da newsletter em index.html.
+
+   Adicionado em 17/09/2026: além do e-mail, agora envia também o nome do
+   atleta (RKLNOME) e a posição geral no momento da inscrição (RKLPOS) como
+   merge fields do Mailchimp. Sem isso não tinha como saber, depois, QUAL
+   atleta aquele e-mail queria acompanhar nem qual era a posição de
+   referência para comparar numa apuração futura. RKLNOME/RKLPOS precisam
+   existir como merge fields na audiência (Audience > Settings > Audience
+   fields and *|MERGE|* tags) antes desta mudança funcionar de verdade; ver
+   `mailchimp/avisar_mudanca_ranking.js` para o fluxo completo de aviso. */
 const RKL_MAILCHIMP_URL = 'https://pacefly.us16.list-manage.com/subscribe/post?u=9e9a244a97352edfb3cde1523&id=72488c6fa6';
 
 function inscreverEmailRanking(ev, d){
@@ -771,7 +780,10 @@ function inscreverEmailRanking(ev, d){
   btn.disabled = true;
   const cbName = '__mcrkl' + Date.now();
   const url = RKL_MAILCHIMP_URL.replace('/post?', '/post-json?')
-    + '&EMAIL=' + encodeURIComponent(email) + '&c=' + cbName;
+    + '&EMAIL=' + encodeURIComponent(email)
+    + '&RKLNOME=' + encodeURIComponent(d ? d.n : '')
+    + '&RKLPOS=' + encodeURIComponent(d ? d.p : '')
+    + '&c=' + cbName;
   window[cbName] = function(data){
     if(data && data.result === 'success'){
       evento('inscricao_ranking', {posicao: d ? d.p : null});
