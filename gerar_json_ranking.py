@@ -42,10 +42,10 @@ RANKINGS_HTML = AQUI / "rankings.html"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "13/09/2026",
+    "atualizado_em": "17/09/2026",
     "temporada": 2026,
-    "total_provas": 15,
-    "total_participacoes": 8838,
+    "total_provas": 17,
+    "total_participacoes": 10080,
     "periodo_coberto": "14 de junho a 13 de setembro de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
@@ -54,7 +54,9 @@ META = {
         "Desafio 60 Anos CBVJGS · 04/07 · Jaraguá do Sul",
         "Corrida HUPI · 05/07 · Joinville",
         "Massaranduba Night Run · 11/07 · Massaranduba",
+        "Live! Run XP · 12/07 · Joinville",
         "1ª Corrida do Colono · 18/07 · Joinville",
+        "Circuito Angeloni · 19/07 · Jaraguá do Sul",
         "RunFest Cidade das Águas · 19/07 · Joinville",
         "2ª Menegotti Run Together · 02/08 · Jaraguá do Sul",
         "Corrida Tigre 85 Anos · 16/08 · Joinville",
