@@ -42,11 +42,11 @@ RANKINGS_HTML = AQUI / "rankings.html"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "17/09/2026",
+    "atualizado_em": "20/09/2026",
     "temporada": 2026,
-    "total_provas": 17,
-    "total_participacoes": 10080,
-    "periodo_coberto": "14 de junho a 13 de setembro de 2026",
+    "total_provas": 18,
+    "total_participacoes": 11265,
+    "periodo_coberto": "14 de junho a 19 de setembro de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
         "12ª Corrida do 8º BPM · 21/06 · Joinville",
@@ -65,6 +65,7 @@ META = {
         "Circuito de Corridas Unimed · 30/08 · Jaraguá do Sul",
         "Barra Run · 13/09 · Barra Velha",
         "Corridas do Bem SESI Saúde · 13/09 · Jaraguá do Sul",
+        "4º Desafio Drogaria Catarinense · 19/09 · Joinville",
     ],
     # Setas de subida e queda voltam a True: o snapshot de 07/09 ja nasceu com
     # o calculo correto (posicao geral derivada do tempo), entao a comparacao

@@ -1,25 +1,27 @@
-[OK] Lendo: C:\Users\santo\OneDrive\Business\Ranking corredores\ranking_multicorridas_norte_sc_2026.csv
-[INFO] Setas de variacao desligadas nesta rodada
-       (usar_historico = False no META do topo do arquivo).
+[OK] Lendo: /sessions/rcw-01wdoc9boxcdgg2n5l4c5ccy/mnt/Business/Ranking corredores/ranking_multicorridas_norte_sc_2026.csv
+[OK] Historico anterior: 1548 atletas para comparacao
+[OK] Historico anterior (por sexo): 1548 atletas para comparacao
 [OK] Separador detectado: ';'
 [OK] Cabecalho: ['pos', 'nome', 'sexo', 'corridas', 'pontos', 'melhorPos', 'historico']
 [OK] Colunas: nome=nome | pontos=pontos | posicao=pos | corridas=corridas | sexo=sexo
-[OK] Posicoes renumeradas de 1 a 956 entre os classificados.
+[OK] Posicoes renumeradas de 1 a 1818 entre os classificados.
+[OK] rankings.html ja estava com a reserva em dia, nada para gravar.
 
 ==========================================================
-Gerado: C:\Users\santo\Claude\Projects\Pacefly\site\assets\ranking_2026.json
-Atletas: 956   |   Ignorados: 0   |   Tamanho: 57 KB
-Feminino: 486   |   Masculino: 470   |   Com nบ de provas: 956
-Atualizado em: 02/09/2026  (edite META no topo se mudar)
+Gerado: /sessions/rcw-01wdoc9boxcdgg2n5l4c5ccy/mnt/Pacefly/site/assets/ranking_2026.json
+Atletas: 1818   |   Ignorados: 0   |   Tamanho: 139 KB
+Feminino: 981   |   Masculino: 837   |   Com nยบ de provas: 1818
+Subiram: 367   |   Cairam: 1168   |   Novos no ranking: 270
+Atualizado em: 20/09/2026  (edite META no topo se mudar)
 ==========================================================
 
 Top 5 para conferencia:
-    1บ  RAFAELA PEREIRA BENEVENUTO                  240 pts
-    2บ  VITOR ESTIVALET DE SOUZA                    180 pts
-    3บ  JORGE NESTOR PEREIRA                        160 pts
-    4บ  RICHARD GLAUCO JOSE PEREIRA                 160 pts
-    5บ  CRISTIANE MELLO COSTA                       135 pts
+    1ยบ  VITOR ESTIVALET DE SOUZA                    290 pts
+    2ยบ  JORGE NESTOR PEREIRA                        240 pts
+    3ยบ  HERBERT SCHRODER NETO                       225 pts
+    4ยบ  NICOLAS DIAS                                215 pts
+    5ยบ  Lucas Brandalise                            180 pts
 
 Abra rankings.html no navegador e busque um nome para validar.
 
-Pressione Enter para fechar...^C
+Pressione Enter para fechar...

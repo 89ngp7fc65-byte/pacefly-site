@@ -35,40 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "desafio-drogaria-catarinense",
-    "nome": "4º Desafio Drogaria Catarinense",
-    "dia": "19",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "19 de setembro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Ágora Tech Park",
-    "organizador": "Number Esportes",
-    "edicao": "4ª edição",
-    "distancias": ["10 km", "5 km", "Kids"],
-    "descricao": "Quarta edição do Desafio Drogaria Catarinense, com largada no Ágora Tech Park e percursos de 10 km, 5 km e corrida kids. A prova vem crescendo ano a ano e já se consolidou entre as principais corridas de rua de Joinville.",
-    "inscricoesEncerradas": true,
-    "oficialUrl": "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507"
-  },
-  {
-    "id": "corrida-cooper-jaragua-do-sul",
-    "nome": "Corrida e Caminhada Movimento Cooper - Etapa Jaraguá do Sul",
-    "dia": "20",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "20 de setembro de 2026",
-    "cidade": "Jaraguá do Sul, SC",
-    "largada": "Parque Linear Via Verde, Rua Bertholdo Bruns, bairro Ilha da Figueira, às 8h",
-    "organizador": "Corre Brasil Marketing Esportivo, com apoio da Cooper",
-    "edicao": "Etapa Jaraguá do Sul",
-    "distancias": ["7 km", "3 km", "Caminhada Pet 3 km", "Kids"],
-    "descricao": "Etapa jaraguaense do Movimento Cooper, com largada às 8h no Parque Linear Via Verde, na Rua Bertholdo Bruns, bairro Ilha da Figueira. A programação reúne corrida de 7 km e 3 km, corrida kids e uma caminhada pet de 3 km para quem quiser levar o cachorro. A inscrição inclui a doação de 1 kg de alimento não perecível (exceto sal), entregue no dia da prova.",
-    "inscricoesEncerradas": true,
-    "oficialUrl": "https://vemcorrer.com/evento/369-corrida-e-caminhada-movimento-cooper-n-etapa-jaragua-do-sul-2026"
-  },
-  {
     "id": "meia-maratona-bela-vista-gaspar",
     "nome": "42ª Meia Maratona Bela Vista Country Club",
     "dia": "26",
@@ -329,6 +295,23 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
+    id: "simone-ponte-ferraz-mundial-copenhague-2026",
+    categoria: "Mundial de Corrida de Rua",
+    titulo: "Jaraguaense Simone Ponte Ferraz disputa o Mundial de Corrida de Rua em Copenhague e termina os 5 km em 40º lugar",
+    resumo: "Campeã brasileira da distância, a atleta de Jaraguá do Sul integrou a delegação que representou o Brasil no Campeonato Mundial de Corrida de Rua, disputado neste fim de semana na capital dinamarquesa.",
+    dataTxt: "19 de setembro de 2026",
+    local: "Jaraguá do Sul, SC",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "OCP News",
+    fonteUrl: "https://ocp.news/esporte/jaraguaense-e-campea-brasileira-e-garante-vaga-no-mundial-de-corrida-de-rua",
+    corpo: [
+      "A jaraguaense Simone Ponte Ferraz representou o Brasil no Campeonato Mundial de Corrida de Rua, disputado em Copenhague, na Dinamarca. Campeã brasileira da distância, ela integrou a delegação convocada para o Mundial, que reuniu provas de 5 km, 10 km e meia maratona ao longo do fim de semana, disputando os 5 km femininos no sábado, 19 de setembro.",
+      "Simone terminou na 40ª colocação, com o tempo de 17min21s. A melhor brasileira na prova foi Núbia de Oliveira, 26ª colocada, com 15min44s. A vitória ficou com a etíope Likina Amebaw, que cruzou a linha de chegada em 14min41s.",
+      "O Campeonato Mundial de Corrida de Rua é organizado pela World Athletics e reúne, a cada edição, atletas de dezenas de países disputando provas de rua nas ruas da cidade-sede; a meia maratona encerrou a competição no domingo, 20 de setembro.",
+      "Simone integra o grupo de atletas do Norte de Santa Catarina acompanhados pelo Radar PaceFly, o boletim semanal de corrida de rua da região."
+    ]
+  },
+  {
     id: "primeira-maratona-de-joinville-2026",
     categoria: "1ª Maratona de Joinville",
     titulo: "Joinville vai ter sua primeira maratona da história em 1º de novembro",
@@ -343,23 +326,6 @@ const PACEFLY_NOTICIAS = [
       "A programação se estende por dois dias. No sábado, 31 de outubro, a organização abre o fim de semana com uma prova de 6 km, pensada para quem quer participar da festa sem encarar a distância cheia. No domingo, 1º de novembro, é a vez da maratona propriamente dita, com os 42 km tradicionais.",
       "Uma das novidades é a opção de revezamento para os 42 km, em que duas pessoas podem dividir o percurso entre si, o que amplia a prova para quem ainda não se sente pronto para correr a distância sozinho, mas quer fazer parte dessa estreia histórica.",
       "Para o corredor de Joinville e região, a expectativa é grande: depois de anos de meia maratona, a cidade finalmente entra no calendário nacional das provas de 42 km. Os detalhes de inscrição estão na plataforma oficial do evento, e o nosso calendário já traz a prova cadastrada para quem quiser se programar com antecedência."
-    ]
-  },
-  {
-    id: "desafio-drogaria-catarinense-2026-confirmado",
-    categoria: "Desafio Drogaria Catarinense",
-    titulo: "4º Desafio Drogaria Catarinense confirma data em 19 de setembro no Ágora Tech Park",
-    resumo: "A prova, que vem crescendo a cada edição, mantém os percursos de 10 km e 5 km, além da corrida kids, com largada no Ágora Tech Park, na Rua Dona Francisca.",
-    dataTxt: "19 de setembro de 2026",
-    local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Ticket Sports",
-    fonteUrl: "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507",
-    corpo: [
-      "A Number Esportes confirmou a data do 4º Desafio Drogaria Catarinense: a prova acontece em 19 de setembro, um sábado, no Ágora Tech Park, na Rua Dona Francisca, em Joinville.",
-      "A programação segue o formato que já consagrou o evento entre os corredores da cidade, com percursos de 10 km e 5 km para quem busca desempenho, além da corrida kids para os pequenos participarem também.",
-      "De uma edição para outra, o Desafio Drogaria Catarinense vem ganhando mais gente na largada e hoje já é uma das provas de referência do calendário joinvilense de setembro, ao lado de outras etapas que movimentam a cidade no mesmo mês.",
-      "Quem quiser se organizar com antecedência já pode conferir todos os detalhes da prova, incluindo local exato de largada e distâncias, no nosso calendário de corridas."
     ]
   },
   {
@@ -380,37 +346,54 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "ademicon-run-joinville-2026-resultado",
+    id: "barra-run-2026-resultado",
     categoria: "Na região",
-    titulo: "Ademicon Run: Henzo Luccas e Bruna Macedo vencem os 4 km, Lucas Brandalise e Rafaela Benevenuto os 8 km",
-    resumo: "A prova de rua com largada na Ademicon, em Joinville, reuniu corredores nos percursos de 8 km e 4 km neste domingo, com pódios definidos no masculino e no feminino em ambas as distâncias.",
-    dataTxt: "30 de agosto de 2026",
-    local: "Joinville, SC",
+    titulo: "Barra Run: Wagner Carvalho Cardozo Borges e Fernanda Leal Grade vencem os 10 km, Luciano Manfio e Bianca Vieira Miranda os 5 km",
+    resumo: "A prova no litoral norte catarinense, com arena na Praça Lauro Carneiro de Loyola, em Barra Velha, definiu os campeões dos 10 km e dos 5 km neste domingo, no masculino e no feminino.",
+    dataTxt: "13 de setembro de 2026",
+    local: "Barra Velha, SC",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "42K Assessoria Esportiva",
-    fonteUrl: "https://42k.esp.br",
+    fonteNome: "Mons Ultra Trail",
+    fonteUrl: "https://www.ticketsports.com.br/e/barra-run-2026-74328",
     corpo: [
-      "A Ademicon Run, prova de rua organizada pela 42K Assessoria Esportiva com largada na sede da Ademicon, em Joinville, teve sua edição de 2026 disputada neste domingo, 30 de agosto, com percursos de 8 km e 4 km.",
-      "Nos 8 km, o pódio masculino foi liderado por Lucas Brandalise, seguido por Luciano Manfio e Wagner Carvalho Cardozo Borges. No feminino, a vitória ficou com Rafaela Pereira Benevenuto, à frente de Rafaela Barbara da Silva e Aline da Silva.",
-      "Já nos 4 km, Henzo Luccas venceu o masculino, com João Paulo Vieira e Leonardo de Carvalho dos Santos completando o pódio. No feminino, Bruna Macedo ficou em primeiro, seguida por Mariana Coelho Strutzel e Luciele Martins.",
-      "A prova é uma das que a 42K Assessoria Esportiva organiza ao longo do ano em Joinville, ao lado de eventos como a JTC Run e a Corrida pela Vida, que seguem no calendário da cidade em setembro e outubro."
+      "A Barra Run, organizada pela Mons Ultra Trail, teve sua edição de 2026 disputada neste domingo, 13 de setembro, com arena montada na Praça Lauro Carneiro de Loyola, na Avenida Paraná, 96, em frente ao Hotel Candeias, em Barra Velha, e percursos de 16 km, 10 km e 5 km.",
+      "Nos 10 km, o pódio masculino foi liderado por Wagner Carvalho Cardozo Borges, com o tempo de 35min50s, seguido por Lenicio de Paula Vieira e Flavio Veber. No feminino, a vitória ficou com Fernanda Leal Grade, em 48min57s, à frente de Solange de Fatima Schwirkowski e Rosimari Possamai Kukla.",
+      "Já nos 5 km, Luciano Manfio venceu o masculino, com 16min44s, seguido por Lucas Porciuncula Oliveira e Rafael Soares Cardoso. No feminino, Bianca Vieira Miranda ficou em primeiro, em 21min26s, à frente de Vanessa Rodrigues P. dos Santos e Andressa Soares Cardoso Ferreira.",
+      "Tradicional no litoral norte catarinense, a Barra Run reúne corredores de Joinville e da região a menos de uma hora de viagem, com arena montada perto da lagoa de Barra Velha."
     ]
   },
   {
-    id: "circuito-unimed-jaragua-2026-resultado",
+    id: "corridas-do-bem-sesi-jaragua-2026-resultado",
     categoria: "Na região",
-    titulo: "Circuito Unimed em Jaraguá do Sul tem Caio Henrique de Oliveira e Hailander da Silva como campeões",
-    resumo: "A etapa jaraguaense do circuito catarinense, no Parque Linear Via Verde, definiu os vencedores dos 5 km e dos 10 km neste domingo, no masculino e no feminino.",
-    dataTxt: "30 de agosto de 2026",
+    titulo: "Corridas do Bem SESI Saúde: Hebert Schroder Neto e Rafaela Pereira Benevenuto vencem os 10 km, Nicolas Dias e Aritusa Mendes de Farias Peggau os 5 km",
+    resumo: "A etapa jaraguaense do Circuito Corridas do Bem, realizado pelo SESI/SC, definiu os vencedores dos 10 km e dos 5 km neste domingo, no masculino e no feminino.",
+    dataTxt: "13 de setembro de 2026",
     local: "Jaraguá do Sul, SC",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Circuito de Corridas Unimed",
-    fonteUrl: "https://circuitodecorridaunimed.com.br/",
+    fonteNome: "SESI/SC",
+    fonteUrl: "https://sesisc.org.br/pt-br/eventos/sesi-corridas-do-bem-jaragua-do-sul",
     corpo: [
-      "O Circuito de Corridas Unimed, um dos calendários mais capilarizados de Santa Catarina, passou por Jaraguá do Sul neste domingo, 30 de agosto, com largada no estacionamento do Parque Linear Via Verde e percursos de 5 km e 10 km.",
-      "Nos 10 km, Hailander da Silva foi o campeão masculino, com o tempo de 35min35s, e Aldenia Marinho venceu o feminino, em 43min10s. Nos 5 km, Caio Henrique de Oliveira levou o título masculino, com 17min30s, e Lucimari Perin Miretzki foi a campeã feminina, com 20min00s.",
-      "O Via Verde virou ponto de encontro dos corredores jaraguaenses nos últimos anos, e a escolha do local ajuda a explicar por que a etapa costuma atrair também gente de Guaramirim, Schroeder e Corupá, além do pessoal de Joinville que faz a viagem curta pela BR-280.",
-      "O Circuito Unimed segue pela região com etapas em São Bento do Sul, em outubro, e em Mafra, em novembro, sempre com o mesmo formato de 10 km e 5 km."
+      "A etapa jaraguaense do Circuito Corridas do Bem, realizado pelo SESI/SC em 16 cidades catarinenses ao longo de 2026, foi disputada neste domingo, 13 de setembro, com largada na Bernardo Dornbusch, 1400, no bairro Vila Lalau, em Jaraguá do Sul, e percursos de 10 km e 5 km, além da maratoninha infantil e da caminhada.",
+      "Nos 10 km, o pódio masculino foi liderado por Hebert Schroder Neto, com o tempo de 35min00s, seguido por Jorge Nestor Pereira e Leomar Vaz Ferreira. No feminino, a vitória ficou com Rafaela Pereira Benevenuto, em 40min17s, à frente de Silvana Aparecida Cagnini Fideles e Layane Malisseski.",
+      "Já nos 5 km, Nicolas Dias venceu o masculino, com 17min18s, seguido por Joclei Benoni da Conceição Junior e Isac Teles dos Santos. No feminino, Aritusa Mendes de Farias Peggau ficou em primeiro, em 21min06s, à frente de Ivete Giachini e Chaiane de Oliveira.",
+      "A etapa incluiu o Festival Som em Movimento, com atrações musicais no espaço da prova, e foi a última das três etapas do circuito no Norte de SC nesta temporada, depois de Joinville em julho e São Bento do Sul em agosto."
+    ]
+  },
+  {
+    id: "desafio-drogaria-catarinense-2026-resultado",
+    categoria: "Na região",
+    titulo: "4º Desafio Drogaria Catarinense: Lucas Brandalise e Beatriz Neres vencem os 10 km, Lucas Vinicius Martins e Juliana de Souza os 5 km",
+    resumo: "A quarta edição da prova, com largada no Ágora Tech Park, em Joinville, definiu os campeões dos percursos de 10 km e 5 km neste sábado, com pódios completos no masculino e no feminino em ambas as distâncias.",
+    dataTxt: "19 de setembro de 2026",
+    local: "Joinville, SC",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Number Esportes",
+    fonteUrl: "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507",
+    corpo: [
+      "O 4º Desafio Drogaria Catarinense, organizado pela Number Esportes, teve sua edição de 2026 disputada neste sábado, 19 de setembro, com largada no Ágora Tech Park, na Rua Dona Francisca, em Joinville, e percursos de 10 km e 5 km.",
+      "Nos 10 km, o pódio masculino foi liderado por Lucas Brandalise, com o tempo de 33min17s, seguido por Luciano Manfio e Gabriel Cidral Correia. No feminino, a vitória ficou com Beatriz Neres, em 38min48s, à frente de Rafaela Pereira Benevenuto e Jaqueline Cristina Ramos Martins.",
+      "Já nos 5 km, Lucas Vinicius Martins venceu o masculino, com 16min46s, com João Paulo Vieira e Leonardo de Carvalho dos Santos completando o pódio. No feminino, Juliana de Souza ficou em primeiro, em 19min12s, seguida por Thamara Alessandra Busarello e Karina de Sa Rodrigues.",
+      "Quarta edição consecutiva do evento, o Desafio Drogaria Catarinense segue crescendo a cada ano e já é uma das provas de referência do calendário joinvilense de setembro, ao lado de outras etapas que movimentam a cidade no mesmo mês."
     ]
   },
   {
