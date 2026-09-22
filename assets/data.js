@@ -64,7 +64,8 @@ const PACEFLY_EVENTOS = [
     "edicao": "Edição 2026",
     "distancias": ["14 km", "7 km", "3 km"],
     "descricao": "Prova em Garuva, a menos de 40 minutos de Joinville, com percursos que passam pelo verde da Serra do Mar, por nascentes e rios da região. Os 14 km contornam a Ponte de Arame e voltam pela Estrada Colonial Otto Roder, os 7 km vão até a Pedra da Judite e retornam pelo mesmo trajeto, e os 3 km seguem em direção a Garuva acima. As inscrições vão até 20 de setembro, e o kit básico traz medalha, número de peito e chip, com opção de kit completo com camiseta. Há retirada de kit em Joinville, em local a ser divulgado pela organização.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/GARUVA+RUN-87861"
+    "oficialUrl": "https://www.ticketsports.com.br/e/GARUVA+RUN-87861",
+    "inscricoesEncerradas": true
   },
   {
     "id": "corrida-solida-rio-negrinho",
@@ -83,6 +84,22 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://www.ticketsports.com.br/e/3%C2%AA+CORRIDA+DE+RUA+SOLIDA-86668"
   },
   {
+    "id": "live-run-xp-jaragua-do-sul",
+    "nome": "LIVE! RUN XP",
+    "dia": "27",
+    "mes": "09",
+    "mesTxt": "SET",
+    "ano": 2026,
+    "dataExtenso": "27 de setembro de 2026",
+    "cidade": "Jaraguá do Sul, SC",
+    "largada": "Palco Via Verde, Ilha da Figueira. Aquecimento dos 5 km às 6h30 (largada às 7h) e dos 10 km às 7h15 (largada às 7h30), com largadas PCD alguns minutos antes de cada uma",
+    "organizador": "LIVE! Experience",
+    "edicao": "Etapa Jaraguá do Sul 2026",
+    "distancias": ["10 km", "5 km", "Corrida Kids"],
+    "descricao": "Etapa jaraguaense do circuito nacional LIVE! RUN XP, presente em 53 cidades de todos os estados do Brasil entre março e dezembro de 2026. A arena fica na Ilha da Figueira, com abertura às 5h30, aquecimento e largada dos 5 km às 7h e dos 10 km às 7h30, premiação às 8h40 e corrida kids às 9h15 (categorias de 50 m a 400 m conforme a idade). A retirada de kits acontece em 25 e 26 de setembro, na loja LIVE! Jaraguá do Sul, na Rua Reinoldo Rau, 67, Centro.",
+    "oficialUrl": "https://www.liverun.com.br/etapa/live-run-jaragu-do-sul-2026"
+  },
+  {
     "id": "corrida-pela-vida-joinville",
     "nome": "Corrida pela Vida",
     "dia": "11",
@@ -97,6 +114,22 @@ const PACEFLY_EVENTOS = [
     "distancias": ["8 km", "3 km"],
     "descricao": "Sexta edição da Corrida pela Vida, que encerra o Circuito Movimento Pelo Bem do ano, com largada no Shopping Mueller e percursos de 8 km e 3 km.",
     "oficialUrl": "https://www.ticketsports.com.br/e/corrida-pela-vida-2026-joinville-sc-84988"
+  },
+  {
+    "id": "oktoberfest-run-blumenau",
+    "nome": "1ª Oktoberfest Run Blumenau",
+    "dia": "11",
+    "mes": "10",
+    "mesTxt": "OUT",
+    "ano": 2026,
+    "dataExtenso": "11 de outubro de 2026",
+    "cidade": "Blumenau, SC",
+    "largada": "Portal da Vila Germânica, Rua Alberto Stein, 199, Bairro Velha, às 7h",
+    "organizador": "FTA Sports",
+    "edicao": "1ª edição",
+    "distancias": ["10 km", "5 km", "Caminhada 3 km", "Kids"],
+    "descricao": "Primeira corrida oficial da Oktoberfest Blumenau, que chega à 41ª edição em 2026 (7 a 25 de outubro, no Parque Vila Germânica). A prova sai do Portal da Vila Germânica às 7h, com percursos de 10 km, 5 km, caminhada de 3 km e corrida kids (das 8h30 às 9h, por faixa etária), supervisão técnica da Federação Catarinense de Atletismo e hidratação a cada 2 km.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/1%C2%AA+OKTOBERFEST+RUN+BLUMENAU+-+SC-87870"
   },
   {
     "id": "sports-run-jaragua-do-sul",
@@ -244,6 +277,22 @@ const PACEFLY_EVENTOS = [
     "destaque": true
   },
   {
+    "id": "meia-maratona-piracity-joinville",
+    "nome": "10ª Meia Maratona de Piracity",
+    "dia": "08",
+    "mes": "11",
+    "mesTxt": "NOV",
+    "ano": 2026,
+    "dataExtenso": "8 de novembro de 2026",
+    "cidade": "Joinville, SC",
+    "largada": "Fundos do Colégio Estadual Olavo Bilac, Rua Olavo Bilac, Distrito de Pirabeiraba, às 6h",
+    "organizador": "L'quelibre e KM Eventos Esportivos",
+    "edicao": "10ª edição",
+    "distancias": ["21 km", "10 km", "5 km", "Caminhada 5 km"],
+    "descricao": "Décima edição da Meia Maratona de Piracity, no distrito joinvilense de Pirabeiraba, com largada e chegada nos fundos do Colégio Estadual Olavo Bilac. Aquecimento às 5h30 e largada única às 6h para os 21 km, 10 km, 5 km e caminhada de 5 km, com premiação a partir das 8h30. A inscrição inclui a doação de 1 kg de alimento não perecível.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/10o-meia-maratona-de-piracity-87885"
+  },
+  {
     "id": "circuito-unimed-mafra",
     "nome": "Circuito de Corridas Unimed",
     "dia": "08",
@@ -290,6 +339,38 @@ const PACEFLY_EVENTOS = [
     "distancias": ["7 km"],
     "descricao": "Prova de rua em Joinville com largada no 1º BPR e percurso de 7 km.",
     "oficialUrl": "https://number.esp.br"
+  },
+  {
+    "id": "corrida-speed-life-run-barra-velha",
+    "nome": "2ª Corrida Speed Life Run",
+    "dia": "29",
+    "mes": "11",
+    "mesTxt": "NOV",
+    "ano": 2026,
+    "dataExtenso": "29 de novembro de 2026",
+    "cidade": "Barra Velha, SC",
+    "largada": "Praça Lauro Loyola, Avenida Paraná, 96, Centro, às 7h (10 km) e 7h05 (5 km e caminhada de 3 km)",
+    "organizador": "Speed Life Run",
+    "edicao": "2ª edição",
+    "distancias": ["10 km", "5 km", "Caminhada 3 km", "Kids"],
+    "descricao": "Segunda edição da Speed Life Run, com percurso à beira-mar e perto da lagoa de Barra Velha. Largada dos 10 km às 7h e dos 5 km e caminhada de 3 km às 7h05, na Praça Lauro Loyola, com corrida kids às 8h30 e premiação às 9h15. A prova também tem versão virtual, para corredores de fora da cidade.",
+    "oficialUrl": "https://www.ticketsports.com.br/e/2-corrida-speed-life-run-85505"
+  },
+  {
+    "id": "corrida-proma-jaragua-do-sul",
+    "nome": "5ª Corrida Proma",
+    "dia": "06",
+    "mes": "12",
+    "mesTxt": "DEZ",
+    "ano": 2026,
+    "dataExtenso": "6 de dezembro de 2026",
+    "cidade": "Jaraguá do Sul, SC",
+    "largada": "Local exato a definir pela organização; largada principal às 6h e largada kids às 7h30",
+    "organizador": "Sesi Jaraguá do Sul",
+    "edicao": "5ª edição",
+    "distancias": ["10 km", "5 km", "Caminhada 5 km", "Kids"],
+    "descricao": "Quinta edição da Corrida Proma, organizada pelo Sesi Jaraguá do Sul, com largada principal às 6h e largada kids às 7h30. Os percursos são de 10 km, 5 km e caminhada de 5 km, com kit de camiseta, número de peito, chip e medalha. A retirada de kits acontece em 5 de dezembro, das 8h às 15h, na sede do Sesi Jaraguá do Sul, na Rua Walter Marquardt, 835, bairro Barra do Rio Molha. O local exato da largada ainda não foi divulgado pela organização.",
+    "oficialUrl": "https://www.movnow.com.br/eventos/235-corrida-proma-2026"
   }
 ];
 
