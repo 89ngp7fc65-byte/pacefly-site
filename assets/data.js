@@ -35,71 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "meia-maratona-bela-vista-gaspar",
-    "nome": "42ª Meia Maratona Bela Vista Country Club",
-    "dia": "26",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "26 e 27 de setembro de 2026",
-    "cidade": "Gaspar, SC",
-    "largada": "Bela Vista Country Club, Rua Anfilóquio Nunes Pires, 5300, às 6h30 (Maratoninha às 9h15)",
-    "organizador": "Bela Vista Country Club",
-    "edicao": "42ª edição",
-    "distancias": ["21 km", "10 km", "5 km", "Maratoninha"],
-    "descricao": "Considerada a meia maratona mais antiga do Brasil, a prova reúne mais de 3 mil participantes em Gaspar, no Vale do Itajaí. A largada dos adultos é às 6h30, no Bela Vista Country Club, com percursos de 21 km, 10 km e 5 km. A Maratoninha, para crianças de 4 a 13 anos, sai às 9h15 e tem vagas limitadas a 200 participantes.",
-    "oficialUrl": "https://www.clubebelavista.com.br/eventos/42-meia-maratona"
-  },
-  {
-    "id": "garuva-run",
-    "nome": "Garuva Run",
-    "dia": "27",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "27 de setembro de 2026",
-    "cidade": "Garuva, SC",
-    "largada": "Praça Pedro Ivo Campos, Avenida Celso Ramos, em frente ao estacionamento da Paróquia São João Batista. Largada dos 14 km às 7h, dos 7 km às 7h10 e dos 3 km às 7h20",
-    "organizador": "KM Eventos Esportivos",
-    "edicao": "Edição 2026",
-    "distancias": ["14 km", "7 km", "3 km"],
-    "descricao": "Prova em Garuva, a menos de 40 minutos de Joinville, com percursos que passam pelo verde da Serra do Mar, por nascentes e rios da região. Os 14 km contornam a Ponte de Arame e voltam pela Estrada Colonial Otto Roder, os 7 km vão até a Pedra da Judite e retornam pelo mesmo trajeto, e os 3 km seguem em direção a Garuva acima. As inscrições vão até 20 de setembro, e o kit básico traz medalha, número de peito e chip, com opção de kit completo com camiseta. Há retirada de kit em Joinville, em local a ser divulgado pela organização.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/GARUVA+RUN-87861",
-    "inscricoesEncerradas": true
-  },
-  {
-    "id": "corrida-solida-rio-negrinho",
-    "nome": "3ª Corrida de Rua Solida",
-    "dia": "27",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "27 de setembro de 2026",
-    "cidade": "Rio Negrinho, SC",
-    "largada": "Mak Center, Rua Capitão Osmar Romão da Silva, 303, Centro. Largada dos 10 km às 7h30 e dos 5 km às 7h40",
-    "organizador": "CJR Academia e Eventos",
-    "edicao": "3ª edição",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Terceira edição da Corrida Solida em Rio Negrinho, no planalto norte catarinense, com largada no Mak Center, na Rua Capitão Osmar Romão da Silva, 303. Os 10 km saem às 7h30 e os 5 km às 7h40, com aquecimento coletivo a partir das 7h e premiação às 9h. O kit tem número de peito, chip descartável e camiseta, com retirada em 26 de setembro no próprio Mak Center, das 8h às 16h. As inscrições vão até 18 de setembro ou até o limite de 800 atletas.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/3%C2%AA+CORRIDA+DE+RUA+SOLIDA-86668"
-  },
-  {
-    "id": "live-run-xp-jaragua-do-sul",
-    "nome": "LIVE! RUN XP",
-    "dia": "27",
-    "mes": "09",
-    "mesTxt": "SET",
-    "ano": 2026,
-    "dataExtenso": "27 de setembro de 2026",
-    "cidade": "Jaraguá do Sul, SC",
-    "largada": "Palco Via Verde, Ilha da Figueira. Aquecimento dos 5 km às 6h30 (largada às 7h) e dos 10 km às 7h15 (largada às 7h30), com largadas PCD alguns minutos antes de cada uma",
-    "organizador": "LIVE! Experience",
-    "edicao": "Etapa Jaraguá do Sul 2026",
-    "distancias": ["10 km", "5 km", "Corrida Kids"],
-    "descricao": "Etapa jaraguaense do circuito nacional LIVE! RUN XP, presente em 53 cidades de todos os estados do Brasil entre março e dezembro de 2026. A arena fica na Ilha da Figueira, com abertura às 5h30, aquecimento e largada dos 5 km às 7h e dos 10 km às 7h30, premiação às 8h40 e corrida kids às 9h15 (categorias de 50 m a 400 m conforme a idade). A retirada de kits acontece em 25 e 26 de setembro, na loja LIVE! Jaraguá do Sul, na Rua Reinoldo Rau, 67, Centro.",
-    "oficialUrl": "https://www.liverun.com.br/etapa/live-run-jaragu-do-sul-2026"
-  },
-  {
     "id": "corrida-pela-vida-joinville",
     "nome": "Corrida pela Vida",
     "dia": "11",
@@ -322,7 +257,7 @@ const PACEFLY_EVENTOS = [
     "edicao": "6ª edição",
     "distancias": ["9 km", "5 km"],
     "descricao": "Sexta edição da corrida em apoio aos Bombeiros Voluntários de Joinville, com largada às 6h na Unidade Central, na Rua Jaguaruna, e percursos de 9 km e 5 km. Inscrições até 3 de novembro.",
-    "oficialUrl": "https://www.cbvj.org.br"
+    "oficialUrl": "https://www.ticketsports.com.br/e/6%C2%AA+CORRIDA+BOMBEIROS+VOLUNT%C3%81RIOS+JOINVILLE-87309"
   },
   {
     "id": "corrida-do-tatico",
@@ -427,161 +362,126 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
-    id: "barra-run-2026-resultado",
-    categoria: "Na região",
-    titulo: "Barra Run: Wagner Carvalho Cardozo Borges e Fernanda Leal Grade vencem os 10 km, Luciano Manfio e Bianca Vieira Miranda os 5 km",
-    resumo: "A prova no litoral norte catarinense, com arena na Praça Lauro Carneiro de Loyola, em Barra Velha, definiu os campeões dos 10 km e dos 5 km neste domingo, no masculino e no feminino.",
-    dataTxt: "13 de setembro de 2026",
-    local: "Barra Velha, SC",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Mons Ultra Trail",
-    fonteUrl: "https://www.ticketsports.com.br/e/barra-run-2026-74328",
-    corpo: [
-      "A Barra Run, organizada pela Mons Ultra Trail, teve sua edição de 2026 disputada neste domingo, 13 de setembro, com arena montada na Praça Lauro Carneiro de Loyola, na Avenida Paraná, 96, em frente ao Hotel Candeias, em Barra Velha, e percursos de 16 km, 10 km e 5 km.",
-      "Nos 10 km, o pódio masculino foi liderado por Wagner Carvalho Cardozo Borges, com o tempo de 35min50s, seguido por Lenicio de Paula Vieira e Flavio Veber. No feminino, a vitória ficou com Fernanda Leal Grade, em 48min57s, à frente de Solange de Fatima Schwirkowski e Rosimari Possamai Kukla.",
-      "Já nos 5 km, Luciano Manfio venceu o masculino, com 16min44s, seguido por Lucas Porciuncula Oliveira e Rafael Soares Cardoso. No feminino, Bianca Vieira Miranda ficou em primeiro, em 21min26s, à frente de Vanessa Rodrigues P. dos Santos e Andressa Soares Cardoso Ferreira.",
-      "Tradicional no litoral norte catarinense, a Barra Run reúne corredores de Joinville e da região a menos de uma hora de viagem, com arena montada perto da lagoa de Barra Velha."
-    ]
-  },
-  {
-    id: "corridas-do-bem-sesi-jaragua-2026-resultado",
-    categoria: "Na região",
-    titulo: "Corridas do Bem SESI Saúde: Hebert Schroder Neto e Rafaela Pereira Benevenuto vencem os 10 km, Nicolas Dias e Aritusa Mendes de Farias Peggau os 5 km",
-    resumo: "A etapa jaraguaense do Circuito Corridas do Bem, realizado pelo SESI/SC, definiu os vencedores dos 10 km e dos 5 km neste domingo, no masculino e no feminino.",
-    dataTxt: "13 de setembro de 2026",
-    local: "Jaraguá do Sul, SC",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "SESI/SC",
-    fonteUrl: "https://sesisc.org.br/pt-br/eventos/sesi-corridas-do-bem-jaragua-do-sul",
-    corpo: [
-      "A etapa jaraguaense do Circuito Corridas do Bem, realizado pelo SESI/SC em 16 cidades catarinenses ao longo de 2026, foi disputada neste domingo, 13 de setembro, com largada na Bernardo Dornbusch, 1400, no bairro Vila Lalau, em Jaraguá do Sul, e percursos de 10 km e 5 km, além da maratoninha infantil e da caminhada.",
-      "Nos 10 km, o pódio masculino foi liderado por Hebert Schroder Neto, com o tempo de 35min00s, seguido por Jorge Nestor Pereira e Leomar Vaz Ferreira. No feminino, a vitória ficou com Rafaela Pereira Benevenuto, em 40min17s, à frente de Silvana Aparecida Cagnini Fideles e Layane Malisseski.",
-      "Já nos 5 km, Nicolas Dias venceu o masculino, com 17min18s, seguido por Joclei Benoni da Conceição Junior e Isac Teles dos Santos. No feminino, Aritusa Mendes de Farias Peggau ficou em primeiro, em 21min06s, à frente de Ivete Giachini e Chaiane de Oliveira.",
-      "A etapa incluiu o Festival Som em Movimento, com atrações musicais no espaço da prova, e foi a última das três etapas do circuito no Norte de SC nesta temporada, depois de Joinville em julho e São Bento do Sul em agosto."
-    ]
-  },
-  {
-    id: "desafio-drogaria-catarinense-2026-resultado",
-    categoria: "Na região",
-    titulo: "4º Desafio Drogaria Catarinense: Lucas Brandalise e Beatriz Neres vencem os 10 km, Lucas Vinicius Martins e Juliana de Souza os 5 km",
-    resumo: "A quarta edição da prova, com largada no Ágora Tech Park, em Joinville, definiu os campeões dos percursos de 10 km e 5 km neste sábado, com pódios completos no masculino e no feminino em ambas as distâncias.",
-    dataTxt: "19 de setembro de 2026",
+    id: "parque-porto-cachoeira-joinville",
+    categoria: "Infraestrutura",
+    titulo: "Joinville licita R$ 55,5 milhões para o Parque Porto Cachoeira, com pista de caminhada e corrida",
+    resumo: "A licitação do novo parque na região central, inspirado em modelos como o High Line de Nova York, recebeu sete propostas e prevê 24 meses de obra. O projeto inclui ciclovia, pista de caminhada e corrida, quadras e área pet, entre o Centreventos Cau Hansen e o rio.",
+    dataTxt: "14 de setembro de 2026",
     local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Number Esportes",
-    fonteUrl: "https://www.ticketsports.com.br/e/4o-desafio-drogaria-catarinense-87507",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "ND Mais",
+    fonteUrl: "https://ndmais.com.br/infraestrutura/parque-r-55-milhoes-avanca-joinville/",
     corpo: [
-      "O 4º Desafio Drogaria Catarinense, organizado pela Number Esportes, teve sua edição de 2026 disputada neste sábado, 19 de setembro, com largada no Ágora Tech Park, na Rua Dona Francisca, em Joinville, e percursos de 10 km e 5 km.",
-      "Nos 10 km, o pódio masculino foi liderado por Lucas Brandalise, com o tempo de 33min17s, seguido por Luciano Manfio e Gabriel Cidral Correia. No feminino, a vitória ficou com Beatriz Neres, em 38min48s, à frente de Rafaela Pereira Benevenuto e Jaqueline Cristina Ramos Martins.",
-      "Já nos 5 km, Lucas Vinicius Martins venceu o masculino, com 16min46s, com João Paulo Vieira e Leonardo de Carvalho dos Santos completando o pódio. No feminino, Juliana de Souza ficou em primeiro, em 19min12s, seguida por Thamara Alessandra Busarello e Karina de Sa Rodrigues.",
-      "Quarta edição consecutiva do evento, o Desafio Drogaria Catarinense segue crescendo a cada ano e já é uma das provas de referência do calendário joinvilense de setembro, ao lado de outras etapas que movimentam a cidade no mesmo mês."
+      "A Prefeitura de Joinville abriu a licitação do Parque Porto Cachoeira, orçado em R$ 55,5 milhões, e já recebeu sete propostas na fase de avaliação de preços, capacidade técnica e documentação, segundo a Secretaria de Administração e Planejamento. O prazo previsto de obra é de 24 meses a partir da assinatura do contrato.",
+      "O parque fica na região central da cidade, próximo ao Centreventos Cau Hansen, numa área entre as avenidas José Vieira e Hermann August Lepper e as ruas Itaiópolis e Dona Francisca, junto ao rio. O projeto se inspira em conceitos de parques urbanos como o High Line de Nova York, que transformou uma antiga estrutura elevada em área de lazer.",
+      "Para quem corre na cidade, o ponto central é a pista de caminhada e corrida prevista no projeto, ao lado de ciclovia, quadras de futsal, basquete e queimada, playground, área de piquenique, espaço pet, mesas de tênis e jogos de tabuleiro, além de pavimentação, drenagem, iluminação e paisagismo completos.",
+      "Com 24 meses de prazo a partir da contratação, a expectativa é de que o parque só fique pronto em 2028. Ainda assim, é mais uma opção de pista segura se somando ao pouco espaço fechado para treino que a região central de Joinville oferece hoje, e vale ficar de olho no avanço da obra nos próximos meses."
     ]
   },
   {
-    id: "garuva-run-2026",
-    categoria: "Na região",
-    titulo: "Garuva Run leva corredores para dentro da Serra do Mar em 27 de setembro",
-    resumo: "A prova sai da Praça Pedro Ivo Campos, a menos de 40 minutos de Joinville, com percursos de 14 km, 7 km e 3 km. Os 14 km contornam a Ponte de Arame e voltam pela Estrada Colonial Otto Roder.",
-    dataTxt: "27 de setembro de 2026",
-    local: "Garuva, SC",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Ticket Sports",
-    fonteUrl: "https://www.ticketsports.com.br/e/GARUVA+RUN-87861",
+    id: "nike-alphafly-4-lancamento",
+    categoria: "Equipamento",
+    titulo: "Nike lança o Alphafly 4, mas o tênis não chega ao Brasil antes da Maratona de Joinville",
+    resumo: "A nova geração do tênis de placa de carbono da Nike traz espuma mais leve e mais retorno de energia, mas só deve chegar às lojas brasileiras na primeira quinzena de dezembro, depois da 1ª Maratona de Joinville (31/10 e 1º/11) e da Meia Maratona de Piracity (8/11).",
+    dataTxt: "18 de setembro de 2026",
+    local: "",
+    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Contra Relógio",
+    fonteUrl: "https://contrarelogio.com.br/nike-apresenta-alphafly-4-nova-geracao-do-tenis-de-maratona/",
     corpo: [
-      "A KM Eventos Esportivos confirmou a Garuva Run para 27 de setembro, com arena na Praça Pedro Ivo Campos, na Avenida Celso Ramos, em frente ao estacionamento da Paróquia São João Batista. Para quem sai de Joinville, é menos de 40 minutos de estrada, o que coloca a prova na faixa de viagem curta que dá para fazer na manhã do próprio domingo.",
-      "São três percursos. Os 14 km contornam a Ponte de Arame, ponto que a própria organização sinaliza como de atenção, e retornam pela Estrada Colonial Otto Roder. Os 7 km vão até a Pedra da Judite e voltam pelo mesmo trajeto. Os 3 km seguem em direção a Garuva acima, também com retorno pelo mesmo caminho.",
-      "As largadas são escalonadas: 7h para os 14 km, 7h10 para os 7 km e 7h20 para os 3 km. O tempo limite dos 14 km é de 2h20, o que equivale a um pace máximo de 10 min/km. A premiação começa às 10h, com troféus do 1º ao 5º lugar no geral e do 1º ao 3º nas categorias por idade.",
-      "O que diferencia essa prova das corridas urbanas da região é o cenário. O traçado atravessa uma área de mata preservada da Serra do Mar, com nascentes e rios ao longo do caminho. Há postos de hidratação no percurso e na chegada, mas a organização sugere que quem corre com cinta ou mochila leve a própria água. As inscrições vão até 20 de setembro, e haverá um ponto de retirada de kit em Joinville, ainda a ser anunciado."
+      "A Nike apresentou em 18 de setembro o Alphafly 4, nova geração do seu tênis de placa de carbono voltado às provas longas. A principal mudança é a espuma ZoomX LT, descrita pela marca como até 17% mais leve que a ZoomX tradicional e com 8% mais retorno de energia, combinada com um cabedal Atomknit novo e ajustes na placa de carbono e nas unidades Air Zoom.",
+      "No geral, a Nike descreve o conjunto como 5% mais leve e com 10% mais retorno de energia do que o Alphafly 3. O modelo tem histórico de peso nas maratonas de elite: versões anteriores da linha estiveram nos pés do recorde mundial de Kelvin Kiptum e da vitória olímpica de Sifan Hassan em Paris.",
+      "Para quem corre por aqui, o dado que interessa é o prazo: o tênis chega às lojas brasileiras só na primeira quinzena de dezembro, segundo a marca, depois de encerrada a sequência mais forte do calendário local, que inclui a 1ª Maratona de Joinville (6 km no sábado 31 de outubro, 42 km no domingo 1º de novembro) e a 10ª Meia Maratona de Piracity (8 de novembro). Ou seja, quem vai estrear os 42 km de Joinville não vai correr de Alphafly 4, e não precisa: o tênis que já está no seu treino, testado e sem surpresa, ainda é a escolha mais segura para uma estreia."
     ]
   }
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-08-30
+/* DICAS_ULTIMA_ROTACAO: 2026-09-27
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "hidratacao-antes-durante-depois-do-treino",
-    categoria: "Nutrição",
-    titulo: "Hidratação: quanto beber antes, durante e depois do treino",
-    resumo: "Com os dias esquentando no norte de Santa Catarina, a sede deixa de ser o único sinal de que o corpo precisa de água. Um planejamento simples de hidratação evita queda de rendimento e cãibra.",
+    id: "calor-e-sol-nos-treinos-da-primavera",
+    categoria: "Saúde",
+    titulo: "Calor e sol: como ajustar o treino agora na primavera",
+    resumo: "Com as tardes mais longas e o sol mais forte em Joinville e região, o treino que funcionava no inverno pode virar um problema nos próximos meses. Pequenos ajustes de horário e proteção evitam queda de rendimento e queimadura.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Conforme o inverno vai ficando para trás e os treinos voltam a pegar sol mais cedo, a hidratação passa a pesar mais no resultado do treino. O problema é que a sede é um sinal atrasado: quando ela aparece, o corpo já está em déficit de líquido há um tempo.",
-      "Antes de sair para correr, o ideal é beber um copo de água de 1 a 2 horas antes, dando tempo do corpo absorver sem deixar o estômago pesado na largada. Em treinos de até 40 minutos, isso costuma bastar, sem necessidade de carregar garrafa.",
-      "Para treinos mais longos, a lógica muda: pequenos goles a cada 15 ou 20 minutos rendem mais do que beber muito de uma vez só. Em dias quentes ou treinos acima de uma hora, vale considerar um isotônico para repor também o sódio perdido no suor, principalmente para quem sua bastante.",
-      "Depois do treino, o corpo continua precisando de reposição por um bom tempo. Uma referência simples é beber cerca de 1,5 litro de água para cada quilo perdido de suor, o que dá para estimar pesando-se antes e depois de um treino mais longo em dia quente.",
-      "Sinais de que a hidratação ficou atrasada incluem urina bem escura, dor de cabeça depois do treino e sensação de cansaço fora do normal. Se isso virar rotina, vale rever a quantidade de água ao longo do dia, não só durante a corrida."
+      "A primavera muda duas coisas de uma vez: a temperatura sobe e o sol fica mais forte, mesmo em horários que antes eram tranquilos. Treinar no mesmo horário do inverno, sem ajustar mais nada, é um dos motivos mais comuns de treino ruim nessa transição de estação.",
+      "O primeiro ajuste é o horário. Treinar bem cedo, antes das 9h, ou já no fim da tarde, depois das 17h, evita o calor mais forte e ainda garante o sol mais baixo, com raios menos diretos. Quem só pode treinar no meio do dia deve reduzir o ritmo e aceitar que o mesmo esforço vai parecer mais puxado.",
+      "Protetor solar deixa de ser opcional a partir de agora. Vale passar pelo menos 20 minutos antes de sair de casa, em rosto, nuca, orelhas e ombros, e reaplicar se o treino passar de uma hora. Boné ou viseira e óculos escuros ajudam bastante nos percursos mais abertos, sem sombra de árvore.",
+      "A hidratação também precisa de mais atenção nessa fase. Levar água em treinos acima de 40 minutos, mesmo em dias que não parecem tão quentes, evita o efeito surpresa de suar mais do que o esperado. Roupas claras e tecidos leves, que respiram melhor, fazem diferença real no conforto.",
+      "Sinais de que o calor está pesando mais do que deveria incluem tontura, pele muito vermelha, parada de suar em pleno esforço e dor de cabeça. Nesses casos, o certo é parar, buscar sombra, se hidratar e não insistir no treino programado."
     ]
   },
   {
-    id: "primeira-semana-de-treino-do-zero",
+    id: "recuperacao-entre-provas-seguidas",
     categoria: "Treino",
-    titulo: "Como montar sua primeira semana de treino do zero",
-    resumo: "Sair do sedentarismo direto para a corrida contínua é o caminho mais rápido para uma lesão. Uma primeira semana bem planejada, com caminhada e corrida intercaladas, constrói uma base que dura.",
+    titulo: "Como recuperar bem entre duas provas em fins de semana seguidos",
+    resumo: "Com o calendário da região cheio quase todo fim de semana entre setembro e novembro, é comum a vontade de correr duas provas seguidas. A recuperação entre elas decide se isso vira ganho ou lesão.",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Quem decide começar a correr costuma cometer o mesmo erro: tentar correr o máximo possível já no primeiro treino. O resultado, na maioria das vezes, é dor no dia seguinte, desânimo e, em muitos casos, uma lesão que atrasa o começo em semanas.",
-      "Um jeito mais inteligente de começar é intercalar caminhada rápida com pequenos trechos de corrida leve. Por exemplo: 1 minuto correndo e 2 minutos caminhando, repetindo por 20 a 25 minutos. O corpo vai se adaptando ao impacto aos poucos, sem sobrecarregar tendão e articulação de uma vez.",
-      "Na primeira semana, três treinos já são suficientes, com um dia de descanso entre eles. Não é sobre quantidade, é sobre dar tempo do corpo se recuperar entre uma sessão e outra, principalmente para quem está destreinado há tempo.",
-      "Vale prestar atenção ao ritmo: se não dá para manter uma conversa enquanto corre, o ritmo está forte demais para essa fase. As primeiras semanas são de adaptação, não de performance, e ir com calma agora é o que garante evolução mais à frente.",
-      "A partir da segunda ou terceira semana, dá para aumentar aos poucos o tempo correndo e reduzir o de caminhada, sempre respeitando como o corpo responde. Quem persiste nesse ritmo gradual costuma chegar aos 30 minutos contínuos de corrida sem drama nenhum."
+      "Correr uma prova por fim de semana, duas vezes seguidas, não é automaticamente um problema, mas exige tratar a semana entre elas como recuperação, não como treino normal. O erro mais comum é voltar para o treino de sempre já na segunda-feira seguinte à primeira prova.",
+      "Nos dois ou três dias depois da prova, o corpo ainda está processando o esforço, mesmo que a dor muscular já tenha passado. Um passeio leve, caminhada ou um trote bem curto e confortável ajudam a circulação sem acrescentar mais desgaste em cima do que já foi feito no fim de semana.",
+      "Sono e alimentação pesam mais do que parecem nessa janela curta entre provas. Dormir um pouco mais do que o normal e não deixar a alimentação solta, principalmente a reposição de carboidrato e proteína nas primeiras horas depois da chegada, acelera a recuperação sem exigir nada além de rotina.",
+      "Vale prestar atenção especial em dor articular ou muscular que persiste ou piora ao longo da semana, diferente do cansaço geral esperado. Esse tipo de dor é sinal de que a segunda prova pode precisar ser encarada em ritmo mais conservador, ou até repensada, para não transformar um fim de semana cheio em uma lesão de semanas.",
+      "Quando as duas provas são de distâncias parecidas e o intervalo é de uma semana, o corredor mais experiente tende a lidar melhor, porque já tem uma base de treino que absorve o esforço extra. Para quem está começando, escolher só uma das duas, ou trocar a segunda por uma distância mais curta, costuma valer mais do que provar os dois pódios."
     ]
   },
   {
-    id: "respiracao-na-corrida-evitar-pontada",
-    categoria: "Técnica",
-    titulo: "Respiração na corrida: o ritmo certo evita a pontada",
-    resumo: "Aquela fisgada do lado da barriga tem explicação, e prevenção. Ajustar a respiração ao ritmo da passada é um dos jeitos mais simples de evitar a pontada que atrapalha o treino.",
-    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "A pontada, aquela dor aguda do lado da barriga, é uma das queixas mais comuns entre corredores, especialmente entre quem está começando. Ela costuma aparecer quando a respiração fica curta e descompassada da passada, ou quando o treino começa forte demais sem aquecimento.",
-      "Uma respiração eficiente na corrida é mais profunda do que parece. Em vez de respirar só com o peito, vale puxar o ar enchendo também a barriga, o chamado respirar diafragmático, que aproveita melhor cada respiração e reduz a chance da pontada aparecer.",
-      "Um padrão que costuma ajudar é respirar em ritmo de 3 passos inspirando e 2 expirando, alternando o lado em que o pé toca o chão na hora de soltar o ar. Isso distribui o impacto entre os dois lados do corpo e reduz a sobrecarga que costuma gerar a fisgada.",
-      "Se a pontada aparecer no meio do treino, reduzir o ritmo e respirar fundo e devagar, empurrando o ar para fora com força, costuma aliviar em poucos minutos. Parar totalmente raramente é necessário, mas forçar o ritmo com dor é o caminho certo para piorar.",
-      "Comer pouco antes de correr e começar o treino sem aquecimento são dois fatores que aumentam bastante a chance de pontada. Um aquecimento leve de 5 minutos e um intervalo de pelo menos uma hora após a última refeição já reduzem boa parte do problema."
-    ]
-  },
-  {
-    id: "quando-trocar-o-tenis-de-corrida",
-    categoria: "Equipamento",
-    titulo: "Hora de trocar o tênis: os sinais que o solado dá",
-    resumo: "O amortecimento perde eficiência bem antes de o tênis parecer gasto por fora. Reconhecer os sinais certos evita lesão e também economiza um tênis novo antes da hora.",
+    id: "caibra-na-corrida-causas-e-prevencao",
+    categoria: "Saúde",
+    titulo: "Cãibra na corrida: por que aparece e como evitar",
+    resumo: "Aquela dor súbita na panturrilha ou na parte de trás da coxa, geralmente perto do fim da prova, tem mais de uma causa possível. Entender qual é a sua ajuda a evitar que ela decida o resultado do próximo desafio.",
     imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Uma referência comum para troca de tênis de corrida é entre 500 e 800 km de uso, mas esse número varia bastante conforme o peso do corredor, o tipo de pisada e a superfície mais usada nos treinos. Vale usar essa faixa como alerta, não como regra fixa.",
-      "O desgaste que mais importa costuma ser invisível: a espuma do solado perde parte do amortecimento aos poucos, mesmo quando a parte de cima do tênis ainda parece nova. Um jeito simples de perceber é apertar o solado com o dedo, comparando com um tênis novo do mesmo modelo, se tiver como comparar.",
-      "Sinais no corpo também avisam. Dor nova no joelho, no tornozelo ou na canela, sem mudança no volume ou intensidade do treino, pode ser o tênis pedindo aposentadoria antes mesmo de qualquer sinal visível de desgaste.",
-      "Olhar o desgaste da sola por baixo ajuda a entender o tipo de pisada e se está uniforme. Desgaste muito concentrado de um lado só, ou uma quina gasta de forma irregular, é sinal de que vale conversar com quem vende o tênis sobre o modelo mais adequado para o seu movimento.",
-      "Para quem treina bastante, ter dois pares em rodízio costuma prolongar a vida útil de cada um, já que a espuma do solado recupera parte do amortecimento durante o descanso entre um uso e outro. E o par novo nunca deve estrear direto numa prova."
+      "A cãibra é uma contração muscular involuntária e dolorida, que na corrida costuma aparecer na panturrilha, no posterior de coxa ou nos pés, quase sempre na parte final do treino ou da prova, quando o músculo já está mais cansado.",
+      "A causa mais estudada hoje é a fadiga muscular em si: o músculo exigido além do que está preparado para aquele ritmo ou distância perde parte do controle da própria contração. É por isso que a cãibra aparece mais em quem tenta correr mais rápido ou mais longe do que o treino recente permite.",
+      "Desidratação e perda de sódio pelo suor também entram na conta, principalmente em dias quentes ou em provas longas. Quem sua muito e só reposiciona água, sem nenhum eletrólito, fica mais exposto a esse tipo de cãibra, especialmente depois de mais de uma hora de esforço.",
+      "Se a cãibra aparecer no meio da prova, parar por alguns segundos e alongar bem devagar o músculo afetado, sem forçar, costuma aliviar mais rápido do que tentar continuar no mesmo ritmo. Massagear a região e reduzir a velocidade depois evita que ela volte na sequência.",
+      "Prevenção de verdade começa antes da prova: treino específico na distância que será cobrada, hidratação com eletrólito em treinos longos ou dias de calor, e respeitar o ritmo que o treino recente sustenta, não o ritmo que a ansiedade da largada sugere."
     ]
   },
   {
-    id: "motivacao-quando-a-vontade-de-treinar-sai-de-ferias",
-    categoria: "Mente",
-    titulo: "Manter a motivação quando a vontade de treinar sai de férias",
-    resumo: "Toda rotina de treino tem semanas de baixa. Pequenos ajustes de meta, companhia e variedade ajudam a atravessar essas fases sem abandonar o hábito que você já construiu.",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    id: "checklist-da-mochila-no-dia-da-prova",
+    categoria: "Equipamento",
+    titulo: "O que levar no dia da prova: o checklist da mochila",
+    resumo: "Entre número de peito, chip e tênis novo demais, é fácil esquecer algo importante na corrida contra o relógio da manhã da prova. Uma mochila organizada na noite anterior evita esse estresse.",
+    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Mesmo quem corre há anos passa por semanas em que o despertador toca e a vontade de treinar simplesmente não aparece. Isso é normal, faz parte de qualquer rotina de longo prazo, e o problema não é sentir isso, é como reagir quando acontece.",
-      "Um erro comum é tentar recuperar a motivação sozinho, treinando exatamente igual até a vontade voltar. Muitas vezes o que falta não é disciplina, é variedade: trocar o percurso de sempre, treinar em outro horário ou convidar alguém para correr junto já muda a sensação do treino.",
-      "Ter uma meta concreta pela frente, como uma prova já inscrita no calendário, costuma funcionar melhor do que depender só da vontade do dia. A meta vira o motivo para sair de casa nos dias em que a motivação sozinha não seria suficiente.",
-      "Correr em grupo, mesmo que só uma vez por semana, ajuda bastante nessas fases. O compromisso com outras pessoas, e a conversa durante o treino, tiram o peso da corrida como obrigação solitária e devolvem parte do prazer que fez você começar.",
-      "Se a queda de vontade vier acompanhada de cansaço persistente, sono ruim ou irritação fora do comum, vale considerar que pode ser sinal de treino em excesso, não só desânimo passageiro. Nesses casos, um ou dois dias de descanso extra costumam resolver mais do que insistir."
+      "Separar a mochila na noite anterior, e não na manhã da prova, já resolve metade do problema. Com tudo pronto na véspera, sobra tempo de sobra para chegar com calma, sem a pressa que faz esquecer justamente o item mais importante.",
+      "O essencial começa pelo número de peito e o chip de cronometragem, já fixados na roupa que será usada, mais um alfinete ou clipe reserva, para o caso de algum se soltar. Documento com foto também costuma ser pedido na retirada de kit ou em caso de alguma dúvida na largada.",
+      "Na parte de roupa, a regra é: nada estreando no dia da prova. Tênis, meia, short e camiseta devem ser os mesmos já testados em treino, para evitar bolha ou assadura por causa de uma peça nova. Vale separar também uma muda de roupa seca para depois da chegada, principalmente em dias de chuva ou muito sol.",
+      "Vaselina ou similar nas áreas de atrito, como axila, mamilo e virilha, evita assadura em provas mais longas. Protetor solar, se a largada for de manhã com sol já forte, e um boné leve completam a parte de proteção.",
+      "Por fim, um pouco de dinheiro ou cartão, o celular carregado com o contato de alguém de referência, e algo pequeno para comer antes da largada, como uma banana ou uma barrinha já testada em treino, fecham a mochila. Menos improviso no dia da prova costuma significar mais foco na hora de correr."
     ]
   },
   {
-    id: "aquecimento-e-alongamento-antes-e-depois",
-    categoria: "Saúde",
-    titulo: "Aquecimento e alongamento: o que fazer antes e depois de correr",
-    resumo: "Alongar antes e aquecer depois é a ordem trocada que mais aparece entre corredores iniciantes. Entender a diferença entre os dois momentos ajuda a treinar com menos risco de lesão.",
+    id: "treino-intervalado-primeiro-passo",
+    categoria: "Técnica",
+    titulo: "Treino intervalado: o primeiro passo para melhorar seu tempo",
+    resumo: "Para quem já corre uma distância com folga mas quer melhorar o tempo, o intervalado costuma ser o treino que faz mais diferença. O segredo está em começar com uma versão simples, sem se afobar.",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Antes de correr, o corpo pede aquecimento, não alongamento parado. Um alongamento estático, segurando a posição por 20 ou 30 segundos, com o músculo ainda frio, pode reduzir a força momentânea da perna e não previne lesão como muita gente imagina.",
-      "O aquecimento ideal antes do treino é dinâmico: uma caminhada rápida de 3 a 5 minutos, seguida de alguns exercícios de mobilidade, como elevação de joelho, chute no glúteo e passadas curtas indo aumentando o ritmo aos poucos até chegar na velocidade do treino.",
-      "Depois de correr é o momento certo para o alongamento estático, com o músculo já aquecido e mais receptivo. Focar em panturrilha, posterior de coxa, quadríceps e quadril, segurando cada posição por cerca de 30 segundos, ajuda na recuperação e na manutenção da amplitude de movimento ao longo do tempo.",
-      "Treinos mais longos ou intensos pedem ainda mais atenção a esse momento pós-treino. Pular o alongamento sistematicamente, semana após semana, é um dos fatores que colabora para o encurtamento muscular que aparece em corredores mais experientes.",
-      "No fim das contas, a regra simples é: movimento antes, alongamento depois. Essa inversão de ordem, tão comum entre quem está começando, é um ajuste pequeno que reduz risco de lesão sem exigir nenhum equipamento ou tempo extra na rotina."
+      "Treino intervalado é, na prática, alternar trechos mais rápidos com trechos de recuperação, em vez de correr sempre no mesmo ritmo do início ao fim. É o tipo de treino que ensina o corpo a sustentar uma velocidade maior do que o ritmo confortável do dia a dia.",
+      "Para quem nunca fez, o ideal é começar simples: 6 a 8 tiros de 1 minuto em ritmo mais forte, mas controlado, intercalados com 2 minutos de trote bem leve ou caminhada. O erro mais comum de quem começa é sair no ritmo máximo do primeiro tiro e não conseguir manter o mesmo esforço nos seguintes.",
+      "Uma boa referência de ritmo para esses tiros é o esforço em que dá para falar só frases curtas, sem manter uma conversa fluida, mas também sem estar no limite total. Com o tempo, dá para aumentar a duração dos tiros ou reduzir o tempo de recuperação, sempre de forma gradual.",
+      "Esse tipo de treino pede mais atenção ao aquecimento do que um treino comum, justamente por exigir esforço mais forte logo nos primeiros tiros. Uns 10 minutos de trote leve, seguidos de alguns exercícios de mobilidade, preparam o corpo para o ritmo mais puxado que vem a seguir.",
+      "Uma vez por semana já é suficiente para começar a sentir diferença, geralmente depois de 3 a 4 semanas de treino consistente. Fazer intervalado todos os dias, ou logo depois de uma prova recente, tende a cansar mais do que ajudar, então vale reservar esse treino para quando o corpo estiver descansado."
+    ]
+  },
+  {
+    id: "correr-em-grupo-como-comecar",
+    categoria: "Mente",
+    titulo: "Correr em grupo: como encontrar uma turma e o que isso muda no treino",
+    resumo: "Com tanta prova nova pipocando na região, treinar sempre sozinho pode estar deixando o corredor de fora de uma parte importante da experiência. Encontrar um grupo certo muda a forma como o treino é sentido.",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Correr em grupo não é só sobre companhia. O mesmo treino que parece pesado sozinho costuma parecer mais leve ao lado de outras pessoas no mesmo ritmo, porque a conversa distrai da sensação de esforço e o compromisso combinado com alguém reduz a chance de faltar ao treino.",
+      "Para encontrar um grupo na região, vale começar observando quem aparece nas provas locais usando a mesma camiseta, procurando por assessorias e grupos de corrida no Instagram, ou perguntando na loja de artigos esportivos que costuma vender para corredores da cidade. A maioria dos grupos recebe bem quem chega para experimentar.",
+      "Encaixar num grupo já formado exige um pouco de humildade no início: nem todo grupo vai ter alguém exatamente no seu ritmo no primeiro treino. Vale conversar antes sobre o pace médio do grupo e não ter vergonha de pedir para o pessoal ir um pouco mais devagar na primeira experiência.",
+      "Treinar acompanhado também ajuda em outro ponto que passa batido: alguém correndo ao lado percebe antes uma mudança estranha na pisada, uma queda de postura ou um sinal de desidratação que o próprio corredor, concentrado no esforço, às vezes não nota em si mesmo.",
+      "Para quem está treinando para a primeira prova, especialmente as mais longas do calendário regional, entrar num grupo nas semanas finais de preparação costuma ajudar tanto no ritmo quanto na ansiedade da estreia. Chegar acompanhado na largada, e não sozinho, já muda a sensação do dia da prova."
     ]
   }
 ];
