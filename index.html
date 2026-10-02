@@ -80,6 +80,31 @@
   </div>
 </section>
 
+<!-- CONTAGEM REGRESSIVA - proxima prova (preenchida pelo ui.js) -->
+<section class="cd-sec" id="countdown" hidden>
+  <div class="wrap cd-wrap">
+    <div class="cd-info">
+      <span class="cd-eyebrow"><span class="cd-dot"></span> Próxima prova</span>
+      <h2 class="cd-nome" id="cdNome"></h2>
+      <p class="cd-meta" id="cdMeta"></p>
+    </div>
+    <div class="cd-right">
+      <div class="cd-clock" id="cdClock" aria-live="polite"></div>
+      <a class="btn btn-amar" id="cdLink" href="#calendario">Ver a prova</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROVAS SOCIAIS -->
+<section class="provas-sociais" aria-label="PaceFly em números">
+  <div class="wrap ps-grid">
+    <div class="ps-item"><b>20+</b><small>provas mapeadas em 2026</small></div>
+    <div class="ps-item"><b>8</b><small>cidades do norte de SC</small></div>
+    <div class="ps-item"><b id="psRanking">no ar</b><small>corredores no ranking</small></div>
+    <div class="ps-item"><b>Toda semana</b><small>conteúdo atualizado</small></div>
+  </div>
+</section>
+
 <!-- VITRINE DA CIDADE -->
 <section class="cidade-sec" id="cidade">
   <div class="wrap">
@@ -588,5 +613,7 @@
     document.body.appendChild(s);
   });
 </script>
+
+<script src="assets/ui.js"></script>
 </body>
 </html>

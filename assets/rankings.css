@@ -435,22 +435,32 @@
   .rkl-stats{gap:20px}
   .rkl-stats b{font-size:1.4rem}
   .rkl-card-atleta .top{flex-direction:column;align-items:flex-start;gap:14px}
-  .rkl-tabela th:nth-child(3),.rkl-tabela td:nth-child(3){display:none}
   .rkl-tabela td,.rkl-tabela th{padding:12px 14px}
 }
 
-/* Celular estreito. Mesmo sem a coluna de variação, as quatro restantes
-   somavam mais que a largura útil de uma tela de 360px: posição 78px,
-   dois cabeçalhos com espaçamento entre letras e o nome, que não quebra
-   no meio da palavra. O resultado era Pontos cortado na borda direita.
-   Aqui a tabela é apertada até caber sem precisar rolar. */
+/* Celular estreito. As cinco colunas, incluindo a de variação, só cabem na
+   largura útil de uma tela de 360px se tudo for apertado junto: padding menor,
+   badge de posição menor, pílula de variação menor e cabeçalhos abreviados
+   (28/09/2026). Antes a coluna de variação era simplesmente escondida abaixo
+   de 720px, e a seta sumia no celular. Medido na página real: 375px dá 343px
+   de tabela, com 208px para o nome e 34px para a variação, sem rolagem
+   horizontal e sem célula cortada. */
 @media(max-width:480px){
-  .rkl-tabela{font-size:.86rem}
-  .rkl-tabela th{padding:11px 8px;font-size:.62rem;letter-spacing:.03em}
-  .rkl-tabela td{padding:12px 8px}
-  .rkl-tabela td.pos{width:54px}
-  .rkl-pos-badge{min-width:28px;height:26px;padding:0 6px;font-size:.78rem}
+  .rkl-tabela{font-size:.8rem}
+  .rkl-tabela th{padding:11px 4px;font-size:.56rem;letter-spacing:0}
+  .rkl-tabela td{padding:10px 4px}
+  .rkl-tabela td.pos{width:42px}
+  .rkl-pos-badge{min-width:24px;height:22px;padding:0 4px;font-size:.72rem}
+  .rkl-var{font-size:.6rem;padding:2px 5px;gap:2px}
+  .rkl-var i{font-size:.56rem}
   .rkl-tabela td.nome{overflow-wrap:anywhere}   /* nomes longos sem sobrenome curto */
   .rkl-toque{font-size:.66rem;margin-top:2px}
   .rkl-corte{padding:9px 12px;font-size:.66rem}
+  /* rótulos curtos só no celular, sem tocar no HTML nem no desktop */
+  .rkl-tabela th:nth-child(3),
+  .rkl-tabela th:nth-child(4),
+  .rkl-tabela th:nth-child(5){font-size:0}
+  .rkl-tabela th:nth-child(3)::after{content:"Var.";font-size:.56rem}
+  .rkl-tabela th:nth-child(4)::after{content:"Pr.";font-size:.56rem}
+  .rkl-tabela th:nth-child(5)::after{content:"Pts";font-size:.56rem}
 }

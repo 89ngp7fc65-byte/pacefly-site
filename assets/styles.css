@@ -427,3 +427,125 @@ footer ul a:hover{color:var(--amarelo)}
   .cidade-nav{opacity:1;width:36px;height:36px}
   .cidade-slide figcaption{padding:44px 20px 26px}
 }
+
+/* ============================================================
+   MODERNIZAÇÃO v2 — camada adicional (não altera o resto)
+   Mantém a identidade: azul #0057B8, amarelo #FFC400, Montserrat.
+   ============================================================ */
+
+/* Âncoras param abaixo do cabeçalho fixo */
+html{scroll-padding-top:128px}
+@media(max-width:560px){html{scroll-padding-top:94px}}
+
+/* Cabeçalho inteligente: encolhe e ganha sombra ao rolar */
+header{transition:box-shadow .25s ease}
+header.scrolled{box-shadow:0 6px 24px rgba(16,21,22,.08)}
+.nav{transition:height .25s ease}
+header.scrolled .nav{height:84px}
+.brand img{transition:height .2s ease}
+header.scrolled .brand img{height:60px}
+@media(max-width:560px){header.scrolled .nav{height:72px}header.scrolled .brand img{height:52px}}
+
+/* Link da seção atual no menu (scrollspy) */
+.menu a.ativo:not(.btn){color:var(--azul);background:rgba(0,87,184,.08)}
+
+/* Animações de entrada ao rolar (reveal) — só ativam com JS */
+.reveal{transition:opacity .6s ease, transform .6s ease}
+body.anim .reveal{opacity:0;transform:translateY(22px)}
+body.anim .reveal.vis{opacity:1;transform:none}
+
+/* Faixa de provas sociais (números da comunidade) */
+.provas-sociais{background:#fff;border-bottom:1px solid var(--linha)}
+.ps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:30px 0}
+.ps-item{text-align:center;position:relative}
+.ps-item:not(:last-child)::after{content:"";position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:1px;height:38px;background:var(--linha)}
+.ps-item b{display:block;font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:900;color:var(--azul);letter-spacing:-.02em;line-height:1}
+.ps-item small{display:block;color:var(--cinza-cl);font-weight:600;font-size:.84rem;margin-top:8px}
+@media(max-width:560px){.ps-grid{grid-template-columns:1fr 1fr;gap:18px 10px}.ps-item:nth-child(2)::after{display:none}}
+
+/* Botão voltar ao topo */
+.to-top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;background:var(--azul);color:#fff;border:0;cursor:pointer;display:grid;place-items:center;box-shadow:var(--sombra-ft);opacity:0;visibility:hidden;transform:translateY(12px);transition:.25s;z-index:60}
+.to-top.on{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--azul-esc);transform:translateY(-2px)}
+.to-top svg{width:22px;height:22px}
+
+/* Botão flutuante do Instagram */
+.fab-ig{position:fixed;left:20px;bottom:20px;display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--linha);color:var(--preto);font-weight:700;font-size:.88rem;padding:10px 16px 10px 10px;border-radius:999px;box-shadow:var(--sombra-ft);z-index:60;transition:.2s}
+.fab-ig:hover{transform:translateY(-2px);box-shadow:0 20px 40px rgba(16,21,22,.18)}
+.fab-ig .ig-ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#fff;background:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);flex:0 0 auto}
+.fab-ig .ig-ic svg{width:18px;height:18px}
+@media(max-width:560px){.fab-ig .lbl{display:none}.fab-ig{padding:10px;gap:0}}
+
+/* Foco visível (acessibilidade) */
+.btn:focus-visible,.chip:focus-visible,.menu a:focus-visible,.to-top:focus-visible,.fab-ig:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--azul);outline-offset:2px}
+
+/* Respeita quem prefere menos movimento */
+@media(prefers-reduced-motion:reduce){
+  body.anim .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+  .rk-status .dot{animation:none}
+}
+
+/* ---- Menu mobile aprimorado ---- */
+.menu-backdrop{position:fixed;inset:0;background:rgba(16,21,22,.5);opacity:0;visibility:hidden;transition:.25s;z-index:45}
+body.menu-open .menu-backdrop{opacity:1;visibility:visible}
+.burger span{transition:transform .25s ease, opacity .2s ease}
+.menu.open ~ .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu.open ~ .burger span:nth-child(2){opacity:0}
+.menu.open ~ .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:900px){
+  body.menu-open{overflow:hidden}
+  .menu{gap:4px;padding:14px 16px 20px;box-shadow:0 18px 40px rgba(16,21,22,.12);animation:menuDrop .22s ease}
+  .menu a{padding:14px 16px;font-size:1.02rem;border-radius:12px}
+  .menu .btn{margin-top:8px;justify-content:center}
+}
+@keyframes menuDrop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* ---- Barra de navegação inferior (mobile) ---- */
+.botnav{display:none}
+@media(max-width:720px){
+  .botnav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-top:1px solid var(--linha);box-shadow:0 -4px 20px rgba(16,21,22,.07);padding-bottom:env(safe-area-inset-bottom,0)}
+  .botnav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 2px 10px;color:var(--cinza-cl);font-weight:700;min-height:54px;justify-content:center}
+  .botnav a:active{background:var(--off)}
+  .botnav .bn-ic{width:23px;height:23px;display:grid;place-items:center}
+  .botnav .bn-ic svg{width:23px;height:23px}
+  .botnav .bn-lb{font-size:.64rem;letter-spacing:.01em}
+  .botnav a.ig .bn-ic{color:#dc2743}
+  body{padding-bottom:64px}
+  .fab-ig,.to-top{display:none!important}
+  /* Pilares (cards-resumo sem ação) ocultos no mobile: a barra inferior
+     já dá acesso rápido a essas seções e assim reduz a rolagem. */
+  .pilares-sec{display:none}
+  /* Números do hero (grupo preto) ocultos no mobile: redundantes com a
+     faixa azul de provas sociais logo abaixo, que fica melhor alinhada. */
+  .hero-stats{display:none}
+}
+
+/* ---- Hero com um pouco mais de presença ---- */
+.hero h1 span{position:relative}
+.hero h1 span::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.07em;height:.26em;background:var(--amarelo);opacity:.55;z-index:-1;border-radius:3px;transform:scaleX(1);transform-origin:left}
+body.anim .hero h1 span::after{transform:scaleX(0);transition:transform .7s cubic-bezier(.22,1,.36,1)}
+body.anim .hero.lit h1 span::after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){.hero h1 span::after{transform:scaleX(1)!important;transition:none}}
+
+/* ---- Contagem regressiva: próxima prova ---- */
+.cd-sec{background:var(--off);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:26px 0}
+.cd-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cd-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--azul)}
+.cd-dot{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 4px rgba(0,200,83,.18)}
+.cd-nome{font-size:clamp(1.15rem,2.4vw,1.6rem);margin:9px 0 4px}
+.cd-meta{color:var(--cinza-cl);font-weight:600;font-size:.92rem}
+.cd-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.cd-clock{display:flex;gap:10px}
+.cd-b{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:8px 12px;text-align:center;min-width:58px}
+.cd-b b{display:block;font-size:1.5rem;font-weight:900;color:var(--azul);font-variant-numeric:tabular-nums;line-height:1}
+.cd-b small{display:block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--cinza-cl);margin-top:4px}
+.cd-hoje{font-size:1.2rem;font-weight:800;color:#0a8a3d}
+@media(max-width:720px){
+  .cd-wrap{flex-direction:column;align-items:flex-start;gap:16px}
+  .cd-right{width:100%;flex-direction:column;align-items:stretch;gap:14px}
+  .cd-clock{width:100%;gap:8px}
+  .cd-b{min-width:0;flex:1;padding:8px 4px}
+  .cd-b b{font-size:1.3rem}
+  .cd-right .btn{width:100%;justify-content:center}
+}
