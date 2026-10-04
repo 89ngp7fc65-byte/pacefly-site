@@ -98,8 +98,8 @@
     <div class="rkl-resultado" id="rklResultado"></div>
 
     <div class="rkl-stats">
-      <div><b id="stTotal">2.011</b><small>atletas classificados</small></div>
-      <div><b id="stProvas">19</b><small>provas apuradas</small></div>
+      <div><b id="stTotal">2.244</b><small>atletas classificados</small></div>
+      <div><b id="stProvas">20</b><small>provas apuradas</small></div>
       <div><b>72h</b><small>para entrar após a prova</small></div>
       <div><b>2026</b><small>temporada em andamento</small></div>
     </div>
@@ -115,7 +115,7 @@
       <p>Todos os atletas com duas provas ou mais concluídas na região em 2026, ordenados por pontos acumulados. Toque em qualquer nome da lista para abrir a posição completa e gerar a imagem de compartilhamento.</p>
     </div>
 
-    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 27/09/2026</span>
+    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 04/10/2026</span>
 
     <div class="rkl-abas" id="rklAbas" role="tablist">
       <button type="button" class="rkl-aba on" data-cat="geral" role="tab">Geral <span class="qt" id="qtGeral"></span></button>
@@ -372,20 +372,20 @@ const burger=document.getElementById('burger'), menu=document.getElementById('me
 burger.addEventListener('click',()=>menu.classList.toggle('open'));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-// Reserva: Top 10 da apuração de 27/09/2026
+// Reserva: Top 10 da apuração de 04/10/2026
 const RESERVA = {
-  atualizado_em:"27/09/2026", total_atletas:2011, total_provas:19,
+  atualizado_em:"04/10/2026", total_atletas:2244, total_provas:20,
   atletas:[
-    {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:290},
+    {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:350},
     {p:2,n:"JORGE NESTOR PEREIRA",pt:265},
-    {p:3,n:"HERBERT SCHRODER NETO",pt:250},
+    {p:3,n:"HERBERT SCHRÖDER NETO",pt:250},
     {p:4,n:"NICOLAS DIAS",pt:240},
     {p:5,n:"LUCAS BRANDALISE",pt:230},
-    {p:6,n:"LUCAS SIMÕES DE OLIVEIRA",pt:230},
+    {p:6,n:"LUCAS SIMOES DE OLIVEIRA",pt:230},
     {p:7,n:"RAFAELA PEREIRA BENEVENUTO",pt:185},
-    {p:8,n:"FELIPE RODRIGUES GONÇALVES",pt:160},
-    {p:9,n:"RICHARD GLAUCO JOSE PEREIRA",pt:160},
-    {p:10,n:"JOCLEI BENONI DA CONCEIÇÃO JUNIOR",pt:150}
+    {p:8,n:"VITOR GIRARDI",pt:170},
+    {p:9,n:"DINEZIO GABRIEL DE OLIVEIRA",pt:165},
+    {p:10,n:"FELIPE RODRIGUES GONCALVES",pt:160}
   ]
 };
 

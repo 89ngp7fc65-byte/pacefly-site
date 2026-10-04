@@ -32,7 +32,6 @@
        estão no ar hoje em assets/data.js, PACEFLY_NOTICIAS. Este
        array é atualizado por item conforme sai notícia nova —
        ao trocar/adicionar uma notícia, atualizar este bloco junto. -->
-  <url><loc>https://pacefly.com.br/noticia.html?id=simone-ponte-ferraz-mundial-copenhague-2026</loc><lastmod>2026-09-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=gutbrau-oktober-run-joinville-2026</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

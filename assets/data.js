@@ -311,23 +311,6 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
-    id: "simone-ponte-ferraz-mundial-copenhague-2026",
-    categoria: "Mundial de Corrida de Rua",
-    titulo: "Jaraguaense Simone Ponte Ferraz disputa o Mundial de Corrida de Rua em Copenhague e termina os 5 km em 40º lugar",
-    resumo: "Campeã brasileira da distância, a atleta de Jaraguá do Sul integrou a delegação que representou o Brasil no Campeonato Mundial de Corrida de Rua, disputado neste fim de semana na capital dinamarquesa.",
-    dataTxt: "19 de setembro de 2026",
-    local: "Jaraguá do Sul, SC",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "OCP News",
-    fonteUrl: "https://ocp.news/esporte/jaraguaense-e-campea-brasileira-e-garante-vaga-no-mundial-de-corrida-de-rua",
-    corpo: [
-      "A jaraguaense Simone Ponte Ferraz representou o Brasil no Campeonato Mundial de Corrida de Rua, disputado em Copenhague, na Dinamarca. Campeã brasileira da distância, ela integrou a delegação convocada para o Mundial, que reuniu provas de 5 km, 10 km e meia maratona ao longo do fim de semana, disputando os 5 km femininos no sábado, 19 de setembro.",
-      "Simone terminou na 40ª colocação, com o tempo de 17min21s. A melhor brasileira na prova foi Núbia de Oliveira, 26ª colocada, com 15min44s. A vitória ficou com a etíope Likina Amebaw, que cruzou a linha de chegada em 14min41s.",
-      "O Campeonato Mundial de Corrida de Rua é organizado pela World Athletics e reúne, a cada edição, atletas de dezenas de países disputando provas de rua nas ruas da cidade-sede; a meia maratona encerrou a competição no domingo, 20 de setembro.",
-      "Simone integra o grupo de atletas do Norte de Santa Catarina acompanhados pelo Radar PaceFly, o boletim semanal de corrida de rua da região."
-    ]
-  },
-  {
     id: "primeira-maratona-de-joinville-2026",
     categoria: "1ª Maratona de Joinville",
     titulo: "Joinville vai ter sua primeira maratona da história em 1º de novembro",
