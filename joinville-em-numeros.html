@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joinville em números | Estatísticas da corrida de rua em 2026 | PaceFly</title>
+<meta name="description" content="Pace médio por idade e gênero, tamanho das provas, provas mais rápidas e os destaques de 2026: a análise da PaceFly com 7.635 resultados das corridas de rua de Joinville.">
+<link rel="canonical" href="https://pacefly.com.br/joinville-em-numeros.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PaceFly">
+<meta property="og:title" content="Joinville em números | A corrida de rua na cidade em 2026">
+<meta property="og:description" content="Qual é o pace típico na sua faixa de idade? Veja a análise de 7.635 resultados das provas de Joinville e descubra onde você está.">
+<meta property="og:url" content="https://pacefly.com.br/joinville-em-numeros.html">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/rankings.css">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- Google Analytics: injetado pelo Netlify, não adicionar aqui. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Joinville em números: a corrida de rua na cidade em 2026","datePublished":"2026-10-08","author":{"@type":"Organization","name":"PaceFly"},"publisher":{"@type":"Organization","name":"PaceFly","url":"https://pacefly.com.br"},"mainEntityOfPage":"https://pacefly.com.br/joinville-em-numeros.html","about":"Estatísticas de corrida de rua em Joinville, SC"}
+</script>
+<style>
+/* ==========================================================================
+   Joinville em números · página de estatísticas (prefixo jn-)
+   Mulheres = dourado escuro #B07A00 · Homens = azul #0057B8
+   (par validado para daltonismo; todo valor também aparece escrito)
+   ========================================================================== */
+:root{--jn-f:#B07A00;--jn-m:#0057B8}
+.jn-sec{padding:76px 0}
+.jn-sec.alt{background:var(--off)}
+.jn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.jn-grid.g2{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+.jn-card{background:#fff;border:1px solid var(--linha);border-radius:18px;padding:28px;box-shadow:var(--sombra)}
+.jn-card h3{font-size:1.15rem;margin-bottom:6px}
+.jn-card>p{color:var(--cinza-cl);font-size:.92rem;margin-top:14px}
+.jn-k{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin-bottom:12px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:middle}
+.sw.f{background:var(--jn-f)} .sw.m{background:var(--jn-m)}
+.jn-bar{display:grid;grid-template-columns:120px 1fr 92px;align-items:center;gap:12px;padding:7px 0}
+.jn-bar .lb{font-weight:600;font-size:.9rem;color:var(--preto)}
+.jn-bar .tr{height:14px;background:#eef1f5;border-radius:4px;overflow:hidden}
+.jn-bar .tr i{display:block;height:100%;background:var(--azul);border-radius:0 4px 4px 0}
+.jn-bar b{font-weight:800;color:var(--preto);font-variant-numeric:tabular-nums;font-size:.95rem}
+.jn-bar b small{display:block;font-weight:500;color:var(--cinza-cl);font-size:.72rem}
+.jn-tab{width:100%;border-collapse:collapse}
+.jn-tab th,.jn-tab td{text-align:left;padding:11px 8px;border-bottom:1px solid var(--linha);vertical-align:middle}
+.jn-tab thead th{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza-cl);font-weight:800}
+.jn-tab tbody th{font-weight:700;color:var(--preto);font-size:.92rem;white-space:nowrap}
+.jn-tab td small{display:block;color:var(--cinza-cl);font-size:.7rem;margin-top:2px}
+.jn-pc{display:flex;align-items:center;gap:10px}
+.jn-pc .tr{flex:none;width:110px;height:10px;background:#eef1f5;border-radius:4px;overflow:hidden}
+.jn-pc .tr i{display:block;height:100%;border-radius:0 4px 4px 0}
+.jn-pc.f .tr i{background:var(--jn-f)} .jn-pc.m .tr i{background:var(--jn-m)}
+.jn-pc b{font-weight:800;color:var(--preto);font-variant-numeric:tabular-nums;min-width:42px}
+.jn-pc.best b{color:var(--azul);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.jn-nota{font-size:.82rem;color:var(--cinza-cl);margin-top:14px}
+.jn-dupla{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.jn-dupla small{display:block;font-size:.78rem;font-weight:700;color:var(--cinza-cl)}
+.jn-dupla b{display:block;font-size:1.9rem;font-weight:900;color:var(--preto);letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.15;margin-top:4px}
+.jn-dupla em{font-style:normal;font-weight:600;color:var(--azul);font-size:.9rem}
+/* calculadora */
+.jn-calc{background:var(--rkl-navy2);color:#fff;border-radius:22px;padding:34px;display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}
+.jn-calc h3{color:#fff;font-size:1.4rem;margin-bottom:8px}
+.jn-calc p{color:#b8c6d6;font-size:.95rem}
+.jn-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.jn-form label{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fa3ba;display:block;margin-bottom:6px}
+.jn-form select,.jn-form input{width:100%;font-family:inherit;font-size:1rem;font-weight:700;padding:13px 14px;border-radius:12px;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff}
+.jn-form select option{color:#101516}
+.jn-form input:focus,.jn-form select:focus{outline:none;border-color:var(--rkl-ouro)}
+.jn-form .full{grid-column:1/-1}
+.jn-tempo{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.jn-tempo legend{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8fa3ba;margin-bottom:6px;padding:0}
+.jn-tempo div{position:relative}
+.jn-tempo input{padding-right:44px;-moz-appearance:textfield}
+.jn-tempo input::-webkit-outer-spin-button,.jn-tempo input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.jn-tempo span{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#8fa3ba;font-weight:700;font-size:.85rem;pointer-events:none}
+
+.jn-res{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px;min-height:190px;display:flex;flex-direction:column;justify-content:center}
+.jn-res .big{font-size:3.4rem;font-weight:900;color:var(--rkl-ouro);line-height:1;letter-spacing:-.03em}
+.jn-res .txt{color:#dfe7f1;margin-top:10px;font-size:1rem}
+.jn-res .sub{color:#8fa3ba;margin-top:8px;font-size:.85rem}
+.jn-res .vazio{color:#8fa3ba}
+/* listas de destaques */
+.jn-card h4{font-size:.85rem;margin:14px 0 8px;color:var(--preto)}
+.jn-card ol,.jn-ass{list-style:none;padding:0;margin:0}
+.jn-card ol li,.jn-ass li{display:flex;gap:14px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--linha)}
+.jn-card ol li:last-child{border-bottom:0}
+.jn-card ol li b,.jn-ass li b{font-weight:900;color:var(--azul);min-width:70px;font-variant-numeric:tabular-nums}
+.jn-card ol li span,.jn-ass li span{font-weight:700;font-size:.86rem;color:var(--preto)}
+.jn-card ol li small,.jn-ass li small{display:block;font-weight:500;color:var(--cinza-cl);font-size:.75rem}
+.jn-ass{columns:2;column-gap:28px}
+.jn-ass li{break-inside:avoid}
+.jn-ass li b{min-width:28px}
+/* tabela de provas */
+.jn-wrap-tab{overflow-x:auto;background:#fff;border:1px solid var(--linha);border-radius:18px;box-shadow:var(--sombra)}
+.jn-provas{width:100%;border-collapse:collapse;min-width:760px}
+.jn-provas th{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza-cl);font-weight:800;text-align:left;padding:14px 16px;border-bottom:1px solid var(--linha)}
+.jn-provas td{white-space:nowrap;padding:13px 16px;border-bottom:1px solid var(--linha);font-size:.9rem}
+.jn-provas tr:last-child td{border-bottom:0}
+.jn-provas td.nm{font-weight:700;color:var(--preto);white-space:normal;min-width:220px}
+.jn-provas td small{color:var(--cinza-cl)}
+.jn-provas .num{font-variant-numeric:tabular-nums;font-weight:700}
+.jn-provas .na{color:#c0c6cf}
+.jn-metodo{background:#fff;border:1px solid var(--linha);border-radius:18px;padding:28px;font-size:.9rem;color:var(--cinza)}
+.jn-metodo li{margin:6px 0 6px 18px}
+.jn-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+@media(max-width:900px){.jn-calc{grid-template-columns:1fr} .jn-grid.g2{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .jn-sec{padding:56px 0}
+  .jn-bar{grid-template-columns:96px 1fr 70px}
+  .jn-calc{padding:24px} .jn-form{grid-template-columns:1fr}
+  .jn-ass{columns:1}
+  .jn-pc .tr{display:none}
+    .jn-card{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html#top" class="brand"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly - Você voando nas pistas"></a>
+    <nav class="menu" id="menu">
+      <a href="index.html#calendario">Calendário</a>
+      <a href="index.html#dicas">Dicas</a>
+      <a href="index.html#noticias">Notícias</a>
+      <a href="rankings.html" class="nav-rk">Ranking<span class="nav-rk-dot"></span></a>
+      <a href="index.html#assessoria">Assessoria</a>
+      <a href="rankings.html#busca" class="btn btn-azul">Buscar meu nome</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="rkl-hero">
+  <div class="rkl-mesh"></div><div class="rkl-glow"></div><div class="rkl-glow2"></div>
+  <div class="wrap rkl-hero-inner">
+    <span class="rkl-live">Dados PaceFly · Temporada 2026</span>
+    <h1>Joinville em <span>números</span></h1>
+    <p class="rkl-lead">Analisamos 7.635 resultados das 11 provas de corrida de rua realizadas em Joinville entre junho e setembro de 2026. Veja quem corre na cidade, o ritmo típico de cada faixa de idade e onde o seu tempo se encaixa.</p>
+    <div class="rkl-stats">
+      <div><b>11</b><small>provas em Joinville</small></div>
+      <div><b>7.635</b><small>resultados analisados</small></div>
+      <div><b>5.737</b><small>corredores diferentes</small></div>
+      <div><b>694</b><small>finalistas por prova, em média</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULADORA -->
+<section class="jn-sec" id="onde-voce-esta">
+  <div class="wrap">
+    <div class="jn-calc">
+      <div>
+        <span class="eyebrow" style="color:var(--rkl-ouro)">Compare o seu tempo</span>
+        <h3>Onde você está no pelotão de Joinville?</h3>
+        <p>Informe a distância e o seu tempo. A comparação é feita com todos os finalistas do mesmo sexo nas provas da cidade em 2026.</p>
+        <form class="jn-form" id="jnForm" onsubmit="return false">
+          <div><label for="jnDist">Distância</label><select id="jnDist"><option value="5KM">5 km</option><option value="10KM">10 km</option><option value="21KM">Meia maratona (21 km)</option></select></div>
+          <div><label for="jnSexo">Comparar com</label><select id="jnSexo"><option value="F">Mulheres</option><option value="M">Homens</option></select></div>
+          <fieldset class="full jn-tempo"><legend>Seu tempo</legend>
+            <div><input id="jnH" type="number" inputmode="numeric" min="0" max="5" placeholder="0" aria-label="Horas"><span>h</span></div>
+            <div><input id="jnM" type="number" inputmode="numeric" min="0" max="59" placeholder="28" aria-label="Minutos"><span>min</span></div>
+            <div><input id="jnS" type="number" inputmode="numeric" min="0" max="59" placeholder="30" aria-label="Segundos"><span>s</span></div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="jn-res" id="jnRes" aria-live="polite"><span class="vazio">Digite um tempo para ver o resultado.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM CORRE -->
+<section class="jn-sec alt" id="perfil">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Perfil</span>
+      <h2>Quem corre em Joinville</h2>
+      <p>As mulheres são 54% do pelotão, mas a presença muda bastante conforme a distância. A idade média é de 39 anos.</p>
+    </div>
+    <div class="jn-grid">
+      <div class="jn-card"><span class="jn-k">Mulheres por distância</span><h3>Participação feminina</h3><div class="jn-bar"><span class="lb">5 km</span><span class="tr"><i style="width:58%"></i></span><b>58%</b></div><div class="jn-bar"><span class="lb">10 km</span><span class="tr"><i style="width:40%"></i></span><b>40%</b></div><div class="jn-bar"><span class="lb">Meia maratona</span><span class="tr"><i style="width:23%"></i></span><b>23%</b></div><p>Percentual de mulheres entre os finalistas de cada distância.</p></div>
+      <div class="jn-card"><span class="jn-k">Faixa etária</span><h3>Idade dos finalistas</h3><div class="jn-bar"><span class="lb">Até 19</span><span class="tr"><i style="width:10%"></i></span><b>3,2%</b></div><div class="jn-bar"><span class="lb">20 a 29</span><span class="tr"><i style="width:66%"></i></span><b>20,9%</b></div><div class="jn-bar"><span class="lb">30 a 39</span><span class="tr"><i style="width:100%"></i></span><b>31,7%</b></div><div class="jn-bar"><span class="lb">40 a 49</span><span class="tr"><i style="width:85%"></i></span><b>27,1%</b></div><div class="jn-bar"><span class="lb">50 a 59</span><span class="tr"><i style="width:34%"></i></span><b>10,9%</b></div><div class="jn-bar"><span class="lb">60 ou mais</span><span class="tr"><i style="width:20%"></i></span><b>6,2%</b></div><p>Participação de cada faixa entre os resultados com idade informada.</p></div>
+      <div class="jn-card"><span class="jn-k">Presença</span><h3>Quantas provas cada um correu</h3><div class="jn-bar"><span class="lb">1 prova</span><span class="tr"><i style="width:100%"></i></span><b>4.562<small>80%</small></b></div><div class="jn-bar"><span class="lb">2 provas</span><span class="tr"><i style="width:16%"></i></span><b>742<small>13%</small></b></div><div class="jn-bar"><span class="lb">3 provas</span><span class="tr"><i style="width:6%"></i></span><b>272<small>5%</small></b></div><div class="jn-bar"><span class="lb">4 ou mais</span><span class="tr"><i style="width:4%"></i></span><b>161<small>3%</small></b></div><p>Cerca de 8 em cada 10 corredores fizeram uma única prova na cidade no período.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACE -->
+<section class="jn-sec" id="pace">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Ritmo</span>
+      <h2>Pace mediano por idade e gênero</h2>
+      <p>O pace mediano é o ritmo de quem termina exatamente no meio do pelotão: metade foi mais rápida, metade mais lenta. É uma referência mais fiel que a média simples, que é puxada por quem caminha parte do percurso. Valores em minutos por quilômetro.</p>
+    </div>
+    <div class="jn-grid g2">
+      <div class="jn-card"><span class="jn-k">5 km</span><h3>Ritmo típico no 5 km</h3><table class="jn-tab"><thead><tr><th>Idade</th><th><span class="sw f"></span>Mulheres</th><th><span class="sw m"></span>Homens</th></tr></thead><tbody><tr><th scope="row">20 a 29</th><td><div class="jn-pc f"><span class="tr"><i style="width:25%"></i></span><b>7:00</b></div><small>644 resultados</small></td><td><div class="jn-pc m best"><span class="tr"><i style="width:87%"></i></span><b>5:23</b></div><small>409 resultados</small></td></tr><tr><th scope="row">30 a 39</th><td><div class="jn-pc f best"><span class="tr"><i style="width:40%"></i></span><b>6:37</b></div><small>955 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:82%"></i></span><b>5:32</b></div><small>564 resultados</small></td></tr><tr><th scope="row">40 a 49</th><td><div class="jn-pc f"><span class="tr"><i style="width:31%"></i></span><b>6:52</b></div><small>754 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:79%"></i></span><b>5:36</b></div><small>529 resultados</small></td></tr><tr><th scope="row">50 a 59</th><td><div class="jn-pc f"><span class="tr"><i style="width:30%"></i></span><b>6:53</b></div><small>262 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:77%"></i></span><b>5:39</b></div><small>224 resultados</small></td></tr><tr><th scope="row">60 ou mais</th><td><div class="jn-pc f"><span class="tr"><i style="width:6%"></i></span><b>7:30</b></div><small>135 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:49%"></i></span><b>6:23</b></div><small>163 resultados</small></td></tr></tbody></table><p class="jn-nota">Barra mais longa indica ritmo mais rápido. Em azul, a faixa mais rápida de cada sexo.</p></div>
+      <div class="jn-card"><span class="jn-k">10 km</span><h3>Ritmo típico no 10 km</h3><table class="jn-tab"><thead><tr><th>Idade</th><th><span class="sw f"></span>Mulheres</th><th><span class="sw m"></span>Homens</th></tr></thead><tbody><tr><th scope="row">20 a 29</th><td><div class="jn-pc f"><span class="tr"><i style="width:27%"></i></span><b>5:45</b></div><small>74 resultados</small></td><td><div class="jn-pc m best"><span class="tr"><i style="width:84%"></i></span><b>4:35</b></div><small>118 resultados</small></td></tr><tr><th scope="row">30 a 39</th><td><div class="jn-pc f best"><span class="tr"><i style="width:37%"></i></span><b>5:32</b></div><small>166 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:66%"></i></span><b>4:57</b></div><small>169 resultados</small></td></tr><tr><th scope="row">40 a 49</th><td><div class="jn-pc f"><span class="tr"><i style="width:32%"></i></span><b>5:39</b></div><small>116 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:66%"></i></span><b>4:57</b></div><small>167 resultados</small></td></tr><tr><th scope="row">50 a 59</th><td><div class="jn-pc f"><span class="tr"><i style="width:18%"></i></span><b>5:56</b></div><small>48 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:61%"></i></span><b>5:03</b></div><small>88 resultados</small></td></tr><tr><th scope="row">60 ou mais</th><td><div class="jn-pc f"><span class="tr"><i style="width:8%"></i></span><b>6:08</b></div><small>15 resultados</small></td><td><div class="jn-pc m"><span class="tr"><i style="width:49%"></i></span><b>5:18</b></div><small>48 resultados</small></td></tr></tbody></table><p class="jn-nota">A faixa feminina de 60 anos ou mais no 10 km tem poucos resultados: leia como indicação, não como regra.</p></div>
+    </div>
+    <div class="sec-head" style="margin-top:56px;margin-bottom:24px"><h2 style="font-size:1.5rem">Tempo de chegada típico por distância</h2></div>
+    <div class="jn-grid"><div class="jn-card"><span class="jn-k">5 km</span>
+<div class="jn-dupla"><div><small><span class="sw f"></span>Mulheres</small><b>34:18</b><em>6:52/km</em></div><div><small><span class="sw m"></span>Homens</small><b>28:06</b><em>5:37/km</em></div></div>
+<p>Terminaram abaixo de 25 min: 4% das mulheres e 29% dos homens.</p></div><div class="jn-card"><span class="jn-k">10 km</span>
+<div class="jn-dupla"><div><small><span class="sw f"></span>Mulheres</small><b>57:02</b><em>5:42/km</em></div><div><small><span class="sw m"></span>Homens</small><b>49:42</b><em>4:58/km</em></div></div>
+<p>Terminaram abaixo de 50 min: 18% das mulheres e 51% dos homens.</p></div><div class="jn-card"><span class="jn-k">Meia maratona</span>
+<div class="jn-dupla"><div><small><span class="sw f"></span>Mulheres</small><b>2:06:23</b><em>6:01/km</em></div><div><small><span class="sw m"></span>Homens</small><b>1:54:56</b><em>5:28/km</em></div></div>
+<p>Terminaram abaixo de 2 h: 31% das mulheres e 62% dos homens.</p></div></div>
+  </div>
+</section>
+
+<!-- PROVAS -->
+<section class="jn-sec alt" id="provas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Calendário</span>
+      <h2>As provas de 2026 em Joinville</h2>
+      <p>Julho e agosto concentraram 8 das 11 provas, e 9 delas largaram num domingo. A RunFest Cidade das Águas teve o pelotão mais rápido nas duas distâncias, um reflexo do percurso e também do perfil de quem participa.</p>
+    </div>
+    <div class="jn-grid" style="margin-bottom:24px"><div class="jn-card"><span class="jn-k">Por mês</span><h3>Finalistas por mês</h3><div class="jn-bar"><span class="lb">Junho</span><span class="tr"><i style="width:30%"></i></span><b>876<small>2 provas</small></b></div><div class="jn-bar"><span class="lb">Julho</span><span class="tr"><i style="width:89%"></i></span><b>2.631<small>4 provas</small></b></div><div class="jn-bar"><span class="lb">Agosto</span><span class="tr"><i style="width:100%"></i></span><b>2.943<small>4 provas</small></b></div><div class="jn-bar"><span class="lb">Setembro</span><span class="tr"><i style="width:40%"></i></span><b>1.185<small>1 prova</small></b></div><p>A base começa em 14/06 e vai até a última prova apurada na cidade, em 19/09.</p></div></div>
+    <div class="jn-wrap-tab">
+      <table class="jn-provas">
+        <thead><tr><th>Data</th><th>Prova</th><th>Distâncias</th><th>Finalistas</th><th>Mulheres</th><th>Pace mediano 5 km</th><th>Pace mediano 10 km</th></tr></thead>
+        <tbody><tr><td data-l="Data">14/06 <small>dom</small></td><td data-l="Prova" class="nm">Meia Maratona Quiriri</td><td data-l="Distâncias">21 km</td><td data-l="Finalistas" class="num">331</td><td data-l="Mulheres" class="num">23%</td><td data-l="Pace 5 km" class="num"><span class="na">-</span></td><td data-l="Pace 10 km" class="num"><span class="na">-</span></td></tr><tr><td data-l="Data">21/06 <small>dom</small></td><td data-l="Prova" class="nm">12ª Corrida do 8º BPM</td><td data-l="Distâncias">5 km</td><td data-l="Finalistas" class="num">545</td><td data-l="Mulheres" class="num">51%</td><td data-l="Pace 5 km" class="num">6:12</td><td data-l="Pace 10 km" class="num"><span class="na">-</span></td></tr><tr><td data-l="Data">05/07 <small>dom</small></td><td data-l="Prova" class="nm">Corrida HUPI Joinville</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">662</td><td data-l="Mulheres" class="num">49%</td><td data-l="Pace 5 km" class="num">6:15</td><td data-l="Pace 10 km" class="num">5:09</td></tr><tr><td data-l="Data">12/07 <small>dom</small></td><td data-l="Prova" class="nm">Live! Run XP, etapa Joinville</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">841</td><td data-l="Mulheres" class="num">61%</td><td data-l="Pace 5 km" class="num">6:21</td><td data-l="Pace 10 km" class="num">5:21</td></tr><tr><td data-l="Data">18/07 <small>sáb</small></td><td data-l="Prova" class="nm">1ª Corrida do Colono</td><td data-l="Distâncias">5 km</td><td data-l="Finalistas" class="num">802</td><td data-l="Mulheres" class="num">58%</td><td data-l="Pace 5 km" class="num">6:44</td><td data-l="Pace 10 km" class="num"><span class="na">-</span></td></tr><tr><td data-l="Data">19/07 <small>dom</small></td><td data-l="Prova" class="nm">RunFest Cidade das Águas</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">326</td><td data-l="Mulheres" class="num">52%</td><td data-l="Pace 5 km" class="num">5:54</td><td data-l="Pace 10 km" class="num">5:02</td></tr><tr><td data-l="Data">02/08 <small>dom</small></td><td data-l="Prova" class="nm">Circuito de Corridas Unimed, etapa Joinville</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">983</td><td data-l="Mulheres" class="num">53%</td><td data-l="Pace 5 km" class="num">6:12</td><td data-l="Pace 10 km" class="num">5:21</td></tr><tr><td data-l="Data">16/08 <small>dom</small></td><td data-l="Prova" class="nm">Corrida Tigre 85 Anos</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">498</td><td data-l="Mulheres" class="num">50%</td><td data-l="Pace 5 km" class="num">6:35</td><td data-l="Pace 10 km" class="num">5:10</td></tr><tr><td data-l="Data">23/08 <small>dom</small></td><td data-l="Prova" class="nm">Circuito Banco do Brasil de Corrida</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">879</td><td data-l="Mulheres" class="num">50%</td><td data-l="Pace 5 km" class="num">6:25</td><td data-l="Pace 10 km" class="num">5:28</td></tr><tr><td data-l="Data">30/08 <small>dom</small></td><td data-l="Prova" class="nm">Ademicon Run</td><td data-l="Distâncias">4 km / 8 km</td><td data-l="Finalistas" class="num">583</td><td data-l="Mulheres" class="num">54%</td><td data-l="Pace 5 km" class="num"><span class="na">-</span></td><td data-l="Pace 10 km" class="num"><span class="na">-</span></td></tr><tr><td data-l="Data">19/09 <small>sáb</small></td><td data-l="Prova" class="nm">4º Desafio Drogaria Catarinense</td><td data-l="Distâncias">5 km / 10 km</td><td data-l="Finalistas" class="num">1.185</td><td data-l="Mulheres" class="num">62%</td><td data-l="Pace 5 km" class="num">6:25</td><td data-l="Pace 10 km" class="num">5:06</td></tr></tbody>
+      </table>
+    </div>
+    <p class="jn-nota">Meia Maratona Quiriri: pace mediano de 5:37/km nos 21 km. Ademicon Run (4 e 8 km) aparece nas contagens de público, mas fica fora das comparações de ritmo por não ter distância oficial.</p>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="jn-sec" id="destaques">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Destaques</span>
+      <h2>Os mais rápidos e os mais presentes</h2>
+      <p>Os três melhores tempos de cada distância nas provas de Joinville, e quem mais correu na cidade no período.</p>
+    </div>
+    <div class="jn-grid"><div class="jn-card"><span class="jn-k">5 km</span><h4><span class="sw f"></span>Feminino</h4><ol><li><b>19:00</b><span>PRISCILA JOLY DOS SANTOS<small>Live! Run XP, etapa Joinville, 12/07</small></span></li><li><b>19:12</b><span>JULIANA DE SOUZA<small>4º Desafio Drogaria Catarinense, 19/09</small></span></li><li><b>19:55</b><span>THAMARA ALESSANDRA BUSARELLO<small>4º Desafio Drogaria Catarinense, 19/09</small></span></li></ol><h4><span class="sw m"></span>Masculino</h4><ol><li><b>16:15</b><span>HENZO LUCCAS SANTOS OLIVERA<small>Live! Run XP, etapa Joinville, 12/07</small></span></li><li><b>16:46</b><span>LUCAS VINICIUS MARTINS<small>4º Desafio Drogaria Catarinense, 19/09</small></span></li><li><b>16:51</b><span>VITOR ESTIVALET DE SOUZA<small>Circuito de Corridas Unimed, etapa Joinville, 02/08</small></span></li></ol></div><div class="jn-card"><span class="jn-k">10 km</span><h4><span class="sw f"></span>Feminino</h4><ol><li><b>37:07</b><span>BEATRIZ NERES ORZECHOWSKI<small>Corrida HUPI Joinville, 05/07</small></span></li><li><b>39:40</b><span>RAFAELA PEREIRA BENEVENUTO<small>Live! Run XP, etapa Joinville, 12/07</small></span></li><li><b>41:21</b><span>GRACIELE DOS REIS<small>RunFest Cidade das Águas, 19/07</small></span></li></ol><h4><span class="sw m"></span>Masculino</h4><ol><li><b>31:15</b><span>LUCAS SIMOES DE OLIVEIRA<small>Corrida HUPI Joinville, 05/07</small></span></li><li><b>33:17</b><span>LUCAS BRANDALISE<small>4º Desafio Drogaria Catarinense, 19/09</small></span></li><li><b>34:16</b><span>GUSTAVO HENRIQUE RAMOS<small>Corrida HUPI Joinville, 05/07</small></span></li></ol></div><div class="jn-card"><span class="jn-k">Meia maratona</span><h4><span class="sw f"></span>Feminino</h4><ol><li><b>1:34:11</b><span>RAFAELA PEREIRA BENEVENUTO<small>Meia Maratona Quiriri, 14/06</small></span></li><li><b>1:41:42</b><span>LUCIANA BEATRIZ FREITAS DA ROCHA<small>Meia Maratona Quiriri, 14/06</small></span></li><li><b>1:43:15</b><span>PRISCILA PIVOVAR<small>Meia Maratona Quiriri, 14/06</small></span></li></ol><h4><span class="sw m"></span>Masculino</h4><ol><li><b>1:16:19</b><span>EVERTON DA SILVA BARBOSA<small>Meia Maratona Quiriri, 14/06</small></span></li><li><b>1:23:10</b><span>ARNALDO FRANKLIN DA SILVA ROSENDO<small>Meia Maratona Quiriri, 14/06</small></span></li><li><b>1:26:15</b><span>ROBIOMAR CLAUDIO FERREIRA<small>Meia Maratona Quiriri, 14/06</small></span></li></ol></div></div>
+    <div class="jn-card" style="margin-top:24px"><span class="jn-k">Presença</span><h3>Quem mais correu em Joinville</h3><ul class="jn-ass"><li><b>9</b><span>GABRIEL HENRIQUE WULFF DA SILVA</span></li><li><b>8</b><span>BENTA DE SENES</span></li><li><b>8</b><span>EDUARDA SENES DIAS</span></li><li><b>7</b><span>ANDREA SILVA MACEDO</span></li><li><b>7</b><span>CARMO MINORU TATEYAMA</span></li><li><b>7</b><span>DENIO MURILO DE AGUIAR</span></li><li><b>7</b><span>HERMANN HERZOG</span></li><li><b>7</b><span>LAUDENIR RAMOS</span></li><li><b>7</b><span>LORIVAL BATISTA</span></li><li><b>7</b><span>LUCIANA MIRA NETTO DE LIMA</span></li><li><b>7</b><span>RAIMUNDO ANDRADE NEVES</span></li><li><b>7</b><span>THIAGO KALBUSCH</span></li><li><b>7</b><span>VITOR ESTIVALET DE SOUZA</span></li></ul><p>Número de provas completadas na cidade entre junho e setembro de 2026, de 11 possíveis. Prefere não aparecer? Escreva para contato@pacefly.com.br e retiramos o seu nome.</p></div>
+  </div>
+</section>
+
+<!-- METODOLOGIA -->
+<section class="jn-sec alt" id="metodologia">
+  <div class="wrap">
+    <div class="jn-metodo">
+      <span class="jn-k">Metodologia</span>
+      <ul>
+        <li>Fonte: resultados oficiais publicados pelas organizações e cronometragens de cada prova, compilados na base do PaceFly Ranking (apuração de 04/10/2026).</li>
+        <li>Recorte: 11 provas realizadas em Joinville entre 14/06 e 19/09/2026, 7.635 resultados.</li>
+        <li>O pace é calculado pelo tempo líquido dividido pela distância oficial. Ritmo, idade e melhores tempos consideram as distâncias de 5, 10 e 21 km.</li>
+        <li>Idade não informada pela fonte no Circuito Banco do Brasil e na Ademicon Run. Na Live! Run XP, a idade foi calculada pelo ano de nascimento. As análises por idade usam 6.173 resultados.</li>
+        <li>Destaques individuais consideram apenas atletas adultos e não exibem a idade de ninguém. Nomes grafados como no resultado oficial.</li>
+        <li><strong>Retirada de nome:</strong> se você aparece nesta página e prefere que seu nome seja retirado, escreva para <a href="mailto:contato@pacefly.com.br">contato@pacefly.com.br</a> ou mande uma mensagem no Instagram @paceflyrunning. Respeitamos a decisão de cada corredor e fazemos a retirada sem questionamentos.</li>
+        <li>Encontrou algum erro? Escreva para <a href="mailto:contato@pacefly.com.br">contato@pacefly.com.br</a>.</li>
+      </ul>
+      <div class="jn-cta"><a href="rankings.html" class="btn btn-azul">Ver o PaceFly Ranking</a><a href="index.html#calendario" class="btn btn-ghost">Próximas provas</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly"></span>
+        <p class="desc">Movimento, confiança e comunidade. O ponto de encontro dos corredores de Joinville e do norte de Santa Catarina.</p>
+      </div>
+      <div>
+        <h4>Conteúdo</h4>
+        <ul>
+          <li><a href="index.html#calendario">Calendário</a></li>
+          <li><a href="index.html#dicas">Dicas</a></li>
+          <li><a href="index.html#noticias">Notícias</a></li>
+          <li><a href="rankings.html">Ranking</a></li>
+          <li><a href="index.html#assessoria">Assessoria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>PaceFly</h4>
+        <ul>
+          <li><a href="index.html#top">Sobre nós</a></li>
+          <li><a href="index.html#assessoria">Assessoria</a></li>
+          <li><a href="mailto:contato@pacefly.com.br">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@pacefly.com.br">contato@pacefly.com.br</a></li>
+          <li><span>Joinville, SC</span></li>
+        </ul>
+        <div class="social">
+          <a href="https://www.instagram.com/paceflyrunning" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 PaceFly. Todos os direitos reservados.</span>
+      <span>pacefly.com.br</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Menu mobile
+const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+// Calculadora: percentis (0 a 100) do tempo líquido em segundos, por distância e sexo
+const Q={"5KMF":[1140,1341,1423,1460,1490,1525,1550,1565,1588,1605,1625,1640,1650,1668,1680,1691,1707,1717,1729,1739,1751,1763,1772,1787,1801,1814,1826,1835,1847,1858,1867,1877,1887,1897,1906,1914,1923,1930,1943,1953,1963,1973,1986,1995,2003,2012,2021,2031,2038,2049,2058,2069,2082,2092,2103,2116,2129,2140,2150,2163,2173,2182,2200,2213,2223,2233,2247,2257,2270,2283,2292,2309,2321,2337,2349,2362,2378,2389,2403,2428,2444,2461,2479,2503,2520,2544,2562,2591,2612,2645,2682,2714,2741,2796,2846,2914,2991,3053,3158,3416,4656],"5KMM":[975,1090,1119,1146,1168,1190,1207,1227,1255,1268,1282,1300,1316,1331,1346,1358,1365,1375,1385,1397,1410,1419,1428,1436,1452,1460,1470,1482,1495,1505,1515,1520,1530,1536,1545,1555,1564,1574,1584,1592,1601,1609,1618,1631,1639,1648,1657,1663,1673,1679,1686,1693,1700,1711,1719,1726,1735,1746,1756,1764,1779,1789,1800,1812,1823,1835,1845,1855,1868,1878,1893,1907,1921,1934,1952,1965,1983,1997,2013,2029,2045,2060,2071,2088,2106,2125,2149,2175,2205,2244,2300,2335,2384,2421,2462,2525,2608,2703,2796,3092,4135],"10KMF":[2227,2479,2631,2674,2721,2751,2780,2816,2832,2860,2875,2894,2906,2919,2932,2946,2968,2980,2998,3014,3029,3040,3062,3076,3085,3102,3126,3134,3153,3175,3190,3200,3209,3214,3228,3235,3246,3258,3264,3272,3279,3294,3299,3308,3318,3342,3364,3371,3401,3408,3422,3428,3444,3452,3466,3472,3486,3497,3516,3529,3536,3549,3562,3567,3581,3611,3621,3640,3651,3668,3676,3692,3698,3704,3720,3735,3760,3774,3786,3802,3822,3828,3870,3898,3913,3941,3971,3990,4004,4044,4060,4074,4102,4149,4276,4308,4371,4440,4470,4861,5662],"10KMM":[1875,2130,2202,2230,2251,2276,2314,2349,2361,2389,2429,2445,2460,2484,2493,2507,2517,2538,2550,2559,2578,2592,2604,2625,2642,2660,2674,2684,2698,2723,2738,2748,2763,2779,2792,2809,2815,2830,2861,2870,2881,2896,2909,2915,2924,2945,2948,2956,2964,2972,2982,3000,3012,3023,3034,3043,3055,3065,3070,3078,3087,3096,3118,3128,3142,3158,3183,3200,3208,3222,3240,3253,3258,3269,3291,3317,3336,3355,3373,3394,3426,3438,3448,3482,3503,3532,3562,3587,3610,3651,3684,3741,3806,3837,3943,3967,4033,4102,4210,4548,4858],"21KMF":[5651,5994,6150,6223,6295,6324,6431,6552,6649,6727,6753,6768,6786,6796,6817,6832,6844,6867,6915,6984,7044,7045,7071,7083,7093,7114,7127,7158,7182,7184,7194,7214,7229,7232,7232,7235,7249,7270,7274,7282,7299,7319,7319,7336,7372,7429,7510,7531,7546,7561,7583,7588,7631,7674,7688,7732,7750,7764,7783,7788,7790,7807,7852,7943,7959,7964,7979,8024,8047,8075,8113,8160,8163,8163,8168,8182,8187,8209,8231,8242,8301,8328,8371,8449,8511,8527,8530,8539,8587,8752,8906,9024,9110,9336,9480,9570,9707,9876,9967,10390,11633],"21KMM":[4579,5194,5268,5345,5382,5468,5526,5576,5620,5642,5702,5805,5843,5868,5920,5931,5986,6023,6049,6121,6146,6179,6201,6227,6255,6287,6305,6330,6344,6357,6367,6372,6402,6440,6452,6470,6541,6590,6610,6633,6646,6662,6677,6716,6733,6751,6759,6779,6840,6848,6896,6927,6943,6969,6989,6998,7017,7025,7060,7083,7159,7175,7195,7243,7280,7296,7355,7406,7455,7485,7514,7533,7587,7613,7634,7700,7802,7844,7896,7914,7960,8062,8116,8129,8148,8182,8204,8248,8425,8500,8550,8697,8825,8845,8905,8971,9661,9831,9987,10769,11465]};
+const KM={'5KM':5,'10KM':10,'21KM':21.0975};
+function seg(t){const p=t.trim().split(':').map(Number);if(p.some(isNaN)||p.length<2||p.length>3)return null;return p.length==3?p[0]*3600+p[1]*60+p[2]:p[0]*60+p[1];}
+function fmt(s){s=Math.round(s);const m=Math.floor(s/60),x=s%60;return m+':'+String(x).padStart(2,'0');}
+function calc(){
+  const d=document.getElementById('jnDist').value,s=document.getElementById('jnSexo').value;
+  const v=id=>{const x=parseInt(document.getElementById(id).value,10);return isNaN(x)?0:x;};
+  const t=v('jnH')*3600+v('jnM')*60+v('jnS');
+  const out=document.getElementById('jnRes');
+  if(!t||t<300){out.innerHTML='<span class="vazio">Preencha o seu tempo em horas, minutos e segundos para ver o resultado.</span>';return;}
+  const q=Q[d+s];let i=0;while(i<100&&q[i+1]<=t)i++;
+  let pct;if(t<=q[0])pct=99;else if(t>=q[100])pct=0;else{const f=(t-q[i])/((q[i+1]-q[i])||1);pct=Math.max(0,Math.min(99,Math.round(100-(i+f))));}
+  const grupo=(s=='F'?'das mulheres':'dos homens'),dist={'5KM':'5 km','10KM':'10 km','21KM':'21 km'}[d];
+  out.innerHTML='<div class="big">'+pct+'%</div><div class="txt">Com esse tempo, você terminaria à frente de '+pct+'% '+grupo+' que completaram os '+dist+' em Joinville em 2026.</div><div class="sub">Seu pace: '+fmt(t/KM[d])+'/km · tempo mediano do grupo: '+(q[50]>=3600?Math.floor(q[50]/3600)+':'+fmt(q[50]%3600).padStart(5,'0'):fmt(q[50]))+'</div>';
+  if(window.gtag)gtag('event','calculadora_joinville',{distancia:d});
+}
+['jnDist','jnSexo','jnH','jnM','jnS'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+</script>
+<script src="assets/ui.js"></script>
+</body>
+</html>

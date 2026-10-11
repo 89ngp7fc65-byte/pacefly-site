@@ -549,3 +549,21 @@ body.anim .hero.lit h1 span::after{transform:scaleX(1)}
   .cd-b b{font-size:1.3rem}
   .cd-right .btn{width:100%;justify-content:center}
 }
+
+/* ===== Seção "Joinville em números" (home) + badge "novo" no menu, aprovado 11/10/2026 ===== */
+.jnh{padding:72px 0;background:var(--off)}
+.jnh-card{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;background:#fff;border:1px solid var(--linha);border-radius:24px;padding:44px;box-shadow:var(--sombra);position:relative;overflow:hidden}
+.jnh-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--azul)}
+.jnh-txt h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin:12px 0}
+.jnh-txt h2 span{color:var(--azul)}
+.jnh-txt p{color:var(--cinza-cl);margin-bottom:22px}
+.jnh-acoes{display:flex;gap:12px;flex-wrap:wrap}
+.jnh-kpis{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.jnh-kpi{background:var(--off);border-radius:16px;padding:20px 22px}
+.jnh-kpi b{display:block;font-size:2rem;font-weight:900;color:var(--preto);letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.jnh-kpi small{display:block;margin-top:8px;color:var(--cinza-cl);font-weight:600;font-size:.82rem;line-height:1.35}
+.jnh-kpi.dest{background:var(--azul)}
+.jnh-kpi.dest b{color:#fff}.jnh-kpi.dest small{color:rgba(255,255,255,.8)}
+.nav-novo{font-size:.6rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--amarelo);color:var(--preto);border-radius:999px;padding:2px 7px;margin-left:6px;vertical-align:2px}
+@media(max-width:900px){.jnh-card{grid-template-columns:1fr;padding:30px 26px;gap:26px}}
+@media(max-width:560px){.jnh{padding:52px 0}.jnh-kpi{padding:16px}.jnh-kpi b{font-size:1.45rem;white-space:nowrap}}

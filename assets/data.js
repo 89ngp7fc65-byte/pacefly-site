@@ -35,54 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "corrida-pela-vida-joinville",
-    "nome": "Corrida pela Vida",
-    "dia": "11",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "11 de outubro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Shopping Mueller Joinville",
-    "organizador": "42K Assessoria Esportiva",
-    "edicao": "6ª edição",
-    "distancias": ["8 km", "3 km"],
-    "descricao": "Sexta edição da Corrida pela Vida, que encerra o Circuito Movimento Pelo Bem do ano, com largada no Shopping Mueller e percursos de 8 km e 3 km.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/corrida-pela-vida-2026-joinville-sc-84988"
-  },
-  {
-    "id": "oktoberfest-run-blumenau",
-    "nome": "1ª Oktoberfest Run Blumenau",
-    "dia": "11",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "11 de outubro de 2026",
-    "cidade": "Blumenau, SC",
-    "largada": "Portal da Vila Germânica, Rua Alberto Stein, 199, Bairro Velha, às 7h",
-    "organizador": "FTA Sports",
-    "edicao": "1ª edição",
-    "distancias": ["10 km", "5 km", "Caminhada 3 km", "Kids"],
-    "descricao": "Primeira corrida oficial da Oktoberfest Blumenau, que chega à 41ª edição em 2026 (7 a 25 de outubro, no Parque Vila Germânica). A prova sai do Portal da Vila Germânica às 7h, com percursos de 10 km, 5 km, caminhada de 3 km e corrida kids (das 8h30 às 9h, por faixa etária), supervisão técnica da Federação Catarinense de Atletismo e hidratação a cada 2 km.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/1%C2%AA+OKTOBERFEST+RUN+BLUMENAU+-+SC-87870"
-  },
-  {
-    "id": "sports-run-jaragua-do-sul",
-    "nome": "Sports + Run",
-    "dia": "11",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "11 de outubro de 2026",
-    "cidade": "Jaraguá do Sul, SC",
-    "largada": "Arena Jaraguá, Rua Gustavo Hagedorn, 636, às 7h",
-    "organizador": "M8 Runners - Treinamento e Eventos Esportivos",
-    "edicao": "1ª edição",
-    "distancias": ["10 km", "5 km", "3 km", "Caminhada", "Kids"],
-    "descricao": "Estreia da Sports + Run em Jaraguá do Sul, com largada às 7h na Arena Jaraguá. A programação reúne percursos de 10 km, 5 km e 3 km, caminhada e corrida kids com medalha garantida para as crianças.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/sports-run-2026-85105"
-  },
-  {
     "id": "maratona-internacional-pomerode",
     "nome": "Maratona Internacional de Pomerode",
     "dia": "17",
@@ -292,6 +244,38 @@ const PACEFLY_EVENTOS = [
     "oficialUrl": "https://www.ticketsports.com.br/e/2-corrida-speed-life-run-85505"
   },
   {
+    "id": "ho-ho-run-joinville",
+    "nome": "Ho Ho Run",
+    "dia": "06",
+    "mes": "12",
+    "mesTxt": "DEZ",
+    "ano": 2026,
+    "dataExtenso": "6 de dezembro de 2026",
+    "cidade": "Joinville, SC",
+    "largada": "Arena de Prova, Rua Rio Branco, 229, Centro, às 20h (Corrida Kids às 18h30)",
+    "organizador": "Number Esportes",
+    "edicao": "Edição 2026",
+    "distancias": ["5 km", "Kids", "Kangoo"],
+    "descricao": "Corrida noturna de Natal que integra a programação oficial de Natal da Prefeitura de Joinville, com percurso de 5 km pelo Centro, além de Corrida Kids e categoria Kangoo. Todos os participantes que concluírem a prova recebem medalha.",
+    "oficialUrl": "https://gruposnumber.ultranocode.com.br/i/ho-ho-run-joinville-2026-2026?g=2549c330456b45b6a6383955621ac2cc"
+  },
+  {
+    "id": "corrida-rustica-trentina-rio-dos-cedros",
+    "nome": "2ª Corrida Rústica Trentina",
+    "dia": "06",
+    "mes": "12",
+    "mesTxt": "DEZ",
+    "ano": 2026,
+    "dataExtenso": "6 de dezembro de 2026",
+    "cidade": "Rio dos Cedros, SC",
+    "largada": "Pavilhão da Festa Trentina, Rua Trento, às 7h30",
+    "organizador": "KW Eventos Esportivos",
+    "edicao": "2ª edição",
+    "distancias": ["5 km"],
+    "descricao": "Segunda edição da Corrida Rústica Trentina, no Centro de Eventos de Rio dos Cedros, com largada no Pavilhão da Festa Trentina, na Rua Trento, e percurso de 5 km. A prova, que seria em outubro, teve a data alterada pela organização para 6 de dezembro.",
+    "oficialUrl": "https://www.kweventosesportivos.com.br/evento/corrida-rustica-trentina-2026"
+  },
+  {
     "id": "corrida-proma-jaragua-do-sul",
     "nome": "5ª Corrida Proma",
     "dia": "06",
@@ -306,6 +290,22 @@ const PACEFLY_EVENTOS = [
     "distancias": ["10 km", "5 km", "Caminhada 5 km", "Kids"],
     "descricao": "Quinta edição da Corrida Proma, organizada pelo Sesi Jaraguá do Sul, com largada principal às 6h e largada kids às 7h30. Os percursos são de 10 km, 5 km e caminhada de 5 km, com kit de camiseta, número de peito, chip e medalha. A retirada de kits acontece em 5 de dezembro, das 8h às 15h, na sede do Sesi Jaraguá do Sul, na Rua Walter Marquardt, 835, bairro Barra do Rio Molha. O local exato da largada ainda não foi divulgado pela organização.",
     "oficialUrl": "https://www.movnow.com.br/eventos/235-corrida-proma-2026"
+  },
+  {
+    "id": "corrida-da-virada-acorde-blumenau",
+    "nome": "6ª Corrida da Virada ACORDE",
+    "dia": "31",
+    "mes": "12",
+    "mesTxt": "DEZ",
+    "ano": 2026,
+    "dataExtenso": "31 de dezembro de 2026",
+    "cidade": "Blumenau, SC",
+    "largada": "Prefeitura Municipal de Blumenau, Praça Vitor Konder, 2, Centro, às 6h",
+    "organizador": "KW Eventos Esportivos",
+    "edicao": "6ª edição",
+    "distancias": ["8 km", "Caminhada 3 km", "Kids"],
+    "descricao": "Sexta edição da Corrida da Virada ACORDE, tradicional prova de Réveillon de Blumenau, com largada às 6h na Praça Vitor Konder, em frente à Prefeitura Municipal. Percursos de 8 km e caminhada de 3 km, com inscrição gratuita para crianças de 2 a 13 anos na Corrida Kids.",
+    "oficialUrl": "https://www.kweventosesportivos.com.br/evento/vi-corrida-da-virada-acorde-2026"
   }
 ];
 
@@ -379,92 +379,92 @@ const PACEFLY_NOTICIAS = [
   }
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-09-27
+/* DICAS_ULTIMA_ROTACAO: 2026-10-11
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "calor-e-sol-nos-treinos-da-primavera",
+    id: "hidratacao-estrategica-em-dias-de-calor",
     categoria: "Saúde",
-    titulo: "Calor e sol: como ajustar o treino agora na primavera",
-    resumo: "Com as tardes mais longas e o sol mais forte em Joinville e região, o treino que funcionava no inverno pode virar um problema nos próximos meses. Pequenos ajustes de horário e proteção evitam queda de rendimento e queimadura.",
+    titulo: "Hidratação estratégica: quanto beber antes, durante e depois da prova",
+    resumo: "Com as provas de outubro e novembro caindo em dias mais quentes, beber água só quando a sede aparece costuma ser tarde demais. Uma estratégia simples, pensada em três momentos, evita a queda de rendimento no fim do percurso.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "A primavera muda duas coisas de uma vez: a temperatura sobe e o sol fica mais forte, mesmo em horários que antes eram tranquilos. Treinar no mesmo horário do inverno, sem ajustar mais nada, é um dos motivos mais comuns de treino ruim nessa transição de estação.",
-      "O primeiro ajuste é o horário. Treinar bem cedo, antes das 9h, ou já no fim da tarde, depois das 17h, evita o calor mais forte e ainda garante o sol mais baixo, com raios menos diretos. Quem só pode treinar no meio do dia deve reduzir o ritmo e aceitar que o mesmo esforço vai parecer mais puxado.",
-      "Protetor solar deixa de ser opcional a partir de agora. Vale passar pelo menos 20 minutos antes de sair de casa, em rosto, nuca, orelhas e ombros, e reaplicar se o treino passar de uma hora. Boné ou viseira e óculos escuros ajudam bastante nos percursos mais abertos, sem sombra de árvore.",
-      "A hidratação também precisa de mais atenção nessa fase. Levar água em treinos acima de 40 minutos, mesmo em dias que não parecem tão quentes, evita o efeito surpresa de suar mais do que o esperado. Roupas claras e tecidos leves, que respiram melhor, fazem diferença real no conforto.",
-      "Sinais de que o calor está pesando mais do que deveria incluem tontura, pele muito vermelha, parada de suar em pleno esforço e dor de cabeça. Nesses casos, o certo é parar, buscar sombra, se hidratar e não insistir no treino programado."
+      "A sede é um sinal atrasado: quando ela aparece, o corpo já está em déficit de líquido há um tempo. Por isso a hidratação de prova começa antes da largada, não no primeiro posto de água do percurso.",
+      "Nas duas horas antes da prova, de 400 a 600 ml de água ou isotônico, aos poucos, preparam o corpo sem deixar o estômago pesado na hora de correr. Tomar tudo de uma vez só, na última hora, costuma sobrar como desconforto no início do percurso.",
+      "Durante a prova, a regra prática é beber pequenos goles em todos os postos, mesmo sem sentir sede, em vez de esperar o calor apertar. Em provas de mais de uma hora, alternar água com isotônico ajuda a repor também o sódio perdido no suor.",
+      "Depois de cruzar a chegada, a reposição não para: o corpo continua repondo líquido nas horas seguintes. Pesar-se antes e depois de um treino longo, uma vez, dá uma ideia real de quanto cada pessoa perde de peso em líquido, número que varia bastante de corredor para corredor.",
+      "Dias de calor forte pedem mais atenção que o roteiro padrão. Se o treino ou a prova tiver sol forte e pouca sombra, vale aumentar um pouco o volume de cada gole e observar sinais como tontura, boca muito seca ou queda de ritmo sem causa aparente."
     ]
   },
   {
-    id: "recuperacao-entre-provas-seguidas",
-    categoria: "Treino",
-    titulo: "Como recuperar bem entre duas provas em fins de semana seguidos",
-    resumo: "Com o calendário da região cheio quase todo fim de semana entre setembro e novembro, é comum a vontade de correr duas provas seguidas. A recuperação entre elas decide se isso vira ganho ou lesão.",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Correr uma prova por fim de semana, duas vezes seguidas, não é automaticamente um problema, mas exige tratar a semana entre elas como recuperação, não como treino normal. O erro mais comum é voltar para o treino de sempre já na segunda-feira seguinte à primeira prova.",
-      "Nos dois ou três dias depois da prova, o corpo ainda está processando o esforço, mesmo que a dor muscular já tenha passado. Um passeio leve, caminhada ou um trote bem curto e confortável ajudam a circulação sem acrescentar mais desgaste em cima do que já foi feito no fim de semana.",
-      "Sono e alimentação pesam mais do que parecem nessa janela curta entre provas. Dormir um pouco mais do que o normal e não deixar a alimentação solta, principalmente a reposição de carboidrato e proteína nas primeiras horas depois da chegada, acelera a recuperação sem exigir nada além de rotina.",
-      "Vale prestar atenção especial em dor articular ou muscular que persiste ou piora ao longo da semana, diferente do cansaço geral esperado. Esse tipo de dor é sinal de que a segunda prova pode precisar ser encarada em ritmo mais conservador, ou até repensada, para não transformar um fim de semana cheio em uma lesão de semanas.",
-      "Quando as duas provas são de distâncias parecidas e o intervalo é de uma semana, o corredor mais experiente tende a lidar melhor, porque já tem uma base de treino que absorve o esforço extra. Para quem está começando, escolher só uma das duas, ou trocar a segunda por uma distância mais curta, costuma valer mais do que provar os dois pódios."
-    ]
-  },
-  {
-    id: "caibra-na-corrida-causas-e-prevencao",
-    categoria: "Saúde",
-    titulo: "Cãibra na corrida: por que aparece e como evitar",
-    resumo: "Aquela dor súbita na panturrilha ou na parte de trás da coxa, geralmente perto do fim da prova, tem mais de uma causa possível. Entender qual é a sua ajuda a evitar que ela decida o resultado do próximo desafio.",
-    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "A cãibra é uma contração muscular involuntária e dolorida, que na corrida costuma aparecer na panturrilha, no posterior de coxa ou nos pés, quase sempre na parte final do treino ou da prova, quando o músculo já está mais cansado.",
-      "A causa mais estudada hoje é a fadiga muscular em si: o músculo exigido além do que está preparado para aquele ritmo ou distância perde parte do controle da própria contração. É por isso que a cãibra aparece mais em quem tenta correr mais rápido ou mais longe do que o treino recente permite.",
-      "Desidratação e perda de sódio pelo suor também entram na conta, principalmente em dias quentes ou em provas longas. Quem sua muito e só reposiciona água, sem nenhum eletrólito, fica mais exposto a esse tipo de cãibra, especialmente depois de mais de uma hora de esforço.",
-      "Se a cãibra aparecer no meio da prova, parar por alguns segundos e alongar bem devagar o músculo afetado, sem forçar, costuma aliviar mais rápido do que tentar continuar no mesmo ritmo. Massagear a região e reduzir a velocidade depois evita que ela volte na sequência.",
-      "Prevenção de verdade começa antes da prova: treino específico na distância que será cobrada, hidratação com eletrólito em treinos longos ou dias de calor, e respeitar o ritmo que o treino recente sustenta, não o ritmo que a ansiedade da largada sugere."
-    ]
-  },
-  {
-    id: "checklist-da-mochila-no-dia-da-prova",
+    id: "quando-trocar-o-tenis-de-corrida",
     categoria: "Equipamento",
-    titulo: "O que levar no dia da prova: o checklist da mochila",
-    resumo: "Entre número de peito, chip e tênis novo demais, é fácil esquecer algo importante na corrida contra o relógio da manhã da prova. Uma mochila organizada na noite anterior evita esse estresse.",
+    titulo: "Quando trocar o tênis de corrida: os sinais que o calendário não mostra",
+    resumo: "Contar só os meses de uso engana, porque dois corredores no mesmo tênis desgastam ele de formas diferentes. O solado e a sensação na pisada contam uma história mais confiável do que a data da compra.",
     imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Separar a mochila na noite anterior, e não na manhã da prova, já resolve metade do problema. Com tudo pronto na véspera, sobra tempo de sobra para chegar com calma, sem a pressa que faz esquecer justamente o item mais importante.",
-      "O essencial começa pelo número de peito e o chip de cronometragem, já fixados na roupa que será usada, mais um alfinete ou clipe reserva, para o caso de algum se soltar. Documento com foto também costuma ser pedido na retirada de kit ou em caso de alguma dúvida na largada.",
-      "Na parte de roupa, a regra é: nada estreando no dia da prova. Tênis, meia, short e camiseta devem ser os mesmos já testados em treino, para evitar bolha ou assadura por causa de uma peça nova. Vale separar também uma muda de roupa seca para depois da chegada, principalmente em dias de chuva ou muito sol.",
-      "Vaselina ou similar nas áreas de atrito, como axila, mamilo e virilha, evita assadura em provas mais longas. Protetor solar, se a largada for de manhã com sol já forte, e um boné leve completam a parte de proteção.",
-      "Por fim, um pouco de dinheiro ou cartão, o celular carregado com o contato de alguém de referência, e algo pequeno para comer antes da largada, como uma banana ou uma barrinha já testada em treino, fecham a mochila. Menos improviso no dia da prova costuma significar mais foco na hora de correr."
+      "A referência mais citada é a quilometragem, algo entre 500 e 800 km, mas esse número varia com o peso do corredor, o tipo de pisada e até o piso onde a maioria dos treinos acontece. Vale usar como alerta, não como regra fixa.",
+      "O solado conta boa parte da história: desgaste irregular, mais de um lado do que do outro, ou a entressola comprimida e sem voltar ao formato original depois de apertada com o dedo, são sinais de que o amortecimento já perdeu parte da função.",
+      "A sensação na pisada também avisa. Tênis que começam a parecer mais duros, ou que deixam uma dor nova no joelho, na canela ou no pé depois dos treinos de sempre, geralmente não é o corpo que mudou, é o tênis que já não absorve o impacto como antes.",
+      "Para quem tem mais de um par, alternar entre eles nos treinos da semana estica a vida útil de cada um, porque o amortecimento tem tempo de descomprimir entre um uso e outro. Usar o mesmo par todos os dias acelera justamente o desgaste que faz menos sentido.",
+      "Antes de uma prova importante, o ideal é nunca estrear tênis novo: o par usado na prova deve ter pelo menos duas ou três semanas de treino nas pernas, tempo suficiente para o corpo se adaptar sem o risco de bolha ou dor inesperada no dia."
     ]
   },
   {
-    id: "treino-intervalado-primeiro-passo",
-    categoria: "Técnica",
-    titulo: "Treino intervalado: o primeiro passo para melhorar seu tempo",
-    resumo: "Para quem já corre uma distância com folga mas quer melhorar o tempo, o intervalado costuma ser o treino que faz mais diferença. O segredo está em começar com uma versão simples, sem se afobar.",
+    id: "sono-antes-da-prova-por-que-importa",
+    categoria: "Mente",
+    titulo: "Sono antes da prova: por que ele pesa tanto quanto o treino",
+    resumo: "Muita gente otimiza treino, alimentação e tênis, mas dorme mal na semana da prova sem perceber o efeito disso no desempenho. O sono é onde boa parte da recuperação do treino realmente acontece.",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "É durante o sono profundo que o corpo repara o tecido muscular exigido pelo treino e consolida parte da adaptação que o treino buscou provocar. Dormir pouco na semana de prova, mesmo treinando certo, deixa essa recuperação incompleta.",
+      "A noite que mais importa não é a véspera da prova, é a semana inteira antes dela. Uma noite mal dormida na véspera, por ansiedade ou nervosismo, afeta bem menos o resultado do que várias noites curtas acumuladas nos dias anteriores.",
+      "Ainda assim, vale cuidar da véspera: deixar tudo organizado (roupa, número de peito, horário de saída) antes de dormir reduz a lista de pensamentos que mantêm a cabeça acesa na cama. Evitar telas e cafeína no fim da noite ajuda o corpo a relaxar mais rápido.",
+      "Cochilos curtos nos dias que antecedem a prova, de 20 a 30 minutos, compensam parte de uma noite mais curta sem prejudicar o sono da noite seguinte. Cochilos longos demais, ou tarde da tarde, tendem a fazer o efeito contrário.",
+      "Depois da prova, o sono volta a ser protagonista: é nos dias seguintes, dormindo bem, que o corpo processa o desgaste do esforço maior que teve. Pular essa fase de recuperação é um dos motivos mais comuns de lesão na prova seguinte."
+    ]
+  },
+  {
+    id: "primeira-meia-maratona-como-comecar",
+    categoria: "Treino",
+    titulo: "Primeira meia maratona: como dar o salto do 10 km para os 21 km",
+    resumo: "Com a Maratona Internacional de Pomerode e outras provas de distância maior no calendário dos próximos meses, cresce a vontade de encarar os 21 km pela primeira vez. O salto de distância pede um plano, não só vontade.",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Treino intervalado é, na prática, alternar trechos mais rápidos com trechos de recuperação, em vez de correr sempre no mesmo ritmo do início ao fim. É o tipo de treino que ensina o corpo a sustentar uma velocidade maior do que o ritmo confortável do dia a dia.",
-      "Para quem nunca fez, o ideal é começar simples: 6 a 8 tiros de 1 minuto em ritmo mais forte, mas controlado, intercalados com 2 minutos de trote bem leve ou caminhada. O erro mais comum de quem começa é sair no ritmo máximo do primeiro tiro e não conseguir manter o mesmo esforço nos seguintes.",
-      "Uma boa referência de ritmo para esses tiros é o esforço em que dá para falar só frases curtas, sem manter uma conversa fluida, mas também sem estar no limite total. Com o tempo, dá para aumentar a duração dos tiros ou reduzir o tempo de recuperação, sempre de forma gradual.",
-      "Esse tipo de treino pede mais atenção ao aquecimento do que um treino comum, justamente por exigir esforço mais forte logo nos primeiros tiros. Uns 10 minutos de trote leve, seguidos de alguns exercícios de mobilidade, preparam o corpo para o ritmo mais puxado que vem a seguir.",
-      "Uma vez por semana já é suficiente para começar a sentir diferença, geralmente depois de 3 a 4 semanas de treino consistente. Fazer intervalado todos os dias, ou logo depois de uma prova recente, tende a cansar mais do que ajudar, então vale reservar esse treino para quando o corpo estiver descansado."
+      "Quem já corre 10 km com regularidade tem a base necessária para começar a treinar os 21 km, mas o salto direto no dia da prova, sem nunca ter passado dos 10 km em treino, é a receita mais comum de sofrer bastante no segundo pelotão da meia maratona.",
+      "O ponto central da preparação é o treino longo semanal, que cresce pouco a pouco ao longo das semanas até chegar perto de 16 a 18 km antes da prova, sempre em ritmo confortável, bem mais lento do que o ritmo de prova.",
+      "Correr rápido todo treino longo, tentando simular a prova, cansa mais do que ensina. O treino longo serve para o corpo se acostumar ao tempo em movimento e ao desgaste progressivo, não para testar velocidade.",
+      "Nas duas últimas semanas antes da prova, a distância dos treinos cai, mesmo que o corpo pareça pronto para mais. Esse período de polimento garante que as pernas cheguem descansadas e não desgastadas pelo próprio treino de preparação.",
+      "No dia da prova, o erro mais comum de quem estreia nos 21 km é sair no ritmo da emoção da largada. Guardar energia para os últimos 5 km, em vez de gastar tudo nos primeiros, costuma decidir se a chegada é comemorada ou sofrida."
     ]
   },
   {
-    id: "correr-em-grupo-como-comecar",
-    categoria: "Mente",
-    titulo: "Correr em grupo: como encontrar uma turma e o que isso muda no treino",
-    resumo: "Com tanta prova nova pipocando na região, treinar sempre sozinho pode estar deixando o corredor de fora de uma parte importante da experiência. Encontrar um grupo certo muda a forma como o treino é sentido.",
+    id: "alimentacao-na-vespera-e-na-manha-da-prova",
+    categoria: "Saúde",
+    titulo: "O que comer na véspera e na manhã da prova",
+    resumo: "A refeição perfeita no dia da prova não compensa semanas de treino mal alimentado, mas uma escolha errada na véspera ou na manhã pode, sim, arruinar uma boa preparação. Duas refeições simples evitam a maioria dos problemas.",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Correr em grupo não é só sobre companhia. O mesmo treino que parece pesado sozinho costuma parecer mais leve ao lado de outras pessoas no mesmo ritmo, porque a conversa distrai da sensação de esforço e o compromisso combinado com alguém reduz a chance de faltar ao treino.",
-      "Para encontrar um grupo na região, vale começar observando quem aparece nas provas locais usando a mesma camiseta, procurando por assessorias e grupos de corrida no Instagram, ou perguntando na loja de artigos esportivos que costuma vender para corredores da cidade. A maioria dos grupos recebe bem quem chega para experimentar.",
-      "Encaixar num grupo já formado exige um pouco de humildade no início: nem todo grupo vai ter alguém exatamente no seu ritmo no primeiro treino. Vale conversar antes sobre o pace médio do grupo e não ter vergonha de pedir para o pessoal ir um pouco mais devagar na primeira experiência.",
-      "Treinar acompanhado também ajuda em outro ponto que passa batido: alguém correndo ao lado percebe antes uma mudança estranha na pisada, uma queda de postura ou um sinal de desidratação que o próprio corredor, concentrado no esforço, às vezes não nota em si mesmo.",
-      "Para quem está treinando para a primeira prova, especialmente as mais longas do calendário regional, entrar num grupo nas semanas finais de preparação costuma ajudar tanto no ritmo quanto na ansiedade da estreia. Chegar acompanhado na largada, e não sozinho, já muda a sensação do dia da prova."
+      "Na véspera, o jantar deve ser parecido com o que o corpo já conhece: carboidrato de fácil digestão (arroz, massa, batata), uma porção moderada de proteína magra e pouca fibra ou gordura em excesso, que pedem mais tempo de digestão.",
+      "Testar um prato completamente novo na noite antes da prova é um risco que não compensa. O estômago reage melhor ao que já foi comido antes de um treino longo, mesmo que a receita não seja a mais sofisticada do cardápio.",
+      "Na manhã da prova, a refeição ideal acontece de 2 a 3 horas antes da largada, com algo leve e já testado em treino: pão com geleia, banana, aveia com pouca fruta. Esse intervalo dá tempo para o corpo absorver a energia sem o desconforto de correr de estômago cheio.",
+      "Café, para quem já tem o hábito, pode continuar fazendo parte da rotina da manhã, mas não é o momento de descobrir se cafeína em jejum cai bem. Novidade na manhã da prova é sempre um risco maior do que o ganho que promete.",
+      "Para provas que passam de uma hora, levar um gel ou uma fruta fácil de comer durante o percurso ajuda a manter a energia na segunda metade, desde que esse mesmo gel já tenha sido testado em algum treino longo antes, nunca estreado na prova."
+    ]
+  },
+  {
+    id: "dor-no-joelho-ajustes-de-tecnica",
+    categoria: "Técnica",
+    titulo: "Dor no joelho na corrida: ajustes de técnica que ajudam a proteger a articulação",
+    resumo: "Boa parte da dor no joelho do corredor não vem do joelho em si, vem de como o resto do corpo se move durante a passada. Pequenos ajustes de técnica aliviam a cobrança sobre a articulação sem exigir parar de treinar.",
+    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "A passada muito longa, com o pé pousando bem na frente do corpo, aumenta o impacto que chega ao joelho a cada passo. Encurtar um pouco a passada e deixar o pé pousar mais perto do corpo reduz essa sobrecarga de forma simples.",
+      "A cadência (quantos passos por minuto) tem efeito parecido: aumentar levemente o número de passos, mantendo o mesmo ritmo, tende a suavizar o impacto por passada. Isso costuma acontecer naturalmente conforme o corredor ganha experiência, mas também pode ser treinado de forma consciente.",
+      "O fortalecimento do quadril e da parte lateral da coxa, músculos que estabilizam o joelho durante a corrida, costuma fazer diferença maior do que qualquer ajuste só na pisada. Exercícios simples de ponte e elevação lateral de perna, feitos duas vezes por semana, já ajudam.",
+      "Dor que aparece sempre no mesmo ponto do treino, ou que piora conforme a distância aumenta, pede atenção redobrada: não é normal e não deve ser tratada só com analgésico para continuar treinando. Esse tipo de dor tende a crescer, não a desaparecer sozinha.",
+      "Se a dor persistir mesmo depois de ajustes de técnica e de alguns dias de descanso, o caminho certo é uma avaliação com profissional de saúde especializado em corrida, que consegue identificar a causa real, em vez de insistir em um palpite sem confirmação."
     ]
   }
 ];

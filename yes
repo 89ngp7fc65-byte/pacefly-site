@@ -1,0 +1,44 @@
+ assets/data.js                                     | 214 [32m++++++[m[31m-------[m
+ assets/ranking_2026.json                           |   2 [32m+[m[31m-[m
+ assets/styles.css                                  |  18 [32m++[m
+ .../texto.txt                                      |  11 [32m+[m
+ .../dor-no-joelho-ajustes-de-tecnica/texto.txt     |  11 [32m+[m
+ .../texto.txt                                      |  11 [32m+[m
+ .../primeira-meia-maratona-como-comecar/texto.txt  |  11 [32m+[m
+ .../quando-trocar-o-tenis-de-corrida/texto.txt     |  11 [32m+[m
+ .../sono-antes-da-prova-por-que-importa/texto.txt  |  11 [32m+[m
+ .../corrida-da-virada-acorde-blumenau/texto.txt    |   8 [32m+[m
+ .../texto.txt                                      |   8 [32m+[m
+ conteudo/eventos/ho-ho-run-joinville/texto.txt     |   8 [32m+[m
+ gerar_json_ranking.py                              |   9 [32m+[m[31m-[m
+ .../LEIA-ME.txt                                    |   2 [32m+[m[31m-[m
+ .../imagem.jpg                                     | Bin [31m0[m -> [32m71321[m bytes
+ .../imagem.jpg                                     | Bin [31m75039[m -> [32m0[m bytes
+ .../LEIA-ME.txt                                    |   3 [31m-[m
+ .../imagem.jpg                                     | Bin [31m27478[m -> [32m0[m bytes
+ .../LEIA-ME.txt                                    |   3 [31m-[m
+ .../imagem.jpg                                     | Bin [31m570130[m -> [32m0[m bytes
+ .../dicas/correr-em-grupo-como-comecar/LEIA-ME.txt |   3 [31m-[m
+ .../dicas/correr-em-grupo-como-comecar/imagem.jpg  | Bin [31m130192[m -> [32m0[m bytes
+ .../dor-no-joelho-ajustes-de-tecnica/LEIA-ME.txt   |   3 [32m+[m
+ .../dor-no-joelho-ajustes-de-tecnica/imagem.jpg    | Bin [31m0[m -> [32m65163[m bytes
+ .../LEIA-ME.txt                                    |   3 [32m+[m
+ .../imagem.jpg                                     | Bin [31m0[m -> [32m1867527[m bytes
+ .../LEIA-ME.txt                                    |   3 [32m+[m
+ .../primeira-meia-maratona-como-comecar/imagem.jpg | Bin [31m0[m -> [32m6190872[m bytes
+ .../quando-trocar-o-tenis-de-corrida/LEIA-ME.txt   |   3 [32m+[m
+ .../quando-trocar-o-tenis-de-corrida/imagem.jpg    | Bin [31m0[m -> [32m3319489[m bytes
+ .../recuperacao-entre-provas-seguidas/LEIA-ME.txt  |   3 [31m-[m
+ .../recuperacao-entre-provas-seguidas/imagem.jpg   | Bin [31m33367[m -> [32m0[m bytes
+ .../LEIA-ME.txt                                    |   3 [32m+[m
+ .../sono-antes-da-prova-por-que-importa/imagem.jpg | Bin [31m0[m -> [32m239214[m bytes
+ .../treino-intervalado-primeiro-passo/LEIA-ME.txt  |   3 [31m-[m
+ .../treino-intervalado-primeiro-passo/imagem.jpg   | Bin [31m96530[m -> [32m0[m bytes
+ .../corrida-da-virada-acorde-blumenau/LEIA-ME.txt  |   3 [32m+[m
+ .../LEIA-ME.txt                                    |   3 [32m+[m
+ imagens/eventos/ho-ho-run-joinville/LEIA-ME.txt    |   3 [32m+[m
+ index.html                                         |  25 [32m++[m
+ joinville-em-numeros.html                          | 342 [32m+++++++++++++++++++++[m
+ rankings.html                                      |  22 [32m+[m[31m-[m
+ sitemap.xml                                        |  34 [32m+[m[31m-[m
+ 43 files changed, 645 insertions(+), 152 deletions(-)
