@@ -37,6 +37,7 @@ from collections import defaultdict
 AQUI = Path(__file__).parent.resolve()
 SAIDA = AQUI / "assets" / "ranking_2026.json"
 RANKINGS_HTML = AQUI / "rankings.html"
+OG_RANKING_HTML = AQUI / "og-ranking.html"
 
 # Metadados da apuração. Atualize a cada nova rodada.
 # A lista de provas aparece na página, na seção de transparência. Ela responde
@@ -368,6 +369,88 @@ def sincronizar_reserva_rankings_html(meta, atletas_final):
     print(f"     ({total_fmt} atletas, {provas_fmt} provas, Top 10 sincronizado). Backup em {backup.name}.")
 
 
+def sincronizar_og_ranking_html(meta):
+    """Mantem em dia os tres numeros gravados no card de compartilhamento
+    og-ranking.html (classificados, provas apuradas e participacoes), que
+    viram a imagem 1200x630 exibida ao mandar o link do ranking no WhatsApp.
+    Esses numeros eram escritos a mao e nunca regravados a cada rodada, entao
+    desatualizavam: em 14/10/2026 o card ainda mostrava 847 classificados e 11
+    provas, de uma apuracao bem antiga, enquanto a apuracao vigente ja tinha
+    2.375 e 21. A partir de agora este script os sincroniza sozinho, no mesmo
+    espirito da sincronizar_reserva_rankings_html.
+
+    Atencao: isto atualiza so o HTML do card. A imagem PNG em si
+    (assets/og-ranking.png) continua sendo gerada pelo gerar_og_ranking.bat,
+    que tira um print do og-ranking.html. Depois desta rodada, rode tambem o
+    gerar_og_ranking.bat para a imagem refletir os numeros novos.
+
+    So grava se os 3 trechos esperados forem encontrados exatamente uma vez
+    cada. Se o card tiver sido redesenhado e algum trecho nao bater mais, a
+    funcao desiste sem tocar no arquivo e avisa no console; o restante do
+    script continua valendo normalmente.
+    """
+    if not OG_RANKING_HTML.exists():
+        print(f"[AVISO] og-ranking.html nao encontrado em {OG_RANKING_HTML}; pulei a sincronizacao do card.")
+        return
+
+    try:
+        with open(OG_RANKING_HTML, "r", encoding="utf-8", newline="") as f:
+            texto = f.read()
+    except Exception as e:
+        print(f"[AVISO] Nao consegui ler og-ranking.html ({type(e).__name__}: {e}); pulei a sincronizacao do card.")
+        return
+
+    classif_fmt = formatar_milhar(meta["total_atletas"])
+    provas_fmt = str(meta["total_provas"])
+    part_fmt = formatar_milhar(meta["total_participacoes"])
+
+    padrao_classif = re.compile(r'(<div class="stat"><b>)[^<]*(</b><small>classificados</small></div>)')
+    padrao_provas = re.compile(r'(<div class="stat"><b>)[^<]*(</b><small>provas apuradas</small></div>)')
+    padrao_part = re.compile(r'(<div class="stat"><b>)[^<]*(</b><small>participações</small></div>)')
+
+    novo_texto, n1 = padrao_classif.subn(rf'\g<1>{classif_fmt}\g<2>', texto)
+    novo_texto, n2 = padrao_provas.subn(rf'\g<1>{provas_fmt}\g<2>', novo_texto)
+    novo_texto, n3 = padrao_part.subn(rf'\g<1>{part_fmt}\g<2>', novo_texto)
+
+    contagens = [n1, n2, n3]
+    if contagens != [1, 1, 1]:
+        print(f"[AVISO] og-ranking.html parece ter mudado de estrutura (trechos encontrados: {contagens},"
+              " esperado [1, 1, 1]).")
+        print("        Por seguranca, NAO mexi em og-ranking.html desta vez. Atualize os numeros")
+        print("        manualmente ou revise esta funcao se o card foi redesenhado.")
+        return
+
+    if novo_texto == texto:
+        print("[OK] og-ranking.html ja estava com os numeros em dia, nada para gravar.")
+        print("     (lembre de rodar gerar_og_ranking.bat para regerar a imagem PNG.)")
+        return
+
+    backup = OG_RANKING_HTML.with_name(OG_RANKING_HTML.name + ".bak")
+    try:
+        with open(backup, "w", encoding="utf-8", newline="") as f:
+            f.write(texto)
+    except Exception as e:
+        print(f"[AVISO] Nao consegui gravar o backup do card ({type(e).__name__}: {e}); prossegui mesmo assim.")
+
+    tmp = OG_RANKING_HTML.with_name(OG_RANKING_HTML.name + ".tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8", newline="") as f:
+            f.write(novo_texto)
+        os.replace(tmp, OG_RANKING_HTML)
+    except Exception as e:
+        print(f"[ERRO] Falha ao gravar og-ranking.html ({type(e).__name__}: {e}). O arquivo original nao foi tocado.")
+        try:
+            if tmp.exists():
+                tmp.unlink()
+        except Exception:
+            pass
+        return
+
+    print(f"[OK] og-ranking.html atualizado: card agora reflete {meta['atualizado_em']}")
+    print(f"     ({classif_fmt} classificados, {provas_fmt} provas, {part_fmt} participacoes).")
+    print(f"     IMPORTANTE: rode gerar_og_ranking.bat para a imagem PNG refletir esses numeros. Backup em {backup.name}.")
+
+
 def main():
     origem = achar_csv()
     print(f"[OK] Lendo: {origem}")
@@ -567,6 +650,7 @@ def main():
                      encoding="utf-8")
 
     sincronizar_reserva_rankings_html(saida, final)
+    sincronizar_og_ranking_html(saida)
 
     kb = SAIDA.stat().st_size // 1024
     n_f = sum(1 for a in final if a.get("s") == "F")

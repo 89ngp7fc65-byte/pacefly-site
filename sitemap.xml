@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Página principal -->
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-10-14.
+       Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
+       nos arrays de assets/data.js. -->
+
+  <!-- Pagina principal -->
   <url>
     <loc>https://pacefly.com.br/</loc>
     <lastmod>2026-09-06</lastmod>
@@ -17,7 +21,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- JOINVILLE EM NUMEROS (nova pagina, aprovada 11/10/2026) -->
+  <!-- JOINVILLE EM NUMEROS -->
   <url>
     <loc>https://pacefly.com.br/joinville-em-numeros.html</loc>
     <lastmod>2026-10-11</lastmod>
@@ -25,10 +29,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- DICAS (regenerado em 11/10/2026: as 6 abaixo são as que estão
-       no ar hoje em assets/data.js, PACEFLY_DICAS. Este array é
-       rotacionado por completo a cada 2 semanas, sempre que a
-       rotação acontecer, regenerar este bloco junto. -->
+  <!-- DICAS (gerado de PACEFLY_DICAS) -->
   <url><loc>https://pacefly.com.br/dica.html?id=hidratacao-estrategica-em-dias-de-calor</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://pacefly.com.br/dica.html?id=quando-trocar-o-tenis-de-corrida</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://pacefly.com.br/dica.html?id=sono-antes-da-prova-por-que-importa</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -36,20 +37,13 @@
   <url><loc>https://pacefly.com.br/dica.html?id=alimentacao-na-vespera-e-na-manha-da-prova</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://pacefly.com.br/dica.html?id=dor-no-joelho-ajustes-de-tecnica</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- NOTÍCIAS (regenerado em 05/09/2026: as 6 abaixo são as que
-       estão no ar hoje em assets/data.js, PACEFLY_NOTICIAS. Este
-       array é atualizado por item conforme sai notícia nova —
-       ao trocar/adicionar uma notícia, atualizar este bloco junto. -->
+  <!-- NOTICIAS (gerado de PACEFLY_NOTICIAS) -->
   <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=gutbrau-oktober-run-joinville-2026</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=nike-alphafly-4-lancamento</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- EVENTOS / CALENDÁRIO DE PROVAS (sincronizado em 11/10/2026: os
-       17 abaixo são os que estão no ar hoje em assets/data.js,
-       PACEFLY_EVENTOS. Ao passar uma prova ou adicionar uma nova,
-       atualizar este bloco junto: provas que saem do calendário
-       devem sair também daqui, senão viram link morto indexado. -->
+  <!-- EVENTOS / CALENDARIO (gerado de PACEFLY_EVENTOS) -->
   <url><loc>https://pacefly.com.br/evento.html?id=maratona-internacional-pomerode</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-sao-francisco-do-sul</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-sao-bento-do-sul</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
