@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>PaceFly · Imagem institucional de compartilhamento (1200x630)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;font-family:'Montserrat',sans-serif;background:#060e1f}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:#060e1f}
+  .mesh{position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:54px 54px}
+  .glow{position:absolute;width:820px;height:820px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,87,184,.44) 0%,rgba(0,87,184,0) 68%);
+    top:-280px;right:-220px}
+  .glow2{position:absolute;width:620px;height:620px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,196,0,.15) 0%,rgba(255,196,0,0) 70%);
+    bottom:-280px;left:-160px}
+  .strip{position:absolute;left:0;top:0;bottom:0;width:8px;background:#FFC400;z-index:5}
+  .content{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;
+    justify-content:space-between;padding:48px 60px 46px 76px}
+  .topo{display:flex;align-items:center;justify-content:space-between}
+  .topo img{height:74px;width:auto;filter:brightness(0) invert(1)}
+  .meio{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:6px}
+  .eyebrow{font-size:17px;font-weight:800;color:rgba(255,255,255,.45);
+    letter-spacing:4.5px;text-transform:uppercase;margin-bottom:16px}
+  .titulo{font-size:62px;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-2px;max-width:900px}
+  .titulo .amarelo{color:#FFC400}
+  .rule{width:84px;height:6px;background:#FFC400;border-radius:4px;margin:22px 0 20px}
+  .sub{font-size:23px;font-weight:500;color:rgba(255,255,255,.68);line-height:1.5;max-width:760px}
+  .rodape{display:flex;align-items:flex-end;justify-content:space-between}
+  .chips{display:flex;gap:14px;flex-wrap:wrap}
+  .chip{font-size:16px;font-weight:800;color:rgba(255,255,255,.72);
+    border:2px solid rgba(255,255,255,.16);border-radius:100px;padding:9px 20px;
+    text-transform:uppercase;letter-spacing:1.5px}
+  .site{font-size:21px;font-weight:800;color:#FFC400;letter-spacing:.3px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="mesh"></div><div class="glow"></div><div class="glow2"></div>
+  <div class="strip"></div>
+  <div class="content">
+    <div class="topo">
+      <img src="assets/PaceFly_Logo_Oficial.png" alt="PaceFly">
+    </div>
+    <div class="meio">
+      <div class="eyebrow">// Corrida de rua · Joinville e Norte de Santa Catarina</div>
+      <div class="titulo">O ponto de encontro dos<br>corredores da <span class="amarelo">região.</span></div>
+      <div class="rule"></div>
+      <div class="sub">Calendário de provas, ranking regional, dicas e notícias. Movimento, confiança e comunidade.</div>
+    </div>
+    <div class="rodape">
+      <div class="chips">
+        <div class="chip">Calendário</div>
+        <div class="chip">Ranking</div>
+        <div class="chip">Dicas</div>
+        <div class="chip">Notícias</div>
+      </div>
+      <div class="site">pacefly.com.br</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
