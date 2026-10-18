@@ -35,70 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "maratona-internacional-pomerode",
-    "nome": "Maratona Internacional de Pomerode",
-    "dia": "17",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "17 e 18 de outubro de 2026",
-    "cidade": "Pomerode, SC",
-    "largada": "Pomerode, SC",
-    "organizador": "Maratona Internacional de Pomerode",
-    "edicao": "19ª edição",
-    "distancias": ["42 km", "21 km", "6 km", "Maratoninha"],
-    "descricao": "Realizada desde 2008, a maratona transforma Pomerode em um cenário de cultura germânica, com apresentações folclóricas, bandas, brincadeiras típicas e degustação de cucas ao longo do percurso. Os 6 km saem no sábado, 17 de outubro, e a maratona e a meia no domingo, 18. Idades mínimas: 14 anos nos 6 km, 18 anos nos 21 km e 20 anos nos 42 km, com a Maratoninha a partir dos 3 anos.",
-    "oficialUrl": "https://vemcorrer.com/evento/345-maratona-internacional-de-pomerode-2026"
-  },
-  {
-    "id": "corrida-bombeiros-sao-francisco-do-sul",
-    "nome": "2ª Corrida dos Bombeiros Voluntários",
-    "dia": "18",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "18 de outubro de 2026",
-    "cidade": "São Francisco do Sul, SC",
-    "largada": "Quartel Central dos Bombeiros Voluntários, Rua Coronel Oliveira, 290",
-    "organizador": "Bombeiros Voluntários de São Francisco do Sul",
-    "edicao": "2ª edição",
-    "distancias": ["5 km"],
-    "descricao": "Segunda edição da corrida em apoio aos Bombeiros Voluntários de São Francisco do Sul, com largada no Quartel Central, na Rua Coronel Oliveira, 290, e percurso de 5 km pela cidade mais antiga de Santa Catarina.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/2-corrida-dos-bombeiros-voluntarios-de-sao-francisco-do-sul-86590"
-  },
-  {
-    "id": "circuito-unimed-sao-bento-do-sul",
-    "nome": "Circuito de Corridas Unimed",
-    "dia": "18",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "18 de outubro de 2026",
-    "cidade": "São Bento do Sul, SC",
-    "largada": "Avenida dos Imigrantes, às 8h",
-    "organizador": "Unimed",
-    "edicao": "Etapa São Bento do Sul",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Etapa são-bentense do Circuito de Corridas Unimed, com largada às 8h na Avenida dos Imigrantes e percursos de 10 km e 5 km. A retirada de kits acontece em 12 de outubro, das 14h às 17h, na sede da Unimed. Clientes com carteirinha Unimed têm 50% de desconto na inscrição.",
-    "oficialUrl": "https://circuitodecorridaunimed.com.br/corrida/sao-bento-do-sul/"
-  },
-  {
-    "id": "gutbrau-oktober-run-joinville",
-    "nome": "Gutbrau Oktober Run",
-    "dia": "18",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "18 de outubro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Gutbrau Cervejaria, Estrada Mutucas, 3122, Vila Nova, às 8h",
-    "organizador": "42K Assessoria Esportiva",
-    "edicao": "Edição 2026",
-    "distancias": ["15 km", "10 km", "5 km", "Kids"],
-    "descricao": "Corrida com arena na Gutbrau Cervejaria, na Estrada Mutucas, 3122, bairro Vila Nova, em Joinville. Largada única às 8h para 15 km, 10 km e 5 km, com corrida kids às 10h e premiação a partir das 10h30. O percurso é basicamente plano: os 5 km são em paver e os 10 km e 15 km têm predomínio de chão batido, com hidratação a cada 3 km. É uma das poucas provas da região a oferecer 15 km, distância que serve bem de teste para quem prepara uma meia maratona. As inscrições vão até 12 de outubro e a retirada de kit está prevista para 17 de outubro.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/GUTBRAU+Oktober+RUN+-88131"
-  },
-  {
     "id": "corrida-matriz-oxford-sao-bento",
     "nome": "2ª Corrida da Matriz Oxford",
     "dia": "24",
@@ -325,23 +261,6 @@ const PACEFLY_NOTICIAS = [
       "A programação se estende por dois dias. No sábado, 31 de outubro, a organização abre o fim de semana com uma prova de 6 km, pensada para quem quer participar da festa sem encarar a distância cheia. No domingo, 1º de novembro, é a vez da maratona propriamente dita, com os 42 km tradicionais.",
       "Uma das novidades é a opção de revezamento para os 42 km, em que duas pessoas podem dividir o percurso entre si, o que amplia a prova para quem ainda não se sente pronto para correr a distância sozinho, mas quer fazer parte dessa estreia histórica.",
       "Para o corredor de Joinville e região, a expectativa é grande: depois de anos de meia maratona, a cidade finalmente entra no calendário nacional das provas de 42 km. Os detalhes de inscrição estão na plataforma oficial do evento, e o nosso calendário já traz a prova cadastrada para quem quiser se programar com antecedência."
-    ]
-  },
-  {
-    id: "gutbrau-oktober-run-joinville-2026",
-    categoria: "Gutbrau Oktober Run",
-    titulo: "Joinville ganha uma prova de 15 km em outubro, com largada na Gutbrau Cervejaria",
-    resumo: "A Gutbrau Oktober Run acontece em 18 de outubro, na Estrada Mutucas, com percursos de 15 km, 10 km e 5 km. A distância de 15 km é rara no calendário da região e cai bem para quem está montando base para uma meia maratona.",
-    dataTxt: "18 de outubro de 2026",
-    local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Ticket Sports",
-    fonteUrl: "https://www.ticketsports.com.br/e/GUTBRAU+Oktober+RUN+-88131",
-    corpo: [
-      "A 42K Assessoria Esportiva confirmou a Gutbrau Oktober Run para 18 de outubro, com arena montada na Gutbrau Cervejaria, na Estrada Mutucas, 3122, no bairro Vila Nova, em Joinville. A largada é única, às 8h, para as três distâncias adultas.",
-      "O detalhe que chama atenção no calendário regional é a prova de 15 km. Entre os 10 km, que dominam o calendário de Joinville, e a meia maratona, quase não existe opção intermediária por aqui. Quem está construindo volume para encarar 21 km costuma ter que inventar o teste sozinho no treino, e a Gutbrau oferece esse degrau com estrutura de prova, hidratação e cronometragem.",
-      "O percurso ajuda nessa leitura. A organização informa que os 5 km correm em paver e que os 10 km e 15 km têm predomínio de chão batido, com traçado descrito como basicamente plano e rápido. Há postos de hidratação a cada 3 km e também na chegada, além de guarda-volumes na área interna da cervejaria. O tempo limite é de 2 horas.",
-      "A corrida kids sai às 10h, depois da chegada do último adulto, com percursos de 50 m a 300 m conforme a idade, e a premiação começa por volta das 10h30. As inscrições ficam abertas até 12 de outubro, e a retirada de kit está prevista para o dia 17, em local ainda a ser anunciado. Atenção para uma regra que costuma pegar gente desprevenida: não há entrega de kit no dia da prova para quem mora em Joinville."
     ]
   },
   {

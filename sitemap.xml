@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-10-14.
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-10-18.
        Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
        nos arrays de assets/data.js. -->
 
@@ -39,15 +39,10 @@
 
   <!-- NOTICIAS (gerado de PACEFLY_NOTICIAS) -->
   <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=gutbrau-oktober-run-joinville-2026</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=nike-alphafly-4-lancamento</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- EVENTOS / CALENDARIO (gerado de PACEFLY_EVENTOS) -->
-  <url><loc>https://pacefly.com.br/evento.html?id=maratona-internacional-pomerode</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-sao-francisco-do-sul</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-sao-bento-do-sul</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=gutbrau-oktober-run-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-matriz-oxford-sao-bento</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-rede-feminina-guaramirim</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-6k</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>

@@ -98,8 +98,8 @@
     <div class="rkl-resultado" id="rklResultado"></div>
 
     <div class="rkl-stats">
-      <div><b id="stTotal">2.375</b><small>atletas classificados</small></div>
-      <div><b id="stProvas">21</b><small>provas apuradas</small></div>
+      <div><b id="stTotal">2.603</b><small>atletas classificados</small></div>
+      <div><b id="stProvas">23</b><small>provas apuradas</small></div>
       <div><b>72h</b><small>para entrar após a prova</small></div>
       <div><b>2026</b><small>temporada em andamento</small></div>
     </div>
@@ -115,7 +115,7 @@
       <p>Todos os atletas com duas provas ou mais concluídas na região em 2026, ordenados por pontos acumulados. Toque em qualquer nome da lista para abrir a posição completa e gerar a imagem de compartilhamento.</p>
     </div>
 
-    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 11/10/2026</span>
+    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 18/10/2026</span>
 
     <div class="rkl-abas" id="rklAbas" role="tablist">
       <button type="button" class="rkl-aba on" data-cat="geral" role="tab">Geral <span class="qt" id="qtGeral"></span></button>
@@ -183,7 +183,7 @@
       <div class="rkl-regra">
         <div class="ic">📍</div>
         <h3>Provas do Norte de SC</h3>
-        <p>Joinville, Jaraguá do Sul, Schroeder, Guaramirim, Massaranduba, Corupá, Araquari e municípios vizinhos.</p>
+        <p>Joinville, Jaraguá do Sul, Schroeder, Guaramirim, Massaranduba, Corupá, Araquari, Barra Velha, São Francisco do Sul, Pomerode, São Bento do Sul, Garuva, Rio Negrinho e municípios vizinhos. São Bento do Sul, Garuva e Rio Negrinho valem a partir de 16/10/2026; provas anteriores nesses municípios não foram reapuradas.</p>
       </div>
       <div class="rkl-regra">
         <div class="ic">📏</div>
@@ -372,9 +372,9 @@ const burger=document.getElementById('burger'), menu=document.getElementById('me
 burger.addEventListener('click',()=>menu.classList.toggle('open'));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-// Reserva: Top 10 da apuração de 11/10/2026
+// Reserva: Top 10 da apuração de 18/10/2026
 const RESERVA = {
-  atualizado_em:"11/10/2026", total_atletas:2375, total_provas:21,
+  atualizado_em:"18/10/2026", total_atletas:2603, total_provas:23,
   atletas:[
     {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:350},
     {p:2,n:"HERBERT SCHRÖDER NETO",pt:300},
@@ -384,8 +384,8 @@ const RESERVA = {
     {p:6,n:"LUCAS SIMOES DE OLIVEIRA",pt:230},
     {p:7,n:"RAFAELA PEREIRA BENEVENUTO",pt:205},
     {p:8,n:"FELIPE RODRIGUES GONCALVES",pt:185},
-    {p:9,n:"VITOR GIRARDI",pt:170},
-    {p:10,n:"DINEZIO GABRIEL DE OLIVEIRA",pt:165}
+    {p:9,n:"WAGNER CARVALHO CARDOZO BORGES",pt:180},
+    {p:10,n:"ROMILDO GONCALVES",pt:175}
   ]
 };
 
