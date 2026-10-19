@@ -45,8 +45,8 @@ OG_RANKING_HTML = AQUI / "og-ranking.html"
 META = {
     "atualizado_em": "18/10/2026",
     "temporada": 2026,
-    "total_provas": 23,
-    "total_participacoes": 14766,
+    "total_provas": 24,
+    "total_participacoes": 18525,
     "periodo_coberto": "14 de junho a 18 de outubro de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
@@ -72,6 +72,7 @@ META = {
         "Sports + Run · 11/10 · Jaraguá do Sul",
         "Gutbrau Oktober Run · 18/10 · Joinville",
         "2ª Corrida dos Bombeiros Voluntários · 18/10 · São Francisco do Sul",
+        "Maratona Internacional de Pomerode · 18/10 · Pomerode",
     ],
     # Setas de subida e queda voltam a True: o snapshot de 07/09 ja nasceu com
     # o calculo correto (posicao geral derivada do tempo), entao a comparacao
