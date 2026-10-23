@@ -247,6 +247,41 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
+    id: "maratona-pomerode-2026-campeoes-42k",
+    categoria: "Resultados",
+    titulo: "Juliana de Souza é bicampeã e Guilherme Czuy vence a Maratona Internacional de Pomerode",
+    resumo: "Juliana de Souza conquistou o segundo título seguido nos 42 km e Guilherme Henrique Bueno Czuy venceu entre os homens, no domingo, 18 de outubro. A prova também contou pontos no Ranking PaceFly.",
+    dataTxt: "18 de outubro de 2026",
+    local: "Pomerode, SC",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Contra Relógio",
+    fonteUrl: "https://contrarelogio.com.br/juliana-de-souza-e-guilherme-czuy-vencem-a-maratona-de-pomerode/",
+    corpo: [
+      "A maratona de 42 km da Maratona Internacional de Pomerode foi decidida no domingo, 18 de outubro. Entre as mulheres, Juliana de Souza venceu pelo segundo ano seguido e se consagrou bicampeã da prova. Entre os homens, o vencedor foi Guilherme Henrique Bueno Czuy.",
+      "Segundo o Contra Relógio, Juliana de Souza fechou os 42 km em 3h10min32 e Guilherme Henrique Bueno Czuy, em 2h35min41. Os tempos são os divulgados pela reportagem, que não informa se são de tempo bruto ou líquido.",
+      "Segundo o portal Contra Relógio, o percurso passou por ruas centrais, áreas verdes e pela Rota Enxaimel de Pomerode. O evento reuniu cerca de 8,5 mil atletas somando as provas de 42 km, 21 km e 6 km.",
+      "Para quem acompanha o Ranking PaceFly: os 42 km e os 21 km de Pomerode contam pontos e entraram na apuração de 18 de outubro. Procure o seu nome em pacefly.com.br/ranking."
+    ]
+  },
+  {
+    id: "maratona-pomerode-2026-publico-meia-6k",
+    categoria: "Provas e resultados",
+    titulo: "Maratona de Pomerode reúne cerca de 8,5 mil atletas, e a prova de 6 km concentra 43% das inscrições",
+    resumo: "Atletas de todos os estados e do Distrito Federal correram em Pomerode em 18 de outubro. Na meia maratona, Nayara Santana de Oliveira Borges e Patrick Gularte foram os vencedores.",
+    dataTxt: "18 de outubro de 2026",
+    local: "Pomerode, SC",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Mania de Corrida",
+    fonteUrl: "https://www.maniadecorrida.com.br/2026/10/maratona-internacional-de-pomerode-2026.html",
+    corpo: [
+      "A Maratona Internacional de Pomerode reuniu cerca de 8,5 mil atletas em 18 de outubro, segundo a cobertura do portal Mania de Corrida, que classifica a edição como histórica. Corredores de todos os estados brasileiros e do Distrito Federal participaram.",
+      "Entre as distâncias, o único percentual divulgado pela cobertura é o dos 6 km: a prova mais curta concentrou 43% dos inscritos. Os outros 57% se dividiram entre os 21 km, os 42 km e a Maratoninha Kids, para crianças e adolescentes de até 13 anos. As reportagens consultadas não trazem o número de inscritos de cada uma dessas provas.",
+      "No Ranking PaceFly, que apura os 42 km e os 21 km, entraram 3.755 participações de Pomerode: 3.107 na meia maratona (82,7%) e 648 na maratona (17,3%). Os 6 km e a Maratoninha não pontuam e ficam fora desse número.",
+      "Na meia maratona, os vencedores foram Nayara Santana de Oliveira Borges, no feminino, com 1h21min32, e Patrick Gularte, no masculino, com 1h11min02, tempos informados pelo Mania de Corrida. Nos 42 km, Juliana de Souza e Guilherme Henrique Bueno Czuy ficaram com os títulos.",
+      "A meia maratona de Pomerode (21 km) conta pontos no Ranking PaceFly, assim como os 42 km. O percurso de 6 km não pontua."
+    ]
+  },
+  {
     id: "primeira-maratona-de-joinville-2026",
     categoria: "1ª Maratona de Joinville",
     titulo: "Joinville vai ter sua primeira maratona da história em 1º de novembro",
