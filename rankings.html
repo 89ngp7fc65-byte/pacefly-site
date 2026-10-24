@@ -806,7 +806,7 @@ async function compartilhar(d){
   const pos = d.p, pts = d.pt;
   evento('compartilhar_posicao',{posicao:pos});
   const txt = `Estou em ${pos}º lugar no PaceFly Ranking 2026, o ranking dos corredores do Norte de SC, com ${pts} pontos. Confere o seu:`;
-  const url = 'https://pacefly.com.br/rankings.html';
+  const url = 'https://pacefly.com.br/rankings.html?utm_source=whatsapp&utm_medium=social&utm_campaign=compartilhar-posicao&utm_content=card-' + pos;
   const whats = 'https://wa.me/?text=' + encodeURIComponent(txt + ' ' + url);
 
   /* No celular a bandeja nativa abre e resolve tudo. No computador o Chrome
@@ -963,7 +963,7 @@ function gerarImagem(d, semLogo){
   ctx.fillStyle='#fff'; ctx.font='900 38px Montserrat, Arial, sans-serif';
   ctx.fillText('@paceflyrunning', L, H-120);
   ctx.fillStyle='rgba(255,255,255,.5)'; ctx.font='600 28px Montserrat, Arial, sans-serif';
-  ctx.fillText('pacefly.com.br/ranking', L, H-72);
+  ctx.fillText('pacefly.com.br/r/card', L, H-72);
 
   ctx.textAlign='right';
   ctx.fillStyle='#FFC400'; ctx.font='800 30px Montserrat, Arial, sans-serif';

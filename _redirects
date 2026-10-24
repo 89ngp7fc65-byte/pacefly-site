@@ -18,3 +18,7 @@
 /rankings         /rankings.html    301
 /ranking/*        /rankings.html    301
 /rankings/*       /rankings.html    301
+
+# Link curto carimbado na imagem do card de compartilhamento do ranking.
+# Carrega UTM para o trafego nao cair como (direct)/(none) no GA4.
+/r/card    /rankings.html?utm_source=card&utm_medium=social&utm_campaign=compartilhar-posicao&utm_content=imagem    301
