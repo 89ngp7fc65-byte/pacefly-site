@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-10-18.
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-10-26.
        Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
        nos arrays de assets/data.js. -->
 
@@ -30,21 +30,21 @@
   </url>
 
   <!-- DICAS (gerado de PACEFLY_DICAS) -->
-  <url><loc>https://pacefly.com.br/dica.html?id=hidratacao-estrategica-em-dias-de-calor</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=quando-trocar-o-tenis-de-corrida</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=sono-antes-da-prova-por-que-importa</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=primeira-meia-maratona-como-comecar</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=alimentacao-na-vespera-e-na-manha-da-prova</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=dor-no-joelho-ajustes-de-tecnica</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=treinar-com-calor-sem-se-arriscar</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=tapering-as-duas-semanas-antes-da-prova</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=caimbras-na-corrida-causas-e-prevencao</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=respiracao-durante-a-corrida-como-controlar-o-ritmo</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=alongamento-antes-ou-depois-do-treino</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=recuperacao-entre-provas-proximas</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- NOTICIAS (gerado de PACEFLY_NOTICIAS) -->
+  <url><loc>https://pacefly.com.br/noticia.html?id=corrida-rede-feminina-guaramirim-400-inscritos</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-2026</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=peres-jepchirchir-suspensao-doping-epo</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=kiprun-kipnext-connect-tenis-sensor-desgaste</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=nike-alphafly-4-lancamento</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- EVENTOS / CALENDARIO (gerado de PACEFLY_EVENTOS) -->
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-matriz-oxford-sao-bento</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=corrida-rede-feminina-guaramirim</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-6k</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=maratona-joinville-42k</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=meia-maratona-piracity-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>

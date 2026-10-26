@@ -35,38 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "corrida-matriz-oxford-sao-bento",
-    "nome": "2ª Corrida da Matriz Oxford",
-    "dia": "24",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "24 de outubro de 2026",
-    "cidade": "São Bento do Sul, SC",
-    "largada": "Igreja Matriz Oxford, Rua São Cristóvão, bairro Oxford, às 21h",
-    "organizador": "CJR Academia e Eventos",
-    "edicao": "2ª edição",
-    "distancias": ["5 km", "Caminhada 3 km"],
-    "descricao": "Segunda edição da Corrida da Matriz Oxford, prova noturna em São Bento do Sul com largada às 21h na Igreja Matriz Oxford, na Rua São Cristóvão. São 5 km de corrida e 3 km de caminhada, com premiação logo depois, às 22h. A retirada de kit acontece em 23 de outubro no salão de festas da igreja, na Rua Alfredo Diener, 87, e também no dia da prova, das 8h às 20h30. As inscrições vão até 16 de outubro ou até o limite de 800 atletas.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/2%C2%AA+CORRIDA+DA+MATRIZ+OXFORD-87381"
-  },
-  {
-    "id": "corrida-rede-feminina-guaramirim",
-    "nome": "Circuito Maria's Run - 1ª Corrida da Rede Feminina de Combate ao Câncer",
-    "dia": "24",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "24 de outubro de 2026",
-    "cidade": "Guaramirim, SC",
-    "largada": "Praça Serafim José dos Santos, às 17h30",
-    "organizador": "Rede Feminina de Combate ao Câncer de Guaramirim",
-    "edicao": "1ª edição",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Primeira edição do Circuito Maria's Run, corrida solidária em apoio à Rede Feminina de Combate ao Câncer de Guaramirim. A largada é no sábado, às 17h30, na Praça Serafim José dos Santos, com percursos de 10 km e 5 km. As inscrições ficam abertas até 15 de outubro.",
-    "oficialUrl": "https://www.movnow.com.br/"
-  },
-  {
     "id": "maratona-joinville-6k",
     "nome": "1ª Maratona de Joinville (6K)",
     "dia": "31",
@@ -247,38 +215,20 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
-    id: "maratona-pomerode-2026-campeoes-42k",
-    categoria: "Resultados",
-    titulo: "Juliana de Souza é bicampeã e Guilherme Czuy vence a Maratona Internacional de Pomerode",
-    resumo: "Juliana de Souza conquistou o segundo título seguido nos 42 km e Guilherme Henrique Bueno Czuy venceu entre os homens, no domingo, 18 de outubro. A prova também contou pontos no Ranking PaceFly.",
-    dataTxt: "18 de outubro de 2026",
-    local: "Pomerode, SC",
-    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Contra Relógio",
-    fonteUrl: "https://contrarelogio.com.br/juliana-de-souza-e-guilherme-czuy-vencem-a-maratona-de-pomerode/",
-    corpo: [
-      "A maratona de 42 km da Maratona Internacional de Pomerode foi decidida no domingo, 18 de outubro. Entre as mulheres, Juliana de Souza venceu pelo segundo ano seguido e se consagrou bicampeã da prova. Entre os homens, o vencedor foi Guilherme Henrique Bueno Czuy.",
-      "Segundo o Contra Relógio, Juliana de Souza fechou os 42 km em 3h10min32 e Guilherme Henrique Bueno Czuy, em 2h35min41. Os tempos são os divulgados pela reportagem, que não informa se são de tempo bruto ou líquido.",
-      "Segundo o portal Contra Relógio, o percurso passou por ruas centrais, áreas verdes e pela Rota Enxaimel de Pomerode. O evento reuniu cerca de 8,5 mil atletas somando as provas de 42 km, 21 km e 6 km.",
-      "Para quem acompanha o Ranking PaceFly: os 42 km e os 21 km de Pomerode contam pontos e entraram na apuração de 18 de outubro. Procure o seu nome em pacefly.com.br/ranking."
-    ]
-  },
-  {
-    id: "maratona-pomerode-2026-publico-meia-6k",
-    categoria: "Provas e resultados",
-    titulo: "Maratona de Pomerode reúne cerca de 8,5 mil atletas, e a prova de 6 km concentra 43% das inscrições",
-    resumo: "Atletas de todos os estados e do Distrito Federal correram em Pomerode em 18 de outubro. Na meia maratona, Nayara Santana de Oliveira Borges e Patrick Gularte foram os vencedores.",
-    dataTxt: "18 de outubro de 2026",
-    local: "Pomerode, SC",
+    id: "corrida-rede-feminina-guaramirim-400-inscritos",
+    categoria: "Guaramirim",
+    titulo: "Corrida da Rede Feminina reúne mais de 400 inscritos em Guaramirim",
+    resumo: "A 1ª Corrida da Rede Feminina de Combate ao Câncer, parte do Circuito Maria's Run, mudou de local por causa da chuva e levou mais de 400 corredores ao Ginásio Osvaldo Klein no sábado, 24 de outubro, com ação de arrecadação para apoiar pacientes do município.",
+    dataTxt: "24 de outubro de 2026",
+    local: "Guaramirim, SC",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Mania de Corrida",
-    fonteUrl: "https://www.maniadecorrida.com.br/2026/10/maratona-internacional-de-pomerode-2026.html",
+    fonteNome: "Nossa FM",
+    fonteUrl: "https://nossa.fm/corrida-da-rede-feminina-reune-mais-de-400-inscritos-em-guaramirim-neste-sabado/",
     corpo: [
-      "A Maratona Internacional de Pomerode reuniu cerca de 8,5 mil atletas em 18 de outubro, segundo a cobertura do portal Mania de Corrida, que classifica a edição como histórica. Corredores de todos os estados brasileiros e do Distrito Federal participaram.",
-      "Entre as distâncias, o único percentual divulgado pela cobertura é o dos 6 km: a prova mais curta concentrou 43% dos inscritos. Os outros 57% se dividiram entre os 21 km, os 42 km e a Maratoninha Kids, para crianças e adolescentes de até 13 anos. As reportagens consultadas não trazem o número de inscritos de cada uma dessas provas.",
-      "No Ranking PaceFly, que apura os 42 km e os 21 km, entraram 3.755 participações de Pomerode: 3.107 na meia maratona (82,7%) e 648 na maratona (17,3%). Os 6 km e a Maratoninha não pontuam e ficam fora desse número.",
-      "Na meia maratona, os vencedores foram Nayara Santana de Oliveira Borges, no feminino, com 1h21min32, e Patrick Gularte, no masculino, com 1h11min02, tempos informados pelo Mania de Corrida. Nos 42 km, Juliana de Souza e Guilherme Henrique Bueno Czuy ficaram com os títulos.",
-      "A meia maratona de Pomerode (21 km) conta pontos no Ranking PaceFly, assim como os 42 km. O percurso de 6 km não pontua."
+      "A 1ª Corrida da Rede Feminina de Combate ao Câncer, parte do Circuito Maria's Run, reuniu mais de 400 inscritos em Guaramirim no sábado, 24 de outubro, com largada às 17h30. O tema da edição foi \"A vida pede movimento\", e as inscrições, feitas pelo site movnow.com.br, se esgotaram na véspera da prova.",
+      "Por causa da previsão de chuva, a organização mudou o local de largada da Praça da Figueira para o Ginásio Municipal de Esportes Osvaldo Klein, anexo à EMEF Mamãe Gansa e seus Filhotes, no bairro Guamiranga. A prova teve percursos de 5 km e 10 km, além de uma caminhada de 3 km, aberta a iniciantes e corredores experientes.",
+      "A corrida faz parte da programação do Outubro Rosa da Rede Feminina de Guaramirim, entidade que acolhe, orienta e apoia pacientes com câncer no município. No mesmo sábado, voluntários também fizeram o \"Pedágio Rosa\", recolhendo doações nas ruas entre 8h e 12h30, além do Pix divulgado pela organização. Uma semana antes, pedágios em Schroeder e Massaranduba já tinham arrecadado R$ 9.449,60.",
+      "A retirada de kits aconteceu na sede da Rede Feminina, na véspera e na manhã da prova, antes da largada ser transferida para o ginásio. O resultado oficial da corrida ainda não foi encontrado em nenhuma fonte até a conclusão desta notícia; a classificação, quando publicada, também entra na apuração do Ranking PaceFly."
     ]
   },
   {
@@ -299,6 +249,41 @@ const PACEFLY_NOTICIAS = [
     ]
   },
   {
+    id: "peres-jepchirchir-suspensao-doping-epo",
+    categoria: "Doping",
+    titulo: "Campeã olímpica Peres Jepchirchir é suspensa provisoriamente por doping",
+    resumo: "A queniana, bicampeã mundial e vencedora de Tóquio, Nova York, Boston, Londres e Sydney, teve um resultado adverso para EPO em um exame fora de competição, segundo a Athletics Integrity Unit. A suspensão é provisória e o caso ainda segue o devido processo.",
+    dataTxt: "23 de outubro de 2026",
+    local: "",
+    imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "ESPN",
+    fonteUrl: "https://www.espn.com/olympics/trackandfield/story/_/id/50257059/champion-marathoner-peres-jepchirchir-given-doping-suspension",
+    corpo: [
+      "A queniana Peres Jepchirchir, uma das maiores maratonistas da atualidade, foi suspensa provisoriamente pela Athletics Integrity Unit (AIU) na sexta-feira, 23 de outubro. Segundo a entidade, uma amostra coletada fora de competição, no Quênia, antes da vitória da atleta na Maratona de Sydney, teve resultado adverso para EPO (eritropoetina), substância que estimula a produção de glóbulos vermelhos e é proibida no esporte.",
+      "Jepchirchir é campeã olímpica da maratona em Tóquio 2021, campeã mundial em 2025 e venceu as maratonas de Nova York (2021), Boston (2022), Londres (2024) e, mais recentemente, Sydney, em 2026. Ocupa hoje o 5º lugar no ranking mundial de maratona feminina da World Athletics.",
+      "A suspensão é provisória: nesse status, a atleta fica impedida de competir enquanto o processo segue seu curso, sem prazo definido para uma decisão final. Seu representante, Gianni Demadonna, não quis comentar o caso. A organização da Maratona de Sydney disse estar extremamente decepcionada com a notícia, mas reforçou que a atleta tem direito ao devido processo e que não fará novos comentários até o desfecho do caso.",
+      "O caso chama atenção por envolver uma das atletas mais vitoriosas da maratona mundial na última década, e reabre a discussão sobre o controle antidoping no fundo queniano, que já teve outros nomes de peso suspensos nos últimos anos. Até a conclusão do processo, os resultados de Jepchirchir seguem válidos; uma suspensão provisória não é, por si só, uma confirmação de culpa."
+    ]
+  },
+  {
+    id: "kiprun-kipnext-connect-tenis-sensor-desgaste",
+    categoria: "Equipamento",
+    titulo: "Kiprun lança tênis com sensor que avisa quando o amortecimento já gastou",
+    resumo: "O novo Kipnext Connect, da Decathlon, tem um sensor de 3 gramas no calcanhar que mede o desgaste real da espuma e informa pelo celular quando é hora de trocar o tênis, em vez de depender só da aparência do solado.",
+    dataTxt: "21 de outubro de 2026",
+    local: "",
+    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Máquina do Esporte",
+    fonteUrl: "https://maquinadoesporte.com.br/?p=245769",
+    corpo: [
+      "A Decathlon apresentou o Kipnext Connect, tênis de corrida da linha Kiprun desenvolvido em parceria com a empresa de tecnologia Movmenta, com um sensor embutido no calcanhar que mede a compactação real da espuma de amortecimento, batizado de Sollo. Ele pesa cerca de 3 gramas, não precisa de bateria externa e usa ondas eletromagnéticas para avaliar o desgaste de forma estática.",
+      "Para consultar o resultado, basta aproximar o celular da área indicada no calcanhar, de um jeito parecido com pagamento por aproximação. O aplicativo Pacer converte a leitura num percentual de degradação da espuma, em vez de deixar essa avaliação só no olho, como a maioria dos corredores faz hoje.",
+      "A proposta ataca um problema real: segundo estudos citados pela marca, quase metade dos corredores se machuca ao menos uma vez por ano, e a perda de amortecimento do tênis é um dos fatores de risco. Mesmo assim, 60% dos corredores decidem a troca só pela aparência do solado ou por sensação subjetiva, sem um critério mais objetivo.",
+      "A entressola tem 53 mm de altura no retropé, em poliuretano termoplástico, e o conjunto eletrônico é isolado contra umidade e variação de temperatura. Segundo a marca, o sistema é imperceptível durante a corrida e não interfere na dinâmica da pisada; o modelo é indicado para rodagens longas no asfalto.",
+      "A reportagem não informou preço nem data exata de chegada ao Brasil, apenas que o modelo \"chega ao mercado\". Ainda assim, é um indício de para onde a indústria de calçados de corrida está olhando: menos achismo sobre quando trocar o tênis, mais dado objetivo."
+    ]
+  },
+  {
     id: "parque-porto-cachoeira-joinville",
     categoria: "Infraestrutura",
     titulo: "Joinville licita R$ 55,5 milhões para o Parque Porto Cachoeira, com pista de caminhada e corrida",
@@ -314,113 +299,98 @@ const PACEFLY_NOTICIAS = [
       "Para quem corre na cidade, o ponto central é a pista de caminhada e corrida prevista no projeto, ao lado de ciclovia, quadras de futsal, basquete e queimada, playground, área de piquenique, espaço pet, mesas de tênis e jogos de tabuleiro, além de pavimentação, drenagem, iluminação e paisagismo completos.",
       "Com 24 meses de prazo a partir da contratação, a expectativa é de que o parque só fique pronto em 2028. Ainda assim, é mais uma opção de pista segura se somando ao pouco espaço fechado para treino que a região central de Joinville oferece hoje, e vale ficar de olho no avanço da obra nos próximos meses."
     ]
-  },
-  {
-    id: "nike-alphafly-4-lancamento",
-    categoria: "Equipamento",
-    titulo: "Nike lança o Alphafly 4, mas o tênis não chega ao Brasil antes da Maratona de Joinville",
-    resumo: "A nova geração do tênis de placa de carbono da Nike traz espuma mais leve e mais retorno de energia, mas só deve chegar às lojas brasileiras na primeira quinzena de dezembro, depois da 1ª Maratona de Joinville (31/10 e 1º/11) e da Meia Maratona de Piracity (8/11).",
-    dataTxt: "18 de setembro de 2026",
-    local: "",
-    imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Contra Relógio",
-    fonteUrl: "https://contrarelogio.com.br/nike-apresenta-alphafly-4-nova-geracao-do-tenis-de-maratona/",
-    corpo: [
-      "A Nike apresentou em 18 de setembro o Alphafly 4, nova geração do seu tênis de placa de carbono voltado às provas longas. A principal mudança é a espuma ZoomX LT, descrita pela marca como até 17% mais leve que a ZoomX tradicional e com 8% mais retorno de energia, combinada com um cabedal Atomknit novo e ajustes na placa de carbono e nas unidades Air Zoom.",
-      "No geral, a Nike descreve o conjunto como 5% mais leve e com 10% mais retorno de energia do que o Alphafly 3. O modelo tem histórico de peso nas maratonas de elite: versões anteriores da linha estiveram nos pés do recorde mundial de Kelvin Kiptum e da vitória olímpica de Sifan Hassan em Paris.",
-      "Para quem corre por aqui, o dado que interessa é o prazo: o tênis chega às lojas brasileiras só na primeira quinzena de dezembro, segundo a marca, depois de encerrada a sequência mais forte do calendário local, que inclui a 1ª Maratona de Joinville (6 km no sábado 31 de outubro, 42 km no domingo 1º de novembro) e a 10ª Meia Maratona de Piracity (8 de novembro). Ou seja, quem vai estrear os 42 km de Joinville não vai correr de Alphafly 4, e não precisa: o tênis que já está no seu treino, testado e sem surpresa, ainda é a escolha mais segura para uma estreia."
-    ]
   }
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-10-11
+/* DICAS_ULTIMA_ROTACAO: 2026-10-25
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "hidratacao-estrategica-em-dias-de-calor",
+    id: "treinar-com-calor-sem-se-arriscar",
     categoria: "Saúde",
-    titulo: "Hidratação estratégica: quanto beber antes, durante e depois da prova",
-    resumo: "Com as provas de outubro e novembro caindo em dias mais quentes, beber água só quando a sede aparece costuma ser tarde demais. Uma estratégia simples, pensada em três momentos, evita a queda de rendimento no fim do percurso.",
+    titulo: "Treinar com calor sem se arriscar: o que muda na rotina a partir de agora",
+    resumo: "Os dias mais quentes do ano estão chegando em Joinville e região, e o treino que funcionava bem no inverno pode virar risco se a rotina não se adaptar. Pequenos ajustes de horário e ritmo evitam o mal-estar que o calor provoca.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "A sede é um sinal atrasado: quando ela aparece, o corpo já está em déficit de líquido há um tempo. Por isso a hidratação de prova começa antes da largada, não no primeiro posto de água do percurso.",
-      "Nas duas horas antes da prova, de 400 a 600 ml de água ou isotônico, aos poucos, preparam o corpo sem deixar o estômago pesado na hora de correr. Tomar tudo de uma vez só, na última hora, costuma sobrar como desconforto no início do percurso.",
-      "Durante a prova, a regra prática é beber pequenos goles em todos os postos, mesmo sem sentir sede, em vez de esperar o calor apertar. Em provas de mais de uma hora, alternar água com isotônico ajuda a repor também o sódio perdido no suor.",
-      "Depois de cruzar a chegada, a reposição não para: o corpo continua repondo líquido nas horas seguintes. Pesar-se antes e depois de um treino longo, uma vez, dá uma ideia real de quanto cada pessoa perde de peso em líquido, número que varia bastante de corredor para corredor.",
-      "Dias de calor forte pedem mais atenção que o roteiro padrão. Se o treino ou a prova tiver sol forte e pouca sombra, vale aumentar um pouco o volume de cada gole e observar sinais como tontura, boca muito seca ou queda de ritmo sem causa aparente."
+      "O calor muda o corpo durante o esforço de um jeito que vai além do simples desconforto: o coração trabalha mais para levar sangue até a pele e ajudar a dissipar o calor, e isso sobra menos energia para os músculos que estão correndo. Ritmo que era confortável no inverno pode parecer mais difícil no mesmo esforço, e isso é esperado, não um sinal de perda de condicionamento.",
+      "O horário do treino é o ajuste mais simples e mais eficaz. Treinar no início da manhã, antes do sol ficar forte, ou no fim da tarde, depois do calor passar do pico, reduz bastante a exposição ao sol direto e à temperatura mais alta do dia, comum entre o meio-dia e as 16h.",
+      "Vestimenta clara, leve e que deixa o suor evaporar ajuda o corpo a se refrescar. Boné ou viseira e protetor solar não são detalhes de estética, protegem contra a insolação e contra a queimadura que, sem perceber, pode piorar bastante o desconforto do treino seguinte.",
+      "Sinais de alerta merecem respeito imediato: tontura, dor de cabeça forte, calafrio apesar do calor, ou parar de suar de repente no meio do esforço. Qualquer um desses pede parar o treino, buscar sombra e se hidratar, não empurrar mais alguns minutos para terminar a planilha.",
+      "Para quem está treinando para a 1ª Maratona de Joinville ou para a Meia Maratona de Piracity, vale lembrar que o corpo leva de uma a duas semanas para se adaptar melhor ao calor. Quem tem treino longo importante pela frente ganha ao antecipar esse ajuste de horário, em vez de só sentir o calor no dia da prova."
     ]
   },
   {
-    id: "quando-trocar-o-tenis-de-corrida",
-    categoria: "Equipamento",
-    titulo: "Quando trocar o tênis de corrida: os sinais que o calendário não mostra",
-    resumo: "Contar só os meses de uso engana, porque dois corredores no mesmo tênis desgastam ele de formas diferentes. O solado e a sensação na pisada contam uma história mais confiável do que a data da compra.",
+    id: "tapering-as-duas-semanas-antes-da-prova",
+    categoria: "Treino",
+    titulo: "Tapering: por que reduzir o treino nas duas semanas antes da prova funciona",
+    resumo: "Com a 1ª Maratona de Joinville e a Meia Maratona de Piracity chegando, bate a tentação de treinar pesado até os últimos dias. Fazer o contrário, reduzindo o volume de propósito, é o que deixa as pernas realmente prontas para o dia da prova.",
     imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "A referência mais citada é a quilometragem, algo entre 500 e 800 km, mas esse número varia com o peso do corredor, o tipo de pisada e até o piso onde a maioria dos treinos acontece. Vale usar como alerta, não como regra fixa.",
-      "O solado conta boa parte da história: desgaste irregular, mais de um lado do que do outro, ou a entressola comprimida e sem voltar ao formato original depois de apertada com o dedo, são sinais de que o amortecimento já perdeu parte da função.",
-      "A sensação na pisada também avisa. Tênis que começam a parecer mais duros, ou que deixam uma dor nova no joelho, na canela ou no pé depois dos treinos de sempre, geralmente não é o corpo que mudou, é o tênis que já não absorve o impacto como antes.",
-      "Para quem tem mais de um par, alternar entre eles nos treinos da semana estica a vida útil de cada um, porque o amortecimento tem tempo de descomprimir entre um uso e outro. Usar o mesmo par todos os dias acelera justamente o desgaste que faz menos sentido.",
-      "Antes de uma prova importante, o ideal é nunca estrear tênis novo: o par usado na prova deve ter pelo menos duas ou três semanas de treino nas pernas, tempo suficiente para o corpo se adaptar sem o risco de bolha ou dor inesperada no dia."
+      "Tapering é o nome que o treino dá à redução proposital de volume nas últimas semanas antes de uma prova importante, enquanto a intensidade de alguns treinos pontuais se mantém. A ideia parece contraintuitiva, porque treinar menos antes de um desafio grande não é o instinto natural de quem está animado com a prova chegando.",
+      "O corpo não fica mais forte durante o treino, fica mais forte durante a recuperação depois dele. Nas semanas finais, o acúmulo de treinos já fez o trabalho necessário, e o que falta é tempo para esse trabalho virar resultado nas pernas, sem o desgaste de treinos novos.",
+      "Na prática, a redução é gradual: a semana duas antes da prova cai para cerca de 70 a 80% do volume normal, e a última semana cai ainda mais, para 40 a 60%, mantendo alguns treinos curtos em ritmo de prova para a sensação de velocidade não se perder.",
+      "Erro comum: interpretar o tapering como desculpa para parar de se cuidar. Sono, alimentação e hidratação continuam tão importantes quanto durante o treino pesado, porque é justamente esse período que decide se o corpo chega descansado ou só menos cansado.",
+      "A sensação de estar perdendo forma nos últimos dias é comum e engana bastante gente. Pernas mais leves e descansadas no início da prova valem muito mais do que alguns quilômetros extras de treino que só cansam sem agregar nada à essa altura da preparação."
     ]
   },
   {
-    id: "sono-antes-da-prova-por-que-importa",
-    categoria: "Mente",
-    titulo: "Sono antes da prova: por que ele pesa tanto quanto o treino",
-    resumo: "Muita gente otimiza treino, alimentação e tênis, mas dorme mal na semana da prova sem perceber o efeito disso no desempenho. O sono é onde boa parte da recuperação do treino realmente acontece.",
+    id: "caimbras-na-corrida-causas-e-prevencao",
+    categoria: "Saúde",
+    titulo: "Câimbras na corrida: por que aparecem e como evitar que estraguem a prova",
+    resumo: "A câimbra quase sempre chega no peor momento, perto do fim de uma prova ou de um treino longo, e para muita gente parece surgir do nada. Entender o que realmente causa a maioria dos casos ajuda a evitar que ela decida o resultado do seu dia.",
     imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "É durante o sono profundo que o corpo repara o tecido muscular exigido pelo treino e consolida parte da adaptação que o treino buscou provocar. Dormir pouco na semana de prova, mesmo treinando certo, deixa essa recuperação incompleta.",
-      "A noite que mais importa não é a véspera da prova, é a semana inteira antes dela. Uma noite mal dormida na véspera, por ansiedade ou nervosismo, afeta bem menos o resultado do que várias noites curtas acumuladas nos dias anteriores.",
-      "Ainda assim, vale cuidar da véspera: deixar tudo organizado (roupa, número de peito, horário de saída) antes de dormir reduz a lista de pensamentos que mantêm a cabeça acesa na cama. Evitar telas e cafeína no fim da noite ajuda o corpo a relaxar mais rápido.",
-      "Cochilos curtos nos dias que antecedem a prova, de 20 a 30 minutos, compensam parte de uma noite mais curta sem prejudicar o sono da noite seguinte. Cochilos longos demais, ou tarde da tarde, tendem a fazer o efeito contrário.",
-      "Depois da prova, o sono volta a ser protagonista: é nos dias seguintes, dormindo bem, que o corpo processa o desgaste do esforço maior que teve. Pular essa fase de recuperação é um dos motivos mais comuns de lesão na prova seguinte."
+      "Durante muito tempo, a explicação mais repetida para a câimbra era a falta de sódio ou potássio no corpo, mas pesquisas mais recentes apontam a fadiga muscular como o gatilho mais comum: o músculo cansado perde parte do controle fino que evita a contração involuntária, mais do que simplesmente ficar sem eletrólito.",
+      "Isso explica por que a câimbra costuma aparecer em provas mais longas do que o corredor está acostumado a treinar, ou em ritmos mais fortes do que o habitual: o músculo chega a um nível de fadiga que o treino normal nunca tinha exigido dele antes.",
+      "A prevenção mais eficaz é o treino específico: treinar na distância e perto do ritmo que a prova vai exigir, em vez de confiar só no dia da prova para descobrir se as pernas aguentam. Progressão gradual de volume e de ritmo reduz bastante esse tipo de surpresa.",
+      "Hidratação e eletrólitos ainda importam, principalmente em dias de calor forte e suor abundante, então vale manter a reposição de sódio em provas longas como parte da estratégia, mesmo sabendo que ela não é a causa isolada da maioria dos casos.",
+      "Se a câimbra já apareceu no meio da prova, parar, alongar suavemente o músculo afetado por alguns segundos e retomar em ritmo mais leve costuma funcionar melhor do que insistir no mesmo ritmo esperando que ela passe sozinha."
     ]
   },
   {
-    id: "primeira-meia-maratona-como-comecar",
-    categoria: "Treino",
-    titulo: "Primeira meia maratona: como dar o salto do 10 km para os 21 km",
-    resumo: "Com a Maratona Internacional de Pomerode e outras provas de distância maior no calendário dos próximos meses, cresce a vontade de encarar os 21 km pela primeira vez. O salto de distância pede um plano, não só vontade.",
+    id: "respiracao-durante-a-corrida-como-controlar-o-ritmo",
+    categoria: "Técnica",
+    titulo: "Respiração durante a corrida: como ela ajuda a controlar o ritmo",
+    resumo: "Muita gente só nota a própria respiração quando ela já está descontrolada, ofegante, no meio de um esforço mais forte. Prestar atenção nela antes desse ponto é uma das formas mais simples de perceber, e corrigir, um ritmo que está acima do que o corpo aguenta sustentar.",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Quem já corre 10 km com regularidade tem a base necessária para começar a treinar os 21 km, mas o salto direto no dia da prova, sem nunca ter passado dos 10 km em treino, é a receita mais comum de sofrer bastante no segundo pelotão da meia maratona.",
-      "O ponto central da preparação é o treino longo semanal, que cresce pouco a pouco ao longo das semanas até chegar perto de 16 a 18 km antes da prova, sempre em ritmo confortável, bem mais lento do que o ritmo de prova.",
-      "Correr rápido todo treino longo, tentando simular a prova, cansa mais do que ensina. O treino longo serve para o corpo se acostumar ao tempo em movimento e ao desgaste progressivo, não para testar velocidade.",
-      "Nas duas últimas semanas antes da prova, a distância dos treinos cai, mesmo que o corpo pareça pronto para mais. Esse período de polimento garante que as pernas cheguem descansadas e não desgastadas pelo próprio treino de preparação.",
-      "No dia da prova, o erro mais comum de quem estreia nos 21 km é sair no ritmo da emoção da largada. Guardar energia para os últimos 5 km, em vez de gastar tudo nos primeiros, costuma decidir se a chegada é comemorada ou sofrida."
+      "A respiração é um dos sinais mais honestos de intensidade que o corpo dá durante a corrida, mais imediato até do que o batimento cardíaco, que a maioria não consegue sentir sem um relógio. Se a respiração já não permite falar uma frase curta sem pausar, o ritmo provavelmente está mais forte do que o esforço pretendido para aquele treino.",
+      "A respiração pelo nariz, quando dá para manter, costuma indicar um ritmo mais confortável e sustentável, enquanto a respiração só pela boca, rápida e curta, aparece justamente quando o esforço sobe para uma intensidade mais forte. Nenhuma das duas é errada, cada uma serve para um tipo de treino diferente.",
+      "Um padrão respiratório mais regular, como inspirar em dois passos e expirar em dois passos nos treinos leves, ajuda a manter o ritmo estável e a notar mais rápido quando o corpo está acelerando sem intenção. Não precisa ser uma contagem rígida, serve mais como referência do que como regra fixa.",
+      "Em subidas ou em trechos finais de prova, a respiração tende a ficar mais curta e mais ofegante, e isso é esperado. O problema é quando esse padrão aparece cedo demais na prova, sinal de que o ritmo da largada saiu mais forte do que o corpo tinha planejado sustentar até o fim.",
+      "Treinar prestando atenção na respiração, sem se sobrecarregar pensando nela o tempo todo, ajuda a desenvolver uma noção de ritmo mais confiável do que só olhar o relógio. Com o tempo, boa parte dos corredores aprende a sentir o próprio limite antes mesmo de ele aparecer no desempenho."
     ]
   },
   {
-    id: "alimentacao-na-vespera-e-na-manha-da-prova",
-    categoria: "Saúde",
-    titulo: "O que comer na véspera e na manhã da prova",
-    resumo: "A refeição perfeita no dia da prova não compensa semanas de treino mal alimentado, mas uma escolha errada na véspera ou na manhã pode, sim, arruinar uma boa preparação. Duas refeições simples evitam a maioria dos problemas.",
+    id: "alongamento-antes-ou-depois-do-treino",
+    categoria: "Técnica",
+    titulo: "Alongamento antes ou depois do treino? O que cada tipo realmente faz",
+    resumo: "A dúvida é clássica e a resposta não é só uma das duas opções: alongamento dinâmico e alongamento estático servem para momentos diferentes, e trocar a ordem pode render menos do que promete ou até incomodar mais do que ajudar.",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Na véspera, o jantar deve ser parecido com o que o corpo já conhece: carboidrato de fácil digestão (arroz, massa, batata), uma porção moderada de proteína magra e pouca fibra ou gordura em excesso, que pedem mais tempo de digestão.",
-      "Testar um prato completamente novo na noite antes da prova é um risco que não compensa. O estômago reage melhor ao que já foi comido antes de um treino longo, mesmo que a receita não seja a mais sofisticada do cardápio.",
-      "Na manhã da prova, a refeição ideal acontece de 2 a 3 horas antes da largada, com algo leve e já testado em treino: pão com geleia, banana, aveia com pouca fruta. Esse intervalo dá tempo para o corpo absorver a energia sem o desconforto de correr de estômago cheio.",
-      "Café, para quem já tem o hábito, pode continuar fazendo parte da rotina da manhã, mas não é o momento de descobrir se cafeína em jejum cai bem. Novidade na manhã da prova é sempre um risco maior do que o ganho que promete.",
-      "Para provas que passam de uma hora, levar um gel ou uma fruta fácil de comer durante o percurso ajuda a manter a energia na segunda metade, desde que esse mesmo gel já tenha sido testado em algum treino longo antes, nunca estreado na prova."
+      "Alongamento estático é aquele em que a posição é mantida parada por um tempo, geralmente de 15 a 30 segundos. Feito antes do treino, ele tende a deixar o músculo momentaneamente menos responsivo, o que pode reduzir um pouco a potência logo nos primeiros minutos de corrida.",
+      "Por isso a recomendação mais aceita hoje é inverter a lógica antiga: antes do treino, o alongamento dinâmico, com movimentos ativos como elevação de joelho, chute de calcanhar e balanço de perna, prepara o músculo sem deixá-lo mais lento, além de elevar a temperatura corporal gradualmente.",
+      "O alongamento estático encontra seu melhor momento depois do treino, quando o músculo já está aquecido e o objetivo passa a ser recuperação e manutenção da amplitude de movimento ao longo do tempo, não mais desempenho imediato.",
+      "Nenhum dos dois tipos substitui o aquecimento progressivo, que para quem corre pode ser simplesmente começar o treino em ritmo bem mais leve nos primeiros minutos, deixando o corpo entrar em movimento antes de cobrar ritmo de prova dele.",
+      "Quem sente desconforto muscular recorrente em uma região específica tende a se beneficiar mais de um trabalho de mobilidade regular, feito em dias separados do treino, do que de alongar mais forte bem na hora em que o músculo já está cansado pelo esforço."
     ]
   },
   {
-    id: "dor-no-joelho-ajustes-de-tecnica",
-    categoria: "Técnica",
-    titulo: "Dor no joelho na corrida: ajustes de técnica que ajudam a proteger a articulação",
-    resumo: "Boa parte da dor no joelho do corredor não vem do joelho em si, vem de como o resto do corpo se move durante a passada. Pequenos ajustes de técnica aliviam a cobrança sobre a articulação sem exigir parar de treinar.",
+    id: "recuperacao-entre-provas-proximas",
+    categoria: "Treino",
+    titulo: "Duas provas em uma semana: como recuperar entre a Maratona de Joinville e a Meia de Piracity",
+    resumo: "Quem vai correr a 1ª Maratona de Joinville no fim de semana de 31 de outubro e 1º de novembro e também encarar a 10ª Meia Maratona de Piracity, já em 8 de novembro, tem pouco mais de uma semana para recuperar entre as duas. Esse intervalo curto pede cuidado redobrado.",
     imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "A passada muito longa, com o pé pousando bem na frente do corpo, aumenta o impacto que chega ao joelho a cada passo. Encurtar um pouco a passada e deixar o pé pousar mais perto do corpo reduz essa sobrecarga de forma simples.",
-      "A cadência (quantos passos por minuto) tem efeito parecido: aumentar levemente o número de passos, mantendo o mesmo ritmo, tende a suavizar o impacto por passada. Isso costuma acontecer naturalmente conforme o corredor ganha experiência, mas também pode ser treinado de forma consciente.",
-      "O fortalecimento do quadril e da parte lateral da coxa, músculos que estabilizam o joelho durante a corrida, costuma fazer diferença maior do que qualquer ajuste só na pisada. Exercícios simples de ponte e elevação lateral de perna, feitos duas vezes por semana, já ajudam.",
-      "Dor que aparece sempre no mesmo ponto do treino, ou que piora conforme a distância aumenta, pede atenção redobrada: não é normal e não deve ser tratada só com analgésico para continuar treinando. Esse tipo de dor tende a crescer, não a desaparecer sozinha.",
-      "Se a dor persistir mesmo depois de ajustes de técnica e de alguns dias de descanso, o caminho certo é uma avaliação com profissional de saúde especializado em corrida, que consegue identificar a causa real, em vez de insistir em um palpite sem confirmação."
+      "O primeiro erro costuma ser tratar a semana entre as duas provas como uma semana de treino normal. O corpo que acabou de correr 42 km, ou mesmo os 6 km de sábado, precisa de tempo de recuperação antes de qualquer treino com intensidade de novo, mesmo que a sensação geral pareça boa nos primeiros dias.",
+      "Os primeiros dois ou três dias depois da prova pedem descanso ativo: caminhada leve, alongamento suave ou, no máximo, um trote bem curto e bem lento, só para soltar as pernas, sem nenhuma meta de ritmo ou distância.",
+      "Dor muscular que persiste além do esperado, inchaço localizado ou qualquer dor articular que não existia antes da prova são sinais para adiar o retorno ao treino e, se não melhorar em poucos dias, buscar avaliação profissional antes da próxima largada.",
+      "Sono e alimentação pesam tanto quanto o treino nessa recuperação relâmpago: dormir bem e repor bem as reservas de energia nos dias seguintes à maratona faz mais diferença no desempenho de Piracity do que qualquer treino apertado nessa janela curta.",
+      "Para quem vai encarar as duas provas, vale ajustar a expectativa para a segunda: correr a Meia de Piracity em ritmo mais conservador do que correria isoladamente é a decisão mais sensata depois de um esforço grande como a maratona, e ainda assim garante cruzar a linha de chegada bem."
     ]
   }
+
 ];
 
 /* ============================================================
