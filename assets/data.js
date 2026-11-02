@@ -35,39 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "maratona-joinville-6k",
-    "nome": "1ª Maratona de Joinville (6K)",
-    "dia": "31",
-    "mes": "10",
-    "mesTxt": "OUT",
-    "ano": 2026,
-    "dataExtenso": "31 de outubro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Kart Joinville",
-    "organizador": "Tkar Produção de Eventos Esportivos",
-    "edicao": "1ª edição, prova de sábado",
-    "distancias": ["6 km"],
-    "descricao": "Prova de 6 km que abre o fim de semana da 1ª Maratona de Joinville, com largada no Kart Joinville.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159"
-  },
-  {
-    "id": "maratona-joinville-42k",
-    "nome": "1ª Maratona de Joinville",
-    "dia": "01",
-    "mes": "11",
-    "mesTxt": "NOV",
-    "ano": 2026,
-    "dataExtenso": "1 de novembro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Kart Joinville",
-    "organizador": "Tkar Produção de Eventos Esportivos",
-    "edicao": "1ª edição",
-    "distancias": ["42 km"],
-    "descricao": "Marco histórico: a primeira Maratona de Joinville, com a distância clássica de 42 km e largada no Kart Joinville.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
-    "destaque": true
-  },
-  {
     "id": "meia-maratona-piracity-joinville",
     "nome": "10ª Meia Maratona de Piracity",
     "dia": "08",
@@ -214,40 +181,6 @@ const PACEFLY_EVENTOS = [
 ];
 
 const PACEFLY_NOTICIAS = [
-  {
-    id: "corrida-rede-feminina-guaramirim-400-inscritos",
-    categoria: "Guaramirim",
-    titulo: "Corrida da Rede Feminina reúne mais de 400 inscritos em Guaramirim",
-    resumo: "A 1ª Corrida da Rede Feminina de Combate ao Câncer, parte do Circuito Maria's Run, mudou de local por causa da chuva e levou mais de 400 corredores ao Ginásio Osvaldo Klein no sábado, 24 de outubro, com ação de arrecadação para apoiar pacientes do município.",
-    dataTxt: "24 de outubro de 2026",
-    local: "Guaramirim, SC",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Nossa FM",
-    fonteUrl: "https://nossa.fm/corrida-da-rede-feminina-reune-mais-de-400-inscritos-em-guaramirim-neste-sabado/",
-    corpo: [
-      "A 1ª Corrida da Rede Feminina de Combate ao Câncer, parte do Circuito Maria's Run, reuniu mais de 400 inscritos em Guaramirim no sábado, 24 de outubro, com largada às 17h30. O tema da edição foi \"A vida pede movimento\", e as inscrições, feitas pelo site movnow.com.br, se esgotaram na véspera da prova.",
-      "Por causa da previsão de chuva, a organização mudou o local de largada da Praça da Figueira para o Ginásio Municipal de Esportes Osvaldo Klein, anexo à EMEF Mamãe Gansa e seus Filhotes, no bairro Guamiranga. A prova teve percursos de 5 km e 10 km, além de uma caminhada de 3 km, aberta a iniciantes e corredores experientes.",
-      "A corrida faz parte da programação do Outubro Rosa da Rede Feminina de Guaramirim, entidade que acolhe, orienta e apoia pacientes com câncer no município. No mesmo sábado, voluntários também fizeram o \"Pedágio Rosa\", recolhendo doações nas ruas entre 8h e 12h30, além do Pix divulgado pela organização. Uma semana antes, pedágios em Schroeder e Massaranduba já tinham arrecadado R$ 9.449,60.",
-      "A retirada de kits aconteceu na sede da Rede Feminina, na véspera e na manhã da prova, antes da largada ser transferida para o ginásio. O resultado oficial da corrida ainda não foi encontrado em nenhuma fonte até a conclusão desta notícia; a classificação, quando publicada, também entra na apuração do Ranking PaceFly."
-    ]
-  },
-  {
-    id: "primeira-maratona-de-joinville-2026",
-    categoria: "1ª Maratona de Joinville",
-    titulo: "Joinville vai ter sua primeira maratona da história em 1º de novembro",
-    resumo: "A cidade sempre teve a tradicional Meia Maratona, mas nunca uma prova de 42 km. Isso muda no fim de semana de 31 de outubro e 1º de novembro, com largada no Kart Joinville e opção de revezamento para quem quiser dividir o percurso.",
-    dataTxt: "31 de outubro e 1º de novembro de 2026",
-    local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Ticket Sports",
-    fonteUrl: "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
-    corpo: [
-      "Joinville tem décadas de tradição com a Meia Maratona, mas nunca recebeu uma prova na distância cheia de 42 km. Isso vai mudar em 2026: a Tkar Produção de Eventos Esportivos confirmou a 1ª Maratona de Joinville, com largada no Kart Joinville, marcando um capítulo novo para o esporte na cidade.",
-      "A programação se estende por dois dias. No sábado, 31 de outubro, a organização abre o fim de semana com uma prova de 6 km, pensada para quem quer participar da festa sem encarar a distância cheia. No domingo, 1º de novembro, é a vez da maratona propriamente dita, com os 42 km tradicionais.",
-      "Uma das novidades é a opção de revezamento para os 42 km, em que duas pessoas podem dividir o percurso entre si, o que amplia a prova para quem ainda não se sente pronto para correr a distância sozinho, mas quer fazer parte dessa estreia histórica.",
-      "Para o corredor de Joinville e região, a expectativa é grande: depois de anos de meia maratona, a cidade finalmente entra no calendário nacional das provas de 42 km. Os detalhes de inscrição estão na plataforma oficial do evento, e o nosso calendário já traz a prova cadastrada para quem quiser se programar com antecedência."
-    ]
-  },
   {
     id: "peres-jepchirchir-suspensao-doping-epo",
     categoria: "Doping",
