@@ -182,6 +182,26 @@ const PACEFLY_EVENTOS = [
 
 const PACEFLY_NOTICIAS = [
   {
+    id: "primeira-maratona-de-joinville-numeros-e-podio",
+    categoria: "1ª Maratona de Joinville",
+    titulo: "1ª Maratona de Joinville reúne 853 corredores e tem Pedro Arthur Vargas, de 19 anos, como campeão dos 42 km",
+    resumo: "A primeira maratona da história de Joinville levou 853 corredores ao Kart Joinville no fim de semana, somando a prova solo de 42 km e as opções de revezamento em dupla e em quarteto. Pedro Arthur Vargas, de apenas 19 anos, foi o grande campeão geral, enquanto Caroline Marques Barros Viebrantz liderou a classificação feminina. Veja o pódio completo, os números da estreia e as curiosidades da prova.",
+    dataTxt: "31 de outubro e 1º de novembro de 2026",
+    local: "Joinville, SC",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Tkar Produção de Eventos Esportivos",
+    fonteUrl: "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
+    corpo: [
+      "Joinville entrou para a história da corrida de rua catarinense no último fim de semana. No sábado, 31 de outubro, a festa começou com a prova de 6 km, em duas ondas de largada, às 18h e às 19h30, no Kart Joinville. No domingo, 1º de novembro, veio o prato principal: a primeira maratona de 42 km da história da cidade, com largada às 6h, organizada pela Tkar Produção de Eventos Esportivos. Juntando a distância solo e as opções de revezamento em dupla e em quarteto, a estreia reuniu 853 corredores, com inscrições esgotadas já desde 20 de outubro.",
+      "No masculino, o destaque foi Pedro Arthur Vargas. Com apenas 19 anos, ele cruzou a linha de chegada em 2h52min56s, ritmo médio de cerca de 4min06s por quilômetro, e se tornou o primeiro campeão da história da prova. A disputa pelo restante do pódio foi disputadíssima: João Victor Galdino Candido fechou em segundo lugar, com 3h01min00s, e Guilhermino Zapelini Junior, de 43 anos, levou o bronze por apenas 2 segundos de diferença, com 3h01min02s.",
+      "No feminino, Caroline Marques Barros Viebrantz, de 52 anos, foi a primeira mulher a cruzar a linha de chegada, com o tempo de 3h26min49s, um resultado que chama atenção também pela faixa etária da atleta. Completaram o pódio feminino Veronica Maria Kuzma, em segundo lugar, com 3h52min49s, e Danieli Soares Borges, em terceiro, com 3h56min54s. As 20 mulheres que terminaram a distância solo tinham entre 30 e 58 anos, sem nenhuma atleta na faixa dos 20 anos completando os 42 km sozinha.",
+      "Os números da estreia reservam boas curiosidades. Ao todo, 163 corredores completaram a distância solo (143 homens e 20 mulheres), com tempo médio de 4h16min07s. A faixa dos 40 aos 49 anos foi a mais numerosa da prova solo, com 52 atletas, quase um em cada três do pelotão. No outro extremo da experiência, José Renato Fernandes, de 72 anos, também completou os 42 km sozinho, em 4h41min57s. A estreia da maratona também teve espaço para a inclusão: três atletas disputaram os 42 km solo na categoria PCD (pessoa com deficiência).",
+      "O revezamento foi o grande fenômeno de participação da estreia: 209 equipes, entre 73 duplas (cada integrante correndo 21 km) e 136 quartetos (cada integrante correndo 10 km), levaram 690 corredores à pista dividindo a distância clássica da maratona entre amigos e colegas de treino. Uma curiosidade: somando os tempos dos dois integrantes, a dupla mais rápida do revezamento, formada por Cleuber e Helbert, cruzou os 42 km combinados em 2h49min17s, tempo que teria sido suficiente para ficar na frente até do campeão da prova solo. Entre os quartetos, a equipe mais rápida, de Luciano, Wagner, Everton e Matheus, somou 2h34min35s.",
+      "Somando todos os formatos da estreia, 478 homens e 375 mulheres cruzaram a linha de chegada no fim de semana. A logística também teve seu tamanho: a retirada de kits aconteceu em três dias e dois endereços diferentes, na sexta-feira (30/10) na GAC Barigui e no sábado (31/10) e no domingo (01/11) no próprio Kartódromo, horas antes de cada largada.",
+      "Com a estreia concluída, Joinville ganha oficialmente seu primeiro marco de 42 km no calendário de corridas, ao lado da tradicional Meia Maratona que já é patrimônio esportivo da cidade."
+    ]
+  },
+  {
     id: "peres-jepchirchir-suspensao-doping-epo",
     categoria: "Doping",
     titulo: "Campeã olímpica Peres Jepchirchir é suspensa provisoriamente por doping",

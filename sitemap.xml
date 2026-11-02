@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-01.
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-02.
        Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
        nos arrays de assets/data.js. -->
 
@@ -38,6 +38,7 @@
   <url><loc>https://pacefly.com.br/dica.html?id=recuperacao-entre-provas-proximas</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- NOTICIAS (gerado de PACEFLY_NOTICIAS) -->
+  <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-numeros-e-podio</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=peres-jepchirchir-suspensao-doping-epo</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=kiprun-kipnext-connect-tenis-sensor-desgaste</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
