@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-02.
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-03.
        Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
        nos arrays de assets/data.js. -->
 
@@ -27,6 +27,14 @@
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- CALENDARIO 2027 (campanha divulgada nos grupos de WhatsApp) -->
+  <url>
+    <loc>https://pacefly.com.br/calendario-2027.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- DICAS (gerado de PACEFLY_DICAS) -->
