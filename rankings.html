@@ -98,8 +98,8 @@
     <div class="rkl-resultado" id="rklResultado"></div>
 
     <div class="rkl-stats">
-      <div><b id="stTotal">3.002</b><small>atletas classificados</small></div>
-      <div><b id="stProvas">27</b><small>provas apuradas</small></div>
+      <div><b id="stTotal">3.353</b><small>atletas classificados</small></div>
+      <div><b id="stProvas">30</b><small>provas apuradas</small></div>
       <div><b>72h</b><small>para entrar após a prova</small></div>
       <div><b>2026</b><small>temporada em andamento</small></div>
     </div>
@@ -115,7 +115,7 @@
       <p>Todos os atletas com duas provas ou mais concluídas na região em 2026, ordenados por pontos acumulados. Toque em qualquer nome da lista para abrir a posição completa e gerar a imagem de compartilhamento.</p>
     </div>
 
-    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 01/11/2026</span>
+    <span class="rkl-atualizado" id="rklAtualizado">Atualizado em 08/11/2026</span>
 
     <div class="rkl-abas" id="rklAbas" role="tablist">
       <button type="button" class="rkl-aba on" data-cat="geral" role="tab">Geral <span class="qt" id="qtGeral"></span></button>
@@ -372,20 +372,20 @@ const burger=document.getElementById('burger'), menu=document.getElementById('me
 burger.addEventListener('click',()=>menu.classList.toggle('open'));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
 
-// Reserva: Top 10 da apuração de 01/11/2026
+// Reserva: Top 10 da apuração de 08/11/2026
 const RESERVA = {
-  atualizado_em:"01/11/2026", total_atletas:3002, total_provas:27,
+  atualizado_em:"08/11/2026", total_atletas:3353, total_provas:30,
   atletas:[
-    {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:350},
-    {p:2,n:"HERBERT SCHRÖDER NETO",pt:320},
-    {p:3,n:"JORGE NESTOR PEREIRA",pt:285},
-    {p:4,n:"RAFAELA PEREIRA BENEVENUTO",pt:255},
-    {p:5,n:"NICOLAS DIAS",pt:240},
-    {p:6,n:"LUCAS BRANDALISE",pt:230},
-    {p:7,n:"LUCAS SIMOES DE OLIVEIRA",pt:230},
-    {p:8,n:"WAGNER CARVALHO CARDOZO BORGES",pt:230},
-    {p:9,n:"FELIPE RODRIGUES GONCALVES",pt:185},
-    {p:10,n:"DINEZIO GABRIEL DE OLIVEIRA",pt:180}
+    {p:1,n:"VITOR ESTIVALET DE SOUZA",pt:410},
+    {p:2,n:"HERBERT SCHRÖDER NETO",pt:360},
+    {p:3,n:"JORGE NESTOR PEREIRA",pt:335},
+    {p:4,n:"RAFAELA PEREIRA BENEVENUTO",pt:280},
+    {p:5,n:"NICOLAS DIAS",pt:280},
+    {p:6,n:"WAGNER CARVALHO CARDOZO BORGES",pt:280},
+    {p:7,n:"LUCAS BRANDALISE",pt:230},
+    {p:8,n:"LUCAS SIMOES DE OLIVEIRA",pt:230},
+    {p:9,n:"FELIPE RODRIGUES GONCALVES",pt:210},
+    {p:10,n:"DINEZIO GABRIEL DE OLIVEIRA",pt:210}
   ]
 };
 
