@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-03.
+  <!-- GERADO AUTOMATICAMENTE por scripts/gerar_sitemap.py em 2026-11-09.
        Nao edite a mao: rode o gerar_sitemap.bat depois de mexer
        nos arrays de assets/data.js. -->
 
@@ -38,22 +38,22 @@
   </url>
 
   <!-- DICAS (gerado de PACEFLY_DICAS) -->
-  <url><loc>https://pacefly.com.br/dica.html?id=treinar-com-calor-sem-se-arriscar</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=tapering-as-duas-semanas-antes-da-prova</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=caimbras-na-corrida-causas-e-prevencao</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=respiracao-durante-a-corrida-como-controlar-o-ritmo</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=alongamento-antes-ou-depois-do-treino</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://pacefly.com.br/dica.html?id=recuperacao-entre-provas-proximas</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=reposicao-de-eletrolitos-em-dias-quentes</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=treinar-na-chuva-cuidados-com-pes-e-equipamento</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=assaduras-e-bolhas-como-prevenir-no-treino-longo</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=treino-noturno-seguranca-e-visibilidade</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=protecao-solar-para-quem-corre-na-rua</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pacefly.com.br/dica.html?id=manter-o-ritmo-de-treino-nas-festas-de-fim-de-ano</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- NOTICIAS (gerado de PACEFLY_NOTICIAS) -->
-  <url><loc>https://pacefly.com.br/noticia.html?id=primeira-maratona-de-joinville-numeros-e-podio</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=10a-meia-maratona-piracity-resultados-2026</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=chuva-impacta-treinos-e-provas-na-regiao</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=boston-half-2026-samuel-e-belayneh</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-de-atenas-2026-recordes-e-mundial-2030</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pacefly.com.br/noticia.html?id=maratona-nova-york-2026-almgren-chepkirui</loc><lastmod>2026-11-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pacefly.com.br/noticia.html?id=peres-jepchirchir-suspensao-doping-epo</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=kiprun-kipnext-connect-tenis-sensor-desgaste</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://pacefly.com.br/noticia.html?id=parque-porto-cachoeira-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- EVENTOS / CALENDARIO (gerado de PACEFLY_EVENTOS) -->
-  <url><loc>https://pacefly.com.br/evento.html?id=meia-maratona-piracity-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://pacefly.com.br/evento.html?id=circuito-unimed-mafra</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-bombeiros-joinville</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-do-tatico</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://pacefly.com.br/evento.html?id=corrida-speed-life-run-barra-velha</loc><lastmod>2026-09-27</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>

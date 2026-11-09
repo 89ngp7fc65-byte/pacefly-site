@@ -35,38 +35,6 @@
 
 const PACEFLY_EVENTOS = [
   {
-    "id": "meia-maratona-piracity-joinville",
-    "nome": "10ª Meia Maratona de Piracity",
-    "dia": "08",
-    "mes": "11",
-    "mesTxt": "NOV",
-    "ano": 2026,
-    "dataExtenso": "8 de novembro de 2026",
-    "cidade": "Joinville, SC",
-    "largada": "Fundos do Colégio Estadual Olavo Bilac, Rua Olavo Bilac, Distrito de Pirabeiraba, às 6h",
-    "organizador": "L'quelibre e KM Eventos Esportivos",
-    "edicao": "10ª edição",
-    "distancias": ["21 km", "10 km", "5 km", "Caminhada 5 km"],
-    "descricao": "Décima edição da Meia Maratona de Piracity, no distrito joinvilense de Pirabeiraba, com largada e chegada nos fundos do Colégio Estadual Olavo Bilac. Aquecimento às 5h30 e largada única às 6h para os 21 km, 10 km, 5 km e caminhada de 5 km, com premiação a partir das 8h30. A inscrição inclui a doação de 1 kg de alimento não perecível.",
-    "oficialUrl": "https://www.ticketsports.com.br/e/10o-meia-maratona-de-piracity-87885"
-  },
-  {
-    "id": "circuito-unimed-mafra",
-    "nome": "Circuito de Corridas Unimed",
-    "dia": "08",
-    "mes": "11",
-    "mesTxt": "NOV",
-    "ano": 2026,
-    "dataExtenso": "8 de novembro de 2026",
-    "cidade": "Mafra, SC",
-    "largada": "Avenida Coronel José Severiano Maia, 590, Vila Buenos Aires",
-    "organizador": "Unimed",
-    "edicao": "Etapa Mafra",
-    "distancias": ["10 km", "5 km"],
-    "descricao": "Etapa mafrense do Circuito de Corridas Unimed, na Avenida Coronel José Severiano Maia, no bairro Vila Buenos Aires, com percursos de 10 km e 5 km. A retirada de kits acontece no dia anterior à prova.",
-    "oficialUrl": "https://circuitodecorridaunimed.com.br/corrida/mafra/"
-  },
-  {
     "id": "corrida-bombeiros-joinville",
     "nome": "6ª Corrida Bombeiros Voluntários",
     "dia": "15",
@@ -181,24 +149,96 @@ const PACEFLY_EVENTOS = [
 ];
 
 const PACEFLY_NOTICIAS = [
-  {
-    id: "primeira-maratona-de-joinville-numeros-e-podio",
-    categoria: "1ª Maratona de Joinville",
-    titulo: "1ª Maratona de Joinville reúne 853 corredores e tem Pedro Arthur Vargas, de 19 anos, como campeão dos 42 km",
-    resumo: "A primeira maratona da história de Joinville levou 853 corredores ao Kart Joinville no fim de semana, somando a prova solo de 42 km e as opções de revezamento em dupla e em quarteto. Pedro Arthur Vargas, de apenas 19 anos, foi o grande campeão geral, enquanto Caroline Marques Barros Viebrantz liderou a classificação feminina. Veja o pódio completo, os números da estreia e as curiosidades da prova.",
-    dataTxt: "31 de outubro e 1º de novembro de 2026",
-    local: "Joinville, SC",
+{
+    id: "10a-meia-maratona-piracity-resultados-2026",
+    categoria: "10ª Meia Maratona de Piracity",
+    titulo: "10ª Meia Maratona de Piracity reúne 750 corredores em Pirabeiraba, com quase a metade do pelotão formada por mulheres",
+    resumo: "A 10ª edição da Meia Maratona de Piracity levou 750 corredores aos 21 km, 10 km e 5 km do distrito joinvilense de Pirabeiraba no domingo, 8 de novembro. As mulheres somaram 48% do pelotão. Veja os pódios das três distâncias e os tempos médios por gênero.",
+    dataTxt: "8 de novembro de 2026",
+    local: "Pirabeiraba, Joinville, SC",
     imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Tkar Produção de Eventos Esportivos",
-    fonteUrl: "https://www.ticketsports.com.br/e/1o-maratona-de-joinville-87159",
+    fonteNome: "L'quelibre e KM Eventos Esportivos (organização da prova)",
+    fonteUrl: "https://www.ticketsports.com.br/e/10o-meia-maratona-de-piracity-87885",
     corpo: [
-      "Joinville entrou para a história da corrida de rua catarinense no último fim de semana. No sábado, 31 de outubro, a festa começou com a prova de 6 km, em duas ondas de largada, às 18h e às 19h30, no Kart Joinville. No domingo, 1º de novembro, veio o prato principal: a primeira maratona de 42 km da história da cidade, com largada às 6h, organizada pela Tkar Produção de Eventos Esportivos. Juntando a distância solo e as opções de revezamento em dupla e em quarteto, a estreia reuniu 853 corredores, com inscrições esgotadas já desde 20 de outubro.",
-      "No masculino, o destaque foi Pedro Arthur Vargas. Com apenas 19 anos, ele cruzou a linha de chegada em 2h52min56s, ritmo médio de cerca de 4min06s por quilômetro, e se tornou o primeiro campeão da história da prova. A disputa pelo restante do pódio foi disputadíssima: João Victor Galdino Candido fechou em segundo lugar, com 3h01min00s, e Guilhermino Zapelini Junior, de 43 anos, levou o bronze por apenas 2 segundos de diferença, com 3h01min02s.",
-      "No feminino, Caroline Marques Barros Viebrantz, de 52 anos, foi a primeira mulher a cruzar a linha de chegada, com o tempo de 3h26min49s, um resultado que chama atenção também pela faixa etária da atleta. Completaram o pódio feminino Veronica Maria Kuzma, em segundo lugar, com 3h52min49s, e Danieli Soares Borges, em terceiro, com 3h56min54s. As 20 mulheres que terminaram a distância solo tinham entre 30 e 58 anos, sem nenhuma atleta na faixa dos 20 anos completando os 42 km sozinha.",
-      "Os números da estreia reservam boas curiosidades. Ao todo, 163 corredores completaram a distância solo (143 homens e 20 mulheres), com tempo médio de 4h16min07s. A faixa dos 40 aos 49 anos foi a mais numerosa da prova solo, com 52 atletas, quase um em cada três do pelotão. No outro extremo da experiência, José Renato Fernandes, de 72 anos, também completou os 42 km sozinho, em 4h41min57s. A estreia da maratona também teve espaço para a inclusão: três atletas disputaram os 42 km solo na categoria PCD (pessoa com deficiência).",
-      "O revezamento foi o grande fenômeno de participação da estreia: 209 equipes, entre 73 duplas (cada integrante correndo 21 km) e 136 quartetos (cada integrante correndo 10 km), levaram 690 corredores à pista dividindo a distância clássica da maratona entre amigos e colegas de treino. Uma curiosidade: somando os tempos dos dois integrantes, a dupla mais rápida do revezamento, formada por Cleuber e Helbert, cruzou os 42 km combinados em 2h49min17s, tempo que teria sido suficiente para ficar na frente até do campeão da prova solo. Entre os quartetos, a equipe mais rápida, de Luciano, Wagner, Everton e Matheus, somou 2h34min35s.",
-      "Somando todos os formatos da estreia, 478 homens e 375 mulheres cruzaram a linha de chegada no fim de semana. A logística também teve seu tamanho: a retirada de kits aconteceu em três dias e dois endereços diferentes, na sexta-feira (30/10) na GAC Barigui e no sábado (31/10) e no domingo (01/11) no próprio Kartódromo, horas antes de cada largada.",
-      "Com a estreia concluída, Joinville ganha oficialmente seu primeiro marco de 42 km no calendário de corridas, ao lado da tradicional Meia Maratona que já é patrimônio esportivo da cidade."
+      "A décima edição da Meia Maratona de Piracity, com largada e chegada nos fundos do Colégio Estadual Olavo Bilac, no distrito de Pirabeiraba, reuniu 750 corredores no domingo, 8 de novembro, somando as distâncias de 21 km, 10 km e 5 km. O resultado oficial, publicado pela organização, mostra um pelotão bastante equilibrado: 360 mulheres completaram alguma das três distâncias, 48% do total.",
+      "Nos 21 km, a distância mais longa do dia, Vitor Hugo Wielewski, de 25 anos, foi o primeiro a cruzar a linha de chegada, com 1h17min22s, seguido por Diego Maneira, em 1h21min17s, e João Victor Galdino, em 1h22min56s. No feminino, Rachel Gomes, de 40 anos, liderou com 1h37min43s, com Roseli dos Santos em segundo lugar, a apenas 7 segundos, e Josiany Moreira em terceiro.",
+      "Nos 10 km, o pódio masculino ficou com Vitor Estivalet de Souza (35min17s), Jean Amaral Lourenço (35min50s) e Joel Rodrigues, de 54 anos, que fechou o top 3 com 36min07s. No feminino, Rafaela B. Galdino venceu com 44min17s, menos de 10 segundos na frente de Rafaela Rosa Neitzel, com Juliana Aparecida Soares Dalpra em terceiro.",
+      "Já nos 5 km, Gabriel Lima, de 26 anos, foi o mais rápido do dia entre todas as distâncias, com 17min18s, seguido por João Paulo de Lara Novakoski, de apenas 16 anos, e Roger Patrick Terres. No feminino, Ana Letícia Ferreira Vilela venceu com 21min33s, com Bianca Vieira Miranda em segundo lugar e Vanessa Rodrigues Pereira dos Santos em terceiro.",
+      "Olhando para os tempos médios, o pelotão masculino cruzou a chegada em 28min34s nos 5 km, 51min36s nos 10 km e 1h50min11s nos 21 km, enquanto o pelotão feminino fechou em 34min40s, 1h02min24s e 2h01min49s nas mesmas distâncias, respectivamente. A prova, que também distribuiu premiação a partir das 8h30 e incluiu a doação de 1 kg de alimento não perecível na inscrição, reforça o calendário de corridas de Joinville às vésperas do verão."
+    ]
+  },
+{
+    id: "chuva-impacta-treinos-e-provas-na-regiao",
+    categoria: "Clima e corrida",
+    titulo: "Com El Niño elevando a chuva de novembro em SC, veja os cuidados para treinar e competir na região",
+    resumo: "Santa Catarina vive um novembro mais chuvoso que o normal por causa do El Niño, com temporais, granizo e vento forte no fim de semana de 7 e 8/11. Veja os cuidados práticos para treinar e competir na chuva na região de Joinville e o que a Epagri/Ciram e o INMET esperam do tempo nos próximos dias.",
+    dataTxt: "3 a 15 de novembro de 2026",
+    local: "Joinville e região, SC",
+    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Instituto Nacional de Meteorologia (INMET)",
+    fonteUrl: "https://portal.inmet.gov.br/noticias/inmet-divulga-previsão-para-semana-de-03-a-10-de-novembro-de-2026",
+    corpo: [
+      "Novembro começou instável em Santa Catarina. O sábado, 7 de novembro, concentrou o trecho mais tenso da semana: uma frente fria trouxe chuva forte desde a madrugada, com risco de granizo e rajadas de vento entre 70 e 90 km/h em diversos pontos do estado. É um sintoma do pano de fundo da estação, o El Niño, que deixa novembro mais chuvoso e mais sujeito a temporais isolados do que a média histórica na região Norte de Santa Catarina.",
+      "Antes de sair para o treino em dias de instabilidade, o primeiro cuidado é conferir o boletim da Defesa Civil do município e os apps de radar meteorológico, não só a previsão do dia, mas os alertas em tempo real, que costumam antecipar temporais isolados em poucas horas. Vale também evitar, nesses dias, ruas e trechos historicamente sujeitos a alagamento na rota de treino, e ter sempre um plano B pronto: treino indoor, esteira, ou mudança de horário para fugir da janela de chuva mais forte prevista.",
+      "Durante a corrida, o risco mais sério em dia de temporal é o raio: ao ouvir trovão ou ver relâmpago, a orientação é interromper o treino e buscar abrigo fechado imediatamente, evitando áreas abertas, postes, árvores isoladas e qualquer estrutura metálica alta. Em piso encharcado, reduzir o ritmo nos trechos de poça, grelha e faixa de pedestre pintada ajuda a evitar escorregões, já que essas superfícies perdem aderência rapidamente na chuva. Para quem treina com o céu fechado ou no fim de tarde chuvoso, roupas claras ou com elementos refletivos aumentam a segurança em cruzamentos.",
+      "A chuva não elimina o risco de desidratação: mesmo em dias mais frescos, repor líquidos e eletrólitos continua necessário, principalmente em treinos longos. Depois do treino, trocar a roupa molhada e se secar rapidamente evita que o corpo perca temperatura além do normal, risco que aumenta quando a chuva vem acompanhada de vento forte. Meias e tênis encharcados por tempo prolongado também aumentam o risco de bolha e assadura, por isso vale levar um par seco de reserva nos treinos mais longos em dia de previsão de chuva.",
+      "Para quem vai competir, provas da região costumam monitorar de perto os alertas da Defesa Civil na semana da largada, e podem ajustar horário, percurso ou pontos de hidratação em cima da hora em caso de temporal. Vale acompanhar os canais oficiais da organização no dia anterior e na manhã da prova, não só a previsão divulgada dias antes.",
+      "Como complemento, a previsão de 5 dias da Epagri/Ciram, divulgada em 7 de novembro, indica tempo estável nos dois primeiros dias desta semana, segunda (9/11) e terça (10/11), com sol, poucas nuvens e mínimas entre 2°C e 13°C, incluindo risco de geada nas áreas altas do Planalto Norte e do Planalto Sul, e uma quarta-feira (11/11) ainda majoritariamente estável, mas com mais nuvens entre o Planalto e o Litoral e chance de chuva isolada. A segunda metade da semana (12 a 15/11) ainda não tinha sido detalhada pela Ciram até o momento desta apuração, nem havia volume de chuva específico divulgado para a região de Joinville. No panorama do mês, o INMET projeta para novembro de 2026 chuva acima da média em toda a Região Sul, com anomalia positiva de pelo menos 75 mm e temperatura entre 0,6°C e 1,5°C acima da média, reforçando o risco de temporais isolados com vendaval, granizo e chuva intensa em curtos períodos.",
+      "Vale reforçar: a previsão de curto prazo pode mudar de um dia para o outro nesta época do ano, então o canal mais confiável para quem vai treinar ou competir na região continua sendo o boletim oficial da Defesa Civil do próprio município, atualizado conforme a situação evolui."
+    ]
+  },
+{
+    id: "boston-half-2026-samuel-e-belayneh",
+    categoria: "Boston Half",
+    titulo: "Habtom Samuel corre a primeira meia maratona abaixo de 1 hora já registrada em Massachusetts na Boston Half 2026",
+    resumo: "O eritreu Habtom Samuel venceu a Boston Half 2026 com 59min49s, recorde do percurso e a primeira meia maratona abaixo de 1 hora já cronometrada no estado de Massachusetts. A etíope Fentaye Belayneh conquistou o tricampeonato feminino, e Daniel Romanchuk bateu o recorde da prova entre os cadeirantes.",
+    dataTxt: "8 de novembro de 2026",
+    local: "Boston, Massachusetts, Estados Unidos",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "The Boston Globe",
+    fonteUrl: "https://www.bostonglobe.com/2026/11/08/sports/boston-half-marathon-photos-times-records/",
+    corpo: [
+      "A edição de 2026 da Boston Half, disputada no domingo, 8 de novembro, com largada e chegada no Franklin Park, teve um resultado histórico no masculino: o eritreu Habtom Samuel venceu com 59min49s, 45 segundos abaixo do recorde anterior do percurso. Segundo a organização, foi a primeira vez que uma meia maratona cronometrada no estado de Massachusetts terminou abaixo de 1 hora.",
+      "No feminino, a etíope Fentaye Belayneh confirmou o favoritismo e venceu com 1h09min14s, conquistando o tricampeonato consecutivo da prova.",
+      "Entre os cadeirantes, o americano Daniel Romanchuk também bateu o recorde do evento, com 45min53s, na sua terceira vitória na Boston Half. No feminino da categoria, Yen Hoang cruzou a linha em 1h02min54s, em um fotofinish com Jenna Ayers, que marcou exatamente o mesmo tempo.",
+      "A prova reuniu mais de 7.300 atletas que completaram o percurso, vindos de 104 países e 46 estados americanos, reafirmando o alcance internacional de uma das principais provas de meia distância dos Estados Unidos.",
+      "A Boston Half é apresentada pelo Dana-Farber Cancer Institute e pelo Jimmy Fund, parceria que já levou corredores do Team Dana-Farber a arrecadar mais de US$ 12 milhões para pesquisa e tratamento do câncer desde que o acordo com a Boston Athletic Association começou, em 2003."
+    ]
+  },
+{
+    id: "maratona-de-atenas-2026-recordes-e-mundial-2030",
+    categoria: "Maratona de Atenas",
+    titulo: "Etíopes dominam o pódio da Maratona de Atenas 2026, que bate recordes e reforça a candidatura da cidade ao Mundial de 2030",
+    resumo: "A 43ª Maratona Autêntica de Atenas reuniu mais de 85 mil corredores entre todas as distâncias do fim de semana e teve recordes do percurso quebrados no masculino e no feminino, com dobradinha etíope. O governador da região de Ática também usou a edição de 2026 para reforçar a candidatura da cidade a sediar o primeiro Mundial de Maratona independente, em 2030.",
+    dataTxt: "8 de novembro de 2026",
+    local: "Atenas, Grécia",
+    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Greek City Times",
+    fonteUrl: "https://greekcitytimes.com/2026/11/08/athens-authentic-marathon-2026-course-records",
+    corpo: [
+      "A 43ª edição da Maratona Autêntica de Atenas, disputada no domingo, 8 de novembro, reuniu mais de 85 mil corredores somando todas as distâncias do fim de semana, a maratona de 42 km e as provas de 5 km e 10 km, um novo recorde de participação para o evento.",
+      "No masculino, o etíope Manazut Siyoum Taferi venceu com 2h10min03s, batendo o recorde do percurso que resistia desde 2023. O pódio foi completado por outro etíope, Asefa Tefera Mengisha, em 2h10min18s, e pelo queniano Patrick Keter Kiplagat, em 2h11min22s.",
+      "No feminino, a dobradinha etíope se repetiu: Yatane Kormose Dusa venceu com 2h30min04s, também superando o recorde anterior do percurso, seguida por Tsiyon Abebe Temesgen, em 2h30min29s. A americana Jane Chemkemboy Bareikis completou o pódio, em 2h32min59s.",
+      "Além do resultado esportivo, a Maratona de Atenas é tratada pela organização como vitrine internacional de turismo esportivo para a Grécia, atraindo corredores de fora do país para a cidade na mesma semana da prova.",
+      "A edição de 2026 também teve um recado político: Nikos Hardalias, governador da região de Ática, afirmou que a organização deste ano ajuda a confirmar que Atenas vai sediar o primeiro Campeonato Mundial de Maratona independente da World Athletics, marcado para 2030. A entidade internacional anunciou em abril de 2026 que abriu negociações formais com a cidade para a sede, mas o acordo ainda não foi formalmente fechado."
+    ]
+  },
+  {
+    id: "maratona-nova-york-2026-almgren-chepkirui",
+    categoria: "Maratona de Nova York",
+    titulo: "Sueco Andreas Almgren vence a Maratona de Nova York na primeira maratona da carreira",
+    resumo: "Em sua estreia na distância, o sueco Andreas Almgren cruzou a linha de chegada em 2h06min01s e se tornou o primeiro europeu a vencer a prova desde 1996. No feminino, a queniana Sheila Chepkirui conquistou o bicampeonato na cidade, com 2h24min36s.",
+    dataTxt: "1º de novembro de 2026",
+    local: "Nova York, Estados Unidos",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    fonteNome: "Marathons.com",
+    fonteUrl: "https://www.marathons.com/pt/maratona-de-new-york/andreas-almgren-e-sheila-chepkirui-dominam-a-maratona-de-nova-iorque-2026-todos-os-resultados_8479",
+    corpo: [
+      "A edição de 2026 da Maratona de Nova York, disputada no domingo, 1º de novembro, marcou o cinquentenário do tradicional percurso pelos cinco distritos da cidade, com uma pequena alteração no trajeto pelo Bronx, a primeira em quinze anos. As condições do dia favoreceram tempos rápidos, com cerca de 7 graus e sem vento.",
+      "No masculino, o sueco Andreas Almgren, recordista europeu dos 5.000 m, disputava a primeira maratona da carreira e surpreendeu ao vencer com 2h06min01s, deixando o italiano Yemaneberhan Crippa (2h06min14s) e o lesotense Kamohelo Mofolo (2h06min26s) na sequência. Almgren se tornou o primeiro europeu a vencer a prova desde o italiano Giacomo Leone, em 1996, e o primeiro sueco da história a conquistar o título. O queniano Benson Kipruto, defensor do título, terminou em quarto lugar, a primeira vez desde 2020 que fica fora do pódio na cidade.",
+      "No feminino, a queniana Sheila Chepkirui confirmou o favoritismo e levou seu segundo título em Nova York, o primeiro havia sido em 2024, com o tempo de 2h24min36s. A americana Jessica McClain terminou em segundo lugar, com 2h24min42s, tornando-se a primeira atleta dos Estados Unidos no pódio da prova desde Shalane Flanagan, em 2018. A queniana Hellen Obiri, recordista da Maratona de Nova York com 2h19min51s, marcado em 2025, fechou o pódio em terceiro, com 2h24min43s.",
+      "A disputa reforça a tradição da Maratona de Nova York como uma das provas mais concorridas do calendário mundial de maratonas, ao lado de Boston, Chicago, Berlim, Londres e Tóquio, as seis que compõem o circuito World Marathon Majors.",
+      "Para quem acompanha o calendário local, a mesma semana também marcou a estreia da 1ª Maratona de Joinville, disputada no mesmo final de semana, 31 de outubro e 1º de novembro, outro sinal de como a distância de 42 km vem ganhando espaço no Brasil e no mundo."
     ]
   },
   {
@@ -217,133 +257,98 @@ const PACEFLY_NOTICIAS = [
       "A suspensão é provisória: nesse status, a atleta fica impedida de competir enquanto o processo segue seu curso, sem prazo definido para uma decisão final. Seu representante, Gianni Demadonna, não quis comentar o caso. A organização da Maratona de Sydney disse estar extremamente decepcionada com a notícia, mas reforçou que a atleta tem direito ao devido processo e que não fará novos comentários até o desfecho do caso.",
       "O caso chama atenção por envolver uma das atletas mais vitoriosas da maratona mundial na última década, e reabre a discussão sobre o controle antidoping no fundo queniano, que já teve outros nomes de peso suspensos nos últimos anos. Até a conclusão do processo, os resultados de Jepchirchir seguem válidos; uma suspensão provisória não é, por si só, uma confirmação de culpa."
     ]
-  },
-  {
-    id: "kiprun-kipnext-connect-tenis-sensor-desgaste",
-    categoria: "Equipamento",
-    titulo: "Kiprun lança tênis com sensor que avisa quando o amortecimento já gastou",
-    resumo: "O novo Kipnext Connect, da Decathlon, tem um sensor de 3 gramas no calcanhar que mede o desgaste real da espuma e informa pelo celular quando é hora de trocar o tênis, em vez de depender só da aparência do solado.",
-    dataTxt: "21 de outubro de 2026",
-    local: "",
-    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "Máquina do Esporte",
-    fonteUrl: "https://maquinadoesporte.com.br/?p=245769",
-    corpo: [
-      "A Decathlon apresentou o Kipnext Connect, tênis de corrida da linha Kiprun desenvolvido em parceria com a empresa de tecnologia Movmenta, com um sensor embutido no calcanhar que mede a compactação real da espuma de amortecimento, batizado de Sollo. Ele pesa cerca de 3 gramas, não precisa de bateria externa e usa ondas eletromagnéticas para avaliar o desgaste de forma estática.",
-      "Para consultar o resultado, basta aproximar o celular da área indicada no calcanhar, de um jeito parecido com pagamento por aproximação. O aplicativo Pacer converte a leitura num percentual de degradação da espuma, em vez de deixar essa avaliação só no olho, como a maioria dos corredores faz hoje.",
-      "A proposta ataca um problema real: segundo estudos citados pela marca, quase metade dos corredores se machuca ao menos uma vez por ano, e a perda de amortecimento do tênis é um dos fatores de risco. Mesmo assim, 60% dos corredores decidem a troca só pela aparência do solado ou por sensação subjetiva, sem um critério mais objetivo.",
-      "A entressola tem 53 mm de altura no retropé, em poliuretano termoplástico, e o conjunto eletrônico é isolado contra umidade e variação de temperatura. Segundo a marca, o sistema é imperceptível durante a corrida e não interfere na dinâmica da pisada; o modelo é indicado para rodagens longas no asfalto.",
-      "A reportagem não informou preço nem data exata de chegada ao Brasil, apenas que o modelo \"chega ao mercado\". Ainda assim, é um indício de para onde a indústria de calçados de corrida está olhando: menos achismo sobre quando trocar o tênis, mais dado objetivo."
-    ]
-  },
-  {
-    id: "parque-porto-cachoeira-joinville",
-    categoria: "Infraestrutura",
-    titulo: "Joinville licita R$ 55,5 milhões para o Parque Porto Cachoeira, com pista de caminhada e corrida",
-    resumo: "A licitação do novo parque na região central, inspirado em modelos como o High Line de Nova York, recebeu sete propostas e prevê 24 meses de obra. O projeto inclui ciclovia, pista de caminhada e corrida, quadras e área pet, entre o Centreventos Cau Hansen e o rio.",
-    dataTxt: "14 de setembro de 2026",
-    local: "Joinville, SC",
-    imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    fonteNome: "ND Mais",
-    fonteUrl: "https://ndmais.com.br/infraestrutura/parque-r-55-milhoes-avanca-joinville/",
-    corpo: [
-      "A Prefeitura de Joinville abriu a licitação do Parque Porto Cachoeira, orçado em R$ 55,5 milhões, e já recebeu sete propostas na fase de avaliação de preços, capacidade técnica e documentação, segundo a Secretaria de Administração e Planejamento. O prazo previsto de obra é de 24 meses a partir da assinatura do contrato.",
-      "O parque fica na região central da cidade, próximo ao Centreventos Cau Hansen, numa área entre as avenidas José Vieira e Hermann August Lepper e as ruas Itaiópolis e Dona Francisca, junto ao rio. O projeto se inspira em conceitos de parques urbanos como o High Line de Nova York, que transformou uma antiga estrutura elevada em área de lazer.",
-      "Para quem corre na cidade, o ponto central é a pista de caminhada e corrida prevista no projeto, ao lado de ciclovia, quadras de futsal, basquete e queimada, playground, área de piquenique, espaço pet, mesas de tênis e jogos de tabuleiro, além de pavimentação, drenagem, iluminação e paisagismo completos.",
-      "Com 24 meses de prazo a partir da contratação, a expectativa é de que o parque só fique pronto em 2028. Ainda assim, é mais uma opção de pista segura se somando ao pouco espaço fechado para treino que a região central de Joinville oferece hoje, e vale ficar de olho no avanço da obra nos próximos meses."
-    ]
   }
+
 ];
 
-/* DICAS_ULTIMA_ROTACAO: 2026-10-25
+/* DICAS_ULTIMA_ROTACAO: 2026-11-08
    As 6 dicas são trocadas por completo a cada 2 semanas.
    Ao rodar a rotação, atualize a data acima. */
 const PACEFLY_DICAS = [
   {
-    id: "treinar-com-calor-sem-se-arriscar",
+    id: "reposicao-de-eletrolitos-em-dias-quentes",
     categoria: "Saúde",
-    titulo: "Treinar com calor sem se arriscar: o que muda na rotina a partir de agora",
-    resumo: "Os dias mais quentes do ano estão chegando em Joinville e região, e o treino que funcionava bem no inverno pode virar risco se a rotina não se adaptar. Pequenos ajustes de horário e ritmo evitam o mal-estar que o calor provoca.",
+    titulo: "Reposição de eletrólitos em dias quentes: o que realmente faz diferença na corrida",
+    resumo: "Com as temperaturas subindo em Joinville e região, o suor leva junto mais do que água, e repor só líquido pode não bastar para evitar mal-estar em treinos e provas mais longas. Entender o papel do sódio na hidratação ajuda a treinar com mais segurança nos meses mais quentes.",
     imagem: "https://images.pexels.com/photos/2461982/pexels-photo-2461982.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "O calor muda o corpo durante o esforço de um jeito que vai além do simples desconforto: o coração trabalha mais para levar sangue até a pele e ajudar a dissipar o calor, e isso sobra menos energia para os músculos que estão correndo. Ritmo que era confortável no inverno pode parecer mais difícil no mesmo esforço, e isso é esperado, não um sinal de perda de condicionamento.",
-      "O horário do treino é o ajuste mais simples e mais eficaz. Treinar no início da manhã, antes do sol ficar forte, ou no fim da tarde, depois do calor passar do pico, reduz bastante a exposição ao sol direto e à temperatura mais alta do dia, comum entre o meio-dia e as 16h.",
-      "Vestimenta clara, leve e que deixa o suor evaporar ajuda o corpo a se refrescar. Boné ou viseira e protetor solar não são detalhes de estética, protegem contra a insolação e contra a queimadura que, sem perceber, pode piorar bastante o desconforto do treino seguinte.",
-      "Sinais de alerta merecem respeito imediato: tontura, dor de cabeça forte, calafrio apesar do calor, ou parar de suar de repente no meio do esforço. Qualquer um desses pede parar o treino, buscar sombra e se hidratar, não empurrar mais alguns minutos para terminar a planilha.",
-      "Para quem está treinando para a 1ª Maratona de Joinville ou para a Meia Maratona de Piracity, vale lembrar que o corpo leva de uma a duas semanas para se adaptar melhor ao calor. Quem tem treino longo importante pela frente ganha ao antecipar esse ajuste de horário, em vez de só sentir o calor no dia da prova."
+      "O suor não é só água: ele carrega minerais, principalmente sódio, que o corpo perde em quantidade maior conforme o calor aumenta e o treino fica mais longo ou mais intenso. Em dias quentes, essa perda acontece mais rápido do que em dias frescos, mesmo num treino que parece igual ao de sempre.",
+      "Beber bastante água sem repor nada além disso funciona bem para treinos curtos, mas em esforços mais longos sob calor pode deixar o corpo com pouco sódio no sangue, o que causa sensação de fraqueza, confusão leve e mal-estar, sintomas que às vezes são confundidos com simples desidratação.",
+      "Na prática, para treinos de até cerca de 60 minutos a água costuma bastar. Acima disso, principalmente em dias de calor forte, vale incluir uma bebida isotônica ou um sachê de eletrólito na garrafa, sobretudo para quem vai encarar provas mais longas, como os 9 km da Corrida Bombeiros Voluntários ou os percursos de 10 km que ainda restam no calendário da região.",
+      "Um jeito simples de perceber se você perde bastante sódio no treino é observar as marcas brancas que o suor seco deixa na roupa escura ou no boné depois de um treino mais longo. Quem nota isso com frequência costuma se beneficiar ainda mais da reposição de eletrólitos, não só de água.",
+      "A reposição de eletrólitos não precisa esperar a cãimbra ou a tontura aparecerem. Planejar a hidratação pensando na duração do treino e na temperatura do dia, em vez de confiar só na sede, é o que realmente evita que o calor decida o resultado do treino ou da prova."
     ]
   },
   {
-    id: "tapering-as-duas-semanas-antes-da-prova",
-    categoria: "Treino",
-    titulo: "Tapering: por que reduzir o treino nas duas semanas antes da prova funciona",
-    resumo: "Com a 1ª Maratona de Joinville e a Meia Maratona de Piracity chegando, bate a tentação de treinar pesado até os últimos dias. Fazer o contrário, reduzindo o volume de propósito, é o que deixa as pernas realmente prontas para o dia da prova.",
-    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Tapering é o nome que o treino dá à redução proposital de volume nas últimas semanas antes de uma prova importante, enquanto a intensidade de alguns treinos pontuais se mantém. A ideia parece contraintuitiva, porque treinar menos antes de um desafio grande não é o instinto natural de quem está animado com a prova chegando.",
-      "O corpo não fica mais forte durante o treino, fica mais forte durante a recuperação depois dele. Nas semanas finais, o acúmulo de treinos já fez o trabalho necessário, e o que falta é tempo para esse trabalho virar resultado nas pernas, sem o desgaste de treinos novos.",
-      "Na prática, a redução é gradual: a semana duas antes da prova cai para cerca de 70 a 80% do volume normal, e a última semana cai ainda mais, para 40 a 60%, mantendo alguns treinos curtos em ritmo de prova para a sensação de velocidade não se perder.",
-      "Erro comum: interpretar o tapering como desculpa para parar de se cuidar. Sono, alimentação e hidratação continuam tão importantes quanto durante o treino pesado, porque é justamente esse período que decide se o corpo chega descansado ou só menos cansado.",
-      "A sensação de estar perdendo forma nos últimos dias é comum e engana bastante gente. Pernas mais leves e descansadas no início da prova valem muito mais do que alguns quilômetros extras de treino que só cansam sem agregar nada à essa altura da preparação."
-    ]
-  },
-  {
-    id: "caimbras-na-corrida-causas-e-prevencao",
-    categoria: "Saúde",
-    titulo: "Câimbras na corrida: por que aparecem e como evitar que estraguem a prova",
-    resumo: "A câimbra quase sempre chega no peor momento, perto do fim de uma prova ou de um treino longo, e para muita gente parece surgir do nada. Entender o que realmente causa a maioria dos casos ajuda a evitar que ela decida o resultado do seu dia.",
-    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    corpo: [
-      "Durante muito tempo, a explicação mais repetida para a câimbra era a falta de sódio ou potássio no corpo, mas pesquisas mais recentes apontam a fadiga muscular como o gatilho mais comum: o músculo cansado perde parte do controle fino que evita a contração involuntária, mais do que simplesmente ficar sem eletrólito.",
-      "Isso explica por que a câimbra costuma aparecer em provas mais longas do que o corredor está acostumado a treinar, ou em ritmos mais fortes do que o habitual: o músculo chega a um nível de fadiga que o treino normal nunca tinha exigido dele antes.",
-      "A prevenção mais eficaz é o treino específico: treinar na distância e perto do ritmo que a prova vai exigir, em vez de confiar só no dia da prova para descobrir se as pernas aguentam. Progressão gradual de volume e de ritmo reduz bastante esse tipo de surpresa.",
-      "Hidratação e eletrólitos ainda importam, principalmente em dias de calor forte e suor abundante, então vale manter a reposição de sódio em provas longas como parte da estratégia, mesmo sabendo que ela não é a causa isolada da maioria dos casos.",
-      "Se a câimbra já apareceu no meio da prova, parar, alongar suavemente o músculo afetado por alguns segundos e retomar em ritmo mais leve costuma funcionar melhor do que insistir no mesmo ritmo esperando que ela passe sozinha."
-    ]
-  },
-  {
-    id: "respiracao-durante-a-corrida-como-controlar-o-ritmo",
+    id: "treinar-na-chuva-cuidados-com-pes-e-equipamento",
     categoria: "Técnica",
-    titulo: "Respiração durante a corrida: como ela ajuda a controlar o ritmo",
-    resumo: "Muita gente só nota a própria respiração quando ela já está descontrolada, ofegante, no meio de um esforço mais forte. Prestar atenção nela antes desse ponto é uma das formas mais simples de perceber, e corrigir, um ritmo que está acima do que o corpo aguenta sustentar.",
+    titulo: "Treinar na chuva: cuidados com os pés e o equipamento que fazem diferença",
+    resumo: "Nesta época do ano, a chance de chuva nos treinos e nas provas da região aumenta bastante, como mostrou a própria previsão para a Meia Maratona de Piracity deste fim de semana. Alguns cuidados simples com o calçado e a roupa evitam que a chuva vire desconforto ou lesão.",
     imagem: "https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "A respiração é um dos sinais mais honestos de intensidade que o corpo dá durante a corrida, mais imediato até do que o batimento cardíaco, que a maioria não consegue sentir sem um relógio. Se a respiração já não permite falar uma frase curta sem pausar, o ritmo provavelmente está mais forte do que o esforço pretendido para aquele treino.",
-      "A respiração pelo nariz, quando dá para manter, costuma indicar um ritmo mais confortável e sustentável, enquanto a respiração só pela boca, rápida e curta, aparece justamente quando o esforço sobe para uma intensidade mais forte. Nenhuma das duas é errada, cada uma serve para um tipo de treino diferente.",
-      "Um padrão respiratório mais regular, como inspirar em dois passos e expirar em dois passos nos treinos leves, ajuda a manter o ritmo estável e a notar mais rápido quando o corpo está acelerando sem intenção. Não precisa ser uma contagem rígida, serve mais como referência do que como regra fixa.",
-      "Em subidas ou em trechos finais de prova, a respiração tende a ficar mais curta e mais ofegante, e isso é esperado. O problema é quando esse padrão aparece cedo demais na prova, sinal de que o ritmo da largada saiu mais forte do que o corpo tinha planejado sustentar até o fim.",
-      "Treinar prestando atenção na respiração, sem se sobrecarregar pensando nela o tempo todo, ajuda a desenvolver uma noção de ritmo mais confiável do que só olhar o relógio. Com o tempo, boa parte dos corredores aprende a sentir o próprio limite antes mesmo de ele aparecer no desempenho."
+      "A combinação de calor e umidade típica do fim de ano em Santa Catarina traz mais chuva de verão, geralmente rápida e forte, tanto nos treinos quanto nas provas de rua da região. Em vez de simplesmente evitar a chuva o tempo todo, vale se preparar para treinar bem mesmo quando ela chega.",
+      "O pé que fica molhado por muito tempo amolece a pele e fica mais sujeito a bolhas, então meias sintéticas ou de lã, que secam mais rápido e deslizam menos do que o algodão, ajudam bastante em treinos sob chuva ou em pisos encharcados.",
+      "Piso molhado também exige atenção redobrada em superfícies lisas, como blocos de calçada, faixas de pintura no asfalto e tampas metálicas de bueiro, que ficam bem mais escorregadias do que o asfalto comum quando molhadas. Reduzir o ritmo nesses trechos específicos evita a maioria dos escorregões.",
+      "Roupas claras ou com faixa refletiva ajudam na visibilidade em dias nublados e chuvosos, quando a luz natural já é mais fraca mesmo de manhã. Um boné com aba curta protege os olhos da chuva sem comprometer a visão do caminho.",
+      "Depois do treino, tirar o tênis e a meia molhados o quanto antes e secar o calçado com jornal amassado por dentro, em vez de usar secador ou deixar no sol forte, preserva o material por mais tempo. Quem treina na chuva com frequência ganha ao ter um segundo par de tênis para alternar, dando tempo de cada um secar por completo."
     ]
   },
   {
-    id: "alongamento-antes-ou-depois-do-treino",
-    categoria: "Técnica",
-    titulo: "Alongamento antes ou depois do treino? O que cada tipo realmente faz",
-    resumo: "A dúvida é clássica e a resposta não é só uma das duas opções: alongamento dinâmico e alongamento estático servem para momentos diferentes, e trocar a ordem pode render menos do que promete ou até incomodar mais do que ajudar.",
-    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    id: "assaduras-e-bolhas-como-prevenir-no-treino-longo",
+    categoria: "Saúde",
+    titulo: "Assaduras e bolhas no calor: como prevenir no treino longo",
+    resumo: "Suor, umidade e atrito aumentam no verão, e é nessa combinação que assaduras e bolhas mais aparecem, até em quem nunca teve esse problema no inverno. A prevenção é simples e evita que um machucado interrompa um treino longo ou uma prova importante.",
+    imagem: "https://images.pexels.com/photos/2404056/pexels-photo-2404056.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "Alongamento estático é aquele em que a posição é mantida parada por um tempo, geralmente de 15 a 30 segundos. Feito antes do treino, ele tende a deixar o músculo momentaneamente menos responsivo, o que pode reduzir um pouco a potência logo nos primeiros minutos de corrida.",
-      "Por isso a recomendação mais aceita hoje é inverter a lógica antiga: antes do treino, o alongamento dinâmico, com movimentos ativos como elevação de joelho, chute de calcanhar e balanço de perna, prepara o músculo sem deixá-lo mais lento, além de elevar a temperatura corporal gradualmente.",
-      "O alongamento estático encontra seu melhor momento depois do treino, quando o músculo já está aquecido e o objetivo passa a ser recuperação e manutenção da amplitude de movimento ao longo do tempo, não mais desempenho imediato.",
-      "Nenhum dos dois tipos substitui o aquecimento progressivo, que para quem corre pode ser simplesmente começar o treino em ritmo bem mais leve nos primeiros minutos, deixando o corpo entrar em movimento antes de cobrar ritmo de prova dele.",
-      "Quem sente desconforto muscular recorrente em uma região específica tende a se beneficiar mais de um trabalho de mobilidade regular, feito em dias separados do treino, do que de alongar mais forte bem na hora em que o músculo já está cansado pelo esforço."
+      "Assadura é resultado de atrito repetido num ponto da pele, agravado pela umidade do suor, e por isso aparece mais no calor mesmo em quem usa a mesma roupa de sempre. As áreas mais comuns são a parte interna das coxas, as axilas e a cintura, onde a roupa pressiona ou roça a cada passada.",
+      "A bolha nos pés segue a mesma lógica, só que dentro do tênis: fricção mais umidade. Em dias mais úmidos, o pé sua mais dentro do calçado, e isso aumenta o risco de bolha mesmo com o mesmo tênis e a mesma meia que nunca causaram problema antes.",
+      "Passar um creme ou vaselina nos pontos de atrito antes de um treino longo, usar roupas técnicas sem costura áspera e escolher meias que não dobram nem formam rugas dentro do tênis reduzem bastante o risco, tanto de assadura quanto de bolha.",
+      "O tamanho e o amarrar do tênis também importam: um calçado meio apertado ou meio solto demais aumenta o atrito a cada passo. Vale testar qualquer tênis ou meia nova em treinos mais curtos antes de usar numa prova ou num treino longo importante, o mesmo cuidado que já vale para não estrear equipamento no dia da prova.",
+      "Se a assadura ou a bolha aparecer no meio do treino ou da prova, limpar a área e cobrir com um curativo, quando disponível, ajuda a terminar com menos desconforto. Depois, descansar a região até ela cicatrizar evita que o mesmo ponto volte a incomodar no treino seguinte."
     ]
   },
   {
-    id: "recuperacao-entre-provas-proximas",
-    categoria: "Treino",
-    titulo: "Duas provas em uma semana: como recuperar entre a Maratona de Joinville e a Meia de Piracity",
-    resumo: "Quem vai correr a 1ª Maratona de Joinville no fim de semana de 31 de outubro e 1º de novembro e também encarar a 10ª Meia Maratona de Piracity, já em 8 de novembro, tem pouco mais de uma semana para recuperar entre as duas. Esse intervalo curto pede cuidado redobrado.",
+    id: "treino-noturno-seguranca-e-visibilidade",
+    categoria: "Segurança",
+    titulo: "Treino noturno: como correr com segurança quando o calor empurra o treino para a noite",
+    resumo: "Com o sol do meio do dia cada vez mais forte, muita gente antecipa ou atrasa o treino para fugir do calor, e o número de corredores nas ruas à noite cresce nesta época do ano. Visibilidade e atenção ao ambiente ficam ainda mais importantes nesse horário.",
     imagem: "https://images.pexels.com/photos/28766046/pexels-photo-28766046.jpeg?auto=compress&cs=tinysrgb&w=1200",
     corpo: [
-      "O primeiro erro costuma ser tratar a semana entre as duas provas como uma semana de treino normal. O corpo que acabou de correr 42 km, ou mesmo os 6 km de sábado, precisa de tempo de recuperação antes de qualquer treino com intensidade de novo, mesmo que a sensação geral pareça boa nos primeiros dias.",
-      "Os primeiros dois ou três dias depois da prova pedem descanso ativo: caminhada leve, alongamento suave ou, no máximo, um trote bem curto e bem lento, só para soltar as pernas, sem nenhuma meta de ritmo ou distância.",
-      "Dor muscular que persiste além do esperado, inchaço localizado ou qualquer dor articular que não existia antes da prova são sinais para adiar o retorno ao treino e, se não melhorar em poucos dias, buscar avaliação profissional antes da próxima largada.",
-      "Sono e alimentação pesam tanto quanto o treino nessa recuperação relâmpago: dormir bem e repor bem as reservas de energia nos dias seguintes à maratona faz mais diferença no desempenho de Piracity do que qualquer treino apertado nessa janela curta.",
-      "Para quem vai encarar as duas provas, vale ajustar a expectativa para a segunda: correr a Meia de Piracity em ritmo mais conservador do que correria isoladamente é a decisão mais sensata depois de um esforço grande como a maratona, e ainda assim garante cruzar a linha de chegada bem."
+      "Conforme o calor do meio do dia fica mais difícil de encarar, é comum migrar parte do treino para o início da manhã ou para a noite, horários mais frescos. Treinar de noite, porém, traz cuidados de segurança e visibilidade que o treino de dia não exige.",
+      "Roupas claras ou com detalhes refletivos, e se possível uma luzinha de clipe ou uma lanterna de cabeça em trechos mais escuros, ajudam em dois sentidos: quem corre vê melhor o piso irregular, e quem dirige ou pedala por perto enxerga o corredor com antecedência suficiente para reagir.",
+      "Na escolha do trajeto, ruas mais movimentadas e bem iluminadas valem mais do que um atalho deserto, mesmo que esse atalho pareça mais rápido ou mais tranquilo. Treinar em dupla ou em grupo também ajuda, tanto pela companhia quanto pela segurança.",
+      "Manter atenção ao redor importa tanto quanto a roupa certa: correr com um fone no volume baixo, ou com só um lado no ouvido, deixa escutar o trânsito e qualquer coisa ao redor. Avisar alguém o trajeto e o horário previsto de volta é um cuidado simples que não custa nada.",
+      "Treinar de noite nos meses mais quentes é um ajuste razoável e muitas vezes necessário, não um problema em si. Mas merece o mesmo cuidado com segurança que qualquer outra mudança na rotina de treino, não menos."
+    ]
+  },
+  {
+    id: "protecao-solar-para-quem-corre-na-rua",
+    categoria: "Saúde",
+    titulo: "Protetor solar para quem corre: o que considerar além do fator de proteção",
+    resumo: "Treinar ao ar livre em dias mais claros e mais longos significa mais exposição ao sol acumulada ao longo das semanas, e o protetor solar, se usado do jeito errado, protege bem menos do que o rótulo promete. Alguns detalhes práticos fazem diferença para quem corre na rua.",
+    imagem: "https://images.pexels.com/photos/18408962/pexels-photo-18408962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Quem treina na rua se expõe ao sol de um jeito diferente de quem passa o dia em ambiente fechado, e isso vale mesmo em dias nublados, quando a radiação ultravioleta continua presente. Escolher um protetor solar resistente à água e ao suor é o primeiro ajuste, porque o suor de um treino mais longo tira boa parte do produto comum rapidamente.",
+      "A quantidade e o momento de aplicar também importam: a maioria das pessoas usa menos protetor do que o recomendado, e passá-lo uns 20 a 30 minutos antes de sair de casa dá tempo da pele absorver melhor o produto antes do primeiro raio de sol.",
+      "Algumas áreas costumam ficar de fora na pressa do dia a dia: orelhas, nuca, a risca do cabelo no couro cabeludo e os lábios, que também se beneficiam de um protetor labial com proteção solar. Vale revisar essas áreas de tempos em tempos, não só o rosto e os braços.",
+      "Protetor solar não precisa fazer esse trabalho sozinho: boné ou viseira, óculos de sol com proteção UV e roupas técnicas com proteção solar embutida somam, principalmente em treinos mais longos sob sol direto. Os óculos escuros também evitam o esforço de ficar apertando os olhos por causa da claridade, o que ajuda a não cansar tanto o rosto durante o treino.",
+      "O efeito do sol no corredor é acumulado: mesmo sem nenhuma queimadura visível, anos de exposição repetida pesam na saúde da pele no longo prazo. Tratar o protetor solar como parte fixa da rotina de treino, do mesmo jeito que a hidratação, protege mais do que só o conforto do dia."
+    ]
+  },
+  {
+    id: "manter-o-ritmo-de-treino-nas-festas-de-fim-de-ano",
+    categoria: "Treino",
+    titulo: "Como manter o ritmo de treino nas festas de fim de ano sem perder o que já conquistou",
+    resumo: "Dezembro traz confraternizações, viagens e uma rotina fora do normal, e é comum o treino ser o primeiro compromisso a sair da agenda. Com a Ho Ho Run e a Corrida da Virada ACORDE fechando o calendário da região, um pouco de planejamento evita perder o condicionamento construído ao longo do ano.",
+    imagem: "https://images.pexels.com/photos/5319384/pexels-photo-5319384.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    corpo: [
+      "Dezembro desorganiza a rotina de quase todo mundo: festas de família, viagens, calor mais forte e uma agenda social bem mais cheia do que o normal. É esperado que o treino sinta esse impacto, e o objetivo realista nesse período é manter o condicionamento, não buscar grandes ganhos.",
+      "Trocar o treino completo por uma versão mais curta, como 20 a 30 minutos num ritmo leve, preserva muito mais a base aeróbica construída no ano do que pular o treino inteiro naquela semana mais cheia. Pouco treino ainda é melhor do que nenhum.",
+      "Para quem vai viajar nas festas, vale olhar um trajeto seguro perto de onde vai ficar antes mesmo de viajar, usando um aplicativo de mapas, ou simplesmente aceitar que aquela semana vai ter volume mais baixo mesmo, em vez de tentar encaixar o plano de treino inteiro num lugar e numa rotina diferentes.",
+      "Quem está de olho numa das provas que fecham o calendário da região, como a Ho Ho Run, em 6 de dezembro, ou a Corrida da Virada ACORDE, no réveillon de Blumenau, em 31 de dezembro, ganha ao manter alguns treinos em ritmo de prova dentro dessas semanas mais leves, para as pernas não estranharem o ritmo na hora da largada.",
+      "O ano novo sempre traz a sensação de reiniciar os planos do zero, mas o jeito mais fácil de chegar a janeiro já treinando bem é simplesmente não parar de vez em dezembro, mesmo que o volume fique bem mais baixo do que o normal."
     ]
   }
-
 ];
 
 /* ============================================================
