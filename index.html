@@ -175,30 +175,39 @@
   </div>
 </section>
 
-<!-- TEASER TEMPORADA 2027 (03/11/2026, autorizado pelo gestor): leva a
-     calendario-2027.html. Link interno sem UTM de proposito, porque UTM em
-     link interno reinicia a origem da sessao no GA4 e apaga a origem real. -->
-<a class="promo-banner" href="calendario-2027.html">
-  <div class="wrap promo-inner">
-    <span class="promo-badge">Vem aí</span>
-    <span class="promo-text"><strong>Temporada 2027:</strong> as primeiras provas da região já têm data. Veja o calendário e comece a planejar o próximo ano.</span>
-    <span class="promo-cta">Ver o calendário 2027 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-  </div>
-</a>
+<!-- Banner "Temporada 2027" removido em 15/11/2026 (autorizado pelo gestor):
+     o calendario principal agora inclui as provas de 2027 ja confirmadas,
+     com filtro de ano. A mencao as novidades da temporada 2027 que ainda
+     so estao em calendario-2027.html foi movida para dentro da secao
+     #calendario (nota abaixo do calGrid). A pagina calendario-2027.html
+     continua no ar, inalterada, so para compartilhamento via link direto. -->
 
 <!-- CALENDARIO -->
 <section id="calendario">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Agenda 2026</span>
+      <span class="eyebrow">Agenda <span id="calEyebrowAno">2026</span></span>
       <h2>Calendário de provas em Joinville e região</h2>
       <p>Do 5K de bairro à primeira maratona da cidade, passando pelo planalto norte, pelo litoral e pelo Vale do Itajaí. Clique em uma prova para ver percurso, inscrição, retirada de kit e resultados das últimas edições.</p>
     </div>
 
+    <div class="cal-filtros" id="calFiltrosAno">
+      <button class="chip on" data-ano="2026">2026</button>
+      <button class="chip" data-ano="2027">2027</button>
+    </div>
+
     <div class="cal-filtros" id="calFiltros">
-      <button class="chip on" data-mes="todos">Todas</button>
-      <button class="chip" data-mes="11">Novembro</button>
-      <button class="chip" data-mes="12">Dezembro</button>
+      <button class="chip" data-mes="todos" data-ano="todos">Todas</button>
+      <button class="chip on" data-mes="11" data-ano="2026">Novembro</button>
+      <button class="chip" data-mes="12" data-ano="2026">Dezembro</button>
+      <button class="chip" data-mes="01" data-ano="2027">Janeiro</button>
+      <button class="chip" data-mes="02" data-ano="2027">Fevereiro</button>
+      <button class="chip" data-mes="03" data-ano="2027">Março</button>
+      <button class="chip" data-mes="04" data-ano="2027">Abril</button>
+      <button class="chip" data-mes="05" data-ano="2027">Maio</button>
+      <button class="chip" data-mes="06" data-ano="2027">Junho</button>
+      <button class="chip" data-mes="07" data-ano="2027">Julho</button>
+      <button class="chip" data-mes="08" data-ano="2027">Agosto</button>
     </div>
 
     <div class="cal-busca">
@@ -209,6 +218,7 @@
 
     <div class="cal-grid" id="calGrid"></div>
     <p class="cal-nota">Datas e distâncias conforme divulgação dos organizadores. Confirme sempre no site oficial de cada prova antes de se inscrever.</p>
+    <p class="cal-nota">Duas provas da temporada 2027 (1ª Meia Maratona de Schroeder e a Maratona Internacional de Pomerode) ainda estão com data a confirmar pelos organizadores e, por isso, permanecem só na nossa <a href="calendario-2027.html">página especial da temporada 2027</a> por enquanto.</p>
   </div>
 </section>
 
@@ -458,7 +468,16 @@
   const busca=document.getElementById('calBusca');
   const selDist=document.getElementById('calDist');
   const selCidade=document.getElementById('calCidade');
-  let fMes='todos';
+  const anoChips=document.querySelectorAll('#calFiltrosAno .chip');
+  const mesChips=document.querySelectorAll('#calFiltros .chip');
+  const eyebrowAno=document.getElementById('calEyebrowAno');
+
+  // padrao: ano atual e mes atual (de hoje), para nao sobrecarregar a rolagem.
+  // se nao houver chip de mes cadastrado para o mes atual do ano atual
+  // (ex.: mes sem prova nenhuma), cai para "Todas" daquele ano.
+  let fAno=String(hoje.getFullYear());
+  let fMesAtual=String(hoje.getMonth()+1).padStart(2,'0');
+  let fMes=[...mesChips].some(c=>c.dataset.ano===fAno && c.dataset.mes===fMesAtual) ? fMesAtual : 'todos';
 
   // popular filtros de distancia e cidade a partir das provas cadastradas
   (function(){
@@ -468,6 +487,19 @@
     if(selDist) selDist.innerHTML='<option value="">Todas as distâncias</option>'+ordDist.map(d=>`<option>${d}</option>`).join('');
     if(selCidade) selCidade.innerHTML='<option value="">Todas as cidades</option>'+[...cidades].sort((a,b)=>a.localeCompare(b)).map(c=>`<option>${c}</option>`).join('');
   })();
+
+  // mostra so os chips de mes do ano selecionado (mais o chip "Todas"),
+  // e mantem os estados "on" de ano/mes em sincronia com fAno/fMes.
+  function syncChips(){
+    anoChips.forEach(c=>c.classList.toggle('on', c.dataset.ano===fAno));
+    mesChips.forEach(c=>{
+      const doAno=c.dataset.ano==='todos' || c.dataset.ano===fAno;
+      c.style.display=doAno?'':'none';
+      c.classList.toggle('on', c.dataset.mes===fMes);
+    });
+    if(eyebrowAno) eyebrowAno.textContent=fAno;
+  }
+  syncChips();
 
   function render(lista){
     grid.innerHTML='';
@@ -505,6 +537,7 @@
     const d=(selDist&&selDist.value)||'';
     const c=(selCidade&&selCidade.value)||'';
     const lista=eventos.filter(e=>{
+      if(String(e.ano)!==fAno) return false;
       if(fMes!=='todos' && e.mes!==fMes) return false;
       if(d && !(e.distancias||[]).includes(d)) return false;
       if(c && e.cidade!==c) return false;
@@ -518,11 +551,18 @@
   }
   aplicar();
 
-  document.querySelectorAll('#calFiltros .chip').forEach(c=>{
-    c.addEventListener('click',()=>{
-      document.querySelectorAll('#calFiltros .chip').forEach(x=>x.classList.remove('on'));
-      c.classList.add('on');
-      fMes=c.dataset.mes;
+  mesChips.forEach(chipEl=>{
+    chipEl.addEventListener('click',()=>{
+      fMes=chipEl.dataset.mes;
+      syncChips();
+      aplicar();
+    });
+  });
+  anoChips.forEach(chipEl=>{
+    chipEl.addEventListener('click',()=>{
+      fAno=chipEl.dataset.ano;
+      fMes='todos'; // ao trocar de ano, mostra o ano inteiro; o visitante escolhe o mes
+      syncChips();
       aplicar();
     });
   });

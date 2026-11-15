@@ -1,0 +1,11 @@
+# Edite os campos abaixo. Deixe em branco para manter o texto padrao do site.
+# Linhas iniciadas por # nao aparecem no site.
+
+titulo:
+resumo:
+categoria:
+local:
+fonte-nome:
+fonte-url:
+
+corpo:
