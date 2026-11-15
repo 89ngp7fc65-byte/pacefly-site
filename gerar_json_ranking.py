@@ -43,11 +43,11 @@ OG_RANKING_HTML = AQUI / "og-ranking.html"
 # A lista de provas aparece na página, na seção de transparência. Ela responde
 # a pergunta que mais gera desconfiança: "corri, por que não estou aqui?".
 META = {
-    "atualizado_em": "08/11/2026",
+    "atualizado_em": "15/11/2026",
     "temporada": 2026,
-    "total_provas": 30,
-    "total_participacoes": 22201,
-    "periodo_coberto": "14 de junho a 08 de novembro de 2026",
+    "total_provas": 31,
+    "total_participacoes": 23764,
+    "periodo_coberto": "14 de junho a 15 de novembro de 2026",
     "provas": [
         "Meia Maratona Quiriri · 14/06 · Joinville",
         "12ª Corrida do 8º BPM · 21/06 · Joinville",
@@ -79,6 +79,7 @@ META = {
         "10ª Meia Maratona de Piracity · 08/11 · Joinville",
         "6ª Crevisc em Movimento · 08/11 · Guaramirim",
         "Corrida da Matriz São Judas Tadeu · 08/11 · Jaraguá do Sul",
+        "6ª Corrida Bombeiros Voluntários · 15/11 · Joinville",
     ],
     # Setas de subida e queda voltam a True: o snapshot de 07/09 ja nasceu com
     # o calculo correto (posicao geral derivada do tempo), entao a comparacao
